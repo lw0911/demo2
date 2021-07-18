@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Bootstrap Real Estate Website Template">
+        <meta name="author" content="KimaroTec">
+
+        <title></title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/animate.css" rel="stylesheet">
+        <!-- Ico font CSS -->
+        <link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+        <link href="fonts/icofont/css/icofont.css" rel="stylesheet">
+        <link href="fonts/themify-icons/themify-icons.css" rel="stylesheet">
+        <!-- Style CSS -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- Google Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,300,400italic,700,700italic,900' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800,300italic,400italic' rel='stylesheet' type='text/css'>
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="js/html5shiv.js"></script>          
+        <![endif]-->
+        <!-- Favicons -->
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> 
+
+    </head>
+    <body>        
+        <!-- /.preloader -->
+        <div id="preloader">
+            <div class="clear-loading loading-effect-3">
+                <div><span></span></div>
+            </div>
+            <h1>Loading</h1>
+        </div>
+        <div id="top"></div>
+
+        <section class="top_bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 col-xs-12">
+                        <div class="top_bar_info">
+                            <p><i class="fa fa-phone"></i>XXX</p>
+                            <p><i class="fa fa-envelope"></i>XXX</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-xs-12 pull-right top-asad-right pl0">
+                        <div class="top_bar_social">
+                            <a class="fac" href="#"><i class="fa fa-facebook"></i></a>
+                            <a class="twi" href="#"><i class="fa fa-twitter"></i></a>
+                            <a class="goo" href="#"><i class="fa fa-google-plus"></i></a>
+                            <a class="lin" href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 col-xs-12 pull-right top-asad-right ">
+                        <div class="langue-currency-menu ">
+                            <div class="dropdown">
+                                <i class="icofont icofont-cur-dollar"></i>
+                                <button class="btn-dropdown dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true">
+                                    Dollar
+                                    <i class="fa fa-angle-down"></i>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#">EURO</a></li>
+                                    <li><a href="#">Rupi</a></li>
+                                    <li><a href="#">Dollar</a></li>
+                                </ul>
+                            </div> <!-- End .dropdown -->
+                            <div class="dropdown">
+                                <i class="icofont icofont-world"></i>
+                                <button class="btn-dropdown dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true">
+                                    English <i class="fa fa-angle-down"></i>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                    <li><a id="fr" href="#">French</a></li>
+                                    <li><a id="de" href="#">Spanish</a></li>
+                                    <li><a id="it" href="#">Japon</a></li> 
+                                </ul>
+                            </div> <!-- End .dropdown -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="main_menu fixed_menu" id="menu">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="header-logo">
+                        <a href="index.html"><img src="img/logo.png" alt="logo" class="img-responsive"></a>
+                    </div> <!-- End .header-logo -->
+                     <div class="btn-cnt-mn">
+                    <a href="submit.html" class="btn-sumbit-menu" data-toggle="tooltip" data-original-title="Add new Property" ><i class="icofont icofont-plus"></i></a>
+                    <div class="dropdown profile-menu-settings" style="">
+
+                        <button class="btn-dropdown dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true">
+                            <img class="img-circle" src="img/demo/team_2.jpg" alt="" width="43" style="border: 1px solid rgb(207, 207, 207);">                                   
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">                                  
+                            <li class="">
+                                <a href="profile.html" class="nav-link">
+                                    <i class="fa fa-heart"></i> My Profile
+                                </a>
+                            </li>                                 
+                            <li class="">
+                                <a href="my-properties.html" class="nav-link">
+                                    <i class="icofont icofont-listine-dots"></i> My properties
+                                </a>
+                            </li>                                 
+                            <li class="nav-item">
+                                <a href="submit.html" class="nav-link">
+                                    <i class="icofont icofont-ui-home"></i> Add property
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="favorites-list.html" class="">
+                                    <i class="icofont icofont-heart"></i> Favorites list
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="compare-list.html" class="">
+                                    <i class="fa fa-balance-scale"></i> Compare list
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="login.html" class="nav-link">
+                                    <i class="icofont icofont-logout"></i> Log-out         
+                                </a>
+                            </li>
+                        </ul>
+                    </div> <!-- End .dropdown -->     
+                    <!-- Menu ______________ -->
+                    </div>
+                    <nav class="navbar navbar-default">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div> <!-- End .navbar-header -->
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li class="sub-menu-holder dropdown"><a href="index.html">Home</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="index.html">Home 01 - Google Map (blue)</a></li> 
+                                        <li><a href="index-1.html">Home 02 - Google Map (dark)</a></li> 
+                                        <li><a href="index-2.html">Home 03 - Google Map (light)</a></li> 
+                                        <li><a href="index-3.html">Home 04 - Small Slider (L)</a></li>
+                                        <li><a href="index-4.html">Home 05 - Small Slider (R)</a></li>
+                                        <li><a href="index-5.html">Home 06 - Image Cover</a></li>
+                                        <li><a href="index-6.html">Home 07 - Video Cover</a></li>
+                                        <li><a href="index-7.html">Home 08 - Horizental Search</a></li>
+                                        <li><a href="index-8.html">Home 09 - Full width Slider</a></li>
+                                    </ul>
+                                    <i class="fa fa-bars"></i>
+                                </li>
+                                <li class="sub-menu-holder dropdown"><a href="#">Properties</a>
+                                    <ul class="sub-menu">
+                                        <li><a data-description="List property page " href="list-view.html">List property page</a></li>
+                                        <li><a data-description="Grid property page" href="grid-view.html">Grid property page</a></li>
+                                        <li><a data-description="Single property page" href="single-property.html">Single Property Page</a></li>
+                                        <li><a data-description="Property category page" href="property-category.html">Property Category Page</a></li>
+                                    </ul>
+                                    <i class="fa fa-bars"></i>
+                                </li>
+
+                                <li class="sub-menu-holder dropdown"><a href="#">Pages</a>
+                                    <ul class="sub-menu">
+                                        <li><a data-description="Agents listing page" href="agents.html">Agents Page</a></li>
+                                        <li><a data-description="Single agent page" href="single-agent.html">Single Agent</a></li>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="pricing-plans.html">Pricing Plans</a></li>
+                                        <li><a data-description="Page with right sidebar" href="page-right-siderbar.html">Page Right Sidebar</a></li>
+                                         <li><a data-description="Page with left sidebar" href="page-left-siderbar.html">Page Left Sidebar</a></li>
+                                        <li><a data-description="Page with full width" href="page-full-width.html">Page Full Width</a></li>
+                                        <li><a data-description="Page not found style" href="404.html">404 - Not Found</a></li>
+                                        <li><a href="login.html">Login / Register</a></li>
+                                        <li><a href="faq.html">FAQ’s</a></li>
+                                    </ul>
+                                    <i class="fa fa-bars"></i>
+                                </li>
+                                <li class="sub-menu-holder dropdown"><a href="#">Blog</a>
+                                    <ul class="sub-menu">
+                                        <li><a data-description="Standard blog posts" href="blog.html">Standard Blog</a></li>
+                                        <li><a data-description="Two Columns Blog" href="two-blog.html">Two Columns Blog</a></li>
+                                        <li><a data-description="Rich content single" href="single-blog.html">Single Blog Page</a></li>
+                                        <li><a data-description="A Blog Category Page" href="blog-category.html">Blog Category</a></li>
+                                    </ul>
+                                    <i class="fa fa-bars"></i>
+                                </li>
+
+                                <li class="sub-menu-holder dropdown"><a href="#">Gallery</a>
+                                    <ul class="sub-menu space_fix">
+                                        <li><a href="gallery-2columns.html">Gallery  2 Columns</a></li>
+                                        <li><a href="gallery-3columns.html">Gallery  3 Columns</a></li>
+                                        <li><a href="gallery-4columns.html">Gallery  4 Columns</a></li>
+                                        <li><a href="gallery-single.html">Gallery Single Page</a></li>
+                                    </ul>
+                                    <i class="fa fa-bars"></i>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </nav> <!-- End .navbar -->
+                    <!-- End Menu __________ -->
+                </div>  <!-- End .wrapper -->
+            </div> <!-- End .container -->
+        </div>
+
+
+        <section id="one-parallax" class="post-wrapper-top dm-shadow clearfix parallax" style="background-image: url('img/breadcrumb.jpg');" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20">
+            <div class="overlay1 dm-shadow">
+                <div class="container">
+                    <div class="post-wrapper-top-shadow">
+                        <span class="s1"></span>
+                    </div>
+                    <div class="col-lg-12">
+                        <ul class="breadcrumb">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">Pages</a></li>
+                            <li>MY PROFILE  </li>
+                        </ul>
+                        <h2>Kimaro Kyoto</h2>
+                    </div>
+                </div>
+            </div>
+        </section><!-- end post-wrapper-top -->
+
+        <section class="generalwrapper dm-shadow clearfix">
+            <div class="container">
+                <div class="row">
+                    <div id="right_sidebar" class="col-lg-3 col-md-3 col-sm-6 col-xs-12 last clearfix">
+                        <div class="widget">
+                            <ul class="pro-info_widget">
+                                <li class="nav-item">
+                                    <a href="#" class="">
+                                        <img class="img-responsive img-thumbnail width-100-100" src="img/demo/team_2.jpg" alt="">
+                                    </a>
+                                </li><!-- /.nav-item -->
+                                <li class="nav-item">
+                                    <a href="profile.html" class="nav-link">
+                                        <i class="fa fa-heart"></i> My Profile
+                                    </a>
+                                </li><!-- /.nav-item -->
+                                <li class="nav-item">
+                                    <a href="my-properties.html" class="nav-link">
+                                        <i class="icofont icofont-listine-dots"></i> My properties
+                                    </a>
+                                </li><!-- /.nav-item --> 
+                                 <li class="nav-item">
+                                    <a href="submit.html" class="nav-link">
+                                        <i class="icofont icofont-ui-home"></i> Add property
+                                    </a>
+                                </li><!-- /.nav-item --> 
+                                <li class="nav-item">
+                                    <a href="favorites-list.html" class="">
+                                        <i class="icofont icofont-heart"></i> Favorites list
+                                    </a>
+                                </li><!-- /.nav-item -->
+                                <li class="nav-item">
+                                    <a href="compare-list.html" class="">
+                                        <i class="fa fa-balance-scale"></i> Compare list
+                                    </a>
+                                </li><!-- /.nav-item -->
+                                
+                                <li class="nav-item">
+                                    <a href="login.html" class="nav-link">
+                                        <i class="icofont icofont-logout"></i> Log-out         
+                                    </a>
+                                </li><!-- /.nav-item -->
+
+
+                            </ul><!-- /.nav-style-primary -->
+                        </div>
+                        <!-- agent details --> 
+                        
+                        <!--Your Current Package  -->
+                        <div class="widget sidebar_agent clearfix">
+                            <div class="title">
+                                <h3>Your Current Package</h3>
+                            </div>                           
+                            <div class="package-content boxes">
+                                <p><strong>Free Membership</strong></p>
+                                <p>Listing included:&nbsp;3</p>
+                                <p>Listing remain:&nbsp;1</p>
+                                <p>Featured included:&nbsp;1</p>
+                                <p>Featured remain:&nbsp;1</p>
+                                <p>Ends On:&nbsp;Never</p>
+                            </div>
+                        </div> 
+                        <!-- Change Your Plan -->
+                        <div class="widget sidebar_agent clearfix">
+                            <div class="title">
+                                <h3>Change Your Plan</h3>
+                            </div>                           
+                            <div class="plan-content boxes">
+                                <form class="subscription_post">
+                                    <div class="form-message">
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="dropdown label-select">
+                                            <select class="form-control">
+                                                <option>Plus Plan</option>
+                                                <option>Premium Plan</option>
+                                                <option>Basic Plan</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="recurring_payment" class="checkbox-label">
+                                            <input id="recurring_payment" name="recurring_payment" value="1" type="checkbox"> 
+                                            Make Payment Recurring
+                                        </label>
+                                    </div>                                          
+                                    <div class="">
+                                        <input class="btn btn-success" value="PAY WITH PAYPAL" type="submit">
+                                    </div>                                            
+                                    <div class="package-info">
+                                        or&nbsp;
+                                        <a href="#">View more detail</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </div> 
+
+                    </div><!-- end sidebar -->
+                    <div id="content" class="col-lg-9 col-md-9 col-sm-6 col-xs-12 clearfix">
+                        <div class="submit-content">
+                            <form id="profile_form" name="profile_form" class="form profile-form">
+                                <div class="control-group">
+                                    <div class="group-title">Welcome back, Kimaro Kyoto</div>
+                                    <div class="group-container row">                                       
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="form-group s-profile-title">
+                                                        <label for="title">Name&nbsp;*</label>
+                                                        <input id="title" class="form-control" value="Kimaro Kyoto" name="title" required="" type="text">
+                                                    </div>
+                                                    <div class="form-group s-profile-position">
+                                                        <label for="position">Title/Position</label>
+                                                        <input id="position" class="form-control" value="Marketing leader" name="position" type="text">
+                                                    </div>
+                                                    <div class="form-group s-profile-email">
+                                                        <label for="email">Email&nbsp;*</label>
+                                                        <input id="email" class="form-control" value="kiamro@kiamromail.com" name="email" required="" type="text">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="form-group s-profile-phone">
+                                                        <label for="phone">Phone</label>
+                                                        <input id="phone" class="form-control" value="(456) 09090909" name="phone" type="text">
+                                                    </div>
+                                                    <div class="form-group s-profile-mobile">
+                                                        <label for="mobile">Mobile</label>
+                                                        <input id="mobile" class="form-control" value="(456) 09090909" name="mobile" type="text">
+                                                    </div>
+                                                    <div class="form-group s-profile-skype">
+                                                        <label for="skype">Skype</label>
+                                                        <input id="skype" class="form-control" value="kiamro.kyot" name="skype" type="text">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <label for="desc">About me</label>
+                                            <textarea id="desc" class="form-control" name="desc" rows="8">Kimaro kyoto He did this without coming from another Manhattan firm. The instinct that drove him to form Elegran was a strong vision and passion to create a workplace atmosphere of generosity and teamwork. Similarly, he committed himself to a basis where the people would be more important than the company's bottom line. His penchant for providing exceptional service to his clients coupled with a cutting-edge knowledge of the industry has provided Elegran's agents with a strong foundation to succeed in their own goals of making clients' real estate dreams into reality. Moreover, Doe realized that there was a real demand for a non-pressured, honest atmosphere where agents could thrive without the everyday workplace politics. Doe also envisioned a workplace in which people would feel at home, clients' interests would be put first and innovative strategies using technology would be utilized in servicing clients' and agents' needs. We believe that this ongoing mission combined with a commitment to industry ethics, selflessness and our select team of knowledgeable agents can change the real estate industry for the better. Prior to Elegran, Doe gained his industry experience in wholesale mortgage banking. He quickly rose to the top of his field at the age of 27, producing in the top 1% industrywide. Close to his exit from that field, Doe was known for implementing new underwriting methods, which brought his team to be the most profitable in the Northeast. Today, Doe and the Elegran team have made their mark; they have earned a respectable presence in the most competitive Real Estate market in the world. His team has experienced exponential growth from the formative days, and they continue to succeed. Agents who work at Elegran continually boast about the office and our "family" atmosphere. Residing for over a decade in the NYC area and a native of Williamsville, New York, Doe went to college in upstate New York, the University of Hawaii and The London School of Economics, majoring in both Business and Economics. Doe spends most of his free time with his family and enjoys reading, travel, music and sporting events.</textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="control-group">
+                                    <div class="group-title">Social Network</div>
+                                    <div class="group-container row">
+                                        <div class="clearfix">
+                                            <div class="col-md-6">
+                                                <div class="form-group s-profile-facebook">
+                                                    <label for="facebook">Facebook Url</label>
+                                                    <input id="facebook" class="form-control" value="#" name="facebook" type="text">
+                                                </div>
+                                                <div class="form-group s-profile-twitter">
+                                                    <label for="twitter">Twitter Url</label>
+                                                    <input id="twitter" class="form-control" value="#" name="twitter" type="text">
+                                                </div>
+                                                <div class="form-group s-profile-google_plus">
+                                                    <label for="google_plus">Google Plus Url</label>
+                                                    <input id="google_plus" class="form-control" value="#" name="google_plus" type="text">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group s-profile-linkedin">
+                                                    <label for="linkedin">LinkedIn Url</label>
+                                                    <input id="linkedin" class="form-control" value="#" name="linkedin" type="text">
+                                                </div>
+                                                <div class="form-group s-profile-pinterest">
+                                                    <label for="pinterest">Pinterest Url</label>
+                                                    <input id="pinterest" class="form-control" value="#" name="pinterest" type="text">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-12 clearfix">
+                                            <div class="submit">
+                                                <input class="btn btn-primary btn-lg" id="profile_submit" value="Update" type="submit">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <form id="password_form" name="password_form" class="form profile-form">
+                                <div class="control-group">
+                                    <div class="group-title">
+                                        Change Password</div>
+                                    <div class="group-container row">
+                                        <div class="col-md-12">
+                                            <div class="form-group s-profile-old_pass">
+                                                <label for="old_pass">Old Password</label>
+                                                <input id="old_pass" class="form-control" value="" name="old_pass" type="password">
+                                            </div>
+                                            <div class="form-group s-profile-new_pass">
+                                                <label for="new_pass">New Password</label>
+                                                <input id="new_pass" class="form-control" value="" name="new_pass" type="password">
+                                            </div>
+                                            <div class="form-group s-profile-new_pass_confirm">
+                                                <label for="new_pass_confirm">Confirm New Password</label>
+                                                <input id="new_pass_confirm" class="form-control" value="" name="new_pass_confirm" type="password">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 clearfix">
+                                            <div class="submit">
+                                                <input class="btn btn-primary btn-lg" id="password_submit" value="Change Password" type="submit">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div><!-- end content --> 
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section><!-- end generalwrapper -->
+
+        <div class="callout dark"><!-- add "styleBackgroundColor" class for colored background and white text OR "dark" for a dark callout -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9"><!-- title + shortdesc -->
+                        <h3>Does Asad Estate Convinced you?</h3>
+                        <p>If so, click to buy now, including <strong>lifetime upgrade</strong> for free!</p>
+                    </div>
+                    <div class="col-md-3"><!-- button -->
+                        <a href="http://kimarotec.com" rel="nofollow" target="_blank" class="btn btn-primary btn-lg">Purchase Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <!-- col #1 -->
+                    <div class="logo_footer dark col-md-3">
+                        <img alt="" src="img/logo-white.png" class="footer-logo">
+                        <p class="block">
+                            XXX<br>
+                            XXX<br>
+                            Email: XXX<br>
+                            Phone: XXX<br>
+                            Fax: XXX<br>
+                        </p>
+                        <p class="block"><!-- social -->
+                            <a href="#" class="social fa fa-facebook"></a>
+                            <a href="#" class="social fa fa-twitter"></a>
+                            <a href="#" class="social fa fa-google-plus"></a>
+                            <a href="#" class="social fa fa-linkedin"></a>
+                        </p><!-- /social -->
+                    </div>
+                    <!-- /col #1 -->
+                    <!-- col #2 -->
+                    <div class="spaced col-md-3 col-sm-4 hidden-xs">
+                        <h4>Recent <strong>Posts</strong></h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a class="block" href="#">New CSS3 Transitions this Year</a><br>
+                                <small>June 26, 2016</small>
+                            </li>
+                            <li>
+                                <a class="block" href="#">Inteligent Transitions In UX Design</a><br>
+                                <small>June 26, 2016</small>
+                            </li>
+                            <li>
+                                <a class="block" href="#">Lorem Ipsum Dolor</a><br>
+                                <small>June 26, 2016</small>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /col #2 -->
+
+                    <!-- col #3 -->
+                    <div class="spaced col-md-3 col-sm-4 hidden-xs">
+                        <h4>Recent <strong>Tweets</strong></h4>
+                        <ul class="list-unstyled fsize13">
+                            <li>
+                                <i class="fa fa-twitter"></i> <a href="#">@Kimaro kim</a> Pilsum dolor lorem sit consectetur  orem sequat <small class="ago">8 mins ago</small>
+                            </li>
+                            <li>
+                                <i class="fa fa-twitter"></i> <a href="#">@Kimaro kim</a> Remonde sequat ipsum dolor lorem sit  adipiscing  <small class="ago">8 mins ago</small>
+                            </li>
+                            <li>
+                                <i class="fa fa-twitter"></i> <a href="#">@Kimaro kim</a> Imperdiet condimentum diam dolor lorem adipiscing <small class="ago">8 mins ago</small>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /col #3 -->
+                    <!-- col #4 -->
+                    <div class="spaced col-md-3 col-sm-4">
+                        <h4>About <strong>Us</strong></h4>
+                        <p>
+                            Incredibly beautiful responsive Real estate Bootstrap Template for Corporate and Creative Professionals.
+                        </p>
+                        <h4><small><strong>Subscribe to our Newsletter</strong></small></h4>
+                        <form id="newsletterSubscribe" method="post" action="#" class="input-group">
+                            <input required="" class="form-control" name="newsletter_email" id="newsletter_email" value="" placeholder="E-mail Address" type="email">
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary">SUBMIT</button>
+                            </span>
+                        </form>
+                    </div>
+                    <!-- /col #4 -->
+                </div>
+            </div>
+            <hr>
+            <div class="copyright">
+                <div class="container text-center fsize12">
+                    Copyright &copy; 2020.Company name All rights reserved <a href="http://www.aizhanzhe.com/template.html" target="_blank">懒之才</a>.
+                    <a href="#" class="fsize11">Privacy Policy</a> • 
+                    <a href="#" class="fsize11">Terms of Service</a>
+                </div>
+            </div>
+        </footer>        
+
+        <!-- Bootstrap core and JavaScript's
+    ================================================== -->
+        <script src="js/jquery-1.10.2.min.js"></script>
+        <script src="js/jquery-migrate-1.2.1.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/jquery.parallax.js"></script>
+        <script src="js/jquery.fitvids.js"></script>
+        <script src="js/jquery.unveilEffects.js"></script>
+        
+        <script src="js/bootstrap-select.js"></script>
+        <script src="js/jquery.fancybox.pack.js"></script>
+        <script src="js/nicescroll.js"></script>
+        <script src="js/main.js"></script>
+ 
+    </body>
+</html>

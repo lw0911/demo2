@@ -1,0 +1,129 @@
+﻿<!--A Design by W3layouts
+   Author: W3layout
+   Author URL: http://w3layouts.com
+   License: Creative Commons Attribution 3.0 Unported
+   License URL: http://creativecommons.org/licenses/by/3.0/
+   -->
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Style Calculator Widget a Flat Responsive Widget Template :: w3layouts </title>
+      <!-- Meta tags -->
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="keywords" content=" Style Calculator Widget Form Responsive Widget, Audio and Video players, Login Form Web Template, Flat Pricing Tables, Flat Drop-Downs, Sign-Up Web Templates, Flat Web Templates,
+         Login Sign-up Responsive Web Template, Smartphone Compatible Web Template, Free Web Designs for Nokia, Samsung, LG, Sony Ericsson, Motorola Web Design"/>
+      <script>
+         addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+      </script>
+      <!-- Meta tags -->
+      <link href="css/style.css" rel='stylesheet' type='text/css' media="all">
+      <!--//style sheet end here-->
+      <link href="//fonts.googleapis.com/css?family=Catamaran:400,500,600,700" rel="stylesheet">
+      <link href="//fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
+   </head>
+   <body>
+      <header>
+         <nav class="sidebar noselect">
+            <div id="sb-header">
+               <div id="hide">HIDE</div>
+            </div>
+            <div id="sb-title">
+               <div id="sb-name">Calculator</div>
+               <div id="sb-setting">Settings</div>
+            </div>
+            <!--<div id="decimal-box">
+               <div id="precision-title">Decimal precision</div>
+               <div id="precision">
+                   <div class="precision" id="float-one" onclick="changePrecision(1)">1</div>
+                   <div class="precision" id="float-two" onclick="changePrecision(2)">2</div>
+                   <div class="precision" id="float-three" onclick="changePrecision(3)">3</div>
+                   <div class="precision" id="float-four" onclick="changePrecision(4)">4</div>
+                   <div class="precision" id="float-five" onclick="changePrecision(5)">5</div>
+                   <div class="precision" id="float-six" onclick="changePrecision(6)">6</div>
+                   <div class="precision" id="float-seven" onclick="changePrecision(7)">7</div>
+                   <div class="precision" id="float-eight" onclick="changePrecision(8)">8</div>
+               </div>
+               </div>-->
+            <div id="theme-box">
+               <div id="theme-title">
+                  <h4>Themes</h4>
+               </div>
+               <div id="theme">
+                  <div class="theme" id="theme-purple">
+                     <h5><a href="#">Color-1</a></h5>
+                  </div>
+                  <div class="theme" id="theme-red">
+                     <h5><a href="#">Color-2</a></h5>
+                  </div>
+                  <div class="theme" id="theme-blue">
+                     <h5><a href="#">Color-3</a></h5>
+                  </div>
+                  <div class="theme" id="theme-green">
+                     <h5><a href="#">Color-4</a></h5>
+                  </div>
+                  <div class="theme" id="theme-bluegreen">
+                     <h5><a href="#">Color-5</a></h5>
+                  </div>
+                  <div class="theme" id="theme-black">
+                     <h5><a href="#">Color-6</a></h5>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <h1 class="header-w3ls">
+         Style Calculator Widget
+      </h1>
+      <div id="base">
+         <div id="main">
+            <div class="calculator-gide" id="header">
+               <div class="noselect" id="name">Calculator</div>
+               <div class="noselect" id="menu">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+               </div>
+            </div>
+            <div class="calculator-gide" id="clear-container">
+               <div class="noselect" id="delete" onclick="backspace()">⇦</div>
+               <div class="noselect" id="clear" onclick="c()">CLEAR</div>
+            </div>
+            <div class="calculator-gide" id="result-container">
+               <div id="result"></div>
+            </div>
+            <div class="calculator-gide noselect" id="op-container">
+               <div class="op" id="plus" onclick="insert('+')">+</div>
+               <div class="op" id="minus"  onclick="insert('−')">−</div>
+               <div class="op" id="multiply" onclick="insert('*')">×</div>
+               <div class="op" id="divide" onclick="insert('/')">÷</div>
+            </div>
+            <div class="calculator-gide" id="eq-container">
+               <div class="" id="equal" onclick="findAns()">=</div>
+            </div>
+         </div>
+         <div id="num" class="noselect">
+            <div class="num-button" id="nine" onclick="insert('9')">9</div>
+            <div class="num-button" id="eight" onclick="insert('8')">8</div>
+            <div class="num-button" id="seven" onclick="insert('7')">7</div>
+            <div class="num-button" id="six" onclick="insert('6')">6</div>
+            <div class="num-button" id="five" onclick="insert('5')">5</div>
+            <div class="num-button" id="four" onclick="insert('4')">4</div>
+            <div class="num-button" id="three" onclick="insert('3')">3</div>
+            <div class="num-button" id="two" onclick="insert('2')">2</div>
+            <div class="num-button" id="one" onclick="insert('1')">1</div>
+            <div class="num-button" id="zero" onclick="insert('0')">0</div>
+            <div class="num-button" id="decimal" onclick="insert('.')">.</div>
+         </div>
+      </div>
+      <div class="copy">
+         <p>&copy;2018 Style Calculator Widget. All Rights Reserved | Design by 
+            <a href="http://www.aizhanzhe.com/template.html" target="_blank">懒之才</a>
+         </p>
+      </div>
+      <!--js working-->
+      <script src='js/jquery-2.2.3.min.js'></script>
+      <!--//js working--> 
+      <script src="js/script.js"></script>
+   </body>
+</html>

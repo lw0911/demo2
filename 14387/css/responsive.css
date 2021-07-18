@@ -1,0 +1,206 @@
+/* XL Device :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+
+
+}
+
+
+/* LG Device :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .header-top .left li {
+        margin-right: 10px;
+        padding-left: 10px;
+    }
+    .header-top .right li {
+        padding: 11px 10px;
+    }
+    .main-menu ul li {
+        margin-left: 23px;
+    }
+    .header-button {
+        margin-left: 20px;
+    }
+    .about-img img {
+        margin-top: 120px;
+        width: 100%;
+    }
+    .about-content h2 {
+        font-size: 31px;
+        margin-bottom: 20px;
+    }
+    .about-content {
+        padding: 80px 0;
+    }
+    .about-content p {
+        margin-bottom: 30px;
+    }
+    .feature-item {
+        padding: 30px 6px;
+    }
+    .blog-area .blog-item ul li {
+        margin-bottom: 5px;
+    }
+    .footer-top-content span {
+        font-size: 16px;
+    }
+    .copyright-area .copyright-social ul li {
+        margin-left: 2px;
+        padding-right: 6px;
+    }
+    .copyright-area .copyright-social ul li a {
+        margin-right: 5px;
+    }
+}
+
+ 
+/* MD Device :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .header-bottom-area {
+        padding-top: 28px;
+        padding-bottom: 10px;
+    }
+    .school-fecilities-single .icon-thumb {
+        float: none;
+        margin-top: 0;
+    }
+    .school-fecilities-single .icon-box-content {
+        margin-left: 0;
+        margin-top: 25px;
+    }
+    .blog-area .blog-item ul li {
+        margin-bottom: 5px;
+    }
+    .footer-top-icon {
+        float: none;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .footer-top-content span {
+        font-size: 16px;
+    }
+    .copyright-text {
+        margin-bottom: 18px;
+    }
+    .copyright-area .copyright-social ul li {
+        margin-left: 10px;
+        padding-right: 10px;
+    }
+    .contact-map iframe{
+        min-height: 500px;
+    }
+}
+
+ 
+/* SM Device :320px. */
+@media (max-width: 767px) {
+    .header-bottom-area {
+        padding-top: 28px;
+        padding-bottom: 10px;
+    }
+    .banner-content h3 {
+        font-size: 26px;
+    }
+    .banner-content h2 {
+        font-size: 43px;
+    }
+    .about-content h2 {
+        font-size: 30px;
+    }
+    .section-title h2 {
+        font-size: 30px;
+    }
+    .school-fecilities-single .icon-thumb {
+        float: none;
+        margin-top: 0;
+    }
+    .school-fecilities-single .icon-box-content {
+        margin-left: 0;
+        margin-top: 25px;
+    }
+    .blog-area .blog-item ul li {
+        margin-bottom: 5px;
+    }
+    .footer-top-icon {
+        float: none;
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .portfolio-menu li {
+        font-size: 14px;
+        padding: 0 20px 18px;
+        margin-bottom: 18px;
+    }
+    .footer-top-single {
+        border-right: 0;
+        padding-bottom: 0px;
+    }
+    .footer-top-wrapper {
+        border-bottom: 0;
+    }
+    .footer-bottom {
+        padding-top: 55px;
+    }
+    #scrollUp {
+        right: 15px;
+    }
+    .page-title h2 {
+        font-size: 33px;
+    }
+    .contact-form h3 {
+        font-size: 25px;
+    }
+    .contact-info h3 {
+        font-size: 25px;
+    }
+    .contact-map iframe{
+        min-height: 400px;
+    }
+    .post-item .post-inner .post-content .post-title,
+    .blog-content-area .single-blog-post .post-content .post-title {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .post-item .post-inner .video-btn, .video-icon {
+        height: 60px;
+        width: 60px;
+        line-height: 60px;
+    }
+    .post-item .post-inner .post-content .post-meta span,
+    .single-blog-post .post-content .post-meta span {
+        margin-bottom: 4px;
+    }
+    .post-item .post-inner blockquote {
+        padding: 50px 30px;
+    }
+    .single-blog-post .post-content .post-text blockquote::before {
+        display: none;
+    }
+    .single-blog-post .post-content .post-text blockquote {
+        padding: 25px;
+    }
+    .post-tag-wrapper .blog-post-tag a {
+        margin-bottom: 10px;
+    }
+    .blog-share-icon {
+        margin-top: 10px;
+    }
+    .author-box .author-thumb {
+        float: none;
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+    .comment-box .comment-avatar {
+        float: none;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .children {
+        margin-left: 0;
+    }
+}
+ 
+/* Large Mobile :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {width:450px}
+ 
+}

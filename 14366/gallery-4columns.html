@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html>
+     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Bootstrap Real Estate Website Template">
+        <meta name="author" content="KimaroTec">
+
+        <title></title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/animate.css" rel="stylesheet">
+        <!-- Ico font CSS -->
+        <link href="fonts/font-awesome/css/font-awesome.css" rel="stylesheet">
+        <link href="fonts/icofont/css/icofont.css" rel="stylesheet">
+        <link href="fonts/themify-icons/themify-icons.css" rel="stylesheet">
+        <!-- Style CSS -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- Google Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,300,400italic,700,700italic,900' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800,300italic,400italic' rel='stylesheet' type='text/css'>
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="js/html5shiv.js"></script>          
+        <![endif]-->
+        <!-- Favicons -->
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"> 
+
+    </head>
+    <body>        
+        <!-- /.preloader -->
+        <div id="preloader"><div class="clear-loading loading-effect-3"><div><span></span></div></div><h1>Loading</h1></div>
+        <div id="top"></div>
+
+        <section class="top_bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 col-xs-12">
+                        <div class="top_bar_info">
+                            <p><i class="fa fa-phone"></i>XXX</p>
+                            <p><i class="fa fa-envelope"></i>XXX</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 col-xs-12 pull-right top-asad-right pl0">
+                        <div class="top_bar_social">
+                            <a class="fac" href="#"><i class="fa fa-facebook"></i></a>
+                            <a class="twi" href="#"><i class="fa fa-twitter"></i></a>
+                            <a class="goo" href="#"><i class="fa fa-google-plus"></i></a>
+                            <a class="lin" href="#"><i class="fa fa-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 col-xs-12 pull-right top-asad-right ">
+                        <div class="langue-currency-menu ">
+                            <div class="dropdown">
+                                <i class="icofont icofont-cur-dollar"></i>
+                                <button class="btn-dropdown dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true">
+                                    Dollar
+                                    <i class="fa fa-angle-down"></i>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#">EURO</a></li>
+                                    <li><a href="#">Rupi</a></li>
+                                    <li><a href="#">Dollar</a></li>
+                                </ul>
+                            </div> <!-- End .dropdown -->
+                            <div class="dropdown">
+                                <i class="icofont icofont-world"></i>
+                                <button class="btn-dropdown dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true">
+                                    English <i class="fa fa-angle-down"></i>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                    <li><a id="fr" href="#">French</a></li>
+                                    <li><a id="de" href="#">Spanish</a></li>
+                                    <li><a id="it" href="#">Japon</a></li> 
+                                </ul>
+                            </div> <!-- End .dropdown -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="main_menu fixed_menu" id="menu">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="header-logo">
+                        <a href="index.html"><img src="img/logo.png" alt="logo" class="img-responsive"></a>
+                    </div> <!-- End .header-logo -->
+                     <div class="btn-cnt-mn">
+                    <a href="submit.html" class="btn-sumbit-menu" data-toggle="tooltip" data-original-title="Add new Property" ><i class="icofont icofont-plus"></i></a>
+                    <div class="dropdown profile-menu-settings" style="">
+
+                        <button class="btn-dropdown dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true">
+                            <img class="img-circle" src="img/demo/team_2.jpg" alt="" width="43" style="border: 1px solid rgb(207, 207, 207);">                                   
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">                                  
+                            <li class="">
+                                <a href="profile.html" class="nav-link">
+                                    <i class="fa fa-heart"></i> My Profile
+                                </a>
+                            </li>                                 
+                            <li class="">
+                                <a href="my-properties.html" class="nav-link">
+                                    <i class="icofont icofont-listine-dots"></i> My properties
+                                </a>
+                            </li>                                 
+                            <li class="nav-item">
+                                <a href="submit.html" class="nav-link">
+                                    <i class="icofont icofont-ui-home"></i> Add property
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="favorites-list.html" class="">
+                                    <i class="icofont icofont-heart"></i> Favorites list
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="compare-list.html" class="">
+                                    <i class="fa fa-balance-scale"></i> Compare list
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="login.html" class="nav-link">
+                                    <i class="icofont icofont-logout"></i> Log-out         
+                                </a>
+                            </li>
+                        </ul>
+                    </div> <!-- End .dropdown -->     
+                    <!-- Menu ______________ -->
+                    </div>
+                    <nav class="navbar navbar-default">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div> <!-- End .navbar-header -->
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li class="sub-menu-holder dropdown"><a href="index.html">Home</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="index.html">Home 01 - Google Map (blue)</a></li> 
+                                        <li><a href="index-1.html">Home 02 - Google Map (dark)</a></li> 
+                                        <li><a href="index-2.html">Home 03 - Google Map (light)</a></li> 
+                                        <li><a href="index-3.html">Home 04 - Small Slider (L)</a></li>
+                                        <li><a href="index-4.html">Home 05 - Small Slider (R)</a></li>
+                                        <li><a href="index-5.html">Home 06 - Image Cover</a></li>
+                                        <li><a href="index-6.html">Home 07 - Video Cover</a></li>
+                                        <li><a href="index-7.html">Home 08 - Horizental Search</a></li>
+                                        <li><a href="index-8.html">Home 09 - Full width Slider</a></li>
+                                    </ul>
+                                    <i class="fa fa-bars"></i>
+                                </li>
+                                <li class="sub-menu-holder dropdown"><a href="#">Properties</a>
+                                    <ul class="sub-menu">
+                                        <li><a data-description="List property page " href="list-view.html">List property page</a></li>
+                                        <li><a data-description="Grid property page" href="grid-view.html">Grid property page</a></li>
+                                        <li><a data-description="Single property page" href="single-property.html">Single Property Page</a></li>
+                                        <li><a data-description="Property category page" href="property-category.html">Property Category Page</a></li>
+                                    </ul>
+                                    <i class="fa fa-bars"></i>
+                                </li>
+
+                                <li class="sub-menu-holder dropdown"><a href="#">Pages</a>
+                                    <ul class="sub-menu">
+                                        <li><a data-description="Agents listing page" href="agents.html">Agents Page</a></li>
+                                        <li><a data-description="Single agent page" href="single-agent.html">Single Agent</a></li>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="pricing-plans.html">Pricing Plans</a></li>
+                                        <li><a data-description="Page with right sidebar" href="page-right-siderbar.html">Page Right Sidebar</a></li>
+                                         <li><a data-description="Page with left sidebar" href="page-left-siderbar.html">Page Left Sidebar</a></li>
+                                        <li><a data-description="Page with full width" href="page-full-width.html">Page Full Width</a></li>
+                                        <li><a data-description="Page not found style" href="404.html">404 - Not Found</a></li>
+                                        <li><a href="login.html">Login / Register</a></li>
+                                        <li><a href="faq.html">FAQ’s</a></li>
+                                    </ul>
+                                    <i class="fa fa-bars"></i>
+                                </li>
+                                <li class="sub-menu-holder dropdown"><a href="#">Blog</a>
+                                    <ul class="sub-menu">
+                                        <li><a data-description="Standard blog posts" href="blog.html">Standard Blog</a></li>
+                                        <li><a data-description="Two Columns Blog" href="two-blog.html">Two Columns Blog</a></li>
+                                        <li><a data-description="Rich content single" href="single-blog.html">Single Blog Page</a></li>
+                                        <li><a data-description="A Blog Category Page" href="blog-category.html">Blog Category</a></li>
+                                    </ul>
+                                    <i class="fa fa-bars"></i>
+                                </li>
+
+                                <li class="sub-menu-holder dropdown"><a href="#">Gallery</a>
+                                    <ul class="sub-menu space_fix">
+                                        <li><a href="gallery-2columns.html">Gallery  2 Columns</a></li>
+                                        <li><a href="gallery-3columns.html">Gallery  3 Columns</a></li>
+                                        <li><a href="gallery-4columns.html">Gallery  4 Columns</a></li>
+                                        <li><a href="gallery-single.html">Gallery Single Page</a></li>
+                                    </ul>
+                                    <i class="fa fa-bars"></i>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div><!-- /.navbar-collapse -->
+                    </nav> <!-- End .navbar -->
+                    <!-- End Menu __________ -->
+                </div>  <!-- End .wrapper -->
+            </div> <!-- End .container -->
+        </div>
+
+        <section id="one-parallax" class="post-wrapper-top dm-shadow clearfix parallax" style="background-image: url('img/breadcrumb.jpg');" data-stellar-background-ratio="0.6" data-stellar-vertical-offset="20">
+            <div class="overlay1 dm-shadow">
+                <div class="container">
+                    <div class="post-wrapper-top-shadow">
+                        <span class="s1"></span>
+                    </div>
+                    <div class="col-lg-12">
+                        <ul class="breadcrumb">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">Pages</a></li>
+                            <li>Three Columns Gallery</li>
+                        </ul>
+                        <h2>Three Columns Gallery</h2>
+                    </div>
+                </div>
+            </div>
+        </section><!-- end post-wrapper-top -->
+
+        <section class="generalwrapper dm-shadow clearfix">
+            <div class="container">
+                <div class="row">
+                    <div id="content" class="col-lg-9 col-md-9 col-sm-6 col-xs-12 clearfix">
+                        <div class="blog_container clearfix">
+
+                            <div class="col-lg-4 col-md-4 col-sm-12 first">
+                                <article class="blog-wrap boxes portfolio-wrap">
+                                    <div class="blog-media">
+                                        <div class="ImageWrapper boxes_img">
+                                            <img class="img-responsive" src="img/demo/02_home.jpg" alt="">
+                                            <div class="ImageOverlayH"></div>
+                                            <div class="Buttons StyleMg">
+                                                <span class="WhiteSquare"><a class="fancybox" href="img/demo/02_home.jpg"><i class="fa fa-search"></i></a></span>
+                                                <span class="WhiteSquare"><a href="single-gallery.html"><i class="fa fa-link"></i></a></span>
+                                            </div> 
+                                        </div><!-- ImageWrappe-->
+                                    </div><!-- end blog media -->
+                                        <div class="post-content"> <h2><a href="single-gallery.html">House Image Gallery</a></h2>
+                                        </div><!-- post-content -->
+                                </article><!-- end blog wrap -->
+                            </div><!-- end col-lg-3 -->
+
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                <article class="blog-wrap boxes portfolio-wrap">
+                                    <div class="blog-media">
+                                        <div class="ImageWrapper boxes_img">
+                                            <img class="img-responsive" src="img/demo/03_home.jpg" alt="">
+                                            <div class="ImageOverlayH"></div>
+                                            <div class="Buttons StyleMg">
+                                                <span class="WhiteSquare"><a class="fancybox" href="img/demo/03_home.jpg"><i class="fa fa-search"></i></a></span>
+                                                <span class="WhiteSquare"><a href="single-gallery.html"><i class="fa fa-link"></i></a></span>
+                                            </div> 
+                                        </div><!-- ImageWrappe-->
+                                    </div><!-- end blog media -->
+                                        <div class="post-content"> <h2><a href="single-gallery.html">Villa Image Gallery</a></h2>
+                                        </div><!-- post-content -->
+                                </article><!-- end blog wrap -->
+                            </div><!-- end col-lg-3 -->
+
+                            <div class="col-lg-4 col-md-4 col-sm-12 last">
+                                <article class="blog-wrap boxes portfolio-wrap">
+                                    <div class="blog-media">
+                                        <div class="ImageWrapper boxes_img">
+                                            <img class="img-responsive" src="img/demo/04_home.jpg" alt="">
+                                            <div class="ImageOverlayH"></div>
+                                            <div class="Buttons StyleMg">
+                                                <span class="WhiteSquare"><a class="fancybox" href="img/demo/04_home.jpg"><i class="fa fa-search"></i></a></span>
+                                                <span class="WhiteSquare"><a href="single-gallery.html"><i class="fa fa-link"></i></a></span>
+                                            </div> 
+                                        </div><!-- ImageWrappe-->
+                                    </div><!-- end blog media -->
+                                        <div class="post-content"> <h2><a href="single-gallery.html">Apertment Image Gallery</a></h2>
+                                        </div><!-- post-content -->
+                                </article><!-- end blog wrap -->
+                            </div><!-- end col-lg-3 -->
+
+                            <div class="col-lg-4 col-md-4 col-sm-12 first">
+                                <article class="blog-wrap boxes portfolio-wrap">
+                                    <div class="blog-media">
+                                        <div class="ImageWrapper boxes_img">
+                                            <img class="img-responsive" src="img/demo/05_home.jpg" alt="">
+                                            <div class="ImageOverlayH"></div>
+                                            <div class="Buttons StyleMg">
+                                                <span class="WhiteSquare"><a class="fancybox" href="img/demo/05_home.jpg"><i class="fa fa-search"></i></a></span>
+                                                <span class="WhiteSquare"><a href="single-gallery.html"><i class="fa fa-link"></i></a></span>
+                                            </div> 
+                                        </div><!-- ImageWrappe-->
+                                    </div><!-- end blog media -->
+                                        <div class="post-content"> <h2><a href="single-gallery.html">Condo Image Gallery</a></h2>
+                                        </div><!-- post-content -->
+                                </article><!-- end blog wrap -->
+                            </div><!-- end col-lg-3 -->
+
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                <article class="blog-wrap boxes portfolio-wrap">
+                                    <div class="blog-media">
+                                        <div class="ImageWrapper boxes_img">
+                                            <img class="img-responsive" src="img/demo/01_home.jpg" alt="">
+                                            <div class="ImageOverlayH"></div>
+                                            <div class="Buttons StyleMg">
+                                                <span class="WhiteSquare"><a class="fancybox" href="img/demo/01_home.jpg"><i class="fa fa-search"></i></a></span>
+                                                <span class="WhiteSquare"><a href="single-gallery.html"><i class="fa fa-link"></i></a></span>
+                                            </div> 
+                                        </div><!-- ImageWrappe-->
+                                    </div><!-- end blog media -->
+                                        <div class="post-content"> <h2><a href="single-gallery.html">Cottoge Image Gallery</a></h2>
+                                        </div><!-- post-content -->
+                                </article><!-- end blog wrap -->
+                            </div><!-- end col-lg-3 -->
+
+                            <div class="col-lg-4 col-md-4 col-sm-12 last">
+                                <article class="blog-wrap boxes portfolio-wrap">
+                                    <div class="blog-media">
+                                        <div class="ImageWrapper boxes_img">
+                                            <img class="img-responsive" src="img/demo/06_home.jpg" alt="">
+                                            <div class="ImageOverlayH"></div>
+                                            <div class="Buttons StyleMg">
+                                                <span class="WhiteSquare"><a class="fancybox" href="img/demo/06_home.jpg"><i class="fa fa-search"></i></a></span>
+                                                <span class="WhiteSquare"><a href="single-gallery.html"><i class="fa fa-link"></i></a></span>
+                                            </div> 
+                                        </div><!-- ImageWrappe-->
+                                    </div><!-- end blog media -->
+                                        <div class="post-content"> <h2><a href="single-gallery.html">Travel Image Gallery</a></h2>
+                                        </div><!-- post-content -->
+                                </article><!-- end blog wrap -->
+                            </div><!-- end col-lg-3 -->
+
+                            <div class="col-lg-4 col-md-4 col-sm-12 first">
+                                <article class="blog-wrap boxes portfolio-wrap">
+                                    <div class="blog-media">
+                                        <div class="ImageWrapper boxes_img">
+                                            <img class="img-responsive" src="img/demo/07_home.jpg" alt="">
+                                            <div class="ImageOverlayH"></div>
+                                            <div class="Buttons StyleMg">
+                                                <span class="WhiteSquare"><a class="fancybox" href="img/demo/07_home.jpg"><i class="fa fa-search"></i></a></span>
+                                                <span class="WhiteSquare"><a href="single-gallery.html"><i class="fa fa-link"></i></a></span>
+                                            </div> 
+                                        </div><!-- ImageWrappe-->
+                                    </div><!-- end blog media -->
+                                        <div class="post-content"> <h2><a href="single-gallery.html">Summerhouse Image Gallery</a></h2>
+                                        </div><!-- post-content -->
+                                </article><!-- end blog wrap -->
+                            </div><!-- end col-lg-3 -->
+
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                <article class="blog-wrap boxes portfolio-wrap">
+                                    <div class="blog-media">
+                                        <div class="ImageWrapper boxes_img">
+                                            <img class="img-responsive" src="img/demo/08_home.jpg" alt="">
+                                            <div class="ImageOverlayH"></div>
+                                            <div class="Buttons StyleMg">
+                                                <span class="WhiteSquare"><a class="fancybox" href="img/demo/08_home.jpg"><i class="fa fa-search"></i></a></span>
+                                                <span class="WhiteSquare"><a href="single-gallery.html"><i class="fa fa-link"></i></a></span>
+                                            </div> 
+                                        </div><!-- ImageWrappe-->
+                                    </div><!-- end blog media -->
+                                        <div class="post-content"> <h2><a href="single-gallery.html">Resort Image Gallery</a></h2>
+                                        </div><!-- post-content -->
+                                </article><!-- end blog wrap -->
+                            </div><!-- end col-lg-3 -->
+
+                            <div class="col-lg-4 col-md-4 col-sm-12 last">
+                                <article class="blog-wrap boxes portfolio-wrap">
+                                    <div class="blog-media">
+                                        <div class="ImageWrapper boxes_img">
+                                            <img class="img-responsive" src="img/demo/09_home.jpg" alt="">
+                                            <div class="ImageOverlayH"></div>
+                                            <div class="Buttons StyleMg">
+                                                <span class="WhiteSquare"><a class="fancybox" href="img/demo/09_home.jpg"><i class="fa fa-search"></i></a></span>
+                                                <span class="WhiteSquare"><a href="single-gallery.html"><i class="fa fa-link"></i></a></span>
+                                            </div> 
+                                        </div><!-- ImageWrappe-->
+                                    </div><!-- end blog media -->
+                                        <div class="post-content"> <h2><a href="single-gallery.html">Emporium Image Gallery</a></h2>
+                                        </div><!-- post-content -->
+                                </article><!-- end blog wrap -->
+                            </div><!-- end col-lg-3 -->
+
+                            <div class="col-lg-4 col-md-4 col-sm-12 first">
+                                <article class="blog-wrap boxes portfolio-wrap">
+                                    <div class="blog-media">
+                                        <div class="ImageWrapper boxes_img">
+                                            <img class="img-responsive" src="img/demo/03_home.jpg" alt="">
+                                            <div class="ImageOverlayH"></div>
+                                            <div class="Buttons StyleMg">
+                                                <span class="WhiteSquare"><a class="fancybox" href="img/demo/03_home.jpg"><i class="fa fa-search"></i></a></span>
+                                                <span class="WhiteSquare"><a href="single-gallery.html"><i class="fa fa-link"></i></a></span>
+                                            </div> 
+                                        </div><!-- ImageWrappe-->
+                                    </div><!-- end blog media -->
+                                        <div class="post-content"> <h2><a href="single-gallery.html">Arable Field Image Gallery</a></h2>
+                                        </div><!-- post-content -->
+                                </article><!-- end blog wrap -->
+                            </div><!-- end col-lg-3 -->
+
+                            <div class="col-lg-4 col-md-4 col-sm-12">
+                                <article class="blog-wrap boxes portfolio-wrap">
+                                    <div class="blog-media">
+                                        <div class="ImageWrapper boxes_img">
+                                            <img class="img-responsive" src="img/demo/04_home.jpg" alt="">
+                                            <div class="ImageOverlayH"></div>
+                                            <div class="Buttons StyleMg">
+                                                <span class="WhiteSquare"><a class="fancybox" href="img/demo/04_home.jpg"><i class="fa fa-search"></i></a></span>
+                                                <span class="WhiteSquare"><a href="single-gallery.html"><i class="fa fa-link"></i></a></span>
+                                            </div> 
+                                        </div><!-- ImageWrappe-->
+                                    </div><!-- end blog media -->
+                                        <div class="post-content"> <h2><a href="single-gallery.html">Shop Image Gallery</a></h2>
+                                        </div><!-- post-content -->
+                                </article><!-- end blog wrap -->
+                            </div><!-- end col-lg-3 -->
+
+                            <div class="col-lg-4 col-md-4 col-sm-12 last">
+                                <article class="blog-wrap boxes portfolio-wrap">
+                                    <div class="blog-media">
+                                        <div class="ImageWrapper boxes_img">
+                                            <img class="img-responsive" src="img/demo/05_home.jpg" alt="">
+                                            <div class="ImageOverlayH"></div>
+                                            <div class="Buttons StyleMg">
+                                                <span class="WhiteSquare"><a class="fancybox" href="img/demo/05_home.jpg"><i class="fa fa-search"></i></a></span>
+                                                <span class="WhiteSquare"><a href="single-gallery.html"><i class="fa fa-link"></i></a></span>
+                                            </div> 
+                                        </div><!-- ImageWrappe-->
+                                    </div><!-- end blog media -->
+                                        <div class="post-content"> <h2><a href="single-gallery.html">Housing Image Gallery</a></h2>
+                                        </div><!-- post-content -->
+                                </article><!-- end blog wrap -->
+                            </div><!-- end col-lg-3 -->
+
+                        </div><!-- end row -->
+
+                        <div class="pagination_wrapper clearfix">
+                            <!-- Pagination Normal -->
+                            <ul class="pagination">
+                                <li><a href="#">«</a></li>
+                                <li class="active"><a href="#">1</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">5</a></li>
+                                <li class="disabled"><a href="#">»</a></li>
+                            </ul>
+                        </div>
+
+                    </div><!-- end content -->
+
+                    <div id="right_sidebar" class="col-lg-3 col-md-3 col-sm-6 col-xs-12 last clearfix">
+                        <div class="widget clearfix">
+                            <div class="preperty_search ">
+                                <div class="title">
+                                    <h3>Advanced search</h3>
+                                </div>
+                                
+                                <div class="search-section serach-widget clearfix boxes">
+                                    <form id="advanced_search" action="#" class="clearfix row" name="advanced_search" method="post">
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                           <label for="location">Location</label>
+                                            <select id="location" class="show-menu-arrow selectpicker">
+                                                <option value="Tokyo">Tokyo</option>
+                                                <option value="paris">paris</option>
+                                                <option value="bodrum">Bodrum</option>
+                                                <option value="Tokyo City">Tokyo City</option>
+                                                <option value="Nagatu">Nagatu</option>
+                                                <option value="ngasaki">ngasaki</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                             <label for="sub-ocation">Sub Location</label>
+                                            <select id="sub-ocation" class="show-menu-arrow selectpicker">
+                                                <option value="Tokyo">Tokyo</option>
+                                                <option value="paris">paris</option>
+                                                <option value="bodrum">Bodrum</option>
+                                                <option value="Tokyo City">Tokyo City</option>
+                                                <option value="Nagatu">Nagatu</option>
+                                                <option value="ngasaki">ngasaki</option>
+                                            </select>
+                                             
+                                            
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                            <label for="status">Status</label>
+                                            <select id="status" class="show-menu-arrow selectpicker">
+                                                <option value="rent">On Rent</option>
+                                                <option value="sale">On Sale</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                            <label for="type">Type</label>
+                                            <select id="type" class="show-menu-arrow selectpicker">
+                                                <option value="apertment">Apertment</option>
+                                                <option value="condo">Condo</option>
+                                                <option value="villa">Villa</option>
+                                                <option value="cottage">Cottage</option>
+                                                <option value="house">House</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                            <label for="bedrooms">Bedrooms</label>
+                                            <select id="bedrooms" class="show-menu-arrow selectpicker">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option>
+                                                <option value="5">5</option>
+                                                <option value="6">6</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                            <label for="baths">Baths</label>
+                                            <select id="baths" class="show-menu-arrow selectpicker">
+                                                <option value="1">1</option>
+                                                <option value="1">2</option>
+                                                <option value="1">3</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                            <label for="min_price">Min Price</label>
+                                            <select id="min_price" class="show-menu-arrow selectpicker">
+                                                <option value="0">$0</option>
+                                                <option value="1000">$1000</option>
+                                                <option value="5000">$5000</option>
+                                                <option value="10000">$10000</option>
+                                                <option value="25000">$25000</option>
+                                                <option value="50000+">$50000+</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                            <label for="max_price">Max Price</label>
+                                            <select id="max_price" class="show-menu-arrow selectpicker">
+                                                <option value="1000">$1000</option>
+                                                <option value="5000">$5000</option>
+                                                <option value="15000">$15000</option>
+                                                <option value="25000">$25000</option>
+                                                <option value="50000">$50000</option>
+                                                <option value="100000+">$100000+</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                            <label for="condition">Condition of Use</label>
+                                            <select id="condition" class="show-menu-arrow selectpicker">
+                                                <option value="empty">Empty</option>
+                                                <option value="tenants">Tenants</option>
+                                                <option value="proprietor">Proprietor</option>
+                                                <option value="any">Any</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                            <label for="from_the">From the</label>
+                                            <select id="from_the" class="show-menu-arrow selectpicker">
+                                                <option value="agent">Agents</option> 
+                                                <option value="property_owner">Property Owner</option>
+                                                <option value="any">Any</option>
+                                            </select>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <a href="#" class="btn btn-inverse btn-block"><i class="icofont icofont-home-search"></i> SEARCH PROPERTY</a>
+                                        </div>
+                                    </form>
+                                </div><!-- end search module -->
+                            </div>
+                        </div>
+
+                        <div class="widget sidebar_agent clearfix">
+                            <div class="title">
+                                <h3>Popular agents</h3>
+                            </div>                           
+                            <div class=" slider_box">
+                                <div id="myCarousel12" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="item">
+                                            <div class="singleTeam text-center">
+                                                <div class="teamImg">
+                                                    <img src="img/team/t2.jpg" alt="">
+                                                </div>
+                                                <div class="teamDet">
+                                                    <h3>mathew hidden</h3>
+                                                    <p>Super agent</p>
+                                                </div>
+                                                <div class="team_hover">
+                                                    <h3>mathew hidden</h3>
+                                                    <p>Super agent</p>
+                                                    <div class="teamSocial">
+                                                        <a href="#" class="fac"><i class="fa fa-facebook"></i></a>
+                                                        <a href="#" class="twi"><i class="fa fa-twitter"></i></a>
+                                                        <a href="#" class="goo"><i class="fa fa-google-plus"></i></a>
+                                                        <a href="#" class="lin"><i class="fa fa-linkedin"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="item active">
+                                            <div class="singleTeam text-center">
+                                                <div class="teamImg">
+                                                    <img src="img/team/t3.jpg" alt="">
+                                                </div>
+                                                <div class="teamDet">
+                                                    <h3>daryl dixon</h3>
+                                                    <p>Super agent</p>
+                                                </div>
+                                                <div class="team_hover">
+                                                    <h3>daryl dixon</h3>
+                                                    <p>Super agent</p>
+                                                    <div class="teamSocial">
+                                                        <a href="#" class="fac"><i class="fa fa-facebook"></i></a>
+                                                        <a href="#" class="twi"><i class="fa fa-twitter"></i></a>
+                                                        <a href="#" class="goo"><i class="fa fa-google-plus"></i></a>
+                                                        <a href="#" class="lin"><i class="fa fa-linkedin"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="item">
+                                            <div class="singleTeam text-center">
+                                                <div class="teamImg">
+                                                    <img src="img/team/t1.jpg" alt="">
+                                                </div>
+                                                <div class="teamDet">
+                                                    <h3>Steve hendry</h3>
+                                                    <p>Super agent</p>
+                                                </div>
+                                                <div class="team_hover">
+                                                    <h3>Steve hendry</h3>
+                                                    <p>Super agent</p>
+                                                    <div class="teamSocial">
+                                                        <a href="#" class="fac"><i class="fa fa-facebook"></i></a>
+                                                        <a href="#" class="twi"><i class="fa fa-twitter"></i></a>
+                                                        <a href="#" class="goo"><i class="fa fa-google-plus"></i></a>
+                                                        <a href="#" class="lin"><i class="fa fa-linkedin"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> <!-- End .carousel-inner -->
+                                </div>
+                                <!-- Left and right controls -->
+                                <a class="carousel_control left" href="#myCarousel12" role="button" data-slide="prev">
+                                    <i class="fa fa-angle-left"></i>
+                                    <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="carousel_control right" href="#myCarousel12" role="button" data-slide="next">
+                                    <i class="fa fa-angle-right"></i>
+                                    <span class="sr-only">Next</span>
+                                </a>
+                            </div> <!-- End .slider_box -->
+                        </div>
+                        
+
+                    </div><!-- end sidebar -->
+                </div><!-- end row -->
+            </div><!-- end container -->
+        </section><!-- end generalwrapper -->
+
+        <div class="callout dark"><!-- add "styleBackgroundColor" class for colored background and white text OR "dark" for a dark callout -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9"><!-- title + shortdesc -->
+                        <h3>Does Asad Estate Convinced you?</h3>
+                        <p>If so, click to buy now, including <strong>lifetime upgrade</strong> for free!</p>
+                    </div>
+                    <div class="col-md-3"><!-- button -->
+                        <a href="http://kimarotec.com" rel="nofollow" target="_blank" class="btn btn-primary btn-lg">Purchase Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer id="footer">
+            <div class="container">
+                <div class="row">
+                    <!-- col #1 -->
+                    <div class="logo_footer dark col-md-3">
+                        <img alt="" src="img/logo-white.png" class="footer-logo">
+                        <p class="block">
+                            XXX<br>
+                            XXX<br>
+                            Email: XXX<br>
+                            Phone: XXX<br>
+                            Fax: XXX<br>
+                        </p>
+                        <p class="block"><!-- social -->
+                            <a href="#" class="social fa fa-facebook"></a>
+                            <a href="#" class="social fa fa-twitter"></a>
+                            <a href="#" class="social fa fa-google-plus"></a>
+                            <a href="#" class="social fa fa-linkedin"></a>
+                        </p><!-- /social -->
+                    </div>
+                    <!-- /col #1 -->
+                    <!-- col #2 -->
+                    <div class="spaced col-md-3 col-sm-4 hidden-xs">
+                        <h4>Recent <strong>Posts</strong></h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a class="block" href="#">New CSS3 Transitions this Year</a><br>
+                                <small>June 26, 2016</small>
+                            </li>
+                            <li>
+                                <a class="block" href="#">Inteligent Transitions In UX Design</a><br>
+                                <small>June 26, 2016</small>
+                            </li>
+                            <li>
+                                <a class="block" href="#">Lorem Ipsum Dolor</a><br>
+                                <small>June 26, 2016</small>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /col #2 -->
+
+                    <!-- col #3 -->
+                    <div class="spaced col-md-3 col-sm-4 hidden-xs">
+                        <h4>Recent <strong>Tweets</strong></h4>
+                        <ul class="list-unstyled fsize13">
+                            <li>
+                                <i class="fa fa-twitter"></i> <a href="#">@Kimaro kim</a> Pilsum dolor lorem sit consectetur  orem sequat <small class="ago">8 mins ago</small>
+                            </li>
+                            <li>
+                                <i class="fa fa-twitter"></i> <a href="#">@Kimaro kim</a> Remonde sequat ipsum dolor lorem sit  adipiscing  <small class="ago">8 mins ago</small>
+                            </li>
+                            <li>
+                                <i class="fa fa-twitter"></i> <a href="#">@Kimaro kim</a> Imperdiet condimentum diam dolor lorem adipiscing <small class="ago">8 mins ago</small>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /col #3 -->
+                    <!-- col #4 -->
+                    <div class="spaced col-md-3 col-sm-4">
+                        <h4>About <strong>Us</strong></h4>
+                        <p>
+                            Incredibly beautiful responsive Real estate Bootstrap Template for Corporate and Creative Professionals.
+                        </p>
+                        <h4><small><strong>Subscribe to our Newsletter</strong></small></h4>
+                        <form id="newsletterSubscribe" method="post" action="#" class="input-group">
+                            <input required="" class="form-control" name="newsletter_email" id="newsletter_email" value="" placeholder="E-mail Address" type="email">
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary">SUBMIT</button>
+                            </span>
+                        </form>
+                    </div>
+                    <!-- /col #4 -->
+                </div>
+            </div>
+            <hr>
+            <div class="copyright">
+                <div class="container text-center fsize12">
+                    Copyright &copy; 2020.Company name All rights reserved <a href="http://www.aizhanzhe.com/template.html" target="_blank">懒之才</a>.
+                    <a href="#" class="fsize11">Privacy Policy</a> • 
+                    <a href="#" class="fsize11">Terms of Service</a>
+                </div>
+            </div>
+        </footer>
+
+        <a class="showit scrollToTop" href="#" id="backToTop"><i class="fa fa-angle-up"></i></a>
+        <!-- Bootstrap core and JavaScript's
+        ================================================== -->
+        <script src="js/jquery-1.10.2.min.js"></script>
+        <script src="js/jquery-migrate-1.2.1.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/jquery.parallax.js"></script>
+        <script src="js/jquery.fitvids.js"></script>
+        <script src="js/jquery.unveilEffects.js"></script>
+        
+        <script src="js/bootstrap-select.js"></script>
+        <script src="js/jquery.fancybox.pack.js"></script>
+        <script src="js/nicescroll.js"></script>
+        <script src="js/main.js"></script>
+
+
+        <!-- FlexSlider JavaScript
+    ================================================== -->
+        <script src="js/jquery.flexslider.js"></script>
+        <script>
+            $(window).load(function () {
+                $('#slider').flexslider({
+                    animation: "fade",
+                    controlNav: false,
+                    animationLoop: false,
+                    slideshow: true,
+                    sync: "#carousel"
+                });
+            });
+        </script>
+
+    </body>
+</html>

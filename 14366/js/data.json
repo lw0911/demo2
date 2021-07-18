@@ -1,0 +1,70 @@
+var data = { "count": 10785236,
+        "property": [
+                {"property_id": 27932, "property_title": "Atardecer en Embalse", "property_url": "single-property.html", "property_cover": "img/demo/01_home.jpg", "latitude": 42.315132, "longitude": - 71.059493, "price": 700000, "currency": '$'}
+        ,
+                {"property_id": 522084, "property_title": "In Memorine ", "property_url": "single-property.html", "property_cover": "img/demo/01_home.jpg", "latitude": 42.313855, "longitude": - 71.062883, "price": 700000, "currency": '$'}
+        ,
+                {"property_id": 1578881, "property_title": "Rosina Testowe ", "property_url": "single-property.html", "property_cover": "img/demo/03_home.jpg", "cat": "house", "latitude": 42.313395, "longitude": - 71.065630, "price": 700000, "currency": '$'}
+        ,
+                {"property_id": 97671, "property_title": "kin-dza-dza", "property_url": "single-property.html", "property_cover": "img/demo/02_home.jpg", "cat": "industrial", "latitude": 42.312625, "longitude": - 71.068430, "price": 700000, "currency": '$'}
+        ,
+                {"property_id": 57819, "property_title": "Burg Hohnwerfen", "property_url": "single-property.html", "property_cover": "img/demo/08_home.jpg", "cat": "land", "latitude": 42.310340, "longitude": - 71.062626, "price": 700000, "currency": '$'}
+        ,
+                {"property_id": 1282387, "property_title": "Thunderstorm  nique", "property_url": "single-property.html", "property_cover": "img/demo/08_home.jpg", "cat": "retail", "latitude": 42.310340, "longitude": - 71.062626, "price": 700000, "currency": '$'}
+        ,
+                {"property_id": 945976, "property_title": "Al tard", "property_url": "single-property.html", "property_cover": "img/demo/01_home.jpg", "cat": "office-building", "latitude": 42.313277, "longitude": - 71.062240, "price": 435000, "currency": '$'}
+        ,
+                {"property_id": 73514, "property_title": "Hintersee Ramsau", "property_url": "single-property.html", "property_cover": "img/demo/03_home.jpg", "cat": "office-building", "latitude": 42.313967, "longitude": - 71.064364, "price": 700000, "currency": '$'}
+        ,
+                {"property_id": 298967, "property_title": "Antelope Canyon", "property_url": "single-property.html", "property_cover": "img/demo/01_home.jpg", "cat": "land", "latitude": 42.315133, "longitude": - 71.066832, "price": 700000, "currency": '$'}
+        ,
+                {"property_id": 88151, "property_title": "Verzatzerland", "property_url": "single-property.html", "property_cover": "img/demo/02_home.jpg", "cat": "apratment", "latitude": 42.312840, "longitude": - 71.067250, "price": 700000, "currency": '$'}
+        ,
+                {"property_id": 6463, "property_title": "Guggenider", "property_url": "single-property.html", "property_cover": "img/demo/property5.jpg", "cat": "villa", "latitude": 42.311563, "longitude": - 71.067754, "price": 700000, "currency": '$'}
+        ,
+                {"property_id": 107980, "property_title": "Mostar", "property_url": "single-property.html", "property_cover": "img/demo/08_home.jpg", "cat": "land", "latitude": 42.309603, "longitude": - 71.067207, "price": 369000, "currency": '$'}
+        ,
+                {"property_id": 9439, "property_title": "Bora Bora", "property_url": "single-property.html", "property_cover": "img/demo/08_home.jpg", "cat": "office-building", "latitude": 42.307945, "longitude": - 71.069353, "price": 700000, "currency": '$'}
+        ,
+                {"property_id": 522084, "property_title": "In Memoroine", "property_url": "single-property.html", "property_cover": "img/demo/01_home.jpg", "latitude": 42.312213, "longitude": - 71.066155, "price": 700000, "currency": '$'}
+        ,
+                {"property_id": 1578881, "property_title": "Rosinamberti", "property_url": "single-property.html", "property_cover": "img/demo/03_home.jpg", "cat": "house", "latitude": 42.310801, "longitude": - 71.068826, "price": 700000, "currency": '$'}
+        ,
+                {"property_id": 97671, "property_title": "kin-dza-dza", "property_url": "single-property.html", "property_cover": "img/demo/02_home.jpg", "cat": "office-building", "latitude": 42.311840, "longitude": - 71.070789, "price": 700000, "currency": '$'}
+        ,
+                {"property_id": 57819, "property_title": "Burg Hoherfen", "property_url": "single-property.html", "property_cover": "img/demo/08_home.jpg", "cat": "land", "latitude": 42.312206, "longitude": - 71.073090, "price": 700000, "currency": '$'}
+        ,
+                {"property_id": 1282387, "property_title": "Thunderstorm in ", "property_url": "single-property.html", "property_cover": "img/demo/07_home.jpg", "cat": "retail", "latitude": 42.312206, "longitude": - 71.073090, "price": 700000, "currency": '$'}
+        ,
+                {"property_id": 945976, "property_title": "Al tard", "property_url": "single-property.html", "property_cover": "img/demo/01_home.jpg", "cat": "apratment", "latitude": 42.308684, "longitude": - 71.068984, "price": 435000, "currency": '$'}
+        ,
+                {"property_id": 73514, "property_title": "Hintemsau", "property_url": "single-property.html", "property_cover": "img/demo/03_home.jpg", "cat": "apratment", "latitude": 42.308684, "longitude": - 71.068984, "price": 700000, "currency": '$'}
+        ,
+                {"property_id": 298967, "property_title": "Antelope Canyon, Ray of Light", "property_url": "single-property.html", "property_cover": "img/demo/01_home.jpg", "cat": "land", "latitude":42.305795, "longitude": - 71.067564, "price": 700000, "currency": '$'}
+        ,
+                {"property_id": 88151, "property_title": "Val Verzasca - Switzerland", "property_url": "single-property.html", "property_cover": "img/demo/02_home.jpg", "cat": "office-building", "latitude": 42.312840, "longitude": - 71.067250, "price": 700000, "currency": '$'}
+        ,
+                {"property_id": 6463, "property_title": "Guggenheim ", "property_url": "single-property.html", "property_cover": "img/demo/property5.jpg", "cat": "villa", "latitude": 42.305795, "longitude": - 71.067564, "price": 700000, "currency": '$'}
+        ,
+                {"property_id": 107980, "property_title": "Mostar", "property_url": "single-property.html", "property_cover": "img/demo/08_home.jpg", "cat": "land", "latitude": 42.304653, "longitude": - 71.064102, "price": 369000, "currency": '$'}
+        ,
+                {"property_id": 9439, "property_title": "Bora Bora", "property_url": "single-property.html", "property_cover": "img/demo/08_home.jpg", "cat": "office-building", "latitude":42.304653, "longitude": - 71.064102, "price": 700000, "currency": '$'}
+        ,
+                {"property_id": 1282387, "property_title": "Thunder Marti", "property_url": "single-property.html", "property_cover": "img/demo/07_home.jpg", "cat": "retail", "latitude": 42.312759, "longitude": - 71.077368, "price": 700000, "currency": '$' }
+        ,
+                {"property_id": 945976, "property_title": "Al tard", "property_url": "single-property.html", "property_cover": "img/demo/01_home.jpg", "cat": "industrial", "latitude": 42.311950, "longitude": - 71.078784, "price": 435000, "currency": '$'}
+        ,
+                {"property_id": 73514, "property_title": "Hintersee sau", "property_url": "single-property.html", "property_cover": "img/demo/03_home.jpg", "cat": "apratment", "latitude": 42.314465, "longitude": - 71.075243, "price": 700000, "currency": '$'}
+        ,
+                {"property_id": 298967, "property_title": "Antelope Cayon", "property_url": "single-property.html", "property_cover": "img/demo/01_home.jpg", "cat": "land", "latitude": 42.312418, "longitude": - 71.073569, "price": 700000, "currency": '$'}
+        ,
+                {"property_id": 88151, "property_title": "Val-Switrland", "property_url": "single-property.html", "property_cover": "img/demo/02_home.jpg", "cat": "retail", "latitude": 42.310427, "longitude": - 71.074588, "price": 700000, "currency": '$'}
+        ,
+                {"property_id": 6463, "property_title": "Mand spider", "property_url": "single-property.html", "property_cover": "img/demo/property5.jpg", "cat": "villa", "latitude": 42.308229, "longitude": - 71.077163, "price": 700000, "currency": '$'}
+        ,
+                {"property_id": 107980, "property_title": "Mostar", "property_url": "single-property.html", "property_cover": "img/demo/08_home.jpg", "cat": "land", "latitude": 42.307031, "longitude": - 71.079556, "price": 360009, "currency": '$'}
+        ,
+                {"property_id": 9439, "property_title": "Bora Bora", "property_url": "single-property.html", "property_cover": "img/demo/08_home.jpg", "cat": "office-building", "latitude": 42.314917, "longitude": - 71.074267, "price": 700000, "currency": '$'}
+        ,
+                {"property_id": 7593894, "property_title": "Super house ", "property_url": "single-property.html", "property_cover": "img/demo/07_home.jpg", "latitude": 42.306890, "longitude": - 71.070876, "price": 700000, "currency": '$'}
+        ]}

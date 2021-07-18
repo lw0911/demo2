@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ecoast</title>
+    <!--bootstrap.min.css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--animate.css-->
+    <link rel="stylesheet" href="css/animate.min.css">
+    <!--fontawesome 5-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!--slicknav.css-->
+    <link rel="stylesheet" href="css/slicknav.min.css">
+    <!--slickslider.css-->
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <!-- lity.css -->
+    <link rel="stylesheet" href="css/lity.min.css">
+    <!-- flaticon.css -->
+    <link rel="stylesheet" href="fonts/flaticon.css">
+    <!--Fav-icon-->
+    <link rel="shortcut icon" href="images/fav-icon.png" type="image/x-icon">
+    <!-- Custom.css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader"></div>
+    <!-- Start-Header-Section -->
+    <!-- Menu-start-area -->
+    <header>
+        <div class="topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-12">
+                        <div class="top-info">
+                            <ul>
+                                <li>Welcome to company name</li>
+                                <li><i class="fas fa-phone-alt"></i>XXX</li>
+                                <li><i class="fas fa-envelope"></i>XXX</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4">
+                        <div class="top-socail">
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                                <li><a href="#" class="active"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mid-bar">
+            <div class="container">
+                <div class="row">
+                    <!--logo-->
+                    <div class="col-lg-2 col-md-3 col-sm-4">
+                        <a href="#"><img src="images/logo.png" alt="" class="logo"></a>
+                    </div>
+                    <!--Search-Bar-->
+                    <div class="col-lg-6 col-md-7 col-sm-8">
+                        <div class="nav-serch">
+                            <form class="serch-bar">
+                                <select class="search-categorie" name="cars">
+                                    <option value="volvo">All Categories</option>
+                                    <option value="saab">Saab</option>
+                                    <option value="fiat">Fiat</option>
+                                    <option value="audi">Audi</option>
+                                </select>
+                                <input type="search" class="search-bg" name="search" placeholder="Search...">
+                                <a href="#" class="submit-btn"><i class="fas fa-search"></i></a>
+                            </form>
+                        </div>
+                    </div>
+                    <!--login-->
+                    <div class="col-lg-2 col-md-1 col-sm-1">
+                        <div class="login">
+                            <div class="header-icon">
+                                <a href="login.html"><i class="flaticon-icon-126486"></i></a>
+                            </div>
+                            <div class="header-content">
+                                <p>Hello Admin</p>
+                                <h5><a href="login.html"> Your Account </a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Cart-->
+                    <div class="col-lg-2 col-md-1 col-sm-1">
+                        <div class="login">
+                            <div class="header-icon">
+                                <a href="my-cart.html"><i class="flaticon-icon-1008010"></i></a>
+                            </div>
+                            <div class="header-content">
+                                <p>Your Cart</p>
+                                <h5><a href="my-cart.html">5 Items in cart</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Nav-Bar-->
+        <div class="header-fixed header-one">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-9">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <div class="collapse navbar-collapse my-lg-0" id="navbarNav">
+                                <ul class="navbar-nav mr-auto text-left">
+                                    <li class="nav-item
+                                    ">
+                                        <a class="nav-link scroll" href="index.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link scroll" href="shop.html">Shop</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link scroll" href="about-us.html">About Us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link scroll" href="#">Pages</a>
+                                        <ul class="dropdown">
+                                            <li class="nav-item">
+                                                <a class="nav-link scroll" href="my-cart.html">My Cart</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link scroll" href="check-out.html">Check Out</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link scroll" href="order-history.html">Order History</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link scroll" href="shop-side-bar.html">Shop With Sidebar</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link scroll" href="tracking.html">Tracking</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link scroll" href="product-detail.html">Product detail</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item active">
+                                        <a class="nav-link scroll" href="#">Blogs</a>
+                                        <ul class="dropdown">
+                                            <li class="nav-item active">
+                                                <a class="nav-link scroll" href="blog-grid.html">Blog Grid</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link scroll" href="blog-with-sidebar.html">Blog With Sidebar</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link scroll" href="blog-detail.html">Blog Detail</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link scroll" href="contact-us.html">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-lg-3">
+                        <!--login-->
+                        <div class="login-2">
+                            <div class="header-icon">
+                                <a href="login.html"><i class="flaticon-icon-126486"></i></a>
+                                <a href="my-cart.html"><i class="flaticon-icon-1008010"></i></a>
+                            </div>
+                        </div>
+                        <div class="selec-lang text-right">
+                            <div class="lang-drop eng">
+                                <select>
+                                    <option value="USD" class="option-bg">USD</option>
+                                    <option value="INR">INR</option>
+                                    <option value="UAE">UAE</option>
+                                </select>
+                            </div>
+                            <div class="lang-drop">
+                                <select>
+                                    <option value="English">English</option>
+                                    <option value="Hindi">Hindi</option>
+                                    <option value="French">French</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobile-menu" data-logo="images/logo.png"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!---Start-main-section-->
+    <section class="page-slider">
+        <div class="hero-banner-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2 class="banner-title">Blogs</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Blogs</li>
+                            </ol>
+                        </nav>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-slider-img">
+                            <img src="images/about-slider-img.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---End-Main-section-->
+    <!---Start-Blog-Section-->
+    <section class="ws-section-spacing">
+        <div class="container">
+            <div class="row  justify-content-center">
+                <!--item-->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="images/blog-1.jpg" alt="">
+                            <span class="date">16 October 2020</span>
+                        </div>
+                        <ul class="meta-tag">
+                            <li><a href="#">By Admin</a></li>
+                            <li><a href="#">Comment (15)</a></li>
+                            <li><a href="#">Likes (25)</a></li>
+                        </ul>
+                        <div class="blog-content">
+                            <h3><a href="#">Combined with a handful of model in fashion.</a></h3>
+                            <p>Lorem ipsum dolor sit ameconsecte tur ing elit, sed do eiusmod tempor inc ididunt ut re et dolore magna dolore.</p>
+                        </div>
+                        <a href="#" class="blog-btn">Read More</a>
+                    </div>
+                </div>
+                <!--item-->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="images/blog-2.jpg" alt="">
+                            <span class="date">12 October 2020</span>
+                        </div>
+                        <ul class="meta-tag">
+                            <li><a href="#">By Admin</a></li>
+                            <li><a href="#">Comment (15)</a></li>
+                            <li><a href="#">Likes (25)</a></li>
+                        </ul>
+                        <div class="blog-content">
+                            <h3><a href="#">Combined with a handful of model in fashion.</a></h3>
+                            <p>Lorem ipsum dolor sit ameconsecte tur ing elit, sed do eiusmod tempor inc ididunt ut re et dolore magna dolore.</p>
+                        </div>
+                        <a href="#" class="blog-btn active">Read More</a>
+                    </div>
+                </div>
+                <!--item-->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="images/blog-3.jpg" alt="">
+                            <span class="date">08 October 2020</span>
+                        </div>
+                        <ul class="meta-tag">
+                            <li><a href="#">By Admin</a></li>
+                            <li><a href="#">Comment (15)</a></li>
+                            <li><a href="#">Likes (25)</a></li>
+                        </ul>
+                        <div class="blog-content">
+                            <h3><a href="#">Combined with a handful of model in fashion.</a></h3>
+                            <p>Lorem ipsum dolor sit ameconsecte tur ing elit, sed do eiusmod tempor inc ididunt ut re et dolore magna dolore.</p>
+                        </div>
+                        <a href="#" class="blog-btn">Read More</a>
+                    </div>
+                </div>
+                <!--item-->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="images/blog-1.jpg" alt="">
+                            <span class="date">16 October 2020</span>
+                        </div>
+                        <ul class="meta-tag">
+                            <li><a href="#">By Admin</a></li>
+                            <li><a href="#">Comment (15)</a></li>
+                            <li><a href="#">Likes (25)</a></li>
+                        </ul>
+                        <div class="blog-content">
+                            <h3><a href="#">Combined with a handful of model in fashion.</a></h3>
+                            <p>Lorem ipsum dolor sit ameconsecte tur ing elit, sed do eiusmod tempor inc ididunt ut re et dolore magna dolore.</p>
+                        </div>
+                        <a href="#" class="blog-btn">Read More</a>
+                    </div>
+                </div>
+                <!--item-->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="images/blog-2.jpg" alt="">
+                            <span class="date">12 October 2020</span>
+                        </div>
+                        <ul class="meta-tag">
+                            <li><a href="#">By Admin</a></li>
+                            <li><a href="#">Comment (15)</a></li>
+                            <li><a href="#">Likes (25)</a></li>
+                        </ul>
+                        <div class="blog-content">
+                            <h3><a href="#">Combined with a handful of model in fashion.</a></h3>
+                            <p>Lorem ipsum dolor sit ameconsecte tur ing elit, sed do eiusmod tempor inc ididunt ut re et dolore magna dolore.</p>
+                        </div>
+                        <a href="#" class="blog-btn">Read More</a>
+                    </div>
+                </div>
+                <!--item-->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="images/blog-3.jpg" alt="">
+                            <span class="date">08 October 2020</span>
+                        </div>
+                        <ul class="meta-tag">
+                            <li><a href="#">By Admin</a></li>
+                            <li><a href="#">Comment (15)</a></li>
+                            <li><a href="#">Likes (25)</a></li>
+                        </ul>
+                        <div class="blog-content">
+                            <h3><a href="#">Combined with a handful of model in fashion.</a></h3>
+                            <p>Lorem ipsum dolor sit ameconsecte tur ing elit, sed do eiusmod tempor inc ididunt ut re et dolore magna dolore.</p>
+                        </div>
+                        <a href="#" class="blog-btn">Read More</a>
+                    </div>
+                </div>
+                <!--item-->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="images/blog-1.jpg" alt="">
+                            <span class="date">16 October 2020</span>
+                        </div>
+                        <ul class="meta-tag">
+                            <li><a href="#">By Admin</a></li>
+                            <li><a href="#">Comment (15)</a></li>
+                            <li><a href="#">Likes (25)</a></li>
+                        </ul>
+                        <div class="blog-content">
+                            <h3><a href="#">Combined with a handful of model in fashion.</a></h3>
+                            <p>Lorem ipsum dolor sit ameconsecte tur ing elit, sed do eiusmod tempor inc ididunt ut re et dolore magna dolore.</p>
+                        </div>
+                        <a href="#" class="blog-btn">Read More</a>
+                    </div>
+                </div>
+                <!--item-->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="images/blog-2.jpg" alt="">
+                            <span class="date">12 October 2020</span>
+                        </div>
+                        <ul class="meta-tag">
+                            <li><a href="#">By Admin</a></li>
+                            <li><a href="#">Comment (15)</a></li>
+                            <li><a href="#">Likes (25)</a></li>
+                        </ul>
+                        <div class="blog-content">
+                            <h3><a href="#">Combined with a handful of model in fashion.</a></h3>
+                            <p>Lorem ipsum dolor sit ameconsecte tur ing elit, sed do eiusmod tempor inc ididunt ut re et dolore magna dolore.</p>
+                        </div>
+                        <a href="#" class="blog-btn">Read More</a>
+                    </div>
+                </div>
+                <!--item-->
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <img src="images/blog-3.jpg" alt="">
+                            <span class="date">08 October 2020</span>
+                        </div>
+                        <ul class="meta-tag">
+                            <li><a href="#">By Admin</a></li>
+                            <li><a href="#">Comment (15)</a></li>
+                            <li><a href="#">Likes (25)</a></li>
+                        </ul>
+                        <div class="blog-content">
+                            <h3><a href="#">Combined with a handful of model in fashion.</a></h3>
+                            <p>Lorem ipsum dolor sit ameconsecte tur ing elit, sed do eiusmod tempor inc ididunt ut re et dolore magna dolore.</p>
+                        </div>
+                        <a href="#" class="blog-btn">Read More</a>
+                    </div>
+                </div>
+                <!---pagination-->
+                <nav aria-label="Page navigation example" class="navigation-btn ">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true"><i class="fas fa-angle-double-left"></i></span>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">....</a></li>
+                        <li class="page-item"><a class="page-link" href="#">15</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true"><i class="fas fa-angle-double-right"></i></span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!---End-Blog-Section-->
+    <!---Start-Partner-Section-->
+   <section class="ws-section-spacing patner-bg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="client-Slider">
+                    <div class="client">
+                        <img src="images/client-1.png" alt="">
+                    </div>
+                    <!--item-->
+                    <div class="client">
+                        <img src="images/client-2.png" alt="">
+                    </div>
+                    <!--item-->
+                    <div class="client">
+                        <img src="images/client-3.png" alt="">
+                    </div>
+                    <!--item-->
+                    <div class="client">
+                        <img src="images/client-4.png" alt="">
+                    </div>
+                    <!--item-->
+                    <div class="client">
+                        <img src="images/client-4.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---End-Partner-Section-->
+    <!---Start-Footer-Section-->
+    <footer class="same-section-spacing footer-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-4">
+                    <div class="footer-about">
+                        <img src="images/logo-wht.png" alt="">
+                        <p>Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit. Aenean com modo ligula eget dolor. Aenean ma ssa. Cum sociis </p>
+                    </div>
+                </div>
+                <!--item-->
+                <div class="col-lg-3 col-md-4">
+                    <div class="popular-tag">
+                        <h4 class="footer-title">Populer Tags</h4>
+                        <ul>
+                            <li><a href="#">Fashion</a></li>
+                            <li><a href="#">T-Shirts</a></li>
+                            <li><a href="#">Women</a></li>
+                            <li><a href="#">Men</a></li>
+                            <li class="active"><a href="#">Jeans</a></li>
+                            <li><a href="#">Modern</a></li>
+                            <li><a href="#">Shirts</a></li>
+                            <li><a href="#">Classic</a></li>
+                            <li><a href="#">Shoes</a></li>
+                            <li><a href="#">Running</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--item-->
+                <div class="col-lg-3 col-md-4">
+                    <div class="contact-us">
+                        <h4 class="footer-title">Contact-Us</h4>
+                        <ul>
+                            <li><i class="fas fa-map-marker-alt"></i> XXX </li>
+                            <li><i class="fas fa-phone-alt"></i>XXX </li>
+                            <li><i class="fas fa-envelope"></i> XXX </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--item-->
+                <div class="col-lg-3 col-md-4">
+                    <div class="contact-us">
+                        <h4 class="footer-title">Contact-Us</h4>
+                        <p>Sign up the newsletter</p>
+                        <input type="email" name="email" placeholder="Email" required="" class="email">
+                        <button type="submit" class="contact-btn">Post Comment</button>
+                    </div>
+                </div>
+                <!--copy-right-->
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="container-fluid">
+                            <div class="copy-right">
+                                <span class="copy-right-seprater"></span>
+                                <p>2020 . All rights reserved <a href="http://www.aizhanzhe.com/template.html" target="_blank">懒之才</a> Developed By Company Name.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Jquery.min.js-->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/jquery.1.12.4.js"></script>
+    <!--bootstrap.min.js-->
+    <script src="js/bootstrap.min.js"></script>
+    <!--slicknav.min.js-->
+    <script src="js/jquery.slicknav.min.js"></script>
+    <!--slickslider.min.js-->
+    <script src="js/slick.min.js"></script>
+    <!-- waypoint.min.js -->
+    <script src="js/waypoints.min.js"></script>
+    <!-- lity.js -->
+    <script src="js/lity.min.js"></script>
+    <!-- imagesloaded.js -->
+    <script src="js/imagesloaded.js"></script>
+    <!-- wow.js -->
+    <script src="js/wow.min.js"></script>
+    <!-- main.js -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
