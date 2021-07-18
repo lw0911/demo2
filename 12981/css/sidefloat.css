@@ -1,0 +1,133 @@
+w@charset "utf-8";
+/************* right icons start ****************/
+#s_icons_box .icons_box>a {
+	display: block;
+	width: 44px;
+	height: 100%;
+	background-image: url(../images/c_icons.png);
+	background-repeat: no-repeat;
+}
+#s_icons_box {
+	position: fixed;
+	right: 80px;
+	bottom: 70px;
+	z-index: 3;
+}
+#s_icons_box a#mobile_icon {
+	height: 28px;
+	background-position: left top;
+	line-height: 20px;
+	color: #FFF;
+	padding-top: 89px;
+	text-align: center;
+}
+#s_icons_box a#mobile_icon:hover {
+	background-position: right top;
+	-webkit-transition: all 0s ease-in-out;
+	-moz-transition: all 0s ease-in-out;
+	-o-transition: all 0s ease-in-out;
+	transition: all 0s ease-in-out;
+	color: #FF871D;
+}
+#s_icons_box a#top_icon {
+	height: 43px;
+	background-position: left -118px;
+}
+#s_icons_box a#top_icon:hover {
+	background-position: right -118px;
+	-webkit-transition: all 0s ease-in-out;
+	-moz-transition: all 0s ease-in-out;
+	-o-transition: all 0s ease-in-out;
+	transition: all 0s ease-in-out;
+}
+#s_icons_box a#service_icon {
+	height: 44px;
+	background-position: right -161px;
+}
+#s_icons_box a#service_icon:hover {
+	background-position: right -161px;
+	-webkit-transition: all 0s ease-in-out;
+	-moz-transition: all 0s ease-in-out;
+	-o-transition: all 0s ease-in-out;
+	transition: all 0s ease-in-out;
+}
+#s_icons_box a#zyfq_icon {
+	height: 44px;
+	background-position: left -206px;
+}
+#s_icons_box a#zyfq_icon:hover {
+	background-position: right -206px;
+	-webkit-transition: all 0s ease-in-out;
+	-moz-transition: all 0s ease-in-out;
+	-o-transition: all 0s ease-in-out;
+	transition: all 0s ease-in-out;
+}
+#s_icons_box a#weixin_icon {
+	height: 44px;
+	background-position: left -250px;
+}
+#s_icons_box a#weixin_icon:hover {
+	background-position: right -250px;
+	-webkit-transition: all 0s ease-in-out;
+	-moz-transition: all 0s ease-in-out;
+	-o-transition: all 0s ease-in-out;
+	transition: all 0s ease-in-out;
+}
+#s_icons_box .icons_box {
+	position: relative;
+	height: 117px;
+}
+#s_icons_box .icons_box.h2 {
+	height: 44px;
+	margin-bottom: -1px;
+}
+#s_icons_box .icons_box:hover .icon_info,#s_icons_box .icons_box:hover .icon_info2, #s_icons_box .icons_box:hover i {
+	display: block;
+}
+#s_icons_box .icons_box .icon_info {
+	position: absolute;
+	display: none;
+	width: 58px;
+	height: 22px;
+	right: 44px;
+	/*color: #FFF;
+	background-color: #494949;*/
+	padding: 10px;
+	line-height: 24px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #D9D9D9;
+	border-bottom-color: #D9D9D9;
+	border-left-color: #D9D9D9;
+	background-color: #FFF;
+}
+#s_icons_box .icons_box .icon_info2 {
+	position: absolute;
+	display: none;
+	width: 88px;
+	height: 88px;
+	right: 43px;
+	padding: 5px;
+	line-height: 24px;
+	background-color: #FFF;
+	top: -57px;
+	border: 1px solid #D9D9D9;
+}
+#s_icons_box .icons_box i {
+	display: none;
+	position: absolute;
+	width: 8px;
+	height: 16px;
+	background: url(../images/arrow4.png) no-repeat left center transparent;
+	right: 36px;
+	top: 0;
+	padding: 14px 0;
+}
+#s_icons_box .icons_box #top_info {
+	top: 0;
+}
+/************* right icons end ****************/

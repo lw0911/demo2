@@ -1,0 +1,477 @@
+<!DOCTYPE html><html lang="zh-cn">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<head><meta charset="UTF-8">
+<title>创意高端大气滚屏产品企业网站页面模板源码 - </title>
+<meta name="keywords" content="关键词" />
+<meta name="description" content="描述" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<link rel="stylesheet" type="text/css" href="css/global.css">
+<link rel="stylesheet" type="text/css" href="css/media.css">
+<link rel="stylesheet" type="text/css" href="css/fancybox.css">
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">	    var is_moblie = "", //手机端
+	        SLIDE = "0", //特效关闭开启 NAVFIXED
+	        BCID = "0",//父级ID
+	        FOOTER = "1",//页脚
+	        CATID = "", //子菜单
+	        SUBFIXED = "0", //子菜单悬浮
+	        ONCONTEXT = 1, //禁止右键
+	        ONCOPY = 1, //禁止复制
+	        ONSELECT = 1, //禁止选择
+	        NAVCOLOR = "rgba(205,0,0,1)", //导航颜色
+	        NAVLEFT = "#cd0000"; //导航边线
+	</script><script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script><script type="text/javascript" src="js/fancybox.js"></script><script type="text/javascript" src="js/common.js"></script><!--[if IE]><script src="/skin/js/html5.js"></script><![endif]-->
+	<meta http-equiv="mobile-agent" content="format=xhtml;url=/m/index.php">
+</head>
+	<!--/************************************************************
+ *																*
+ * 						      							*
+ *                        							*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+**************************************************************-->
+<body >
+	<!-- 头部  never -->
+	<div class="header fixed" id="never">
+	<div class="nocontainer nopd">
+	<!-- logo -->
+	<div class="logoleft fl">
+	<div class="logo"><a href="javascript:;"><img src="images/logo.png" alt="布拉猫设计模板" /></a></div></div>
+	<!-- /ogo -->
+	<!-- nav -->
+	<div class="navs" >
+	<ul>
+	
+	<li><a href="javascript:;">首页</a></span></li>
+	
+	<li><a href="javascript:;">关于我们</a></span></li>
+	
+	<li><a href="javascript:;">产品案例</a></span></li>
+	
+	<li><a href="javascript:;">新闻资讯</a></span></li>
+	
+	<li><a href="javascript:;">常见问题</a></span></li>
+	
+	<li><a href="javascript:;">联系我们</a></span></li>
+	
+	</ul></div><!-- /nav --></div></div><!-- /头部 -->
+	<link rel="stylesheet" type="text/css" href="css/index.css"><link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css"><link rel="stylesheet" href="css/swiper.css" /><link rel="stylesheet" href="css/animate.min.css" /><script src="js/jquery.fullPage.js"></script><script src="js/swiper.min.js"></script><script src="js/swiper.animate1.0.2.min.js"></script><!--  首页功能块 --><style>html{overflow-x: hidden; overflow-y: hidden;}</style><div id="usezan-v2"><div class="section banner active"><style>.swiper-container {min-width: 1150px; width: 100%;height: auto;background: #000;overflow: hidden;}
+.swiper-slide{
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+</style><div class="swiper-container"><div class="swiper-wrapper">
+<div class="swiper-slide swiper-lazy" data-background="images/slide1.jpg" style="width:100% !important;min-width:1150px;"><a href="javascript:;" class="block wrapper-a" style="width:100%;min-width:1150px;"></a><div class="swiper-lazy-preloader"></div></div>
+<div class="swiper-slide swiper-lazy" data-background="images/slide2.jpg" style="width:100% !important;min-width:1150px;"><a href="javascript:;" class="block wrapper-a" style="width:100%;min-width:1150px;"></a><div class="swiper-lazy-preloader"></div></div>
+<div class="swiper-slide swiper-lazy" data-background="images/slide3.jpg" style="width:100% !important;min-width:1150px;"><a href="javascript:;" class="block wrapper-a" style="width:100%;min-width:1150px;"></a><div class="swiper-lazy-preloader"></div></div>
+
+</div>
+<!-- Add Pagination --><!-- Add Arrows --><div class="swiper-button-next"></div><div class="swiper-button-prev"></div></div><script type="text/javascript">$(document).ready(function () {
+	var _text=$(".wrapper-intro"), //文本
+	_windows=$(window).width(), //文档宽度
+	_height=$(window).height(), // 文档高度
+	_twidth=_text.width(), //文本宽度
+	_theight=_text.height(), //文本高度
+	_px='px'; //像素
+	var _direction="horizontal",
+	_effect="slide",
+	_autoplay="2000",
+	_texttype="center",
+	_textleft="200",
+	_texttop="250",
+	_a=(_windows-_twidth)/2,
+	_b=(_height-_theight)/2;
+	
+	$(".swiper-container,.swiper-wrapper,.swiper-slide,.wrapper-a").css({"height":_height});
+	//定位
+	if(_texttype=='center'){
+		_text.css({'left':_a+_px,'top':_b+_px})
+	}else if(_texttype=='left'){
+		_text.css({'left':_textleft+_px,'top':_texttop+_px})
+	}else{
+		_text.css({'right':_textleft+_px,'top':_texttop+_px})
+	}
+	var swiper=new Swiper('.swiper-container',{   
+		pagination:'.swiper-pagination',
+		paginationClickable:true,
+		lazyLoading : true,
+		nextButton:'.swiper-button-next',
+		prevButton:'.swiper-button-prev',
+		effect:_effect,
+		autoplay:_autoplay,
+		autoplayDisableOnInteraction:false,
+		direction:_direction,
+		keyboardControl:true,
+	    onInit:function(swiper){
+	    //文本动画
+			swiperAnimateCache(swiper);
+			swiperAnimate(swiper)
+		},
+		onSlideChangeEnd:function(swiper){
+			swiperAnimate(swiper)
+	  }
+	});
+})
+</script></div><div class="section newsv2" style="background:url(images/hnews.jpg) no-repeat center top;">	
+<!-- 新闻资讯 -->
+<div class="backcolor newsv4a nowhite">
+    <div class="newsv4-h">
+    <div class="clear" style="height:60px;"></div>
+		<div class="index_title text-center pb20"><h3 class="f30 animateds slideInUps anim1s">新闻资讯</h3>
+			<span class="f14 upper block ar animateds slideInUps anim2s">SOLVE</span>
+		</div>
+<!-- 模板风格 -->
+	<div class="kwidth">
+		<div class="news-list">	
+			<ul class="bd wul110">
+<li class="animateds slideInUps anim1s">
+				    <div class="news-detail">
+				        <div class="news-data">
+				            <span class="f18 block y ar">2017</span>
+					    	<span class="md ar block">01.05</span>
+					    </div>
+					    <i class="borh"></i>
+					    <h5><a class="f16 blod" title="系统化的解决方案">通讯授权认证</a></h5>
+					    <div class="remark">
+						    <p class="line22 pt5 pb30">物联网让大家想到的是一个万物互联的场景，如此庞大、繁杂的网络其安全需要系统化的解决方案。比如，对于智能设备的安全保护，在梆梆安全的USC架构...</p>
+						    <a class="news-more mt15">Details</a>
+					    </div>
+				    </div>
+				    <a href="javascript:;" class="posi_url"></a>
+				</li>
+<li class="animateds slideInUps anim2s">
+				    <div class="news-detail">
+				        <div class="news-data">
+				            <span class="f18 block y ar">2017</span>
+					    	<span class="md ar block">01.05</span>
+					    </div>
+					    <i class="borh"></i>
+					    <h5><a class="f16 blod" title="系统化的解决方案">智能机器人技术</a></h5>
+					    <div class="remark">
+						    <p class="line22 pt5 pb30">智能机器人具备形形色色的内部信息传感器和外部信息传感器，如视觉、听觉、触觉、嗅觉。除具有感受器外，它还有效应器，作为作用于周围环境的手段...</p>
+						    <a class="news-more mt15">Details</a>
+					    </div>
+				    </div>
+				    <a href="javascript:;" class="posi_url"></a>
+				</li>
+<li class="animateds slideInUps anim3s">
+				    <div class="news-detail">
+				        <div class="news-data">
+				            <span class="f18 block y ar">2017</span>
+					    	<span class="md ar block">01.05</span>
+					    </div>
+					    <i class="borh"></i>
+					    <h5><a class="f16 blod" title="系统化的解决方案">智能家居市场</a></h5>
+					    <div class="remark">
+						    <p class="line22 pt5 pb30">目前智能家居才刚刚兴起，物联网1.0时代的核心将会是“技术”，国内绝大部分传统厂商比较缺乏的是软硬结合的开发实力。因此在这一阶段，氦氪想做的...</p>
+						    <a class="news-more mt15">Details</a>
+					    </div>
+				    </div>
+				    <a href="javascript:;" class="posi_url"></a>
+				</li>
+<li class="animateds slideInUps anim4s">
+				    <div class="news-detail">
+				        <div class="news-data">
+				            <span class="f18 block y ar">2017</span>
+					    	<span class="md ar block">01.05</span>
+					    </div>
+					    <i class="borh"></i>
+					    <h5><a class="f16 blod" title="系统化的解决方案">系统化的解决方案</a></h5>
+					    <div class="remark">
+						    <p class="line22 pt5 pb30">据央视报道称，包括汽车、摄像头、洗衣机、烤箱等在内的智能设备被曝出批量安全漏洞，黑客利用安全漏洞可以控制汽车制动系统、智能家居开关、无人...</p>
+						    <a class="news-more mt15">Details</a>
+					    </div>
+				    </div>
+				    <a href="javascript:;" class="posi_url"></a>
+				</li>
+
+						</ul>
+					</div>
+	<div class="hg50"></div>
+	<!--  /默认风格 -->			
+	</div>
+	<div class="clear" style="height:0px;"></div>
+</div>
+</div>
+<!-- /新闻资讯-->
+<script type="text/javascript">
+$(".news-list").slide({titCell:".hd ul",mainCell:".bd",autoPage:true,effect:"left",autoPlay:true,interTime:5000,vis:3,pnLoop:false});
+$("a[rel=example_group]").fancybox();
+</script></div><div class="section aboutv2" style="background:#fff"><!-- 关于我们 -->
+<div class="aboutv4-h">	
+    <div class="about-content "><div class="img-left fl animateds slideInUps anim1s">
+    		<a href="javascript:;"><span style="background: url(images/habout.jpg) no-repeat center center;"></span></a>
+    	</div>
+        <div class="r-about-0 fl">
+	        <h3 class="f24 animateds slideInUps anim1s">
+	        	<span class="block cndir ar f30">Intelligence</span>
+	        	<span class="block endir f14">关于我们</span>
+	        	<i class="abor"></i>
+	        </h3>
+	        <p class="line24 pb50 animateds slideInUps anim2s">目前智能家居才刚刚兴起，物联网1.0时代的核心将会是“技术”，国内绝大部分传统厂商比较缺乏的是软硬结合的开发实力。因此在这一阶段，氦氪想做的是先用一整套高效快速的解决方案帮助厂商们打好地基。而在智能家居市场的地基初步打好后，物联网2.0时代的核心会转......</p>
+	        <a href="javascript:;" class="block ar animateds slideInUps anim4s">Detail</a>
+        </div>
+    </div>
+</div>
+<!-- /关于我们--></div><div class="section productv2" style="background:url(images/hcase.jpg) no-repeat center top;"><!-- 作品、案例、产品 -->
+<div class="backcolor workv4a nowhite">
+    <div class="workv4-h">
+    <div class="clear" style="height:30px;"></div>
+	    <div class="index_title text-center pb20">
+			<h3 class="f30 animateds slideInUps anim1s">产品案例</h3>
+			<span class="f14 upper ar animateds slideInUps anim2s">machine</span>
+		</div>
+<!--	-->
+	<div class="kwidth">	
+		<!-- 默认风格 -->
+		    <ul class="wul105 workul pro3">
+<li class="animateds slideInUps anim1s">
+					<a  rel='example_group' href='javascript:;' class="img"><img src="images/582437f28f95a.jpg"  alt="自动化licon" />
+					</a>
+					<div class="title">
+						<h5 class="f18 pt15 pb10"><a >自动化licon</a></h5>
+						<p class="f12 pb10 entitle">机械工程一向以增加生产、提高劳动生产率、提高生产的经济性，即以提高人类的利益为目标来研制和发展新的机械...</p>
+						<a href='javascript:;' class="awork block ar" >Details</a>
+					</div>
+				</li>
+<li class="animateds slideInUps anim2s">
+					<a  rel='example_group' href='javascript:;' class="img"><img src="images/58252463cb2ce.jpg"  alt="新型工业设备Ed" />
+					</a>
+					<div class="title">
+						<h5 class="f18 pt15 pb10"><a >新型工业设备Ed</a></h5>
+						<p class="f12 pb10 entitle">机械工程一向以增加生产、提高劳动生产率、提高生产的经济性，即以提高人类的利益为目标来研制和发展新的机械...</p>
+						<a href='javascript:;' class="awork block ar" >Details</a>
+					</div>
+				</li>
+<li class="animateds slideInUps anim3s">
+					<a  rel='example_group' href='javascript:;' class="img"><img src="images/5825231526da5.jpg"  alt="GAF智能半自动" />
+					</a>
+					<div class="title">
+						<h5 class="f18 pt15 pb10"><a >GAF智能半自动</a></h5>
+						<p class="f12 pb10 entitle">机电一体化技术和机电一体化产品的统称，是在机电产品中引入微电子元器件和技术之后形成的。机电一体化技术又...</p>
+						<a href='javascript:;' class="awork block ar" >Details</a>
+					</div>
+				</li>
+<li class="animateds slideInUps anim4s">
+					<a  rel='example_group' href='javascript:;' class="img"><img src="images/582523d4dddf8.jpg"  alt="工业科技EFD设备" />
+					</a>
+					<div class="title">
+						<h5 class="f18 pt15 pb10"><a >工业科技EFD设备</a></h5>
+						<p class="f12 pb10 entitle">地壳中和海水中的金属矿藏的蕴藏量极为丰富。只要改进采矿和选矿的工艺和提高采、选矿机械的性能，以降低可以...</p>
+						<a href='javascript:;' class="awork block ar" >Details</a>
+					</div>
+				</li>
+<li class="animateds slideInUps anim5s">
+					<a  rel='example_group' href='javascript:;' class="img"><img src="images/582438c180cef.jpg"  alt="RTM6 PLI" />
+					</a>
+					<div class="title">
+						<h5 class="f18 pt15 pb10"><a >RTM6 PLI</a></h5>
+						<p class="f12 pb10 entitle">工程技术的发展在提高人类物质文明和生活水平的同时，也对自然环境起了破坏作用。20世纪中期以来，暴露出来的严...</p>
+						<a href='javascript:;' class="awork block ar" >Details</a>
+					</div>
+				</li>
+<li class="animateds slideInUps anim6s">
+					<a  rel='example_group' href='javascript:;' class="img"><img src="images/582438dd666a1.jpg"  alt="LIFLEXII智能设备" />
+					</a>
+					<div class="title">
+						<h5 class="f18 pt15 pb10"><a >LIFLEXII智能设备</a></h5>
+						<p class="f12 pb10 entitle">机械工程一向以增加生产、提高劳动生产率、提高生产的经济性，即以提高人类的利益为目标来研制和发展新的机械...</p>
+						<a href='javascript:;' class="awork block ar" >Details</a>
+					</div>
+				</li>
+
+		    </ul>
+		    
+		<div class="hg15"></div>
+		<div class="hd animateds slideInUps anim3s">
+			<ul></ul>
+		</div>
+		
+	<!-- /默认风格 -->	
+</div>
+    <div class="clear" style="height:0px;"></div>
+</div>
+</div>
+<!-- 作品、案例、产品 -->
+<script type="text/javascript">
+$(".productv2").slide({titCell:".hd ul",mainCell:".workul",autoPage:true,effect:"left",autoPlay:true,interTime:5000,vis:3,pnLoop:false});
+$("a[rel=example_group]").fancybox();
+</script></div><div class="section contactv2" style="background:#fff"><!-- 联系我们 -->
+<div class="backcolor contactv4a ">
+    <div class="contactv4-h">
+    <div class="clear" style="height:20px;"></div>
+	<div class="index_title text-center pb20"><h3 class="f30 animateds slideInUps anim1s">联系我们</h3>
+			<span class="f14 upper ar animateds slideInUps anim2s">CONTACTS</span>
+	</div>
+			
+    <div class="kwidth">
+			<div class="wul105 bd">	
+				<ul>
+					<li class="animateds slideInUps anim3s">
+						<i></i> 
+						<h5 class="f14 pt8">公司地址</h5>
+						<p>浙江省温州市平阳县萧江</p>
+					</li>
+					<li class="animateds slideInUps anim3s">
+						<i></i> 
+						<h5 class="f14 pt8">联系电话</h5>
+						<p>+86 873468834</p>
+					</li>
+					<li class="animateds slideInUps anim3s">
+						<i></i> 
+						<h5 class="f14 pt8">电子邮箱</h5>
+						<p>873468834@qq.com</p>
+					</li>
+				</ul>
+			</div>
+	        <div class="hg30"></div>
+	    <!-- 表单 -->
+		      <div class="form-action wul105 animateds slideInUps anim4s">
+		        <form action="/plus/diy.php" enctype="multipart/form-data" method="post" id="myform-contact" >
+<input type="hidden" name="action" value="post" />
+<input type="hidden" name="diyid" value="1" />
+<input type="hidden" name="do" value="2" />
+			        <li><input type="text" name="name" placeholder="您的姓名" datatype="z2-4" nullmsg="请填写姓名" errormsg="姓名长度为2-5个中文"></li>
+			        <li><input type="text" name="email" placeholder="电子邮箱" datatype="email" nullmsg="请填写电子邮箱" errormsg="电子邮箱格式错误">
+			        </li>
+			        <li><input type="text" name="telephone" placeholder="联系方式" datatype="m-s" nullmsg="请填写手机" errormsg="手机号码格式错误">
+			        </li>
+			        <li class="textarea"><textarea name="content" placeholder="咨询内容" datatype="*5-255" nullmsg="请填写详细内容" errormsg="详细内容长度为10-2000个字符"></textarea>
+			        </li>
+		            <span class="j_form_tips"></span>
+		            <div class="hg5"></div>
+		            <div class="submit-bth">
+			            <input type="hidden" id="catid" name="catid" value="19" />
+			            <input type="hidden" id="catid" name="moduleid" value="8" />
+			            <input type="hidden" name="title" value="客户留言" />
+			            <input type="hidden"  name="lang" value="" /><input type="hidden" name="dede_fields" value="name,text;email,text;telephone,text;content,multitext" />
+<input type="hidden" name="dede_fieldshash" value="6b82e19f90a6a0fbfef9283f5c5903b5" />
+			            <input type="submit" class="ar f12" value="提交留言">
+		            </div>
+		        </form> 
+		      </div>
+        <!-- /表单 -->	
+	</div>
+	<div class="clear" style="height:0px;"></div>
+    </div>
+</div>
+<!-- /联系我们-->
+<link rel="stylesheet" href="css/validform.css" type="text/css" />
+<script type="text/javascript" src="js/validform.js"></script>
+<script type="text/javascript" src="js/datatype.js"></script>
+<script type="text/javascript">
+//表单
+$("#myform").Validform({
+        ajaxPost:true,
+        ignoreHidden:true,
+        datatype:{
+            "z2-4" : /^[\u4e00-\u9fa5]{2,5}$/,
+            "m-s": /^1[3|5|7|8|][0-9]{9}$/
+        },
+        tiptype:function(msg,o,cssctl){
+            var objtip = $(".j_form_tips");
+            cssctl(objtip,o.type);
+            objtip.html(msg);
+        },callback:function(data){
+			if(data.status){
+				$(".j_form_tips").removeClass("Validform_wrong").addClass("Validform_right");
+			}
+		}
+    });
+</script></div>
+<!-- footer --><div class="hg42"></div><div class="footer footer-fixed" id="footer" style="background:#fff"><i class="footer-bor" style="background:#000;opacity:.1";></i><div class="kwidth npb"><div class="max50 fixed-right white-footer fr"><div class="shar fr bdsharebuttonbox"><a class="bds_tsina" data-cmd="tsina" href="javascript:;" target="_blank"></a><a class="bds_qzone" data-cmd="qzone" href="javascript:;" target="_blank"></a><a class="bds_tqq" data-cmd="tqq" href="javascript:;" target="_blank"></a></div><span class="fr mr10">分享:</span><div class="fr mr10">Copyright ? 2002-2016 DMAKU.COM 布拉猫设计 版权所有  备案号：浙ICP888888888备 </div></div></div></div><script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='js/share.js?cdnversion='+~(-new Date()/36e5)];function check_inv(){
+}</script><!-- /footer --><div class="kefu_q3" style="right:3px;bottom:40px;">
+	<div class="default" style="right:3px;bottom:40px;"></div>
+		<div class="default-hide fr">
+		  <div class="top-1 ico-bg">
+		    <span class="colse"></span>
+		  </div>
+		  <ul class="bor-ul">
+		    <span class="qq-tx ico-bg"></span>
+		    <p>在线客服咨询</p>
+		  <volist name="qq" id="k">
+		  	
+		      <li class="ico-bg"><a target="_blank" href="javascript:;">客服一</a></li>
+		  	
+		      <li class="ico-bg"><a target="_blank" href="javascript:;">客服二</a></li>
+		   
+		    <div class="em fl">
+		      <i class="ico-code ico-bg"></i>
+		      <div class="show-em ico-bg"><img src="images/code.jpg" alt="扫描二维码，关注我们" /></div>
+		    </div>
+		    <div class="get-top fr">
+		      <a target="_self" href="javascript:;"><i class="get-ico-code ico-bg" id="#"></i></a>
+		    </div>
+		  </ul>
+		<div class="bottom-1 ico-bg"></div>
+	</div>
+</div>
+<!-- /在线客服 -->
+<script type="text/javascript">
+  var qq_left = "3",
+      qq_topbottom = 40;
+  $(".kefu_q3 .default").on("click",function () {
+      $(this).animate({"right" : -120 + '%'}, 100);
+      $(".default-hide").animate({"margin-right" : 0}, 300);
+  })
+    $(".colse").on("click",function () {
+      $(".default-hide").animate({"margin-right" : -120 + '%'}, 100);
+      $(".kefu_q3 .default").animate({"right" : qq_left + 'px',"bottom" : qq_topbottom +'px'}, 300);
+  })
+</script></div><!--  /首页功能块 --></body><script type="text/javascript">$(document).ready(function () {
+		var $header = $("#drop");
+	    $('#usezan-v2').fullpage({
+		verticalCentered: !1,
+		navigation: !0,
+		onLeave: function(index, nextIndex, direction){
+			if (nextIndex > 1 && direction == 'down') $("#fp-nav").show();
+			if (nextIndex < 2 && direction == 'up') $("#fp-nav").hide();
+			if (direction == 'up') {
+				$(".section").find(".animateds").removeClass('slideInUps');
+			} else {
+				$(".section").find(".animateds").addClass('slideInUps');
+			}
+			if(direction == 'down'){
+				$header.animate({
+					top: 0
+				}, 400);
+			} else if (nextIndex == 1 && direction == 'up') {
+				$header.animate({
+					top: - 80
+				}, 400);
+		    }
+		},
+		afterRender: function () {
+			var pluginContainer = $(this);
+			pluginContainer.addClass("slideon");
+			aslide();
+		}
+	});
+})
+function aslide() {
+	$(".teamv2").slide({titCell:".hd ul",mainCell:".temaul",autoPage:true,effect:"top",autoPlay:false,vis:1,interTime:7000});
+	$(".wrongv4a").slide({titCell:".hd ul",mainCell:".bd",autoPage:true,effect:"top",autoPlay:false,interTime:7000,vis:2,pnLoop:false});
+	$(".service4a").slide({titCell:".hd ul",mainCell:"ul.bd",autoPage:true,effect:"left",autoPlay:false,vis:3,interTime:7000});
+	$(".customersv2").slide({titCell:".hd ul",mainCell:".partnerul ul",autoPage:true,effect:"left",autoPlay:true,vis:4,interTime:7000});
+	$(".downloadv4a").slide({titCell:".hd ul",mainCell:".bd",autoPage:true,effect:"top",autoPlay:false,interTime:7000,vis:2,pnLoop:false});
+};
+ajaxGetNotify();
+function ajaxGetNotify(){
+    $.get("Expired/getNotify.html",function(data){
+         if (data.status){
+         	$(".error ul").html(data.info);
+         	$(".error").show();
+         } else {
+         	$(".error ul").html('');
+         	$(".error").hide();
+         }
+       },'json');
+}
+$(window).load(function () {
+$(".workv4a").css({'height':$(".workv4-h").height()});$(".newsv4a").css({'height':$(".newsv4-h").height()});$(".customersv4a").css({'height':$(".customersv4-h").height()});$(".contactv4a").css({'height':$(".contactv4-h").height()});$(".aboutv4-h").css({'height':$(".about-content").height()});$(".teamv4a").css({'height':$(".teamv4-h").height()});$(".service4a").css({'height':$(".service4-h").height()});$(".wrongv4a").css({'height':$(".wrongv4-h").height()});$(".downloadv4a").css({'height':$(".downloadv4-h").height()});
+})
+
+</script>
+</html>

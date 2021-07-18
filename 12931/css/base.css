@@ -1,0 +1,207 @@
+﻿/****************************************************************
+ *																*		
+ * 						      代码库							*
+ *                        www.dmaku.com							*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+****************************************************************/
+
+@charset "utf-8";
+body {
+	font-family:"微软雅黑";
+	font-size:12px;
+	color:#484848;
+	min-width:1004px;
+	width:auto!important;
+	width:1004px;
+_width:expression(document.documentElement.clientWidth<1004?"1004px":"auto");
+	margin:0 auto;
+	background:#fff;
+	text-align:left;
+}
+article, aside, dialog, footer, header, section, footer, nav, figure, menu {
+	display:block
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+	margin:0;
+	padding:0;
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+fieldset, img {
+	border:0;
+}
+address, caption, cite, code, dfn, em, th, var {
+	font-style:normal;
+	font-weight:normal;
+}
+li {
+	list-style:none;
+}
+caption, th {
+	text-align:left;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size:100%;
+	font-weight:normal;
+}
+a {
+	color:#5d5d5d;
+	text-decoration:none;
+}
+a:hover {
+	color:#c3ab51;
+	text-decoration:none;
+}
+.c {
+	clear:both;
+}
+/* H 标题样式
+-----------------------------------------------------------------------------------------------------*/
+h1 {
+	font-size:26px;
+}
+h2 {
+	font-size: 16px;
+	text-align:center;
+	color:#3f5d7c;
+	font-weight:bold;
+}
+h2 a {
+	color:#3f5d7c;
+}
+h2 a:hover {
+	color:#3f5d7c;
+}
+h3 {
+	font-size: 16px;
+}
+h4 {
+	font-size: 14px;
+}
+h6 {
+	font-size: 12px;
+}
+.c_red {
+	color: #cc3333;
+}
+.c_orage a {
+	color: #ff6600;
+}
+.c_orage a:hover {
+	color: #ff6600;
+}
+.c_yellow {
+	color: #ffff00;
+}
+.c_green a {
+	color: #669933;
+}
+.c_green a:hover {
+	color: #669933;
+}
+.c_blue {
+	color: #0066cc;
+}
+.c_purple {
+	color: #9900cc;
+}
+.c0 {
+	color: #000000;
+}
+.c3 {
+	color: #333333;
+}
+.c6 {
+	color: #666666;
+}
+.c9 {
+	color: #999999;
+}
+.cc {
+	color: #cccccc;
+}
+.cd {
+	color: #dddddd;
+}
+.ce {
+	color: #eeeeee;
+}
+.cf {
+	color: #ffffff;
+}
+.pad_0p {
+	padding: 0;
+}
+.pad_10p {
+	padding: 10px;
+}
+.pad_10p0p {
+	padding: 10px 0;
+}
+.pad_t10p {
+	padding-top: 10px;
+}
+.pad_r10p {
+	padding-right: 10px;
+}
+.pad_r20p {
+	padding-right: 20px;
+}
+.pad_b10p {
+	padding-bottom: 10px;
+}
+.pad_l10p {
+	padding-left: 10px;
+}
+/*翻页*/
+DIV.jogger {
+	PADDING-RIGHT: 2px;
+	PADDING-LEFT: 2px;
+	PADDING-BOTTOM: 2px;
+	MARGIN: 7px;
+	PADDING-TOP: 2px;
+	FONT-FAMILY: "Lucida Sans Unicode", "Lucida Grande", LucidaGrande, "Lucida Sans", Geneva, Verdana, sans-serif
+}
+DIV.jogger A {
+	PADDING-RIGHT: 0.64em;
+	PADDING-LEFT: 0.64em;
+	PADDING-BOTTOM: 0.43em;
+	MARGIN: 2px;
+	COLOR: #fff;
+	PADDING-TOP: 0.5em;
+	BACKGROUND-COLOR: #ff7282;
+	TEXT-DECORATION: none
+}
+DIV.jogger A:hover {
+	PADDING-RIGHT: 0.64em;
+	PADDING-LEFT: 0.64em;
+	PADDING-BOTTOM: 0.43em;
+	MARGIN: 2px;
+	COLOR: #fff;
+	PADDING-TOP: 0.5em;
+	BACKGROUND-COLOR: #de1818
+}
+DIV.jogger A:active {
+	PADDING-RIGHT: 0.64em;
+	PADDING-LEFT: 0.64em;
+	PADDING-BOTTOM: 0.43em;
+	MARGIN: 2px;
+	COLOR: #fff;
+	PADDING-TOP: 0.5em;
+	BACKGROUND-COLOR: #de1818
+}
+DIV.jogger SPAN.current {
+	PADDING-RIGHT: 0.64em;
+	PADDING-LEFT: 0.64em;
+	PADDING-BOTTOM: 0.43em;
+	MARGIN: 2px;
+	COLOR: #6d643c;
+	PADDING-TOP: 0.5em;
+	BACKGROUND-COLOR: #f6efcc
+}
+DIV.jogger SPAN.disabled {
+	DISPLAY: none
+}

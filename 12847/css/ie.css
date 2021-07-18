@@ -1,0 +1,5 @@
+/** IE pointer events */
+
+li.dropdown > .submenu-wrapper.no-pointer-events {
+    display : none;
+    }

@@ -1,0 +1,414 @@
+@charset "utf-8";
+.pos_rel {
+	position:relative;
+}
+.text-c {
+	text-align:center;
+}
+.al_left {
+	text-align: left!important;
+}
+.al_center {
+	text-align: center!important;
+}
+.al_right {
+	text-align: right!important;
+}
+.font_b {
+	font-weight: bold;
+}
+.font_del {
+	text-decoration: line-through;
+}
+.font12 {
+	font-size: 12px;
+}
+.font14 {
+	font-size: 14px;
+}
+.font16 {
+	font-size: 16px;
+}
+.font18 {
+	font-size: 18px;
+}
+.font20 {
+	font-size: 20px;
+}
+.font24 {
+	font-size: 24px;
+}
+.font48 {
+	font-size: 48px;
+}
+.font_grey {
+	color: #C3C3C3;
+}
+.font_dark {
+	color: #000;
+}
+.font_dark a {
+	color: #000;
+}
+.font_dark a:hover {
+	color: #FFBB31;
+}
+.font-rose {
+	color: #DD4957;
+}
+.font_red {
+	color: #FF0000;
+}
+.font_red a {
+	color: #FF0000;
+}
+.font_red a:hover {
+	color: #C60000;
+}
+.font_blue {
+	color: #45BDFF;
+}
+.font_blue a {
+	color: #45BDFF;
+}
+.font_blue a:hover {
+	color: #0093E1;
+}
+.font_yellow {
+	color: #FFBB32;
+}
+.font_yellow a {
+	color: #FFBB32;
+}
+.font_yellow a:hover {
+	color: #F9A800;
+}
+.font_orange {
+	color: #FF9346;
+}
+.font_orange a {
+	color: #FF9346;
+}
+.font_orange a:hover {
+	color: #FF7006;
+}
+.fl400 {
+	float: left;
+	width: 400px;
+}
+.fl-half {
+	float: left;
+	width:50%;
+}
+.pt15 {
+	padding-top: 15px;
+}
+.pt25 {
+	padding-top: 25px;
+}
+.plr15 {
+	padding-right: 15px;
+	padding-left: 15px;
+}
+.pd10 {
+	padding: 10px;
+}
+.pt50 {
+	padding-top:50px;
+}
+.ml15 {
+	margin-left: 15px;
+}
+.ml35 {
+	margin-left: 35px;
+}
+.mr10 {
+	margin-right: 10px;
+}
+.mt5 {
+	margin-top: 5px;
+}
+.mt15 {
+	margin-top: 15px;
+}
+.mt20 {
+	margin-top: 20px;
+}
+.mb5 {
+	margin-bottom: 5px;
+}
+.mb20 {
+	margin-bottom: 20px;
+}
+.btn1 {
+	background-image: url(../../images/btn1_bg.gif);
+	background-repeat: repeat-x;
+	background-position: left center;
+	height: 30px;
+	width: 130px;
+	border: 1px solid #EF9700;
+	font-size: 14px;
+	color: #FFF;
+	font-family: "微软雅黑";
+	cursor: pointer;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+}
+.btn1:active {
+	background-image: url(../../images/btn1_o_bg.gif);
+	background-repeat: repeat-x;
+	background-position: left center;
+}
+.btn2 {
+	height: 30px;
+	width: 130px;
+	border: 1px solid #EF9700;
+	font-size: 14px;
+	color: #F1A100;
+	font-family: "微软雅黑";
+	cursor: pointer;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	background-color: #FFEAC1;
+}
+.btn2:active {
+	background-color: #FFD78C;
+}
+.btn3 {
+	height: 34px;
+	font-size: 18px;
+	color: #FFF;
+	font-family: "微软雅黑";
+	cursor: pointer;
+	background-color: #FFBB31;
+	padding-right: 20px;
+	padding-left: 20px;
+	border: none;
+}
+.btn3:hover {
+	background-color: #FFB111;
+}
+.btn3.blue {
+	background-color: #008FDD;
+}
+.btn3.blue:hover {
+	background-color: #0085CC;
+}
+.btn3.red {
+	background-color: #FF300B;
+}
+.btn3.red:hover {
+	background-color: #EA2300;
+}
+.btn3.green {
+	background-color: #AADA1B;
+}
+.btn3.green:hover {
+	background-color: #9DC918;
+}
+.btn3.small {
+	height: 30px;
+	width: 60px;
+	font-size: 16px;
+	padding: 0px;
+}
+.btn4 {
+	height: 28px;
+	font-size: 12px;
+	font-family: "微软雅黑";
+	color: #7B7B7B;
+	cursor: pointer;
+	background-color: #EFEFEF;
+	border: 1px solid #DCDCDC;
+	width: 148px;
+	-webkit-box-shadow: 0 0 0 1px #fff inset;
+    -moz-box-shadow: 0 0 0 1px #fff inset;
+	box-shadow: 0 0 0 1px #fff inset;
+}
+.btn4:hover {
+	background-color: #EBEBEB;
+}
+
+.progress-bar {
+	background-color: #EEE;
+	font-size: 0;
+	height: 10px;
+	line-height: 0;
+	overflow: hidden;
+	width: 100%;
+}
+.progress-bar span.progress {
+	display: block;
+	font-size: 0;
+	height: 10px;
+	line-height: 0;
+	background-color: #FF8D01;
+}
+.progress-bar span.progress.blue {
+	background-color: #2985BF;
+}
+.progress-bar span.progress.green {
+	background-color: #95BD31;
+}
+table {
+}
+table.table1 {
+	width: 100%;
+}
+table.table1 th {
+	padding-top: 8px;
+	padding-right: 5px;
+	padding-bottom: 8px;
+	padding-left: 5px;
+	font-weight: normal;
+	text-align: right;
+}
+table.table1 td {
+	padding-top: 8px;
+	padding-right: 5px;
+	padding-bottom: 8px;
+	padding-left: 5px;
+}
+table.table2 {
+	width: 100%;
+}
+table.table2 th {
+	padding: 15px;
+	font-weight: normal;
+	text-align: right;
+	font-size: 14px;
+	vertical-align: top;
+}
+table.table2 td {
+	padding: 15px;
+	font-size: 14px;
+}
+table.table3 {
+	width: 100%;
+	border: 1px solid #BFBFBF;
+}
+table.table3 th {
+	padding: 8px;
+	font-weight: normal;
+	font-size: 14px;
+	border: 1px solid #BFBFBF;
+	background-color: #F5F5F5;
+	text-align: left;
+	color: #555;
+}
+table.table3 td {
+	padding: 8px;
+	font-size: 14px;
+	text-align: center;
+}
+table.table4 {
+	width: 100%;
+}
+table.table4 th {
+	padding: 8px;
+	font-weight: normal;
+	border: 1px solid #CCC;
+	background-color: #F5F5F5;
+	color: #555;
+}
+table.table4 td {
+	padding: 8px;
+	text-align: center;
+	border: 1px solid #CCC;
+}
+table.table5 {
+	width: 100%;
+	font-size: 14px;
+}
+table.table5 th {
+	padding: 10px;
+	text-align: right;
+	font-weight: normal;
+	color: #555;
+}
+table.table5 td {
+	padding: 10px;
+}
+table.table6 {
+	width: 100%;
+	border: 1px solid #CCC;
+	background-color: #FFF;
+}
+table.table6 th {
+	font-weight: normal;
+	color: #555;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+	padding-top: 10px;
+	padding-right: 5px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+}
+table.table6 td {
+	padding-top: 10px;
+	padding-right: 5px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+	text-align: center;
+}
+
+.input1 {
+	line-height: 28px;
+	height: 28px;
+	width: 220px;
+	padding-left: 2px;
+	padding-right: 2px;
+	border: 1px solid #DDD;
+}
+.input1:hover {
+	border: 1px solid #CCC;
+}
+.input1:focus {
+	border: 1px solid #FFBB31;
+}
+.textarea1 {
+    border: 1px solid #e9e9e9;
+    font-size: 12px;
+	font-family: "微软雅黑";
+    height: 60px;
+    line-height: 20px;
+    padding: 10px;
+	width:440px;
+}
+.textarea1:hover {
+	border: 1px solid #CCC;
+}
+.textarea1:focus {
+	border: 1px solid #FFBB31;
+}
+.select1 {
+	height:30px;
+	min-width:80px;
+	padding-right:5px;
+	border: 1px solid #DDD;
+}
+.select1:hover {
+	border: 1px solid #CCC;
+}
+.select1 option {
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+.w60 {
+	width: 60px;
+}
+.w100 {
+	width: 100px;
+}
+.w350 {
+	width: 350px;
+}
+.h30 {
+	height: 30px!important;
+}

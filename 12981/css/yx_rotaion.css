@@ -1,0 +1,87 @@
+@charset "utf-8";
+.yx-rotaion {
+	height: 435px;
+	width: 600px;
+	overflow: hidden;
+}
+.yx-rotaion-btn, .yx-rotaion-title, .yx-rotation-focus, .yx-rotation-t, .yx-rotaion-btn {
+	position: absolute
+}
+.yx-rotation-focus span, .yx-rotaion-btn span {
+	background: url(../images/ico.png) no-repeat;
+	display: block;
+}
+.yx-rotation-focus {
+	height: 10px;
+	line-height: 10px;
+	right: 50%;
+	bottom: 0;
+	z-index: 2;
+	margin-right: -35px;
+}
+.yx-rotation-focus span {
+	width: 10px;
+	height: 10px;
+	line-height: 10px;
+	float: left;
+	margin-left: 5px;
+	position: relative;
+	top: -10px;
+	cursor: pointer;
+	background-position: left -200px;
+	text-indent: -9999px;
+	-webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+.yx-rotaion-btn {
+	width: 100%;
+	height: 10px;
+	top: 50%;
+	margin-top: -45px;
+}
+.yx-rotaion-btn span {
+	width: 32px;
+	height: 95px;
+	cursor: pointer;
+	filter: alpha(opacity=10);
+	-moz-opacity: 0.1;
+	-khtml-opacity: 0.1;
+	opacity: 0.1;
+	position: relative
+}
+.yx-rotaion-btn .left_btn {
+	background-position: left top;
+	float: left;
+	left: 0px
+}
+.yx-rotaion-btn .right_btn {
+	background-position: left -95px;
+	float: right;
+	right: 0px
+}
+.yx-rotaion-btn span.hover {
+	filter: alpha(opacity=30);
+	-moz-opacity: 0.3;
+	-khtml-opacity: 0.3;
+	opacity: 0.3
+}
+.yx-rotation-focus span.hover {
+	background-position: -10px -200px
+}
+.rotaion_list {
+	height: 435px;
+	width: 600px;
+	overflow: hidden;
+}
+.rotaion_list li {
+	height: 435px;
+	width: 600px;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.rotaion_list li a {
+	display:block;
+	height: 435px;
+	width: 600px;
+}

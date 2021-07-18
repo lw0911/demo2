@@ -1,0 +1,502 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>文化传播公司企业网站模板</title>
+<meta name="keywords" content="文化传播,企业网站,模板下载" />
+<meta name="description" content="文化传播公司企业网站模板下载，单网页首页网页模板下载。" />
+<style type="text/css">
+
+
+/* news slider */
+a.aleft{background:url(images/arrow-left.jpg) #fff center center no-repeat;display:block;height:55px;width:55px;overflow:hidden;float:left;position:absolute; right:141px; top:-56px; border-left:1px solid #ccc;border-right:1px solid #ccc; }
+a.agrayleft{cursor:default;background:url(images/arrow-left1.jpg) #fff center center no-repeat;}
+a.aright{background:url(images/arrow-right.jpg) #fff center center no-repeat;display:block;height:55px;width:55px;overflow:hidden;float:left;position:absolute; right:85px; top:-56px;border-right:1px solid #ccc;}
+a.agrayright{cursor:default;background:url(images/arrow-right1.jpg) #fff center center no-repeat;}
+
+.scrolllist1{height:322px;position:relative;}
+.scrolllist1 .imglist_w{width:100%;height:322px;overflow:hidden;float:left;position:relative;/*必要元素*/}
+.scrolllist1 .imglist_w ul{width:20000px;position:absolute;left:0px;top:0px;}
+.scrolllist1 .imglist_w li{width:100%; height:160px; border-bottom:1px dotted #ccc;}
+.scrolllist1 .imglist_w li .rl{width:66px; height:86px; padding:37px 27px; float:left;}
+.scrolllist1 .imglist_w li .rl h1{width:66px; height:55px; background:#c51007; text-align:center; line-height:55px; color:#fff; border-bottom:1px dotted #fff; font-size:38px; font-family:Impact;}
+.scrolllist1 .imglist_w li .rl h2{width:66px; height:30px; background:#c51007; text-align:center; line-height:30px; color:#fff; font-size:16px;}
+.scrolllist1 .imglist_w li .nr { padding:10px; width:459px; height:140px; float:right;}
+.scrolllist1 .imglist_w li .nr h1{width:100%; height:35px; line-height:35px; font-size:16px; text-align:left; overflow:hidden; margin-bottom:10px; font-weight:bold;}
+.scrolllist1 .imglist_w li .nr h1 a { color:#c51007; text-decoration:none;}
+.scrolllist1 .imglist_w li .nr h1 a:hover { color:#3fb7d2; text-decoration:underline;}
+.scrolllist1 .imglist_w li .nr p { width:100%; height:95px; font-size:14px; color:#999; line-height:23px;}
+
+.scrolllist1 .imglist_w li a{color:#3366cc;text-decoration:none;float:left;}
+.scrolllist1 .imglist_w li a:hover img{filter:alpha(opacity=86);-moz-opacity:0.86;opacity:0.86;}
+.scrolllist1 .imglist_w li p{height:48px;line-height:24px;overflow:hidden;float:left;}
+
+#s2{width:599px;}
+#s2 .imglist_w{width:100%;}
+#s2 .imglist_w ul{height:20000px;width:100%;position:absolute;left:0px;top:0px;}
+</style>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-2.4.2.min.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=2342142432424243&v=1.1&services=true"></script>
+<script type="text/javascript">
+var xx5 = jQuery.noConflict();
+xx5(document).ready(function(){
+	// 切换视频
+	xx5(".video-list li").click(function(){
+		var obj = xx5(this);
+		var video_id = obj.attr("video");
+		var path = obj.attr("id");
+		var vid = obj.attr("vid");
+		xx5(".js_videoCon").hide();
+		xx5("#js_videoCon_"+vid).show();
+		obj.addClass("now").siblings().removeClass("now");
+	});
+});
+</script> 
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/owl.carousel.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+<script type="text/javascript">
+//--顶部幻灯片--
+var ad = jQuery.noConflict();
+ad(function(){
+	ad('#owl-demo').owlCarousel({
+		items: 1,
+		navigation: true,
+		navigationText: ["上一个","下一个"],
+		autoPlay: true,
+		stopOnHover: true
+	}).hover(function(){
+		ad('.owl-buttons').show();
+	}, function(){
+		ad('.owl-buttons').hide();
+	});
+});
+
+//--走马灯--
+var bm = jQuery.noConflict();
+bm(function(){
+    //默认状态下左右滚动
+    bm("#s1").xslider({
+        unitdisplayed:4,//可视的单位个数 必需项
+        movelength:1,//要移动的单位个数 必需项
+        unitlen:288,//移动的单位或宽度  默认查找li的尺寸；
+        autoscroll:3000//自动移动间隔时间，默认null不自动移动
+		
+    });
+})
+//服务项目遮罩层
+var zz = jQuery.noConflict();
+zz(document).ready(function(){
+zz("#service ul li").hover(function(){zz(this).find(".zz").show()},function(){zz(this).find(".zz").hide()});
+})
+//站内动态滚屏
+var news = jQuery.noConflict();
+	news(function(){
+		//设置上下滚动
+		news("#s2").xslider({
+			unitdisplayed:2,
+			movelength:1,
+			dir:"V",
+			unitlen:161,
+			autoscroll:2000
+		});
+	})
+</script>
+</head>
+<!--/************************************************************
+ *																*
+ * 						      							*
+ *                        						*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+**************************************************************-->
+<body>
+<!--top-->
+<div id="top-h35">
+	<div class="w1200">
+    	<span class="txt-l">开业庆典、公司年会、商务会议、展会策划、文艺演出.....首选服务商！</span>
+        <span class="txt-r">业务专线：88888888888&nbsp;&nbsp; 11111111111&nbsp;&nbsp;QQ:<a href="#">888888888</a>&nbsp;&nbsp;<a href="#">11111111</a></span>
+    </div>
+</div>
+<!--menu-->
+<div id="top-h100" class="clearfix">
+	<div class="logo400"><img src="images/logo.png"></div>
+    <ul>
+        <li><a href="#">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+        <li><a href="#">服务项目</a></li>
+        <li><a href="#">关于我们</a></li>
+        <li><a href="#">团队介绍</a></li>
+        <li><a href="#">成功案例</a></li>
+        <li><a href="#">联系我们</a></li>
+    </ul>
+</div>
+<!--slider-->
+<div id="owl-demo" class="owl-carousel">
+	<a class="item" href="#" target="_blank"><img src="images/bg-top.jpg"alt=""><b></b><span>年会嘉年华</span></a>
+	<a class="item" href="#" target="_blank"><img src="images/bg-top-tow.jpg"alt=""><b></b><span>婚宴晚会</span></a>
+</div>
+<!--service-->
+<div class="title-box">
+	服务项目
+	<div class="yd"></div>
+</div>
+<div id="service">
+	<ul>
+    	<li>
+        	<i></i>
+            <a href="#">
+                <img src="images/service01.jpg">
+                <p>礼仪庆典</p>
+                <div class="zz"></div>
+            </a>
+        </li>
+    	<li>
+        	<i></i>
+            <a href="#">
+                <img src="images/service01.jpg">
+                <p>商务会议</p>
+                <div class="zz"></div>
+            </a>
+        </li>
+    	<li>
+        	<i></i>
+            <a href="#">
+                <img src="images/service01.jpg">
+                <p>文艺演出</p>
+                <div class="zz"></div>
+            </a>
+        </li>
+    	<li>
+        	<i></i>
+            <a href="#">
+                <img src="images/service01.jpg">
+                <p>展览展示</p>
+                <div class="zz"></div>
+            </a>
+        </li>
+    	<li>
+        	<i></i>
+            <a href="#">
+                <img src="images/service01.jpg">
+                <p>设备租赁</p>
+                <div class="zz"></div>
+            </a>
+        </li>
+    	<li>
+        	<i></i>
+            <a href="#">
+                <img src="images/service01.jpg">
+                <p>品牌推广</p>
+                <div class="zz"></div>
+            </a>
+        </li>
+	</ul>
+</div>
+<!--case-->
+<div class="title-box">
+	成功案例
+	<div class="yd"></div>
+</div>
+<div class="videobox">
+	<div class="video-img">
+		<embed id="js_videoCon_1" class="js_videoCon"   src="http://player.youku.com/player.php/sid/XNTMyNzE2ODk2/v.swf" allowFullScreen="true" quality="high" width="1198" height="498" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+		<embed id="js_videoCon_2" class="js_videoCon" style="display:none"  src="http://player.youku.com/player.php/sid/XNTMyNzM4MzA4/v.swf" allowFullScreen="true" quality="high" width="1198" height="498" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+		<embed id="js_videoCon_3" class="js_videoCon" style="display:none"  src="http://player.youku.com/player.php/sid/XNTMyNzQ1MjQw/v.swf" allowFullScreen="true" quality="high" width="1198" height="498" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+		<embed id="js_videoCon_4" class="js_videoCon" style="display:none"  src="http://player.youku.com/player.php/sid/XNTMyODE3NTU2/v.swf" allowFullScreen="true" quality="high" width="1198" height="498" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+	</div>
+	<div class="video-list">
+		<ul>
+			<li class="now" id="http://player.youku.com/player.php/sid/XNTMyNzE2ODk2/v.swf" video="1" vid="1">
+				<img src="images/video_1.jpg" width="160" height="120">
+				<img src="images/icon-video.png" class="icon-video" style="opacity:1;">
+			</li>
+			<li id="http://player.youku.com/player.php/sid/XNTMyNzM4MzA4/v.swf" video="2" vid="2">
+				<img src="images/video_2.jpg" width="160" height="120">
+				<img src="images/icon-video.png" class="icon-video" style="opacity:1;">
+			</li>
+			<li id="http://player.youku.com/player.php/sid/XNTMyNzQ1MjQw/v.swf" video="3" vid="3">
+				<img src="images/video_3.jpg" width="160" height="120">
+				<img src="images/icon-video.png" class="icon-video" style="opacity:1;">
+			</li>
+			<li id="http://player.youku.com/player.php/sid/XNTMyODE3NTU2/v.swf" video="4" vid="4">
+				<img src="images/video_4.jpg" width="160" height="120">
+				<img src="images/icon-video.png" class="icon-video" style="opacity:1;">
+			</li>
+            <li id="http://player.youku.com/player.php/sid/XNTMyNzQ1MjQw/v.swf" video="3" vid="3">
+				<img src="images/video_5.jpg" width="160" height="120">
+				<img src="images/icon-video.png" class="icon-video" style="opacity:1;">
+			</li>
+			<li id="http://player.youku.com/player.php/sid/XNTMyODE3NTU2/v.swf" video="4" vid="4">
+				<img src="images/video_6.jpg" width="160" height="120">
+				<img src="images/icon-video.png" class="icon-video" style="opacity:1;">
+			</li>
+		</ul>
+	</div>
+</div>
+<!--case photo-->
+<div id="cass1">
+    <div class="title-box">
+        案例图册
+        <div class="yd"></div>
+    </div>
+    <div class="photo1">
+        <div class="scrolllist" id="s1">
+           <a class="abtn aleft" href="#left" title="左移" style=" position:relative; top:0; left:0; border:none;"></a>
+           <div class="imglist_w">
+                <ul class="imglist_w">
+                    <li>
+                       <a target="_blank" href="#" title=""><img width="233" height="175" alt="" src="images/photo.jpg"/></a>
+                    </li>
+                    <li>
+                       <a target="_blank" href="#" title=""><img width="233" height="175" alt="" src="images/photo.jpg"/></a>
+                    </li>
+                    <li>
+                       <a target="_blank" href="#" title=""><img width="233" height="175" alt="" src="images/photo.jpg"/></a>
+                    </li>
+                    <li>
+                       <a target="_blank" href="#" title=""><img width="233" height="175" alt="" src="images/photo.jpg"/></a>
+                    </li>
+                    <li>
+                       <a target="_blank" href="#" title=""><img width="233" height="175" alt="" src="images/photo.jpg"/></a>
+                    </li>
+                    <li>
+                       <a target="_blank" href="#" title=""><img width="233" height="175" alt="" src="images/photo.jpg"/></a>
+                    </li>
+                 </ul>
+            </div>
+            <a class="abtn aright" href="#right" title="右移" style=" position:relative; top:0; left:0; border:none;"></a>
+        </div>        
+    </div>
+    <a href="#" class="more"><span style="padding:5px 10px; background:#3fb7d2;">查看更多</span></a>
+</div>
+<!--about us-->
+<div class="title-box">
+	关于我们
+	<div class="yd"></div>
+</div>
+<div id="about">
+	<div class="l599">
+    	<h1>公司简介<span>[ ABOUT US ]</span></h1>
+        <div class="wz">
+        	<img src="images/office.jpg">
+            <p>东莞市XXXXX传播有限公司是一家集策划、 设计、组织、执行大型活动一站式服务的综合性公 司，成立至今，成功地为各大企业及政府单位提供完美的服务，得到了广大客户的高度评价及业界内同行的认可。</p>
+            <p>服务项目：各种礼仪庆典活动、商务会议、舞蹈设计、灯光音响、礼仪模特、品牌推.....</p>
+        </div>
+        <h2>───&nbsp;&nbsp;&nbsp;专业 ▪ 专注 ▪ 诚信 ▪ 共赢&nbsp;&nbsp;&nbsp;───</h2>
+    </div>
+    <div class="r599">
+    	<div class="tit">
+        	<h1>站内动态<span>[ NEWS ]</span></h1>
+            <div class="more"><a href="#">更多</a></div>
+        </div>
+	<div class="scrolllist1" id="s2">
+		<a class="aleft" href="#left" title="上移" style="background-position:center;"></a>
+		<div class="imglist_w">
+			<ul class="imglist">
+				<li>
+                	<div class="rl">
+                    	<h1>19</h1>
+                        <h2>Mar</h2>
+                    </div>
+                    <div class="nr">
+                    	<h1><a href="#">东莞市XXXXX传播有限公司是一家集策划、 设计、组织、执行大型活动一站式</a></h1>
+                        <p>东莞市XXXXX传播有限公司是一家集策划、 设计、组织、执行大型活动一站式东莞市XXXXX传播有限公司是一家集策划、 设计、组织、执行大型活动一站式东莞市XXXXX传播有限公司是一家集策划、 设计、组织、执行大型活动一站式东莞市XXXXX传播有限公司是一家集策划、 设计、组织、执行大型活动一站式东莞市XXXXX传播有限公司是一家集策划、 设计、组织、执行大型活动一站式东莞市XXXXX传播有限公司是一家集策划、 设计、组织、执行大型活动一站式东莞市XXXXX传播有限公司是一家集策划、 设计、组织、执行大型活动一站式</p>
+                    </div>
+                </li>
+				<li>
+                	<div class="rl">
+                    	<h1>19</h1>
+                        <h2>Mar</h2>
+                    </div>
+                    <div class="nr">
+                    	<h1><a href="#">东莞市XXXXX传播有限公司是一家集策划、 设计、组织、执行大型活动一站式</a></h1>
+                        <p>东莞市XXXXX传播有限公司是一家集策划、 设计、组织、执行大型活动一站式东莞市XXXXX传播有限公司是一家集策划、 设计、组织、执行大型活动一站式东莞市XXXXX传播有限公司是一家集策划、 设计、组织、执行大型活动一站式东莞市XXXXX传播有限公司是一家集策划、 设计、组织、执行大型活动一站式东莞市XXXXX传播有限公司是一家集策划、 设计、组织、执行大型活动一站式东莞市XXXXX传播有限公司是一家集策划、 设计、组织、执行大型活动一站式东莞市XXXXX传播有限公司是一家集策划、 设计、组织、执行大型活动一站式</p>
+                    </div>
+                </li>
+				<li>
+                	<div class="rl">
+                    	<h1>19</h1>
+                        <h2>Mar</h2>
+                    </div>
+                    <div class="nr">
+                    	<h1><a href="#">东莞市XXXXX传播有限公司是一家集策划、 设计、组织、执行大型活动一站式</a></h1>
+                        <p>东莞市XXXXX传播有限公司是一家集策划、 设计、组织、执行大型活动一站式东莞市XXXXX传播有限公司是一家集策划、 设计、组织、执行大型活动一站式东莞市XXXXX传播有限公司是一家集策划、 设计、组织、执行大型活动一站式东莞市XXXXX传播有限公司是一家集策划、 设计、组织、执行大型活动一站式东莞市XXXXX传播有限公司是一家集策划、 设计、组织、执行大型活动一站式东莞市XXXXX传播有限公司是一家集策划、 设计、组织、执行大型活动一站式东莞市XXXXX传播有限公司是一家集策划、 设计、组织、执行大型活动一站式</p>
+                    </div>
+                </li>
+				<li>
+                	<div class="rl">
+                    	<h1>19</h1>
+                        <h2>Mar</h2>
+                    </div>
+                    <div class="nr">
+                    	<h1><a href="#">东莞市XXXXX传播有限公司是一家集策划、 设计、组织、执行大型活动一站式</a></h1>
+                        <p>东莞市XXXXX传播有限公司是一家集策划、 设计、组织、执行大型活动一站式东莞市XXXXX传播有限公司是一家集策划、 设计、组织、执行大型活动一站式东莞市XXXXX传播有限公司是一家集策划、 设计、组织、执行大型活动一站式东莞市XXXXX传播有限公司是一家集策划、 设计、组织、执行大型活动一站式东莞市XXXXX传播有限公司是一家集策划、 设计、组织、执行大型活动一站式东莞市XXXXX传播有限公司是一家集策划、 设计、组织、执行大型活动一站式东莞市XXXXX传播有限公司是一家集策划、 设计、组织、执行大型活动一站式</p>
+                    </div>
+                </li>
+			</ul><!--imglist end-->
+		</div>
+		<a class="aright" href="#right" title="下移" style="background-position:center;"></a>
+	</div><!--scrolllist1 end-->
+    </div>
+</div>
+
+<!--team-->
+<div class="title-box">
+	团队介绍
+	<div class="yd"></div>
+</div>
+<div id="team" class="clearfix">
+	<ul>
+    	<li>
+        	<h1 class="team-bg1">团队介绍</h1>
+            <p class="team-bg1a">
+            	<img src="images/photo1.jpg">
+                各种礼仪庆典活动、商务会议、舞美设 计、灯光音响、礼仪模特、品牌推广、 展览展示、设备租赁及各种演出服务。 展览展示、设备租赁及演出服务
+            </p>
+            <div class="more team-bg1">
+            	<div class="v team-bg1b"></div>
+                <a href="#">Learn More</a>
+            </div>
+        </li>
+    	<li>
+        	<h1 class="team-bg2">团队介绍</h1>
+            <p class="team-bg2a">
+            	<img src="images/photo1.jpg">
+                各种礼仪庆典活动、商务会议、舞美设 计、灯光音响、礼仪模特、品牌推广、 展览展示、设备租赁及各种演出服务。 展览展示、设备租赁及演出服务
+            </p>
+            <div class="more team-bg2">
+            	<div class="v team-bg2b"></div>
+                <a href="#">Learn More</a>
+            </div>
+        </li>
+    	<li>
+        	<h1 class="team-bg3">团队介绍</h1>
+            <p class="team-bg3a">
+            	<img src="images/photo1.jpg">
+                各种礼仪庆典活动、商务会议、舞美设 计、灯光音响、礼仪模特、品牌推广、 展览展示、设备租赁及各种演出服务。 展览展示、设备租赁及演出服务
+            </p>
+            <div class="more team-bg3">
+            	<div class="v team-bg3b"></div>
+                <a href="#">Learn More</a>
+            </div>
+        </li>
+    	<li>
+        	<h1 class="team-bg4">团队介绍</h1>
+            <p class="team-bg4a">
+            	<img src="images/photo1.jpg">
+                各种礼仪庆典活动、商务会议、舞美设 计、灯光音响、礼仪模特、品牌推广、 展览展示、设备租赁及各种演出服务。 展览展示、设备租赁及演出服务
+            </p>
+            <div class="more team-bg4">
+            	<div class="v team-bg4b"></div>
+                <a href="#">Learn More</a>
+            </div>
+        </li>
+    </ul>
+</div>
+<!--cou-->
+<div class="title-box">
+	联系我们
+	<div class="yd"></div>
+</div>
+<div id="map1">
+    <div class="width853">
+        <div style="width:842px;height:427px;" id="map"></div>
+   <script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+      createMap();//创建地图
+      setMapEvent();//设置地图事件
+      addMapControl();//向地图添加控件
+      addMapOverlay();//向地图添加覆盖物
+    }
+    function createMap(){ 
+      map = new BMap.Map("map"); 
+      map.centerAndZoom(new BMap.Point(113.765922,23.020637),17);
+    }
+    function setMapEvent(){
+      map.enableScrollWheelZoom();
+      map.enableKeyboard();
+      map.enableDragging();
+      map.enableDoubleClickZoom()
+    }
+    function addClickHandler(target,window){
+      target.addEventListener("click",function(){
+        target.openInfoWindow(window);
+      });
+    }
+    function addMapOverlay(){
+      var markers = [
+        {content:"XX文化传播有限公司",title:"XX文化传播有限公司",imageOffset: {width:0,height:3},position:{lat:23.020637,lng:113.765922}}
+      ];
+      for(var index = 0; index < markers.length; index++ ){
+        var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+        var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+          imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+        })});
+        var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+        var opts = {
+          width: 200,
+          title: markers[index].title,
+          enableMessage: false
+        };
+        var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+        marker.setLabel(label);
+        addClickHandler(marker,infoWindow);
+        map.addOverlay(marker);
+      };
+    }
+    //向地图添加控件
+    function addMapControl(){
+      var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+      scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+      map.addControl(scaleControl);
+      var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+      map.addControl(navControl);
+      var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});
+      map.addControl(overviewControl);
+    }
+    var map;
+      initMap();
+  </script>
+    </div>
+    <div class="right327_1">
+       <div class="yeiiow1">
+           <div class="yun1" style="background:url(images/logo1.png) #fff center center no-repeat;"></div>
+           <div class="style1">
+             <h1>XXXX文化传播</h1>
+             <h2>地址：×××</h2>
+             <h2>电话：×××&nbsp;&nbsp;×××&nbsp;&nbsp;1111111111111</h2>
+             <h2><a href="#">邮箱：×××</a></h2>
+             <h2><a href="#">QQ：×××&nbsp;&nbsp;111111111</a></h2>
+           </div>
+       </div>
+    </div>
+</div>
+<!-- footer -->
+<div id="footer-h10"></div>
+<div id="footer-bg" style=" background:url(images/bottom1.jpg);">
+	<div class="box1200">
+    	<div class="logo" style=" background:url(images/logo1.png) center center no-repeat;"></div>
+        <div class="txt">
+            <h1>东莞市XXXX文化传播有限公司</h1>
+          
+            <h3>───   专业 ▪ 专注 ▪ 诚信 ▪ 共赢   ───</h3>
+        </div>
+        <ul>
+            <li><a href="#">首&nbsp;&nbsp;页</a></li>
+            <li><a href="#">服务项目</a></li>
+            <li><a href="#">关于我们</a></li>
+            <li><a href="#">团队介绍</a></li>
+            <li><a href="#">成功案例</a></li>
+            <li><a href="#">联系我们</a></li>
+        </ul>
+        <div class="qr">
+        	
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

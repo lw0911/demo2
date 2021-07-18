@@ -1,0 +1,41 @@
+﻿/****************************************************************
+ *																*		
+ * 						      							*
+ *                        							*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+****************************************************************/
+/*服务页面*/
+.service_bd{height:248px;}
+/*服务栏目*/
+body{background:#fff}
+.service_bd{
+	position:relative;overflow:hidden;
+	}
+.service_arrow{
+	position:absolute;bottom:1px;left:78px;width:41px;height:21px;background:url(../images/ssj.gif) no-repeat;
+	}
+.service_main{
+	position:relative;overflow:hidden; height:460px; 
+	}
+.service_main .prev, .service_main .next{
+	position:absolute;top:250px;z-index:100;width:48px;height:48px;
+	
+	}
+.service_main .prev{
+	left:0; width:50px; height:50px; background:url(../images/left.png) no-repeat left top;
+
+	}
+.service_main .prev:hover{
+	left:0;background-position:-96px -255px; background:url(../images/left.png) no-repeat right top;
+	}
+.service_main .next{
+	right:0;width:50px; height:50px;background:url(../images/rigt.png) no-repeat left top;
+	}
+.service_main .next:hover{
+	right:0;background-position:-144px -255px;background:url(../images/rigt.png) no-repeat right top;
+	}
+.service_main .item{
+	position:absolute;top:0;left:-100%;z-index:1;width:100%;padding-top:7px;  
+	overflow:hidden;
+	 }

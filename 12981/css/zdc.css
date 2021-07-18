@@ -1,0 +1,25 @@
+.select_list1 li {
+	line-height: 24px;
+	height: 24px;
+	padding-right: 8px;
+	padding-left: 8px;
+	border: 1px solid #BFBFBF;
+	float: left;
+	margin-right: 5px;
+	cursor: pointer;
+}
+.select_list1 li.dashed {
+	border: 1px dashed #BFBFBF;
+}
+.select_list1 li.dashed:hover {
+	border: 1px dashed #BFBFBF;
+}
+.select_list1 li.dashed.active {
+	border: 1px dashed #BFBFBF;
+}
+.select_list1 li:hover {
+	border: 1px solid #FFBB31;
+}
+.select_list1 li.active {
+	border: 1px solid #FFBB31;
+}

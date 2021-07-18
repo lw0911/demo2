@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+.tabshow {
+}
+.tabshow .tabList {
+	height: 50px;
+	/*margin-bottom:20px;*/
+}
+.tabshow .tabList li {
+	height: 50px;
+	width: 292px;
+	float: left;
+	cursor: pointer;
+	text-align: center;
+	line-height: 50px;
+	background-color: #FD5521;
+	font-size: 16px;
+	color: #FFF;
+	margin-right: 1px;
+	margin-left: 1px;
+}
+.tabshow .tabList li.on {
+	background-color: #E63502;
+	font-weight: bold;
+}
+.tabshow .tabcon {
+	display: none;
+	min-height: 100px;
+	overflow: hidden;
+	padding: 10px;	/*border: 1px solid #DDD;*/
+}
+
+.tabshow.w1 .tabList li {
+	width:262.5px;
+}
