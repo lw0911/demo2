@@ -1,0 +1,934 @@
+<!doctype html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>
+             html5+jQuery全套大气分期购物类电子商城模板源码
+        </title>
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="author" content="大连东明汇科技有限公司">
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link href="css/content.css" rel="stylesheet" type="text/css" />
+        <link href="css/zdc.css" rel="stylesheet" type="text/css" />
+        <link href="css/common3.css" rel="stylesheet" type="text/css" />
+        <link href="css/datetimepicker.css" rel="stylesheet" type="text/css" />
+        <script src="js/jquery.min.js" type="text/javascript">
+        </script>
+        <link href="css/form.css" rel="stylesheet" type="text/css" />
+        <link href="css/datetimepicker.css" rel="stylesheet" type="text/css" />
+        <link href="css/datetimepicker.css" rel="stylesheet" type="text/css" />
+        <style type="text/css">
+            .btn-form{ display: inline} .tabshow { } .tabshow .tabList { height: 50px;
+            margin-bottom: 15px; } .tabshow .tabList li { width: 250px; float: left;
+            cursor: pointer; text-align: center; line-height: 50px; /*border-bottom:
+            2px solid #fd5521;*/ font-size: 16px; color:#333; } .tabshow .tabList li.on
+            { height: 48px; border-bottom: 2px solid #fd5521; } .tabshow .tabcon {
+            display: none; min-height: 100px; overflow: hidden; }
+        </style>
+        <!--[if IE]>
+            <script src="js/html5shiv.min.js" type="text/javascript">
+            </script>
+        <![endif]-->
+    </head>
+    
+    <body>
+        <div id="wrap" class="clearfix">
+            <header id="header">
+                <div class="header_top">
+                    <div class="row clearfix">
+                        <div class="head_fl">
+                            <span class="fl">
+                                <!--<span></span> > <a href="changecity.html" class="head_city">切换城市</a>-->
+                                Hi,欢迎进入×××分期2.0
+                                <a href="login.html" class="ml15">
+                                    请登录
+                                </a>
+                                　|　
+                                <a href="register.html">
+                                    免费注册
+                                </a>
+                            </span>
+                            <div class="head_gz">
+                                <span class="fl">
+                                    关注我们：
+                                </span>
+                                <a href="#" class="weibo">
+                                    <div class="head_gz_box text-c">
+                                        <i class="head_gz_i">
+                                        </i>
+                                        <img src="images/QR_weibo.gif" width="88" height="88" />
+                                        <br />
+                                        关注×××分期
+                                        <br />
+                                        官方微博
+                                    </div>
+                                </a>
+                                <a href="javascript:void(0)" class="weixin">
+                                    <div class="head_gz_box wx text-c">
+                                        <i class="head_gz_i">
+                                        </i>
+                                        <div class="fl">
+                                            <img src="images/QR_weixin2.gif" width="88" height="88" />
+                                            <br />
+                                            关注×××分期
+                                            <br />
+                                            商城微信
+                                        </div>
+                                        <div class="fr">
+                                            <img src="images/QR_weixin3.gif" width="88" height="88" />
+                                            <br />
+                                            关注×××分期
+                                            <br />
+                                            官方微信
+                                        </div>
+                                        <div class="clear">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="fr">
+                            <a href="login.html">
+                                我的×××
+                            </a>
+                            　|　
+                            <!-- <a href="/parttime.html">×××兼职</a>　|　-->
+                            <a href="register.html">
+                                怎样分期
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="logo">
+                        <a href="./">
+                            <img src="images/logo.png" alt="×××分期 - 校园旅游消费金融服务商">
+                        </a>
+                    </div>
+                    <div class="fr">
+                        <div class="head_search">
+                            <input id="sousuozhi" type="text" class="head_form" value="" placeholder="输入关键字"
+                            onkeydown="if(event.keyCode==13){sousuo();}" />
+                            <button type="button" class="head_search_btn" id="sousuo">
+                            </button>
+                        </div>
+                        <a href="#" title="步步高 VIVO X6">
+                            步步高 VIVO X6
+                        </a>
+                        |
+                        <a href="#" title="华为 Mate8">
+                            华为 Mate8
+                        </a>
+                        |
+                        <a href="#" title="美图 meitu M4">
+                            美图 meitu M4
+                        </a>
+                        |
+                        <a href="#" title="苹果 iPhone6s">
+                            苹果 iPhone6s
+                        </a>
+                    </div>
+                    <div class="clear">
+                    </div>
+                </div>
+                <nav id="navi">
+                    <aside class="aside">
+                        <div class="aside_title">
+                            商品服务分类
+                        </div>
+                        <ul class="aside_list">
+                            <li>
+                                <a href="travel.html" class="tra">
+                                    旅　行
+                                    <br>
+                                    <span class="en">
+                                        Travel
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="city.html" class="edu">
+                                    教　育
+                                    <br>
+                                    <span class="en">
+                                        Education
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="limit.html" class="spe">
+                                    特　卖
+                                    <br>
+                                    <span class="en">
+                                        special offer
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+                    <ul id="nav">
+                        <li>
+                            <a href="index.html">
+                                首页
+                            </a>
+                        </li>
+                        <li>
+                            <a href="limit.html">
+                                限时特卖
+                            </a>
+                        </li>
+                        <!--<li><a href="/city.html" >教育分期</a></li>-->
+                        <li>
+                            <a href="travel.html">
+                                ×××旅行
+                            </a>
+                        </li>
+                        <li>
+                            <a href="allweb.html">
+                                全网分期
+                            </a>
+                        </li>
+                        <li>
+                            <a href="jubanzhuanxian.html" class="active">
+                                ×××专线
+                            </a>
+                        </li>
+                        <li>
+                            <a href="baitiao.html">
+                                ×××白条
+                            </a>
+                        </li>
+                        <li>
+                            <a href="juban_apply.html">
+                                ×××召集令
+                            </a>
+                        </li>
+                        <div class="clear">
+                        </div>
+                    </ul>
+                    <div class="tel">
+                        400-8383-517
+                    </div>
+                </nav>
+            </header>
+            <section id="content" class="pt15">
+                <h3 class="flight_title">
+                    <i class="flight_icon">
+                    </i>
+                    ×××专线
+                </h3>
+                <div class="indent">
+                    <div class="allweb_box">
+                        <table class="table1 mb20">
+                            <tr>
+                                <th width="10%">
+                                    旅行社/网站名称：
+                                </th>
+                                <td width="100%">
+                                    <input name="name" type="text" class="input1 w350" id="lxs" />
+                                </td>
+                                &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    产品名称：
+                                </th>
+                                <td width="100%">
+                                    <input name="name" type="text" class="input1 w350" id="cpmc" />
+                                </td>
+                                &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    产品链接：
+                                </th>
+                                <td width="100%">
+                                    <input name="name" type="text" class="input1 w350" id="chanpinlianjie"
+                                    />
+                                    <span class="font_grey ml15">
+                                        请填写正确购买网址
+                                    </span>
+                                </td>
+                                &nbsp;
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    产品价格：
+                                </th>
+                                <td colspan="3">
+                                    <input id="jiagejieguo" type="text" class="input1 w100" onKeyUp="value=value.replace(/[^\d.]/g,'');shuxing1(this.value)"
+                                    onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[^\d]/g,''))"
+                                    />
+                                    元
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    出发日期：
+                                </th>
+                                <td colspan="3">
+                                    <input id="datetimepicker3" type="text" class="input1 w100" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    首付比例：
+                                </th>
+                                <td width="20%">
+                                    <div class="sel_wrap" style="width:620px;">
+                                        <select class="select" id="sfbl" onChange="sfbl()">
+                                            <option value="0">
+                                                零首付
+                                            </option>
+                                            <option value="0.1">
+                                                10%
+                                            </option>
+                                            <option value="0.2">
+                                                20%
+                                            </option>
+                                            <option value="0.3">
+                                                30%
+                                            </option>
+                                            <option value="0.4">
+                                                40%
+                                            </option>
+                                            <option value="0.5">
+                                                50%
+                                            </option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    总价：
+                                </th>
+                                <td colspan="3">
+                                    <span id="zongjia">
+                                        0
+                                    </span>
+                                    元
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    分期数：
+                                </th>
+                                <td colspan="3">
+                                    <ul class="select_list1">
+                                        <li>
+                                            3个月
+                                        </li>
+                                        <li>
+                                            6个月
+                                        </li>
+                                        <li>
+                                            9个月
+                                        </li>
+                                        <li>
+                                            12个月
+                                        </li>
+                                        <li>
+                                            15个月
+                                        </li>
+                                        <li>
+                                            18个月
+                                        </li>
+                                        <li>
+                                            24个月
+                                        </li>
+                                        <div class="clear">
+                                        </div>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="font_orange">
+                                    月供：
+                                </th>
+                                <td colspan="3" class="font_orange" id="yuegongjieguo">
+                                </td>
+                            </tr>
+                            <tr>
+                                <tr>
+                                    <th class="font_orange">
+                                        验证码：
+                                    </th>
+                                    <td colspan="3" class="font_orange">
+                                        <input name="name" type="text" class="input1 w100" id="yanzhengma" />
+                                        &nbsp;&nbsp;
+                                        <img src='images/www.jpg' id="imagess" onclick=show() style="display:inline;cursor:pointer;">
+                                    </td>
+                                </tr>
+                        </table>
+                    </div>
+                    <div class="fl pt25">
+                        <img src="images/jbzx_pic.gif" width="377" height="366">
+                    </div>
+                    <div class="clear">
+                    </div>
+                    <div id="form">
+                        <!--<h3 class="form-title">请填写申请人信息</h3>-->
+                        <div class="tabshow">
+                            <ul class="tabList clearfix">
+                                <li>
+                                    学生申请人填写信息
+                                </li>
+                                <li>
+                                    白领申请人填写信息
+                                </li>
+                            </ul>
+                            <div class="tabcon">
+                                <table class="table-form">
+                                    <tr>
+                                        <th width="18%">
+                                            姓名
+                                        </th>
+                                        <td>
+                                            <input name="name" id="zhongwenxingming" type="text" class="input1" value=""
+                                            />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            电话号码
+                                        </th>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th width="18%">
+                                            身份证号
+                                        </th>
+                                        <td>
+                                            <input name="sfzh" id="shenfenzheng" type="text" class="input1" value=""
+                                            />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            学校名称
+                                        </th>
+                                        <td>
+                                            <select id="province" class="s2 mb5" style="width:80px; height:30px; border:1px #ccc solid;">
+                                                <option value="">
+                                                    请选择
+                                                </option>
+                                            </select>
+                                            <select id="city" class="s2 mb5" style="width:80px;  height:30px; border:1px #ccc solid;">
+                                                <option value="">
+                                                    请选择
+                                                </option>
+                                            </select>
+                                            <select id="schoolname" class="s2 mb5" style="width:200px;  height:30px; border:1px #ccc solid;">
+                                                <option value="">
+                                                    请选择
+                                                </option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            正在读几年级
+                                        </th>
+                                        <td>
+                                            <select class="select1" name="education">
+                                                <option value="">
+                                                    请选择
+                                                </option>
+                                                <option value="专科一年级">
+                                                    专科一年级
+                                                </option>
+                                                <option value="专科二年级">
+                                                    专科二年级
+                                                </option>
+                                                <option value="专科三年级">
+                                                    专科三年级
+                                                </option>
+                                                <option value="本科一年级">
+                                                    本科一年级
+                                                </option>
+                                                <option value="本科二年级">
+                                                    本科二年级
+                                                </option>
+                                                <option value="本科三年级">
+                                                    本科三年级
+                                                </option>
+                                                <option value="本科四年级">
+                                                    本科四年级
+                                                </option>
+                                                <option value="本科五年级">
+                                                    本科五年级
+                                                </option>
+                                                <option value="硕士">
+                                                    硕士
+                                                </option>
+                                                <option value="博士">
+                                                    博士
+                                                </option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            收货地址
+                                        </th>
+                                        <td>
+                                            <input id="receiveaddress" name="receiveaddr" type="text" class="input1 l1"
+                                            value="" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            校区推荐码（选填）
+                                        </th>
+                                        <td>
+                                            <input id="recommandcode" maxlength="11" name="orangekey" type="text"
+                                            class="input1" value="" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                <button type="button" class="btn-form" onClick="javascript:location.href='login.html';">
+                                    请先登录
+                                </button>
+                                <table class="table-form" style="display:none">
+                                    <tr style="display:none;">
+                                        <th>
+                                            申请贷款用途
+                                        </th>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th width="15%">
+                                            品牌
+                                        </th>
+                                        <td>
+                                            ×××
+                                            <input type="hidden" value="×××" id="sppinpai" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            颜色
+                                        </th>
+                                        <td>
+                                            无
+                                            <input type="hidden" value="无" id="spyanse" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            型号
+                                        </th>
+                                        <td>
+                                            ×××专线
+                                            <input type="hidden" value="×××专线" id="spxinghao" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            数量
+                                        </th>
+                                        <td>
+                                            1
+                                            <input type="hidden" value="" id="spshuliang" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            总价格
+                                        </th>
+                                        <td>
+                                            <span id="zongjiagede">
+                                            </span>
+                                            <input type="hidden" value="" id="spjiege" />
+                                            <input type="hidden" value="1" id="spdanjiege" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            首付总金额
+                                        </th>
+                                        <td>
+                                            0
+                                            <input type="hidden" value="0" id="spshoufu" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            申请金额
+                                        </th>
+                                        <td>
+                                            <span id="zongjiagede2">
+                                            </span>
+                                            <input type="hidden" value="" id="spshenqingfenqi" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            分期月数
+                                        </th>
+                                        <td>
+                                            <span id="shijiyuefen">
+                                            </span>
+                                            个月
+                                    </tr>
+                                </table>
+                                <button class="btn3 mr10 ml35" id="yudingfenqi" style="display:none">
+                                    预定分期
+                                </button>
+                                我们将在您的资料审核通过后与您联系。
+                            </div>
+                            <div class="tabcon">
+                                <table class="table-form">
+                                    <tr>
+                                        <th width="18%">
+                                            姓名
+                                        </th>
+                                        <td>
+                                            <input name="name" id="xingm" type="text" class="input1" value="" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            电话号码
+                                        </th>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th width="18%">
+                                            身份证号
+                                        </th>
+                                        <td>
+                                            <input name="sfzh" id="sfzh" type="text" class="input1" value="" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            户籍所在地
+                                        </th>
+                                        <td>
+                                            <select id="province1" class="s2 mb5" style="width:110px; height:30px; border:1px #ccc solid;">
+                                                <option value="">
+                                                    请选择
+                                                </option>
+                                            </select>
+                                            <select id="city1" class="s2 mb5" style="width:110px;  height:30px; border:1px #ccc solid;">
+                                                <option value="">
+                                                    请选择
+                                                </option>
+                                            </select>
+                                            <select id="quname1" class="s2 mb5" style="width:120px;  height:30px; border:1px #ccc solid;">
+                                                <option value="">
+                                                    请选择
+                                                </option>
+                                            </select>
+                                           
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            单位名称
+                                        </th>
+                                        <td>
+                                            <input name="" id="dwmc" type="text" class="input1" value="" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            公司性质
+                                        </th>
+                                        <td>
+                                            <select class="select1" id="gsxz">
+                                                <option value="">
+                                                    请选择
+                                                </option>
+                                                <option value="国有企业">
+                                                    国有企业
+                                                </option>
+                                                <option value="集体企业">
+                                                    集体企业
+                                                </option>
+                                                <option value="联营企业">
+                                                    联营企业
+                                                </option>
+                                                <option value="股份合作制企业">
+                                                    股份合作制企业
+                                                </option>
+                                                <option value="私营企业">
+                                                    私营企业
+                                                </option>
+                                                <option value="个体户">
+                                                    个体户
+                                                </option>
+                                                <option value="合伙企业">
+                                                    合伙企业
+                                                </option>
+                                                <option value="有限责任公司">
+                                                    有限责任公司
+                                                </option>
+                                                <option value="股份有限公司">
+                                                    股份有限公司
+                                                </option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            月薪范畴
+                                        </th>
+                                        <td>
+                                            <select class="select1" id="yxfc">
+                                                <option value="">
+                                                    请选择
+                                                </option>
+                                                <option value="2000以下">
+                                                    2000以下
+                                                </option>
+                                                <option value="2001~3000">
+                                                    2001~3000
+                                                </option>
+                                                <option value="3001~5000">
+                                                    3001~5000
+                                                </option>
+                                                <option value="5001~8000">
+                                                    5001~8000
+                                                </option>
+                                                <option value="8000以上">
+                                                    8000以上
+                                                </option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>
+                                            公司地址
+                                        </th>
+                                        <td>
+                                            <input id="gsdz" name="" type="text" class="input1 l1" value="" />
+                                        </td>
+                                    </tr>
+                                </table>
+                                <button type="button" class="btn-form" onClick="javascript:location.href='login.html';">
+                                    请先登录
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div style="display:none" id="ewai" bei='0'>
+            </div>
+            <div style="display:none" id="jianshuzz" bei='0'>
+            </div>
+            <div style="display:none" id="fenqiyueshuzz" bei='12'>
+            </div>
+            <div style="display:none" id="yuegong" bei=''>
+            </div>
+            <div style="display:none" id="jianshuzz2" bei='0'>
+            </div>
+            <footer id="footer">
+                <div class="row">
+                    <ul class="foot_service">
+                        <li class="s1">
+                            卓越品质
+                            <br>
+                            <span class="font14 font_grey">
+                                100%正品保障
+                            </span>
+                        </li>
+                        <li class="s2">
+                            金牌服务
+                            <br>
+                            <span class="font14 font_grey">
+                                为您呈现最优服务
+                            </span>
+                        </li>
+                        <li class="s3">
+                            手续简单
+                            <br>
+                            <span class="font14 font_grey">
+                                专业人员上门办理
+                            </span>
+                        </li>
+                        <li class="s4">
+                            轻松还款
+                            <br>
+                            <span class="font14 font_grey">
+                                足不出户轻松还款
+                            </span>
+                        </li>
+                        <li class="s5">
+                            专业配送
+                            <br>
+                            <span class="font14 font_grey">
+                                快速安全
+                            </span>
+                        </li>
+                        <div class="clear">
+                        </div>
+                    </ul>
+                    <ul class="foot_link">
+                        <li>
+                            <div class="foot_title">
+                                分期指南
+                            </div>
+                            <a href="help-a52.html">
+                                分期条件
+                            </a>
+                            <br>
+                            <a href="help-a53.html">
+                                需要资料
+                            </a>
+                            <br>
+                            <a href="help-a54.html">
+                                分期步骤
+                            </a>
+                            <br>
+                            <a href="help-a171.html">
+                                分期问题
+                            </a>
+                            <br>
+                        </li>
+                        <li>
+                            <div class="foot_title">
+                                还款指南
+                            </div>
+                            <a href="help-a55.html">
+                                还款流程
+                            </a>
+                            <br>
+                            <a href="help-a172.html">
+                                提前还款
+                            </a>
+                            <br>
+                            <a href="help-a173.html">
+                                出现逾期
+                            </a>
+                            <br>
+                        </li>
+                        <li>
+                            <div class="foot_title">
+                                售后保障
+                            </div>
+                            <a href="help-a57.html">
+                                正品保障
+                            </a>
+                            <br>
+                            <a href="help-a58.html">
+                                售后服务
+                            </a>
+                            <br>
+                            <a href="help-a59.html">
+                                退换政策
+                            </a>
+                            <br>
+                        </li>
+                        <li>
+                            <div class="foot_title">
+                                账户服务
+                            </div>
+                            <a href="help-a61.html">
+                                关于账户
+                            </a>
+                            <br>
+                            <a href="help-a62.html">
+                                关于订单
+                            </a>
+                            <br>
+                            <a href="help-a63.html">
+                                常见问题
+                            </a>
+                            <br>
+                        </li>
+                        <li>
+                            <div class="foot_title">
+                                ×××来了
+                            </div>
+                            <a href="help-a9.html">
+                                有关发货
+                            </a>
+                            <br>
+                            <a href="help-a8.html">
+                                有关物流
+                            </a>
+                            <br>
+                        </li>
+                       
+                        <div class="clear">
+                        </div>
+                    </ul>
+                </div>
+                <div class="foot_menu">
+                    <a href="about.html">
+                        关于×××分期
+                    </a>
+                    |
+                    <a href="contact.html">
+                        联系我们
+                    </a>
+                    |
+                    <a href="join.html">
+                        加入我们
+                    </a>
+                    |
+                    <a href="report.html">
+                        媒体报道
+                    </a>
+                </div>
+                <div class="al_center">
+                    <p>
+                       
+                        <noscript>
+                            <a href="#" target="_blank">
+                                <img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="images/icon_0.gif"
+                                style="border:none" />
+                            </a>
+                        </noscript>
+                    </p>
+                    <div class="foot_icon">
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- 右侧浮动 -->
+        <div id="float">
+            <a href="#" class="consult" target="_blank">
+            </a>
+            <a href="cart.html" class="cart">
+            </a>
+            <a href="javascript:void(0)" class="btn_top">
+            </a>
+        </div>
+        <!-- 右侧浮动 end -->
+        <script src="js/app.js"></script>
+        <script src="js/juzi.js" type="text/javascript">
+        </script>
+        <div class="themey-popover-mask">
+        </div>
+        <div class="themey-popover" style="display:none">
+            <div class="themey-poptit">
+                ×××分期温馨提示
+            </div>
+            <div class="themey-popbod">
+                <div class="themey-box" id="neirongy">
+                </div>
+                <div class="themey-box2">
+                    <button class="button3" id="zdcyonghuiche" type="button" onclick="coolalertguanbi()"
+                    onkeydown="if(event.keyCode==13){coolalertguanbi();}">
+                        确 定
+                    </button>
+                    <input type="hidden" id="wjstz">
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

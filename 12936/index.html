@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>数码产品企业网站html源码手机自适应 - </title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="keywords" content="网站建设" />
+    <meta name="description" content="您身边的网站建设专家" />
+    <meta name="author" content="xxx.com" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/glide.css" rel="Stylesheet" />
+    <link href="css/style.css" rel="Stylesheet" />
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="js/jquery.min.js"></script>
+
+    <script src="js/bootstrap.js"></script>
+
+    <script src="js/jquery.glide.js"></script>
+
+</head>
+<!--/************************************************************
+ *																*
+ * 						      							*
+ *                        							*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+**************************************************************-->
+<body>
+    
+<header>
+    <div class="topBox">
+        <div class="borderBottom">
+            <div class="container">
+                <div class="welcomeBox"><span style="color:#666666;font-family:微软雅黑;white-space:normal;background-color:#FFFFFF;">欢迎光临xxx企业网站管理系统</span></div>
+
+                <div class="languageBox">
+                    
+                    <a href="javascript:;" class="en">English</a><a href="javascript:;" class="zh">中文版</a>
+                </div>
+
+                <div class="searchBox">
+                    <input type="text" id="queryTxt" name="queryTxt" placeholder="请输入关键字" onclick="this.value = ''"
+                        onkeydown="searchHandle(event)">
+                    <a href="javascript:;" type="button">搜 索</a>
+                    <span class="glyphicon glyphicon-search searchBtn" aria-hidden="true" onclick="search()"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-static-top navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="javascript:;"><img src="images/20170325092611_5286.jpg" alt="" /></a>
+
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown"><a href="javascript:;" target="" class="dropdown-toggle" data-toggle="dropdown">网站首页</a><a href = "#" id="app_menudown" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-menu-down btn-xs"></span></a><ul class="dropdown-menu" role="menu"></ul></li><li class="dropdown"><a href="javascript:;" target="" class="dropdown-toggle" data-toggle="dropdown">关于我们</a><a href = "#" id="app_menudown" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-menu-down btn-xs"></span></a><ul class="dropdown-menu" role="menu"><li><a class='' target='' href='javascript:;'>公司简介</a></li><li><a class='' target='' href='javascript:;'>公司文化</a></li></ul></li><li class="dropdown"><a href="javascript:;" target="" class="dropdown-toggle" data-toggle="dropdown">产品中心</a><a href = "#" id="app_menudown" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-menu-down btn-xs"></span></a><ul class="dropdown-menu" role="menu"><li><a class='' target='' href='javascript:;'>高清网络摄像机</a><span>+</span><ul><li><a class='' target='' href='javascript:;'>30米红外半球</a><ul></ul></li></ul></li><li><a class='' target='' href='javascript:;'>无线网络摄像机</a><span>+</span><ul><li><a class='' target='' href='javascript:;'>无线防水红外</a><ul><li><a class='' target='' href='javascript:;'>QH5</a></li></ul></li><li><a class='' target='' href='javascript:;'>无线音频</a><ul></ul></li></ul></li></ul></li><li class="dropdown"><a href="javascript:;" target="" class="dropdown-toggle" data-toggle="dropdown">新闻中心</a><a href = "#" id="app_menudown" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-menu-down btn-xs"></span></a><ul class="dropdown-menu" role="menu"><li><a class='' target='' href='javascript:;'>行业新闻</a></li><li><a class='' target='' href='javascript:;'>公司新闻</a></li><li><a class='' target='' href='javascript:;'>常见问题</a></li></ul></li><li class="dropdown"><a href="javascript:;" target="" class="dropdown-toggle" data-toggle="dropdown">客户案例</a><a href = "#" id="app_menudown" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-menu-down btn-xs"></span></a><ul class="dropdown-menu" role="menu"></ul></li><li class="dropdown"><a href="javascript:;" target="" class="dropdown-toggle" data-toggle="dropdown">资料下载</a><a href = "#" id="app_menudown" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-menu-down btn-xs"></span></a><ul class="dropdown-menu" role="menu"></ul></li><li class="dropdown"><a href="javascript:;" target="" class="dropdown-toggle" data-toggle="dropdown">联系我们</a><a href = "#" id="app_menudown" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-menu-down btn-xs"></span></a><ul class="dropdown-menu" role="menu"><li><a class='' target='' href='javascript:;'>在线留言</a></li><li><a class='' target='' href='javascript:;'>联系方式</a></li></ul></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<script type="text/javascript">
+    function searchHandle(event) {
+        var e = event || window.event || arguments.callee.caller.arguments[0];
+        if (e && e.keyCode == 13) { // enter 键
+            search();
+        }
+    };
+
+    function search() {
+        if (document.getElementById("queryTxt").value == "" || document.getElementById("queryTxt").value == "请输入关键字") {
+            alert("请输入关键字！");
+            return;
+        }
+        var url = "keywords=" + document.getElementById("queryTxt").value;
+        url = encodeURI(encodeURI(url));
+
+        window.location = "/zh/search.aspx?" + url;
+        return false;
+    }
+</script>
+
+    <div class="banner">
+        <div class="slider">
+            <ul class="slider__wrapper">
+                <li class="slider__item"><a target="_self" title="" href="javascript:;" style="background-image:url(images/2.jpg)"><img class='img' src="images/banner-01.png"/><img class='mobileimg' src="images/2.jpg"/></a></li><li class="slider__item"><a target="_self" title="1" href="javascript:;" style="background-image:url(images/1.jpg)"><img class='img' src="images/banner-01.png"/><img class='mobileimg' src="images/2.jpg"/></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        var glide = $('.slider').glide();
+    </script>
+    <div style="background: #fcfcfc; padding-top: 20px; padding-bottom: 10px">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="productBox">
+                        <div class="titleBar">
+                            <span class="leftbg"></span><span class="txt"><h5>
+	推荐<span style="color:#337FE5;">产品</span> 
+</h5>
+<span>PRODUCTS</span></span><span class="rightbg"></span>
+                        </div>
+                        <div class="introduce">
+                            <p style="text-align:center;">
+	XXX安防监控有限公司创建于1996年，前身为上海XXX安防有限公司，是一家净资产达数十亿元
+</p>
+<p style="text-align:center;">
+	<span style="line-height:1.5;">的股份制大型家电连锁零售企业，年销售额超过150亿元。</span>
+</p>
+                        </div>
+                        <div class="more"><a href="javascript:;">更多 +</a></div>
+                        <div class="list">
+                            
+                                    <div class="col-xs-6 col-sm-4 col-md-3 col-mm-6 productImg">
+                                        <a title="30米红外半球摄像机" href='javascript:;'>
+                                            <span class="imgLink-hover"><span class="hover-link"></span></span>
+                                            <img src="images/thumb2016022102.jpg"
+                                                alt="30米红外半球摄像机">
+                                        </a><a class="productTitle" href="javascript:;"
+                                            title="30米红外半球摄像机">
+                                            30米红外半球摄像机</a>
+                                    </div>
+                                
+                                    <div class="col-xs-6 col-sm-4 col-md-3 col-mm-6 productImg">
+                                        <a title="拷贝的数据" href='javascript:;'>
+                                            <span class="imgLink-hover"><span class="hover-link"></span></span>
+                                            <img src="images/thumb2016022102.png"
+                                                alt="拷贝的数据">
+                                        </a><a class="productTitle" href="javascript:;"
+                                            title="拷贝的数据">
+                                            拷贝的数据</a>
+                                    </div>
+                                
+                                    <div class="col-xs-6 col-sm-4 col-md-3 col-mm-6 productImg">
+                                        <a title="QH5" href='javascript:;'>
+                                            <span class="imgLink-hover"><span class="hover-link"></span></span>
+                                            <img src="images/thumb2016022103.jpg"
+                                                alt="QH5">
+                                        </a><a class="productTitle" href="javascript:;"
+                                            title="QH5">
+                                            QH5</a>
+                                    </div>
+                                
+                                    <div class="col-xs-6 col-sm-4 col-md-3 col-mm-6 productImg">
+                                        <a title="100万像素防暴红外支持网络摄像机" href='javascript:;'>
+                                            <span class="imgLink-hover"><span class="hover-link"></span></span>
+                                            <img src="images/thumb2016022101.jpg"
+                                                alt="100万像素防暴红外支持网络摄像机">
+                                        </a><a class="productTitle" href="javascript:;"
+                                            title="100万像素防暴红外支持网络摄像机">
+                                            100万像素防暴红外支持网络摄像机</a>
+                                    </div>
+                                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background: url(images/aboutbg.jpg) center center; background-size: cover; padding-top: 30px; padding-bottom: 20px">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="aboutBox">
+                        <div class="titleBar">
+                            <span class="leftbg"></span><span class="txt"><h5>
+	公司<span style="color:#337FE5;">简介</span> 
+</h5>
+<span>ABOUT US</span></span><span class="rightbg"></span>
+                        </div>
+                        <section>
+                            <p class="aboutContent"><p style="text-align:center;">
+	<span style="line-height:1.5;"><img src="images/20170207190748_0051.png" alt="" /><br />
+</span> 
+</p>
+<span> 
+<div style="text-align:center;">
+	&nbsp; &nbsp; xxx企业网站管理系统-xxx.comCMS是采用asp.net/access/bootstrap技术开发，可以自适应电脑和移动设备，页面友好，用户体验性能佳。后台支持多语言，可以随意扩展，各个语言版本之间自由切换进行管理。网站包含企业网站的主要功能（关于我们、新闻、产品、留言、人才招聘、工程案例、相册等），并可增加栏目进行扩展，适合于二次开发。文章、产品、相册模块可以单独设置SEO参数，并一键生成静态页面，对SEO更友好。系统可以复制产品、文章、相册到其他语言版本等，使得操作更方便，并嵌入百度翻译，双击即可翻译文字，现版本已集成模板引擎，可以自由更换模板。
+</div>
+</span></p>
+                            <a href="javascript:;" class="aboutMore">了解我们更多&gt;&gt;</a>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="padding-top: 30px; padding-bottom: 30px; background: #eae3dd">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="indexNavigationGroup" id="classification">
+                        <div class="navigationBox">
+                            <div class="titleBar">
+                                <span class="leftbg"></span><span class="txt">
+                                    <h5>导航栏目</h5>
+                                    <span>PRODUCT NAVIGATION</span></span><span class="rightbg"></span>
+                            </div>
+                            <div class="list">
+                                <ul id="firstpane">
+                                    <li><a class='' target='' href='javascript:;'>高清网络摄像机</a><span>+</span><ul><li><a class='' target='' href='javascript:;'>30米红外半球</a><ul></ul></li></ul></li><li><a class='' target='' href='javascript:;'>无线网络摄像机</a><span>+</span><ul><li><a class='' target='' href='javascript:;'>无线防水红外</a><ul><li><a class='' target='' href='javascript:;'>QH5</a></li></ul></li><li><a class='' target='' href='javascript:;'>无线音频</a><ul></ul></li></ul></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12">
+                    <div class="newsBox">
+                        <div class="titleBar">
+                            <span class="leftbg"></span><span class="txt"><h5>
+	新闻中心
+</h5>
+<span>NEWS CENTER</span></span><span class="rightbg"></span>
+                        </div>
+                        <div class="introduce">
+                            <p style="text-align:center;">
+	关注我们公司的最新动态，关注行业内的资讯动态。致力于为用户提供更好的产品和更优秀的服务，
+</p>
+<p style="text-align:center;">
+	孜孜不倦，勇于创新。
+做中国创造的优秀代表！
+</p>
+                        </div>
+                        <div class="more"><a href="javascript:;">更多 +</a></div>
+                        <ul class="indexNewsList">
+                            
+                                    <li class="col-xs-12 col-sm-6 col-md-6"><a href="javascript:;">
+                                        <div class="img" style="background-image: url(images/thumb20170617110358276.png)"></div>
+                                        <div class="txt">
+                                            <span class="title">
+                                                宇视2017全国巡展：创新 架构 安全 可持续</span>
+
+                                            <span class="time">[ 2017/7/19 11:55:24 ]
+                                            </span>
+                                            <p>
+                                                
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2017年5月～6月，宇视科技（uniview）以『开疆拓宇视远阔步』为主题，在全国70余城召开产品技术交流会（下称“巡展”），截至6月4日，宇视已在北京、广...
+                                            </p>
+                                        </div>
+                                    </a>
+                                    </li>
+                                
+                                    <li class="col-xs-12 col-sm-6 col-md-6"><a href="javascript:;">
+                                        <div class="img" style="background-image: url(images/thumb20170618091958606.jpg)"></div>
+                                        <div class="txt">
+                                            <span class="title">
+                                                软硬兼施 长虹智慧家庭应用解决方案直击用户“痛点”</span>
+
+                                            <span class="time">[ 2017/6/18 9:30:11 ]
+                                            </span>
+                                            <p>
+                                                
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;当家里的燃气发生泄漏，声光传感器自动报警;当家里空气PM2.5超标，智慧空气管家会自动协同净化器运行;用户打开手机察看当月水电气各项的开支情况，发现小孩子的电...
+                                            </p>
+                                        </div>
+                                    </a>
+                                    </li>
+                                
+                                    <li class="col-xs-12 col-sm-6 col-md-6"><a href="javascript:;">
+                                        <div class="img" style="background-image: url(images/thumb20170617101346300.jpg)"></div>
+                                        <div class="txt">
+                                            <span class="title">
+                                                城市智能交通的现状与发展趋势</span>
+
+                                            <span class="time">[ 2017/6/17 11:40:31 ]
+                                            </span>
+                                            <p>
+                                                
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;根据公安部交管局统计的数据得知，截止到2016年底，全国机动车保有量达2.9亿辆，其中汽车1.94亿辆;机动车驾驶人3.6亿人，其中汽车驾驶人超过3.1亿人，...
+                                            </p>
+                                        </div>
+                                    </a>
+                                    </li>
+                                
+                                    <li class="col-xs-12 col-sm-6 col-md-6"><a href="javascript:;">
+                                        <div class="img" style="background-image: url(images/thumb20170617114018316.jpg)"></div>
+                                        <div class="txt">
+                                            <span class="title">
+                                                产品4.0时代下 智能安防产品该思考什么</span>
+
+                                            <span class="time">[ 2017/6/17 11:40:21 ]
+                                            </span>
+                                            <p>
+                                                
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在当下无论是受新技术如人工智能、深度学习的影响，还是寻求用户痛点的深入变化，产品设计以及产品营销都已经进入新的创新之路中，在近日的新硬件高峰论坛上，一些优秀的...
+                                            </p>
+                                        </div>
+                                    </a>
+                                    </li>
+                                
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+<script type="text/javascript" src="js/common.js"></script>
+
+<!--电脑版-->
+<!--客服面板-->
+<link rel="stylesheet" type="text/css" href="css/online.css" />
+<div id="cmsFloatPanel">
+    <div class="ctrolPanel">
+        <a class="service" href="javascript:;"></a><a class="message" href="javascript:;"></a><a class="qrcode"
+            href="javascript:;"></a><a class="arrow" title="返回顶部" href="javascript:;"></a>
+    </div>
+    <div class="servicePanel">
+        <div class="servicePanel-inner">
+            <div class="serviceMsgPanel">
+                <div class="serviceMsgPanel-hd">
+                    <a href="javascript:;"><span>关闭</span></a>
+                </div>
+                <div class="serviceMsgPanel-bd">
+                    <!--在线QQ-->
+                    <script type="text/javascript">
+                        var services = [{"id":1,"name":"客服QQ","classname":"QQ","service":"496273508"},{"id":12,"name":"客服旺旺","classname":"淘宝旺旺","service":"mxiangcai"},{"id":14,"name":"国际旺旺","classname":"旺旺国际版","service":"mxiangcai"}];
+                        if (services.length > 0) {
+                            var servicecode = "<div class='msggroup'>"
+                            var mobileServicecode = "";
+                            for (var i = 0; i < services.length; i++) {
+                                if (services[i].classname == "QQ") {
+                                    mobileServicecode += "<a title='" + services[i].name + "' href='javascript:;'><img  border=0 src='http://wpa.qq.com/pa?p=1:" + services[i].service + ":4'> " + services[i].name + "</a>";
+                                    servicecode += "<a title='" + services[i].name + "' href='javascript:;'><img  border=0 src='http://wpa.qq.com/pa?p=1:" + services[i].service + ":4'> " + services[i].name + "</a><br>";
+                                } else if (services[i].classname == "SKYPE")
+                                    servicecode += "<a href='javascript:;' target=_blank><img src='images/small_white_online.png'/>" + services[i].name + "</a><br>";
+                                else if (services[i].classname == "MSN")
+                                    servicecode += "<a href='javascript:;' target=_blank><img src='images/msn.jpg'/>" + services[i].name + "</a><br>";
+                                else if (services[i].classname == "淘宝旺旺")
+                                    servicecode += "<a title='" + services[i].name + "' target=blank href='javascript:;'><img SRC='http://amos.alicdn.com/online.aw?v=2&uid=" + services[i].service + "&site=cntaobao&s=1&charset=utf-8'></a><br>";
+                                else if (services[i].classname == "旺旺国内版")
+                                    servicecode += "<a title='" + services[i].name + "' target=blank href='javascript:;'><img SRC='http://amos.alicdn.com/online.aw?v=2&uid=" + services[i].service + "&site=cnalichn&s=10&charset=UTF-8'></a><br>";
+                                else if (services[i].classname == "旺旺国际版")
+                                    servicecode += "<a title='" + services[i].name + "' target=blank href='javascript:;'><img SRC='http://amos.alicdn.com/online.aw?v=2&uid=" + services[i].service + "&site=enaliint&s=22&charset=UTF-8'>" + services[i].name + "</a><br>";
+                            }
+                            servicecode += "</div>"
+                            document.write(servicecode);
+
+                            if (mobileServicecode == "") {
+                                $(document).ready(function () { $("#serviceBtn").hide(); $("#gotocate").show() });
+                            } else {
+                                var html = "<div id='serviceBox'>";
+                                html += mobileServicecode;
+                                html += "</div>";
+                                $("body").append(html);
+                            }
+                        }
+                    </script>
+
+
+                </div>
+                <div class="serviceMsgPanel-ft">
+                </div>
+            </div>
+            <div class="arrowPanel">
+                <div class="arrow02">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="messagePanel">
+        <div class="messagePanel-inner">
+            <div class="formPanel">
+                <div class="formPanel-bd">
+                    <div class="bdsharebuttonbox" style="width: auto; float: left"><a href="javascript:;" class="bds_more" data-cmd="more"></a><a href="javascript:;" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="javascript:;" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="javascript:;" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="javascript:;" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="javascript:;" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></div>
+                    <script>window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "2", "bdMiniList": false, "bdPic": "", "bdStyle": "1", "bdSize": "24" }, "share": {} }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'js/share.js?v=js/89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+                    <a type="button" id="shareBtn" class="btn btn-default btn-xs" href="javascript:;" style="margin: 6px 0px 0px 10px;">关闭</a>
+                </div>
+            </div>
+            <div class="arrowPanel">
+                <div class="arrow01">
+                </div>
+                <div class="arrow02">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="qrcodePanel">
+        <div class="qrcodePanel-inner">
+            <div class="codePanel">
+                <div class="codePanel-hd">
+                    <span style="float: left">用手机扫描二维码</span><a href="javascript:;"><span>关闭</span></a>
+                </div>
+                <div class="codePanel-bd">
+                    <div id="qrcode">
+                        <img src="images/20170605150229_5378.png" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="arrowPanel">
+                <div class="arrow01">
+                </div>
+                <div class="arrow02">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/online.js"></script>
+
+<!--电脑版 end-->
+<!--手机版-->
+<nav class="navbar-default navbar-fixed-bottom footer_nav" style="background: #fafafa;">
+    <div class="foot_nav"><a href="javascript:;"><span class="glyphicon glyphicon-share btn-lg" aria-hidden="true"></span>分享</a></div>
+    <div class="foot_nav"><a href="javascript:;"><span class="glyphicon glyphicon-phone btn-lg" aria-hidden="true"></span>电话</a></div>
+    <div class="foot_nav" id="serviceBtn"><a onclick="showService()"><span class="glyphicon glyphicon glyphicon-headphones btn-lg" aria-hidden="true"></span>客服</a></div>
+    <div class="foot_nav" id="gotocate" style="display: none"><a href="javascript:;"><span class="glyphicon glyphicon-th-list btn-lg" aria-hidden="true"></span>分类</a></div>
+    <div class="foot_nav"><a id="gototop" href="javascript:;"><span class="glyphicon glyphicon-circle-arrow-up btn-lg" aria-hidden="true"></span>顶部</a></div>
+    <div id="mShareBox" style="position: fixed; display: none; z-index: 999; bottom: 47px; width: 100%; height: 45px; background: #fff; border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; padding: 5px;">
+        <!-- JiaThis Button BEGIN -->
+        <div class="jiathis_style_m"></div>
+        <script type="text/javascript" src="js/jiathis_m.js" charset="utf-8"></script>
+        <!-- JiaThis Button END -->
+    </div>
+</nav>
+<!--手机版 end-->
+<footer>
+    <div class="copyright">
+        <p style="text-align:center;">
+	<br />
+</p>
+<p style="white-space:normal;text-align:center;">
+	CopyRight 2016 All Right Reserved &nbsp;
+</p>
+<p style="white-space:normal;text-align:center;">
+	地址：xxx&nbsp;&nbsp;电话：00000000
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<br />
+</p>
+<p style="text-align:center;">
+	<span style="white-space:normal;"><span style="white-space:normal;"></span><span style="white-space:normal;"></span></span> 
+</p>
+    </div>
+</footer>
+
+<script type="text/javascript">
+    function mShare() {
+        $("#mShareBox").toggle();
+        $("#serviceBox").hide();
+    }
+    if ($(".banner .slider__wrapper li").length == 0) {
+        $(".banner").addClass("emptyBanner");
+    }
+    function showService() {
+        $("#mShareBox").hide();
+        $("#serviceBox").toggle();
+    }
+</script>
+
+</body>
+</html>

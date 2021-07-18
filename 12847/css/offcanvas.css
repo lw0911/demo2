@@ -1,0 +1,209 @@
+
+.offcanvas-container,
+.offcanvas-pusher,
+.offcanvas-content {
+    height : 100%;
+    }
+
+.offcanvas-content {
+    overflow-y : hidden;
+    background : #F3EFE0;
+    }
+
+.offcanvas-content,
+.offcanvas-content-inner {
+    position : relative;
+    }
+
+.offcanvas-container {
+    position : relative;
+    overflow : hidden;
+    }
+
+.offcanvas-pusher {
+    position           : relative;
+    left               : 0;
+    z-index            : 99;
+    height             : 100%;
+    -webkit-transition : -webkit-transform 0.5s;
+    transition         : transform 0.5s;
+    }
+
+.offcanvas-pusher::after {
+    position           : absolute;
+    top                : 0;
+    right              : 0;
+    width              : 0;
+    height             : 0;
+    background         : rgba(0, 0, 0, 0.2);
+    content            : '';
+    opacity            : 0;
+    -webkit-transition : opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+    transition         : opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+    }
+
+.offcanvas-menu-open .offcanvas-pusher::after {
+    width              : 100%;
+    height             : 100%;
+    opacity            : 1;
+    -webkit-transition : opacity 0.5s;
+    transition         : opacity 0.5s;
+    }
+
+.offcanvas-menu {
+    position           : absolute;
+    top                : 0;
+    left               : 0;
+    z-index            : 100;
+    visibility         : hidden;
+    width              : 300px;
+    height             : 100%;
+    background         : #27272C;
+    -webkit-transition : all 0.5s;
+    transition         : all 0.5s;
+    }
+
+.offcanvas-menu::after {
+    position           : absolute;
+    top                : 0;
+    right              : 0;
+    width              : 100%;
+    height             : 100%;
+    background         : rgba(0, 0, 0, 0.2);
+    content            : '';
+    opacity            : 1;
+    -webkit-transition : opacity 0.5s;
+    transition         : opacity 0.5s;
+    }
+
+.offcanvas-menu-open .offcanvas-menu::after {
+    width              : 0;
+    height             : 0;
+    opacity            : 0;
+    -webkit-transition : opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+    transition         : opacity 0.5s, width 0.1s 0.5s, height 0.1s 0.5s;
+    }
+
+/* SIDEBAR MANU ICON
+   ------------------*/
+.offcanvas-menu ul li a i {
+    margin-right : 7px;
+    }
+
+/* SIDEBAR CLOSE ICON
+   -------------------*/
+.offcanvas-menu .close {
+    position           : absolute;
+    right              : 0;
+    top                : 0;
+    color              : #FFFFFF;
+    padding            : .73em 1em;
+    opacity            : .5;
+    background         : rgba(0, 0, 0, .3);
+    -webkit-transition : background .3s;
+    -moz-transition    : background .3s;
+    transition         : background .3s;
+    }
+
+.offcanvas-menu .close:hover {
+    background : #fa4a4a;
+    opacity    : 1;
+    }
+
+/* SIDEBAR MANU LIST STYLE
+   ------------------------*/
+
+.offcanvas-menu ul {
+    margin     : 0;
+    padding    : 0;
+    list-style : none;
+    }
+
+.offcanvas-menu h2 {
+    font-size      : 16px;
+    text-transform : uppercase;
+    color          : #FFFFFF;
+    font-weight    : 400;
+    letter-spacing : 1px;
+    background     : rgba(0, 0, 0, 0.25);
+    padding        : 1em 1em 1em 1.2em;
+    text-shadow    : 0 0 1px rgba(0, 0, 0, 0.1);
+    }
+
+.offcanvas-menu ul li a {
+    display            : block;
+    padding            : 1em 1em 1em 1.2em;
+    outline            : none;
+    box-shadow         : inset 0 -1px rgba(0, 0, 0, 0.2);
+    color              : #F3EFE0;
+    text-transform     : uppercase;
+    text-shadow        : 0 0 1px rgba(255, 255, 255, 0.1);
+    letter-spacing     : 1px;
+    font-weight        : 500;
+    -webkit-transition : all 0.5s;
+    -moz-transition    : all 0.5s;
+    transition         : all 0.5s;
+    }
+
+.offcanvas-menu ul li li a {
+    font-size   : 12px;
+    font-weight : 400;
+    }
+
+.offcanvas-menu ul li:first-child a {
+
+    }
+
+.offcanvas-menu ul li a:hover {
+    background : rgba(0, 0, 0, 0.2);
+    box-shadow : inset 0 -1px rgba(0, 0, 0, 0);
+    color      : #FFFFFF;
+    }
+
+/* Individual effects */
+
+/* Effect 9: Scale down pusher */
+
+.offcanvas-effect.offcanvas-container {
+    -webkit-perspective : 1500px;
+    perspective         : 1500px;
+    }
+
+.offcanvas-effect .offcanvas-pusher {
+    -webkit-transform-style : preserve-3d;
+    transform-style         : preserve-3d;
+    }
+
+.offcanvas-effect.offcanvas-menu-open .offcanvas-pusher {
+    -webkit-transform : translate3d(0, 0, 0px);
+    transform         : translate3d(0, 0, 0px);
+    }
+
+.offcanvas-effect.offcanvas-menu {
+    opacity           : 1;
+    -webkit-transform : translate3d(-100%, 0, 0);
+    transform         : translate3d(-100%, 0, 0);
+    }
+
+.offcanvas-effect.offcanvas-menu-open .offcanvas-effect.offcanvas-menu {
+    visibility         : visible;
+    -webkit-transition : -webkit-transform 0.5s;
+    transition         : transform 0.5s;
+    -webkit-transform  : translate3d(0, 0, 0);
+    transform          : translate3d(0, 0, 0);
+    }
+
+.offcanvas-effect.offcanvas-menu::after {
+    display : none;
+    }
+
+/* Fallback example for browsers that don't support 3D transforms (and no JS fallback) */
+.no-csstransforms3d .offcanvas-pusher,
+.no-js .offcanvas-pusher {
+
+    }
+
+
+
+
+

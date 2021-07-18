@@ -1,0 +1,167 @@
+﻿/****************************************************************
+ *																*		
+ * 						      							*
+ *                        							*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+****************************************************************/
+#footer {
+	margin-top: 60px;
+	background-color: #FFF;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+#footer .foot_service {
+	padding-bottom: 50px;
+	padding-left: 50px;
+}
+#footer .foot_service li {
+	float: left;
+	height: 53px;
+	width: 150px;
+	padding-left: 80px;
+	font-size: 16px;
+	padding-top: 12px;
+}
+#footer .foot_service li.s1 {
+	background-image: url(../images/foot_service.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+#footer .foot_service li.s2 {
+	background-image: url(../images/foot_service2.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+#footer .foot_service li.s3 {
+	background-image: url(../images/foot_service3.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+#footer .foot_service li.s4 {
+	background-image: url(../images/foot_service4.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+#footer .foot_service li.s5 {
+	background-image: url(../images/foot_service5.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+#footer .foot_link li {
+	width: 130px;
+	float: left;
+	margin-bottom: 30px;
+	height: 160px;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #E8E8E8;
+	padding-left: 40px;
+	margin-left: 20px;
+	color: #A1A1A1;
+	line-height: 24px;
+	font-size: 14px;
+}
+#footer .foot_link li:first-child {
+	border-left-style: none;
+}
+#footer .foot_title {
+	margin-bottom: 10px;
+	font-size: 16px;
+	color: #333;
+}
+#footer .foot_menu {
+	font-size: 16px;
+	line-height: 38px;
+	color: #FFF;
+	background-color: #FFD37B;
+	text-align: center;
+	height: 38px;
+	margin-bottom: 20px;
+}
+#footer .foot_menu a {
+	color: #FFF;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+#footer .foot_menu a:hover {
+	color: #FFECC4;
+}
+#footer .foot_icon {
+	background-image: url(../images/foot_icon.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 38px;
+	width: 720px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#float {
+	width: 82px;
+	position: fixed;
+	right: 50%;
+	top: 55%;
+	margin-right:-702px;
+	-webkit-box-shadow: #DDD 0px 1px 5px;
+    -moz-box-shadow: #DDD 0px 1px 5px;
+    box-shadow: #DDD 0px 1px 5px;
+}
+@media only screen and (max-width: 1350px) {
+#float {
+	right: 10px;
+	margin-right:0;
+}
+}
+#float .qq {
+	background-image: url(../images/float_icon.gif);
+	background-repeat: no-repeat;
+	background-position: center top;
+	display: block;
+	height: 76px;
+	width: 82px;
+}
+#float .consult {
+	background-image: url(../images/float_icon.gif);
+	background-repeat: no-repeat;
+	background-position: center -77px;
+	display: block;
+	height: 76px;
+	width: 82px;
+}
+#float .cart {
+	background-image: url(../images/float_icon.gif);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	display: block;
+	height: 16px;
+	width: 16px;
+	font-size: 12px;
+	line-height: 16px;
+	color: #45BDFF;
+	text-align: center;
+	padding-top: 15px;
+	padding-right: 18px;
+	padding-bottom: 47px;
+	padding-left: 48px;
+}
+#float .btn_top {
+	background-image: url(../images/float_top.gif);
+	background-repeat: no-repeat;
+	background-position: center top;
+	display: block;
+	height: 39px;
+	width: 82px;
+	-webkit-transition: all 0s ease-in-out;
+	-moz-transition: all 0s ease-in-out;
+	-o-transition: all 0s ease-in-out;
+	transition: all 0s ease-in-out;
+}
+#float .btn_top:hover {
+	background-image: url(../images/float_top.gif);
+	background-repeat: no-repeat;
+	background-position: center bottom;
+}
+.al_center {
+	text-align:center;
+}

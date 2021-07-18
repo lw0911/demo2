@@ -1,0 +1,327 @@
+
+/**************************************************************
+                        Color style
+/***************************************************************/
+
+/*ul.nav.navbar-nav li.dropdown ul.single-dropdown li a:hover{
+    color: #0F9D58 !important;
+}*/
+
+.slider-btn:hover{  
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#259b60+20,099b52+100&amp;0.88+14,1+100 */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjE0JSIgc3RvcC1jb2xvcj0iIzI1OWI2MCIgc3RvcC1vcGFjaXR5PSIwLjg4Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjIwJSIgc3RvcC1jb2xvcj0iIzI1OWI2MCIgc3RvcC1vcGFjaXR5PSIwLjg5Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwOTliNTIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(-45deg,  rgba(37,155,96,0.88) 14%, rgba(37,155,96,0.89) 20%, rgba(9,155,82,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(14%,rgba(37,155,96,0.88)), color-stop(20%,rgba(37,155,96,0.89)), color-stop(100%,rgba(9,155,82,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg,  rgba(37,155,96,0.88) 14%,rgba(37,155,96,0.89) 20%,rgba(9,155,82,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg,  rgba(37,155,96,0.88) 14%,rgba(37,155,96,0.89) 20%,rgba(9,155,82,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg,  rgba(37,155,96,0.88) 14%,rgba(37,155,96,0.89) 20%,rgba(9,155,82,1) 100%); /* IE10+ */
+background: linear-gradient(135deg,  rgba(37,155,96,0.88) 14%,rgba(37,155,96,0.89) 20%,rgba(9,155,82,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0259b60', endColorstr='#099b52',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+
+}
+.header-top .text-right li, .header-top .text-right li a, .header-top .text-right li i,
+.large_text.lfr span, .large_text.lfl span,
+.dropdown-header,
+.latest-news-text h2,
+/*.home-three-practice-area .col-xs-12.col-sm-6:nth-child(1) i,*/
+.home-three-practice-area .col-xs-12.col-sm-6:nth-child(5) i,
+.testimonial .image-bar h3,
+.book-heading h1,
+.map-hover h4,
+.counter-box-left-content ul li i,
+.counter-box-left-content ul li span.counter,
+.subscribe-box-form .btn-lg.costom-btn,
+footer .footer-bottom .col-sm-8 ul li a,
+.error-text-box-inner > div:first-child span,
+.error-text-box-inner p a,
+.search-404 .btn-search,
+.top-heading span,
+.attorny_arrow a,
+.attorny_hover_social ul li a:hover,
+.top-heading-banner.blog-single ul li span,
+a:hover, a:focus,
+.single-leave-comments .text-tag p,
+.blog-right-tab .tab-content li:hover:before, .blog-right-tab .tab-content li a:hover,
+.blog-right-tab .tab-content li:hover:before, .blog-right-tab .tab-content li a:hover,
+.blog-accordion .accordion-deafult .panel-heading a,
+.tag-cloud ul li a:hover,
+.social-list ul li:hover a,
+.divider-section i,
+.dropcaps .dropcaps-widget-two p::first-letter,
+.dropcaps .dropcaps-widget-three p::first-letter,
+.icon ul.icon-social li a:hover,
+.latest_news_box:hover .latest_news_details h4,
+.single_practice_icon:hover i,
+.single_testi_item h4,
+.student-info h2,
+.single-counter span,
+.law-btn,
+.single_office_location:hover .map_address .map_button,
+.map_address .map_button,
+.home_two_business_law_top .business_law_single_service a i:before,
+.home-two-testimonial .carousel-inner span,
+.home-two-counter .single-counter i,.home-two-counter .single-counter span,
+.btn-md:hover,
+.home-two-students-area .student-info .btn-sm:hover,
+.home-three-practice-area .col-xs-12.col-sm-6 i, 
+.home-three-practice-area .col-xs-12.col-sm-6:nth-child(1) i,
+.home-three-practice-area .col-xs-12.col-sm-6:nth-child(4) i,
+.home-three-practice-area .col-xs-12.col-sm-6:nth-child(5) i,
+.latest-news-text h2 a,
+.lfr span, .lfl span,
+footer.main-footer p a:hover,
+.footer-area .media-body p:last-child a:hover,
+.latest_news_details h4 a:hover,
+.hidden-class .attorny_head h2,
+.third-footer-tag ul li a:hover,
+.countings-div i,
+.countings-div span,
+.blog-accordion .panel-body ul li a:hover,
+.blog-accordion .accordion-deafult .panel-heading a.collapsed:hover,
+.blog-text ul li a:hover,
+.sidebar-tweet .media-body a,
+.top-heading-banner.blog-single ul li a,
+.about-author .button-plus-share p a:hover,
+.footer-area .tweet-feed .tweet li a:hover{
+    color: #0F9D58 ;
+}
+
+
+/*only gradient*/
+.latest-news-text .btn-default:hover,
+.btn-default:hover, .btn-default:focus,
+.header-top .text-right li a:hover,
+.home-three-business-law-top .practice_trigger-home-three li.active,
+.home-three-business-law-top .practice_trigger-home-three ul li.active, .home-three-business-law-top .practice_trigger-home-three ul li:hover,
+.icon_single_service a:hover,
+.carousel-control .fa:hover,
+.attorny_social.text-center ul li .fa:hover,
+.attorny-text:hover,
+.book-heading a:hover,
+.map-hover .fa,
+.our-map-location .owl-wrap-off .fa:hover,
+.subscribe-box-form .btn-lg.costom-btn:hover,
+.lovely-partner-slider .owl-controls .fa:hover,
+.home-three-pro-bono-area figure.effect-pro-bono:hover,
+.contact-form-last .costom-btn:hover,
+.footer-area .btn-subscribe,
+.color-code h1,
+.icon-fixed,
+footer .footer-bottom .col-sm-4 ul li:hover,
+.search-404 .btn-search:hover, .search-404 .btn-search:focus, .search-404 .btn-search:active,
+.about-us-skill .tab-nav ul li.active,
+.paginator .style-1:hover,
+#owl-blog-slider .owl-buttons .fa:hover,
+.paginator-center .active,
+.paginator-center a:hover,
+.dropcaps .dropcaps-widget-one p::first-letter,
+.icon ul.box-social li a:hover,
+#tabs .nav-tabs>li a:hover, #tabs .nav-tabs>li.active a,
+.latest_news_date,
+.practice_trigger ul li:hover, .practice_trigger ul li.active,
+.single_practice_icon i,
+.single_practice_icon:hover,
+.single_office_location:hover,
+.single-counter i:hover,
+.form_contact input[type="submit"]:hover,
+.law-btn:hover,
+.home_two_latest_news .latest_news_box a.fa,
+.home-two-practise .single_practice_icon:hover,
+.home_two_business_law_top .business_law_single_service:hover,
+.slider-btn,
+.attorny_arrow.white-arrow a,
+.home-two-students-area .student-info .btn-sm,
+.btn-md,
+.lovely-partner-slider .owl-controls .owl-buttons > div:hover,
+.form_contact .send-buttons:hover,
+.home-three-pro-bono-area figure.effect-pro-bono,
+.latest_news_box > a,
+.slider_con:hover,
+.attorny_hover,
+.accordion-deafult .panel-heading a,
+.home-two-attorney .attorny_hover_social ul li a:hover { 
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#259b60+8,099b52+100&amp;0.79+2,0.88+2,0.88+2,1+100 */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjIlIiBzdG9wLWNvbG9yPSIjMjU5YjYwIiBzdG9wLW9wYWNpdHk9IjAuODgiLz4KICAgIDxzdG9wIG9mZnNldD0iOCUiIHN0b3AtY29sb3I9IiMyNTliNjAiIHN0b3Atb3BhY2l0eT0iMC44OSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDk5YjUyIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+background: -moz-linear-gradient(-45deg,  rgba(37,155,96,0.88) 2%, rgba(37,155,96,0.89) 8%, rgba(9,155,82,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(2%,rgba(37,155,96,0.88)), color-stop(8%,rgba(37,155,96,0.89)), color-stop(100%,rgba(9,155,82,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg,  rgba(37,155,96,0.88) 2%,rgba(37,155,96,0.89) 8%,rgba(9,155,82,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg,  rgba(37,155,96,0.88) 2%,rgba(37,155,96,0.89) 8%,rgba(9,155,82,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg,  rgba(37,155,96,0.88) 2%,rgba(37,155,96,0.89) 8%,rgba(9,155,82,1) 100%); /* IE10+ */
+background: linear-gradient(135deg,  rgba(37,155,96,0.88) 2%,rgba(37,155,96,0.89) 8%,rgba(9,155,82,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0259b60', endColorstr='#099b52',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+}
+
+.gallery-image .portfolio-thumb::before,
+.sing_prac_caption {  
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#259b60+8,099b52+100&amp;0.79+2,0.88+2,0.88+2,1+100 */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjIlIiBzdG9wLWNvbG9yPSIjMjU5YjYwIiBzdG9wLW9wYWNpdHk9IjAuODgiLz4KICAgIDxzdG9wIG9mZnNldD0iOCUiIHN0b3AtY29sb3I9IiMyNTliNjAiIHN0b3Atb3BhY2l0eT0iMC44OSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDk5YjUyIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L2xpbmVhckdyYWRpZW50PgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+background: -moz-linear-gradient(-45deg,  rgba(37,155,96,0.88) 2%, rgba(37,155,96,0.89) 8%, rgba(9,155,82,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(2%,rgba(37,155,96,0.88)), color-stop(8%,rgba(37,155,96,0.89)), color-stop(100%,rgba(9,155,82,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg,  rgba(37,155,96,0.88) 2%,rgba(37,155,96,0.89) 8%,rgba(9,155,82,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg,  rgba(37,155,96,0.88) 2%,rgba(37,155,96,0.89) 8%,rgba(9,155,82,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg,  rgba(37,155,96,0.88) 2%,rgba(37,155,96,0.89) 8%,rgba(9,155,82,1) 100%); /* IE10+ */
+background: linear-gradient(135deg,  rgba(37,155,96,0.88) 2%,rgba(37,155,96,0.89) 8%,rgba(9,155,82,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0259b60', endColorstr='#099b52',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+}
+
+
+ul.nav.navbar-nav li > a:hover,
+ul.nav.navbar-nav li ul.mega-first-law li a:hover,
+ul.nav.navbar-nav li.current-page a,
+.latest-news-text h3:before,
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span,
+.partner-area .owl-wrap-partner .fa:hover,
+.totop,
+.social-icons li a:hover,
+.education-details .tab-nav .nav-tabs.nav-justified>.active>a,
+.accordion-deafult .panel-heading a,
+.blog-right-tab .tab-content li:hover:after,
+#owl-blog-slider .owl-controls .owl-page.active span, #owl-blog-slider .owl-controls.clickable .owl-page:hover span,
+.home_two_pro_bono_area .single_pro_bono:hover .pro_bono_text,
+.bottom-plus i:before, 
+.offcanvas-menu .close:hover,
+.slider-btn,
+.single_latest_item .home-three-news a.fa,
+.home-three-practice-area .col-xs-12.col-sm-6 i:hover,
+ul.nav.navbar-nav li.dropdown ul.single-dropdown li a:hover,
+.sidebar-tweet .tweet-feed .tweet ul li:hover {
+     background-color: #0F9D58;
+}
+
+.totop:hover{
+    background-color: #0F9D58;
+    opacity: 0.9;
+}
+
+
+.dropdown-menu {
+    border-top: 2px solid #0F9D58;
+}
+
+.single-counter i:hover { 
+    border: 2px solid #0F9D58;
+}
+
+.btn-default,
+.icon_single_service a {
+    border: 1px solid #0F9D58;
+    color: #0F9D58;
+ }
+
+
+
+.attorny_social.text-center ul li .fa:hover,
+.book-heading a,
+.lovely-partner-slider .owl-controls .fa:hover,
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span,
+.partner-area .owl-wrap-partner .fa:hover,
+.contact-form-last .input-group:hover, .contact-form-last .input-group:focus,
+.contact-form-last .form-control.message-box:hover,
+.contact-form-last .costom-btn,
+.footer-area .form-control:hover,
+.footer-area .btn-subscribe:hover,
+.search-404 .form-control:hover, .search-404 .form-control:focus,
+.search-404 .btn-search,
+.tag-cloud ul li a:hover,
+.social-list ul li:hover,
+#owl-blog-slider .owl-controls .owl-page.active span, #owl-blog-slider .owl-controls.clickable .owl-page:hover span,
+.paginator-center a:hover,
+.paginator-center .active,
+.free-case-evulution.contact-page-form .form-control:hover, .free-case-evulution.contact-page-form .form-control:focus,
+.dropcaps .dropcaps-widget-two p::first-letter,
+.icon ul.box-social li a:hover,
+section.free-case-evulution.faq-page-form .form-control:hover,
+.law-btn,
+.map_address .map_button,
+.home_two_business_law_top .business_law_single_service a,
+.home-two-testimonial .carousel .control-arrow-two .fa:hover,
+.form_contact input[type="submit"]:hover,
+/*.free-case-form input:hover, .free-case-form input:active, .free-case-form select:hover, 
+.free-case-form textarea#message:hover, .free-case-form textarea#message:active,
+.free-case-form input:hover, .free-case-form input:active, .free-case-form select:hover, 
+.free-case-form textarea#message:hover, .free-case-form textarea#message:active,*/
+
+.free-case-form input:hover, .free-case-form input:focus,
+.free-case-form input:active, .free-case-form select:hover,
+.free-case-form select:focus, .free-case-form textarea#message:hover,
+.free-case-form textarea#message:focus,
+.free-case-form textarea#message:active,
+.slider-btn,
+.home_two_latest_news .btn-default:hover,
+.footer-area .btn-subscribe,
+.form_contact .send-buttons:hover,
+.home-three-practice-area .col-xs-12.col-sm-6 i,
+.slider_con:hover,
+.footer-bottom .col-sm-4 ul.box-icon li:hover {
+    border: 1px solid #0F9D58 !important;
+}
+.btn-md,
+.home-three-case-form .free-case-form input:hover,
+.home-three-case-form .free-case-form select:hover,
+.home-three-case-form button:hover,
+#custom-search-input  .input-group:hover,
+.free-case-form button:hover{
+    border: 1px solid #0F9D58;
+}
+
+.practice-text-area,
+.ach-img:before,
+.business-hover figure.effect-home-two figcaption::before{
+     background: rgba(15, 157, 88, 0.8);
+}
+
+.contact_us_address,
+.subscribe-box-form:before {
+    background-color: rgba(15, 157, 88, 0.7);
+}
+.blog-accordion .accordion-deafult .panel-heading:hover {
+    border-left: 4px solid #0F9D58 !important;
+}
+
+.scrollspy .nav>li.active, .scrollspy .nav>li:hover {
+    border-left: 5px solid #0F9D58;
+}
+.single_attorny:hover .attorny_head {
+    border-bottom: 1px solid #B0600A;
+}
+.accordion-deafult .panel-heading a i{
+    border-right: 1px solid #0FC167;
+}
+
+.home-two-counter .single-counter i:hover { 
+    border: 2px solid transparent;
+}
+.lovely-partner-slider .owl-controls .owl-buttons > div:hover{
+    border-color: #0F9D58;
+}
+.single-leave-comments .form-control:focus, .single-leave-comments .form-control:hover{
+    border-color: #0F9D58;
+}
+
+.about-us-skill progress::-webkit-progress-value {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#259b60+20,099b52+100&amp;0.88+14,1+100 */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjE0JSIgc3RvcC1jb2xvcj0iIzI1OWI2MCIgc3RvcC1vcGFjaXR5PSIwLjg4Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjIwJSIgc3RvcC1jb2xvcj0iIzI1OWI2MCIgc3RvcC1vcGFjaXR5PSIwLjg5Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwOTliNTIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(-45deg,  rgba(37,155,96,0.88) 14%, rgba(37,155,96,0.89) 20%, rgba(9,155,82,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(14%,rgba(37,155,96,0.88)), color-stop(20%,rgba(37,155,96,0.89)), color-stop(100%,rgba(9,155,82,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg,  rgba(37,155,96,0.88) 14%,rgba(37,155,96,0.89) 20%,rgba(9,155,82,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg,  rgba(37,155,96,0.88) 14%,rgba(37,155,96,0.89) 20%,rgba(9,155,82,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg,  rgba(37,155,96,0.88) 14%,rgba(37,155,96,0.89) 20%,rgba(9,155,82,1) 100%); /* IE10+ */
+background: linear-gradient(135deg,  rgba(37,155,96,0.88) 14%,rgba(37,155,96,0.89) 20%,rgba(9,155,82,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0259b60', endColorstr='#099b52',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+
+.about-us-skill progress::-moz-progress-bar {
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#259b60+20,099b52+100&amp;0.88+14,1+100 */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjE0JSIgc3RvcC1jb2xvcj0iIzI1OWI2MCIgc3RvcC1vcGFjaXR5PSIwLjg4Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjIwJSIgc3RvcC1jb2xvcj0iIzI1OWI2MCIgc3RvcC1vcGFjaXR5PSIwLjg5Ii8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwOTliNTIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(-45deg,  rgba(37,155,96,0.88) 14%, rgba(37,155,96,0.89) 20%, rgba(9,155,82,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(14%,rgba(37,155,96,0.88)), color-stop(20%,rgba(37,155,96,0.89)), color-stop(100%,rgba(9,155,82,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg,  rgba(37,155,96,0.88) 14%,rgba(37,155,96,0.89) 20%,rgba(9,155,82,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg,  rgba(37,155,96,0.88) 14%,rgba(37,155,96,0.89) 20%,rgba(9,155,82,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg,  rgba(37,155,96,0.88) 14%,rgba(37,155,96,0.89) 20%,rgba(9,155,82,1) 100%); /* IE10+ */
+background: linear-gradient(135deg,  rgba(37,155,96,0.88) 14%,rgba(37,155,96,0.89) 20%,rgba(9,155,82,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0259b60', endColorstr='#099b52',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+}
