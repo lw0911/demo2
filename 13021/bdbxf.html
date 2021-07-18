@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>冰点币消费</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<script src="js/jquery-2.1.0.js"></script>
+		<style>
+			body{
+				margin: 0;
+				padding: 0;
+				background-color: #f4f6f3;
+			}
+			.list{
+				background-color: white;
+				box-sizing: border-box;
+				padding: 10px;
+				height: 140px;
+				margin-top: 10px;
+			}
+			.listIco{
+				display: block;
+				float: left;
+				width: 120px;
+				height: 120px;
+			}
+			.listRight{
+				height: 120px;
+			}
+			.title{
+				padding-left: 10px;
+				box-sizing: border-box;
+				max-height: 36px;
+				overflow-y: hidden;
+			}
+			.speedBox{
+				float: left;
+				background-color: #dcdcdc;
+				height: 15px;
+				margin: 20px 0 0 10px;
+				border-radius: 10px;
+			}
+			.speedBox div{
+				border-top-left-radius: 10px;
+				border-bottom-left-radius: 10px;
+				background-color: #4488e6;
+				color: white;
+				font-size: 14px;
+				height: 15px;
+				line-height: 15px;
+				width: 50%;
+				padding-left: 10px;
+			}
+			.money{
+				float: left;
+				margin: 20px 0 0 10px;
+			}
+			.exchange{
+				display: block;
+				float: right;
+				color: white;
+				background-color: #4488e6;
+				width: 50px;
+				height: 28px;
+				line-height: 28px;
+				text-align: center;
+				border-radius: 6px;
+				margin-top: 14px;
+			}
+		</style>
+</head>
+<!--/************************************************************
+ *																*
+ * 						      							*
+ *                       							*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+**************************************************************-->
+<body>
+		<img src="images/huiyuanzx.png" style="display: block;width: 100%;" />
+		<div style="height: 45px;line-height: 50px;background-color: white;padding: 5px 0 0 10px;">
+			<img src="images/product.png" style="display: block;float: left;width: 40px;height: 40px;border-radius: 50%;" />
+			<div style="float: left;line-height: 40px;margin-left: 15px;">冰点币：<font color="#4488e6">xx</font></div>
+		</div>
+		<div style="height: 45px;line-height: 45px;padding-left: 10px;">
+			<span style="color: #535352;font-size: 18px;">冰点大优惠</span>
+			<span style="color: #adadad;font-size: 14px;font-weight: 700;">冰点币消费日就是停不下来！</span>
+		</div>
+		<div class="listBox">
+			<div class="list">
+				<img class="listIco" src="images/product.png" />
+				<div class="listRight">
+					<div class="title">【新品首发】美国原装进口伟哥 99元/盒 顺丰包邮</div>
+					<div class="speedBox"><div>25人已兑换</div></div>
+					<div class="money"><font color="red">200</font>冰点币</div>
+					<a href="#" class="exchange">兑换</a>
+				</div>
+			</div>
+			<div class="list">
+				<img class="listIco" src="images/product.png" />
+				<div class="listRight">
+					<div class="title">【新品首发】美国原装进口伟哥 99元/盒 顺丰包邮</div>
+					<div class="speedBox"><div>25人已兑换</div></div>
+					<div class="money"><font color="red">200</font>冰点币</div>
+					<a href="#" class="exchange">兑换</a>
+				</div>
+			</div>
+			<div class="list">
+				<img class="listIco" src="images/product.png" />
+				<div class="listRight">
+					<div class="title">【新品首发】美国原装进口伟哥 99元/盒 顺丰包邮</div>
+					<div class="speedBox"><div>25人已兑换</div></div>
+					<div class="money"><font color="red">200</font>冰点币</div>
+					<a href="#" class="exchange">兑换</a>
+				</div>
+			</div>
+		</div>
+	
+		<script>
+			(function(){
+				$('.speedBox').css('width',parseInt($('.title').css('width'))-10);
+				$('.list').eq(0).css('margin-top','0px');
+			}())
+		</script>
+	</body>
+</html>

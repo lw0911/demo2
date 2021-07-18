@@ -1,0 +1,316 @@
+/****************************************************************
+ *																*		
+ * 						      							*
+ *                       							*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+****************************************************************/
+body{background: #F4F6F3;}
+/*********************swiper*************************/
+.swiper-container {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 7px
+}
+.swiper-slide {
+    text-align: center;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.swiper-container .swiper-slide img{
+    width:100%;
+    height:100px;
+}
+.store{
+    position: relative;
+    height:60px;
+    margin-bottom: 7px;
+}
+/*store*/
+.store a{
+    display: block;
+    width: 25%;
+    float: left;
+    height: 60px;
+    color: #454239;
+    text-align: center;
+    position: relative;
+    font-weight: 600;
+    background: #fff;
+    border-bottom: 1px solid #D7D7D7;
+}
+.store a img{
+    display: block;
+    width:60px;
+    height:60px;
+    position: absolute;
+    top:-20px;
+    left:20px;
+    z-index: 2;
+}
+.store a div{
+    margin: 10px 0 5px;
+    height:20px;
+}
+.store a p{
+    height:30px;
+    line-height: 20px;
+}
+.store a .collect{
+    background: url("../images/water_star.png") no-repeat center;
+    background-size: 20px 20px;
+}
+.store a .er{
+    background: url("../images/water_er.png") no-repeat center;
+    background-size: 20px 20px;
+}
+/*search*/
+.search{
+    background: #fff;
+    padding: 10px 10%;
+    border-bottom: 1px solid #D7D7D7;
+}
+.search input{
+    display: inline-block;
+    width:75%;
+    height:30px;
+    line-height: 30px;
+    background: #EFEFEF url("../images/search.png") no-repeat 5px center;
+    background-size: 16px 16px;
+    padding:0 5px 0 26px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 12px;
+}
+.search button{
+    display: inline-block;
+    width:21%;
+    height:30px;
+    line-height: 30px;
+    margin-left: 5px;
+    background: #0560DE;
+    color: #fff;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+/*nav*/
+.nav{
+    padding: 7px 2% 7px 5%;
+    overflow: hidden;
+}
+.nav .nav_list{
+    overflow: hidden;
+}
+.nav .nav_list li{
+    background: #fff;
+    float: left;
+    margin-right: 3%;
+    width:22%;
+    height:90px;
+    margin-bottom: 3px;
+}
+.nav .nav_list li a{
+    display: block;
+    font-size: 12px;
+    color: #5F5F5F;
+    padding-top: 60px;
+    text-align: center;
+    line-height: 30px;
+}
+.nav .nav_list li a.all{
+    background: url("../images/all.png") no-repeat center 10px;
+    background-size: 50px 50px;
+}
+.nav .nav_list li a.snacks{
+    background: url("../images/snacks.png") no-repeat center 10px;
+    background-size: 50px 50px;
+}
+.nav .nav_list li a.fresh_fruits{
+    background: url("../images/fresh_fruits.png") no-repeat center 10px;
+    background-size: 50px 50px;
+}
+.nav .nav_list li a.tea{
+    background: url("../images/tea.png") no-repeat center 10px;
+    background-size: 50px 50px;
+}
+.nav .nav_list li a.dry_fruits{
+    background: url("../images/dry_fruits.png") no-repeat center 10px;
+    background-size: 50px 50px;
+}
+.nav .nav_list li a.shoppe{
+    background: url("../images/shoppe.png") no-repeat center 10px;
+    background-size: 50px 50px;
+}
+.nav .nav_list li a.home{
+    background: url("../images/home.png") no-repeat center 10px;
+    background-size: 50px 50px;
+}
+.nav .nav_list li a.drinks{
+    background: url("../images/drinks.png") no-repeat center 10px;
+    background-size: 50px 50px;
+}
+/*top_line*/
+.top_line{
+    background: #fff;
+    height:35px;
+    line-height: 35px;
+    border-bottom: 1px solid #D7D7D7;
+}
+.top_line img{
+    display: inline-block;
+    width:60px;
+    height:14px;
+    vertical-align: middle;
+    margin-left: 5%;
+}
+.top_line a{
+    color: #4F4F4F;
+    font-weight: 600;
+    font-size: 12px;
+}
+.top_line a span{
+    color: #F95E5E;
+}
+/*panic_buying*/
+.panic_buying{
+    background: #F8F8F8;
+    border-top:2px solid #fff;
+    border-bottom:2px solid #fff;
+    margin: 7px 0;
+}
+.panic_buying ul{
+    overflow: hidden;
+}
+.panic_buying ul li{
+    float: left;
+    width:33.1%;
+}
+.panic_buying ul li:nth-child(2){
+    border-left: 2px solid #fff;
+    border-right: 2px solid #fff;
+}
+.panic_buying ul li img{
+    width:100%;
+    height:130px;
+}
+/*product*/
+.product{
+    margin-bottom: 60px;
+    background: #fff;
+}
+.product  .product_nav ul{
+    overflow: hidden;
+    color: #fff;
+}
+.product  .product_nav ul li{
+    float: left;
+    width:20%;
+    text-align: center;
+    border-top: 2px solid #fff;
+    background: #F8F8F8;
+    height:30px;
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+.product  .product_nav ul li a{
+    color: #39362E;
+    display: block;
+    width:100%;
+}
+.product  .product_nav ul li a.active{
+    color: #EC4B48;
+}
+.product  .product_nav ul li div.sort{
+    display: none;
+    position: relative;
+    top:4px;
+}
+.product  .product_nav ul li div.sort .sort_up,.product  .product_nav ul li div.sort .sort_down{
+    width:0;height:0;
+    border:4px solid transparent;
+}
+.product  .product_nav ul li div.sort .sort_up{
+    border-bottom-color:#FFA201;
+}
+.product  .product_nav ul li div.sort .sort_down{
+    border-top-color: #9B9B9B;
+    margin-top: 3px;
+}
+
+.product .product_data{
+    border-top: 1px solid #D8D8D8;
+    padding: 0 7px;
+}
+.product .product_data ul{
+    overflow: hidden;
+    padding-bottom: 7px;
+}
+.product .product_data ul li{
+    float: left;
+    padding: 10px 0;
+    border-bottom: 1px solid #DEDEDE;
+}
+.product .product_data ul li .left{
+    float: left;
+    width:35%;
+    height: 85px;
+}
+.product .product_data ul li .left img{
+    width:100%;
+    height: 85px;
+}
+.product .product_data ul li .right{
+    float: left;
+    width:65%;
+    height:85px;
+    font-size: 12px;
+    position: relative;
+    padding-left: 10px;
+}
+.product .product_data ul li .right .product_name{
+    margin-bottom: 1px;
+}
+.product .product_data ul li .right .djj{
+    color: #98989C;
+}
+.product .product_data ul li .right .bottom{
+    position: absolute;
+    bottom:0;
+    overflow: hidden;
+    width:90%;
+}
+.product .product_data ul li .right .bottom .good{
+    text-align: right;
+    color: #98989C;
+}
+.product .product_data ul li .right .bottom .price{
+    float: left;
+    color: #E63431;
+    font-size: 14px;
+    font-weight: 600;
+}
+.product .product_data ul li .right .bottom .price span{
+    color: #737374;
+    font-size: 12px;
+    text-decoration: line-through;
+    font-weight: 400;
+    margin-left: 5px;
+}
+.product .product_data ul li .right .bottom .how_much{
+    float: right;
+    font-weight:600 ;
+    line-height: 18px;
+}

@@ -1,0 +1,275 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<title>买卖圈</title>
+<meta content="易工场" name="keywords">
+<meta content="易工场" name="description">
+<meta http-equiv="Cache-Control" content="max-age=180">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link href="font/iconfont.css" rel="stylesheet" type="text/css" />
+<link href="css/basestyle.css" rel="stylesheet" type="text/css" />
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script src="js/iscroll-probe.js"></script>
+<script src="js/jquery.lazyload.js"></script>
+<script type="text/javascript" charset="utf-8">
+  $(function() {
+      $("img.lazy").lazyload({effect: "show"});
+  });
+</script>
+<script>
+var myScroll;
+var pullDownFlag,pullUpFlag;
+var pullDown,pullUp;
+var spinner;
+function positionJudge(){
+    if(this.y>40){    //判断下拉
+        pullDown.innerHTML = "放开刷新页面";
+        pullDownFlag = 1;
+    }else if(this.y<(this.maxScrollY-40)){   //判断上拉
+        pullUp.innerHTML = "加载页面";
+        pullUpFlag = 1;
+    }
+}
+function action(){
+    if(pullDownFlag==1){
+        pullDownAction();
+        pullDown.innerHTML = "下拉加载页面…";
+        pullDownFlag = 0;
+    }else if(pullUpFlag==1){
+        pullUpAction();
+        pullUp.innerHTML = "上拉刷新…";
+        pullUpFlag = 0;
+    }
+}
+function loaded(){
+    pullDownFlag = 0;
+    pullUpFlag = 0;
+    pullDown = document.getElementById("pullDown");
+    pullUp = document.getElementById("pullUp");
+    spinner = document.getElementById("spinner");
+    myScroll = new IScroll("#wrapper",{
+        probeType: 3,
+//        momentum: false,//关闭惯性滑动
+        mouseWheel: true,//鼠标滑轮开启
+        scrollbars: true,//滚动条可见
+        fadeScrollbars: true,//滚动条渐隐
+        interactiveScrollbars: true,//滚动条可拖动
+        shrinkScrollbars: 'scale', // 当滚动边界之外的滚动条是由少量的收缩
+        useTransform: true,//CSS转化
+        useTransition: true,//CSS过渡
+        bounce: true,//反弹
+        freeScroll: false,//只能在一个方向上滑动
+        startX: 0,
+        startY: 0,
+//        snap: "li",//以 li 为单位
+    });
+    myScroll.on('scroll',positionJudge);
+    myScroll.on("scrollEnd",action);
+}
+
+function updatePosition(){
+pullDown.innerHTML = this.y>>0;
+}
+document.addEventListener('touchmove', function (e) {
+    e.preventDefault();
+}, false);
+document.addEventListener('touchmove', function (e) {
+    e.preventDefault();
+}, false);
+myScroll.on('scroll',positionJudge);
+myScroll.on("scrollEnd",action);
+</script>
+</head>
+<body onload="loaded()">
+<script type="text/javascript">
+  $(function(){
+	  $(".mmq-fb-btn a").click(function(){
+		  $(".fb-leixing").fadeIn();
+		  })
+	  $(".fb-leixing").click(function(){
+		  $(".fb-leixing").fadeOut();
+		  })
+	  })
+</script>
+<div class="mmq-fb-btn"><a href="javascript:;"></a></div>
+<div class="fb-leixing" style="display:none;">
+  <div class="fb-lx-check">
+    <a href="avascript:;">发布商品</a>
+    <a href="avascript:;">发布需求</a>
+  </div>
+</div>
+<div id="wrapper">
+  <div id="scroller" class="mmq-box">
+    <div id="pullDown"> <span>下拉刷新…</span> </div>
+    <div class="mmq-top"><a href="shop2.html" class="hd-pic"><img src="images/touxiang2.png" /></a><div class="home-back-btn"><a href="index.html"></a></div></div>
+    <ul id="list" style="padding-bottom:0; padding-top:6rem;">
+      <li>
+        <div class="mmq-list">
+          <div class="header-pic"> <img class="lazy" data-original="images/tx3.jpg"> </div>
+          <div class="mmq-info">
+            <div class="tit tab">
+              <span class="name">快乐的小黄人</span>
+              <div class="mmq-label">需求</div>
+            </div>
+            <div class="txt">在宇宙中未知的地方有一个由12个人类殖民地组成的星际国家，人类为了方便制造了Cylons（机器人）为人类服务战之后停火，Cylons离开了殖民地去建立自己的家园的第13个殖民地——地球——的旅程。</div>
+            <div class="mmq-pic-gallery only tab">
+              <a href="#"><span><img class="lazy" data-original="http://www.xiaoni.com//upload/201605/21/2016521149589535.jpg" width="150" height="150"></span></a>
+  
+            </div>
+            <div class="mmq-pri-day"><span class="day">期望交货时间<em class="txt-yel">2015-10-10</em>之前</span></div>
+            <div class="proinfo-ft-opt mmq tab" id="down-show" style="display: block;">
+              <a href="javascript::" class="fl zt">匹配中</a>
+              <a href="javascript::" class="fl gz">关注</a>
+              <a href="javascript::" class="fl fxx">发消息</a>
+              <a href="javascript::" class="fr shop-btn">我来</a>
+            </div>
+            <div class="proinfo-zan mmq">
+              <span>我来</span>
+              <div class="zan-peo">
+                <ul class="tab">
+                  <li><a href="#"><img src="images/touxiang.png"></a></li>
+                  <li><a href="#"><img src="images/touxiang.png"></a></li>
+                  <li><a href="#"><img src="images/touxiang.png"></a></li>
+                  <li><a href="#"><img src="images/touxiang.png"></a></li>
+                  <li><a href="#"><img src="images/touxiang.png"></a></li>
+                </ul>
+              </div>
+              <a href="wolai2.html" class="more-zan"><i class="icon iconfont"></i></a>
+            </div>
+            <div class="mmq-send-time">40分钟前</div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="mmq-list">
+          <div class="header-pic"> <img  class="lazy" data-original="images/tx.jpg"> </div>
+          <div class="mmq-info">
+            <div class="tit tab">
+              <span class="name">快乐的小黄人</span>
+            </div>
+            <div class="txt">在宇宙中未知的地方有一个由12个人类殖民地组成的星际国家，人类为了方便制造了Cylons（机器人）为人类服务战之后停火，Cylons离开了殖民地去建立自己的家园的第13个殖民地——地球——的旅程。</div>
+            <div class="mmq-pic-gallery tab">
+              <a href="#"><span><img class="lazy" data-original="http://www.xiaoni.com//upload/201605/21/2016521149589535.jpg" width="150" height="150"></span></a>
+              <a href="#"><span><img class="lazy" data-original="http://www.xiaoni.com//upload/201605/21/2016521149589535.jpg" width="150" height="150"></span></a>
+              <a href="#"><span><img class="lazy" data-original="http://www.xiaoni.com//upload/201605/21/2016521149589535.jpg" width="150" height="150"></span></a>
+            </div>
+            <div class="mmq-pri-day"><span class="pri"><s>￥</s><em>325.00</em></span><span class="day">交货周期<em>7</em>天</span></div>
+            <div class="proinfo-ft-opt mmq tab" id="down-show" style="display: block;">
+              <a href="javascript::" class="fl pl">评论</a>
+              <a href="javascript::" class="fl gz">关注</a>
+              <a href="javascript::" class="fl fxx">发消息</a>
+              <a href="javascript::" class="fr shop-btn">购买</a>
+            </div>
+            <div class="mmq-send-time">40分钟前</div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="mmq-list">
+          <div class="header-pic"> <img  class="lazy" data-original="images/tx.jpg"> </div>
+          <div class="mmq-info">
+            <div class="tit tab">
+              <span class="name">快乐的小黄人</span>
+            </div>
+            <div class="txt">在宇宙中未知的地方有一个由12个人类殖民地组成的星际国家，人类为了方便制造了Cylons（机器人）为人类服务战之后停火，Cylons离开了殖民地去建立自己的家园的第13个殖民地——地球——的旅程。</div>
+            <div class="mmq-pic-gallery tab">
+              <a href="#"><span><img class="lazy" data-original="http://www.xiaoni.com//upload/201605/21/2016521149589535.jpg" width="150" height="150"></span></a>
+              <a href="#"><span><img class="lazy" data-original="http://www.xiaoni.com//upload/201605/21/2016521149589535.jpg" width="150" height="150"></span></a>
+              <a href="#"><span><img class="lazy" data-original="http://www.xiaoni.com//upload/201605/21/2016521149589535.jpg" width="150" height="150"></span></a>
+            </div>
+            <div class="mmq-pri-day"><span class="pri"><s>￥</s><em>325.00</em></span><span class="day">交货周期<em>7</em>天</span></div>
+            <div class="proinfo-ft-opt mmq tab" id="down-show" style="display: block;">
+              <a href="javascript::" class="fl pl">评论</a>
+              <a href="javascript::" class="fl gz">关注</a>
+              <a href="javascript::" class="fl fxx">发消息</a>
+              <a href="javascript::" class="fr shop-btn">购买</a>
+            </div>
+            <div class="mmq-send-time">40分钟前</div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="mmq-list">
+          <div class="header-pic"> <img  class="lazy" data-original="images/tx.jpg"> </div>
+          <div class="mmq-info">
+            <div class="tit tab">
+              <span class="name">快乐的小黄人</span>
+            </div>
+            <div class="txt">在宇宙中未知的地方有一个由12个人类殖民地组成的星际国家，人类为了方便制造了Cylons（机器人）为人类服务战之后停火，Cylons离开了殖民地去建立自己的家园的第13个殖民地——地球——的旅程。</div>
+            <div class="mmq-pic-gallery tab">
+              <a href="#"><span><img class="lazy" data-original="http://www.xiaoni.com//upload/201605/21/2016521149589535.jpg" width="150" height="150"></span></a>
+              <a href="#"><span><img class="lazy" data-original="http://www.xiaoni.com//upload/201605/21/2016521149589535.jpg" width="150" height="150"></span></a>
+              <a href="#"><span><img class="lazy" data-original="http://www.xiaoni.com//upload/201605/21/2016521149589535.jpg" width="150" height="150"></span></a>
+            </div>
+            <div class="mmq-pri-day"><span class="pri"><s>￥</s><em>325.00</em></span><span class="day">交货周期<em>7</em>天</span></div>
+            <div class="proinfo-ft-opt mmq tab" id="down-show" style="display: block;">
+              <a href="javascript::" class="fl pl">评论</a>
+              <a href="javascript::" class="fl gz">关注</a>
+              <a href="javascript::" class="fl fxx">发消息</a>
+              <a href="javascript::" class="fr shop-btn">购买</a>
+            </div>
+            <div class="mmq-send-time">40分钟前</div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="mmq-list">
+          <div class="header-pic"> <img  class="lazy" data-original="images/tx.jpg"> </div>
+          <div class="mmq-info">
+            <div class="tit tab">
+              <span class="name">快乐的小黄人</span>
+            </div>
+            <div class="txt">在宇宙中未知的地方有一个由12个人类殖民地组成的星际国家，人类为了方便制造了Cylons（机器人）为人类服务战之后停火，Cylons离开了殖民地去建立自己的家园的第13个殖民地——地球——的旅程。</div>
+            <div class="mmq-pic-gallery tab">
+              <a href="#"><span><img class="lazy" data-original="http://www.xiaoni.com//upload/201605/21/2016521149589535.jpg" width="150" height="150"></span></a>
+              <a href="#"><span><img class="lazy" data-original="http://www.xiaoni.com//upload/201605/21/2016521149589535.jpg" width="150" height="150"></span></a>
+              <a href="#"><span><img class="lazy" data-original="http://www.xiaoni.com//upload/201605/21/2016521149589535.jpg" width="150" height="150"></span></a>
+            </div>
+            <div class="mmq-pri-day"><span class="pri"><s>￥</s><em>325.00</em></span><span class="day">交货周期<em>7</em>天</span></div>
+            <div class="proinfo-ft-opt mmq tab" id="down-show" style="display: block;">
+              <a href="javascript::" class="fl pl">评论</a>
+              <a href="javascript::" class="fl gz">关注</a>
+              <a href="javascript::" class="fl fxx">发消息</a>
+              <a href="javascript::" class="fr shop-btn">购买</a>
+            </div>
+            <div class="mmq-send-time">40分钟前</div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="mmq-list">
+          <div class="header-pic"> <img  class="lazy" data-original="images/tx.jpg"> </div>
+          <div class="mmq-info">
+            <div class="tit tab">
+              <span class="name">快乐的小黄人</span>
+            </div>
+            <div class="txt">在宇宙中未知的地方有一个由12个人类殖民地组成的星际国家，人类为了方便制造了Cylons（机器人）为人类服务战之后停火，Cylons离开了殖民地去建立自己的家园的第13个殖民地——地球——的旅程。</div>
+            <div class="mmq-pic-gallery tab">
+              <a href="#"><span><img class="lazy" data-original="http://www.xiaoni.com//upload/201605/21/2016521149589535.jpg" width="150" height="150"></span></a>
+              <a href="#"><span><img class="lazy" data-original="http://www.xiaoni.com//upload/201605/21/2016521149589535.jpg" width="150" height="150"></span></a>
+              <a href="#"><span><img class="lazy" data-original="http://www.xiaoni.com//upload/201605/21/2016521149589535.jpg" width="150" height="150"></span></a>
+            </div>
+            <div class="mmq-pri-day"><span class="pri"><s>￥</s><em>325.00</em></span><span class="day">交货周期<em>7</em>天</span></div>
+            <div class="proinfo-ft-opt mmq tab" id="down-show" style="display: block;">
+              <a href="javascript::" class="fl pl">评论</a>
+              <a href="javascript::" class="fl gz">关注</a>
+              <a href="javascript::" class="fl fxx">发消息</a>
+              <a href="javascript::" class="fr shop-btn">购买</a>
+            </div>
+            <div class="mmq-send-time">40分钟前</div>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div id="pullUp"><span>123</span></div>
+  </div>
+</div>
+</body>
+</html>

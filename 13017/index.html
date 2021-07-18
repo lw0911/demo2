@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" type="text/css" href="css/index.css" media="all" />
+<script type="text/javascript" src="js/jQuery.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/jquery_lazyload.js"></script>
+<title>扁平的分销平台介绍专题单页模板 </title>
+<meta name="keywords" content="国内网站模板,活动专题页面" />
+<meta name="description" content="扁平的分销平台介绍专题模板html下载，美观大气简洁，适合活动专题介绍单页。" />
+<link rel="shortcut icon" href="images/favicon.ico" />
+	<style>
+		*{ margin:0; padding:0;}
+		a img {
+			border: 0
+		}
+		img {
+			vertical-align: middle
+		}
+		ul li{ list-style:none;}
+		div {
+			display: block;
+		}
+		.box{ width:100%; }
+		.banner{ width:999px; height:532px; margin: 0 auto;  }
+		.box-sm{ width:999px; margin:0 auto;}
+@media (min-width: 1920px) {
+			.margin-left-1{padding-left:18px; }
+			.margin-left-2{padding-left:-10px;  }
+
+
+}
+
+	</style>
+
+	<body>
+<!--[if lte IE 8]>  <script language="javascript">$(function (){$.browser.msie&&$("#ie9-tips").show().find("#stopSuggestA").click(function(){$("#ie9-tips").hide()})})</script><![endif]-->
+<div class="nav clearfix">
+	<div class="nav-content">
+		<h1 class="left" style='color:white;font-size:30px;height:49px;line-height:49px;'>东南商城分销平台</span></h1>
+		
+		<div class="right line-li">
+        
+			 <ul>
+        <li><a href="javascript:;">首页</a></li>
+        <li><a href="javascript:;">公司简介</a></li>
+        <li><a href="javascript:;" >分成流程</a></li>
+		<li><a href="javascript:;">手机端访问</a></li>
+
+		<li><a href="javascript:;">管理登陆</a></li>
+	    <!--<li class="nav_menu_li_1"><a style="width:70px; text-align:left;" class="_hover">产品中心<i></i></a>
+					 <div class="sub-nav">
+						 <a href="site/package" target="_black">微盟套餐</a>
+						 <a href="site/guide1">功能介绍</a>
+						 <a href="topic/weipai" target="_black">微拍</a>
+						 <a href="topic/wifi" target="_black">微盟WiFi</a>
+						 <a href="topic/printer" target="_black">小票机</a>
+					 </div>
+
+	    </li>
+		<li  class="nav_menu_li_1"><a style="width:70px; text-align:left;" class="_hover">关于微盟<i></i></a>
+			 <div class="sub-nav">
+			 			<a href="site/aboutus" target="_black">关于我们</a>
+						 <a href="site/news" target="_black">媒体报道</a>
+						 <a href="site/proxy1" target="_black">渠道代理</a>
+			 </div>
+
+	
+		</li>
+        <li class="nav_menu_li_1"><a style="width:70px; text-align:left;" class="_hover" target="_black">帮助中心<i></i></a>
+
+					 <div class="sub-nav">
+						 <a href="site/help" target="_black">使用指南</a>
+						 <a href="site/wenda" target="_black">产品问答</a>
+						 <a href="javascript:;" target="_black">在线咨询</a>
+					 </div>
+        </li>
+          -->
+    </ul>
+            <div class="account">
+			        <a href="site/reg1" class="btn-reg btn0" target="_black">注册</a>
+			          			        <a href="javascript:;" class="btn-login btn0" onClick="if(location.hostname.indexOf('.cn')>-1){location.href='site/login'; return false;} loginBox.toggle(this, event);">登录</a>
+										 <a href="javascript:;" class="btn-login btn0" onClick="if(location.hostname.indexOf('.cn')>-1){location.href='site/login'; return false;} loginBox2.toggle(this, event);">合作商登录</a>
+										
+								
+			</div>
+	           <!-- 下拉二维码<div id="qrcode" class="qrcode">
+					<div>
+						<a id="switch" href="javascript:;"  class="switch"></a>
+						<div id="qrcode_body" class="qrcode_body">
+
+						</div>
+					</div>
+				</div>-->
+		</div>
+	</div>
+</div>
+
+	<div id="loginBox">
+		<div class="login-panel">
+			<h3>登录</h3>
+			<div class="login-mod">
+				<div class="login-err-panel dn" id="err_area">
+					<span class="icon-wrapper"><i class="icon24-login err" style="margin-top:-.2em;*margin-top:0;"></i></span>
+					<span id="err_tips"></span>
+				</div>
+				<form class="login-form" id="login-form">
+					<div class="login-un">
+						<span class="icon-wrapper"><i class="icon24-login un"></i></span>
+						<input type="text" id="username" placeholder="账号">
+					</div>
+					<div class="login-pwd">
+						<span class="icon-wrapper"><i class="icon24-login pwd"></i></span>
+						<input type="password" id="password" placeholder="密码">
+					</div>
+				</form>
+				<div class="login-help-panel">
+					<a id="rememberPwd" class="login-remember-pwd" href="javascript:;">
+						<input type="checkbox" id="rememberPwdIcon">记住帐号
+					</a>
+					<a class="login-forget-pwd" href="forgotpassword/">忘记密码？</a>
+                    <a class="login-forget-pwd" href="site/reg1">新用户注册</a>
+				</div>
+				<div class="login-btn-panel">
+					<a class="login-btn" title="点击登录" href="javascript:;" id="login_button" onClick="login();">登录</a>
+				</div>
+			</div>
+		</div>
+		<div class="login-cover" onClick="loginBox.toggle(this, event);"></div>
+	</div>
+
+	<div id="loginBox2">
+		<div class="login-panel">
+			<h3>合作商登录</h3>
+			<div class="login-mod">
+				<div class="login-err-panel dn" id="err_area">
+					<span class="icon-wrapper"><i class="icon24-login err" style="margin-top:-.2em;*margin-top:0;"></i></span>
+					<span id="err_tips"></span>
+				</div>
+				<form class="login-form" id="login-form">
+					<div class="login-un">
+						<span class="icon-wrapper"><i class="icon24-login un"></i></span>
+						<input type="text" id="username" placeholder="账号">
+					</div>
+					<div class="login-pwd">
+						<span class="icon-wrapper"><i class="icon24-login pwd"></i></span>
+						<input type="password" id="password" placeholder="密码">
+					</div>
+				</form>
+				<div class="login-help-panel">
+					<a id="rememberPwd" class="login-remember-pwd" href="javascript:;">
+						<input type="checkbox" id="rememberPwdIcon">记住帐号
+					</a>
+					<a class="login-forget-pwd" href="forgotpassword/">忘记密码？</a>
+                    <a class="login-forget-pwd" href="site/reg1">新用户注册</a>
+				</div>
+				<div class="login-btn-panel">
+					<a class="login-btn" title="点击登录" href="javascript:;" id="login_button" onClick="login();">登录</a>
+				</div>
+			</div>
+		</div>
+		<div class="login-cover" onClick="loginBox2.toggle(this, event);"></div>
+	</div>
+
+
+<div id="ie9-tips" class="clearfix">
+	<div id="tipsPanel">
+		<div id="tipsDesc">系统检测到您所使用的浏览器版本较低，推荐使用<a href="javascript:;" target="_blank">Firefox</a>或<a href="javascript:;" target="_blank">Chrome</a>浏览器打开，否则将无法体验完整产品功能。</div>
+		<a id="stopSuggestA" href="javascript:;">×</a>
+	</div>
+</div>
+
+<script>
+var $do_submit = false;
+
+// 绑定回车键
+$('#loginBox').keydown(function(e){
+	if(13 == event.keyCode){
+		login();
+	}
+});
+$('#loginBox2').keydown(function(e){
+	if(13 == event.keyCode){
+		login();
+	}
+});
+
+	function login()
+	{
+		if (true == $do_submit)
+		{
+			return false;
+		}
+
+		var $pre_submit = '登录', $done_submit = '登录中...';
+		var $username = $('#username').val(), $password = $('#password').val(), $keepalive = $('#rememberPwdIcon').val();
+		$('#login_button').text($done_submit);
+		$do_submit = true;
+
+		// check
+		if ('' == $username || '' == $password)
+		{
+			$('#err_tips').text('您输入的账号或密码错误，请重新输入！');
+			$('#err_area').show();
+			$('#login_button').text($pre_submit);
+			$do_submit = false;
+			return false;
+		}
+
+		var $login_data = {
+			username:$username,
+			password:$password,
+			keepalive:$keepalive
+		};
+		$.post('login', $login_data, function(rs){
+			if(rs.errno == 200)
+			{
+				location.href = rs.url_route;
+			}
+			else
+			{
+				$('#err_tips').text(rs.error);
+				$('#err_area').show();
+				$('#login_button').text($pre_submit);
+			}
+			$do_submit = false;
+		}, 'json');
+	}
+</script>
+<script>
+			//alert($);
+			$(function(){
+				var slider = {
+					flag:false,
+					moving:false,
+					owner:$("#qrcode"),
+					lastEvt:null,
+					handleEvent: function(evt, delay){
+						var that = this;
+						if(that.moving){
+							that.lastEvt = {type:evt.type};
+							return;
+						}else{
+							that.lastEvt = null;
+						}
+						that.moving = true;
+						that.flag = ("mouseenter" == evt.type);
+						if(that.flag){
+							params = {opacity:"1", top:"0px"};
+							$("#qrcode_body").addClass("on");
+							$("#switch").addClass("on");
+						}else{
+							params = {opacity:"0", top:"-50px"};
+							$("#switch").removeClass("on");
+						}
+						
+						$("#qrcode_body").animate(params, 500, "swing", function(){
+							if(that.flag){
+
+							}else{
+								$("#qrcode_body").removeClass("on");
+							}
+							that.moving = false;
+							that.lastEvt&&that.handleEvent(that.lastEvt, true);
+						});
+					}
+				};
+				
+				slider.owner.bind("mouseenter mouseleave", function(evt){
+					slider.handleEvent(evt);
+				});
+
+
+
+			});
+		</script>
+
+		
+	<div class="box" style="position: relative; background-image:url(images/sdp/sdp-b_02.jpg?2014-11-27); height:532px; margin-top:50px; background-color:#3fc2a2;">
+		<div class="banner" style="position: absolute; left:154px;">
+			<h1><img alt="东南商城分销平台" src="images/sdp/sdp_03.png?2014-11-27" class="margin-left-1" width="999" height="531"  usemap="#Map"></h1>
+			<map name="Map" id="Map">
+			  <area shape="rect" coords="584,295,879,372" href="site/reg1" target="_blank" />
+			</map>
+		</div>
+	</div>
+	<div class="box" style="background-color:#fff;">
+		<div class="box-sm" >
+			<H2><img  alt="东南分销三大角色" src="images/sdp/sdp_05.jpg" width="999" height="687"></H2>
+		</div>
+	</div>
+	<div class="box" style="background-image:url(images/sdp/sdp-b_04.jpg);background-position: center bottom; background-color:#ffffff; height:512px;">
+		<div class="box-sm" >
+			
+			<H3><img alt="东南分销解决四大难题" style="margin:0 auto; width:999px;" src="images/sdp/sdp_06.png" width="999" height="463"></h3>		
+		</div>
+	</div>
+
+	<div class="box" style="background-image:url(images/sdp/sdp-b_05.jpg); background-color:#fff ;  height:625px;">
+		<div class="box-sm" >
+			<h4><img alt="东南分销五大价值" src="images/sdp/sdp_07.png" style="margin:0 auto; width:999px;" width="999" height="623"></h4>
+		</div>
+	</div>
+	<div class="box"  style="background-image:url(images/sdp/sdp-b_06.jpg);  background-color:#49423d; height:662px; ">
+		<div class="box-sm"><img src="images/sdp/sdp_08.png"  style="margin:0 auto; width:999px;" width="999" height="663" ></div>
+	</div>
+
+	<div class="box"  style="background-image:url(images/sdp/sdp-b_07.jpg); height:701px;">
+		<div class="box-sm" ><img src="images/sdp/sdp_09.png" width="999" height="700"></div>
+	</div>
+	<div class="box"  style="background-image:url(images/sdp/sdp-b_08.jpg);  background-color:#49423d; height:668px; ">
+		<div class="box-sm" ><img src="images/sdp/sdp_10.png"  width="999" height="669"></div>
+	</div>
+	<div class="box"  style=" position: relative; background-image:url(images/sdp/sdp-b_09.jpg);  background-color:#49423d; height:635px; ">
+		<div class="box-sm" style=" position: absolute;left:114px; top:5px;" ><img src="images/sdp/sdp_11.png?2014-11-27" class="margin-left-2"  width="999" height="620"></div>
+	</div>
+	<!--<div class="box"  style="background-color:#fff; background-position: center bottom;">
+		<div class="box-sm" >
+			<img src="images/sdp/sdp_11.jpg" width="999" height="164">
+			<img src="images/sdp/sdp_13.jpg" width="999" height="154">
+			<img src="images/sdp/sdp_14.jpg" width="999" height="178">
+			<img src="images/sdp/sdp_15.jpg" width="999" height="164" usemap="#Map2" border="0">
+			<map name="Map2" id="Map2">
+			  <area shape="rect" coords="303,29,703,116"  href="site/reg1" target="_blank" />
+			</map>
+		</div>
+	</div>-->
+
+	
+
+<!--<div class="erwei" title="微信扫一扫">
+	<span class="hudongzhushou">官方微信</span>
+	<div class="erwei_big" style="display:none;">
+		<p>扫一扫，关注微盟官方微信，体验微盟智能服务</p>
+	</div>
+</div>-->
+
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		var erwei_time = null;
+		$(".erwei").hover(function(){
+			$(".erwei_big").show();
+		}).mouseleave(function(){
+				erwei_time = setTimeout(function(){
+					$(".erwei_big").hide();
+				},1000);
+			});
+		$(".erwei_big").mouseenter(function(){
+			if(erwei_time){
+				clearTimeout(erwei_time);
+			}
+		}).mouseleave(function(){
+				erwei_time = setTimeout(function(){
+					$(".erwei_big").hide();
+				},1000);
+			});
+	});
+</script>
+<!-- 意见反馈 -->
+<div id="feedback_cover" class="feedback_cover"></div>
+<!--QQ咨询-->
+<!--script charset="utf-8" type="text/javascript" src="http://static.b.qq.com/account/bizqq/js/wpa.js?wty=1&type=13&kfuin=4006305400&ws=http%3A%2F%2Fwww.weimob.com%2F&title=%e4%bc%81%e4%b8%9aQQ%e5%94%ae%e5%89%8d&cot1=%e5%9b%bd%e5%86%85%e6%9c%80%e5%a4%a7%e7%9a%84%e5%be%ae%e4%bf%a1%e5%85%ac%e4%bc%97%e6%9c%8d%e5%8a%a1%e5%b9%b3%e5%8f%b0&btn1=%e4%bc%81%e4%b8%9aQQ%e5%92%a8%e8%af%a2&fsty=0&fposX=2&fposY=1&tx=2&aty=1&a=1001"></script-->
+<div id="wpa_release_b04" class="wpa_release_b04 wpa_release_b04_02">
+					<div class="wpa_release_b04_btn_box">
+						<a  class="wpa_release_b04_btn" href="tencent://message/?Menu=yes&uin=3213704425&Site=东南商城qq客服&Service=10&sigT=10&sigU=10" target="_blank">企业QQ咨询</a>
+					</div>
+					<div id="closeBtn" class="closeBtn"></div>
+				</div>
+				<!--<div id="popup-layer" class="popup-layer" style="opacity:0;top:-500px;">
+				    <div class="popup-layer-box">
+				        <div class="popup-close"></div>
+				        <a href="site/reg1" class="popup-btn-a" target="_blank"></a>
+				        <a href="javascript:;" class="popup-btn-b" target="_blank"></a>
+				    </div>
+				</div>-->
+<script>
+	$(function(){
+				$("#closeBtn").click(function(){
+					$("#wpa_release_b04").remove();
+				});
+				
+				if(document.cookie.indexOf("popupLayer")<0){
+					setTimeout(function(){
+						fadeIn();
+						$("#popup-layer .popup-close").click(function(){
+							fadeOut();
+						});
+					}, 30*1000);
+					document.cookie = "popupLayer=1";
+				}
+
+				function fadeIn(){
+					$("#popup-layer").animate({opacity:1, top:200}, 500, "swing", function(){
+						
+					});
+				}
+
+				function fadeOut(){
+					$("#popup-layer").animate({opacity:0, top:850}, 500, "swing", function(){
+						$("#popup-layer").css({top:-500});
+					});
+				}
+
+			});
+		</script>
+
+<div class="footer">
+	<div class="footer-content clearfix">
+		<div class="foot-menu">
+			<p>
+				<a href="index.html" target="_blank">商城首页</a>&nbsp;|&nbsp;
+				<a href="site/reg1" target="_blank">申请入驻</a>&nbsp;|&nbsp;
+				<a href="site/proxy1" target="_blank">渠道代理</a>&nbsp;|&nbsp;
+				<a href="site/aboutus" target="_blank">关于微盟</a>&nbsp;|&nbsp;
+				<a href="site/agents" target="_blank">授权认证</a>&nbsp;|&nbsp;
+				<a href="javascript:;" target="_blank">代理商登录</a>&nbsp;|&nbsp;
+				<a href="gdt" target="_blank">广点通</a>&nbsp;|&nbsp;
+				<a href="javascript:;" target="_blank">iwork365</a>&nbsp;|&nbsp;
+				<a href="javascript:;" target="_blank">V店</a>
+
+			</p>
+			<p style="margin-top:6px;">免费热线：×××&nbsp;&nbsp;&nbsp;QQ：×××&nbsp;&nbsp;&nbsp;邮箱：×××</p>
+			<p>地址：×××</p>
+		</div>
+		<div class="copyright">
+			
+		</div>
+	</div>
+</div>
+
+</body>
+</HTML>

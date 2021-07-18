@@ -1,0 +1,471 @@
+
+
+.rtl {
+  direction: rtl; 
+}
+
+.ltr {
+  direction: ltr; 
+}
+
+.rtl .main-header .header-top .text{
+  float: right;
+}
+
+.rtl .main-header .header-top .location-box{
+  float: left;
+}
+
+.rtl .main-header .header-top .top-inner:before{
+  left: inherit;
+  right: 0px;
+}
+
+.rtl .main-header .header-top .top-inner{
+  padding-left: 0px;
+  padding-right: 30px;
+}
+
+.rtl .header-upper .logo-box{
+  left: inherit;
+  right: 0px;
+}
+
+.rtl .header-upper{
+  padding-left: 0px;
+  padding-right: 300px;
+}
+
+.rtl .banner-carousel{
+  direction: ltr;
+}
+
+.rtl .main-header .header-top{
+  padding-left: 0px;
+  padding-right: 300px;
+}
+
+.rtl .header-upper .info-box{
+  float: left;
+}
+
+.rtl .header-upper .social-links{
+  float: right;
+}
+
+.rtl .header-upper .info-box li{
+  margin-right: 0px;
+  margin-left: 30px;
+  padding-left: 0px;
+  padding-right: 45px;
+  text-align: right;
+}
+
+.rtl .header-upper .info-box li i{
+  left: inherit;
+  right: 0px;
+}
+
+.rtl .header-upper .info-box li:last-child{
+  margin-left: 0px;
+}
+
+.rtl .main-menu{
+  float: right;
+}
+
+.rtl .main-header .menu-right-content{
+  float: left;
+}
+
+.rtl .main-menu .navigation > li{
+  float: right;
+}
+
+.rtl .main-menu .navigation > li:first-child{
+  margin-right: 0px;
+  margin-left: 37px !important;
+}
+
+.rtl .main-menu .navigation > li:last-child{
+  margin-left: 0px;
+  margin-right: 37px !important;
+}
+
+.rtl .main-menu .navigation > li > ul > li > a, 
+.rtl .main-menu .navigation > li > .megamenu li > a{
+  text-align: right;
+}
+
+.rtl .main-menu .navigation li.dropdown .megamenu li h4{
+  text-align: right;
+}
+
+.rtl .main-menu .navigation > li > ul > li > a:before{
+  left: inherit;
+  right: -30px;
+  content: "\f104";
+}
+
+.rtl .main-menu .navigation > li > ul > li > a:hover:before {
+  right: -17px;
+}
+
+.rtl .main-menu .navigation > li > ul > li.dropdown > a:after{
+  right: inherit;
+  left: 20px;
+  content: "\f104";
+}
+
+.rtl .main-menu .navigation > li > ul > li > ul > li > a{
+  text-align: right;
+}
+
+.rtl .main-menu .navigation > li > ul > li > ul > li > a:before{
+  left: inherit;
+  right: -30px;
+  content: "\f104";
+}
+
+.rtl .main-menu .navigation > li > ul > li > ul > li > a:hover:before{
+  right: -17px;
+}
+
+.rtl .search-popup .search-form fieldset input[type="submit"]{
+  right: inherit;
+  left: 0px;
+}
+
+.rtl .search-popup .search-form fieldset input[type="search"]{
+  padding-right: 30px;
+  padding-left: 250px;
+}
+
+.rtl #content_block_3 .content-box{
+  text-align: right;
+}
+
+.rtl #content_block_3 .content-box .shediul-box i{
+  right: inherit;
+  left: 60px;
+}
+
+.rtl #content_block_2 .content-box h4{
+  text-align: right;
+}
+
+.rtl #content_block_2 .content-box .list li{
+  padding-left: 0px;
+  padding-right: 22px;
+  text-align: right;
+}
+
+.rtl #content_block_2 .content-box .list li:before{
+  left: inherit;
+  right: 0px;
+}
+
+.rtl #content_block_2 .content-box .inner-box li{
+  padding-left: 0px;
+  padding-right: 60px;
+  text-align: right;
+  float: right;
+  margin-right: 0px;
+  margin-left: 10px;
+}
+
+.rtl #content_block_2 .content-box .inner-box li i{
+  left: inherit;
+  right: 25px;
+}
+
+.rtl #content_block_2 .content-box .inner-box li:last-child{
+  margin-left: 0px;
+}
+
+.rtl #content_block_1 .content-box h2{
+  text-align: right;
+}
+
+.rtl #content_block_1 .content-box .image-holder{
+  padding-right: 0px;
+  padding-left: 50px;
+  margin-right: 0px;
+  margin-left: 40px;
+}
+
+.rtl #content_block_1 .content-box .image-holder .icon-box{
+  right: inherit;
+  left: 0px;
+}
+
+.rtl #content_block_1 .content-box .image-holder .line{
+  left: inherit;
+  right: -45px;
+}
+
+.rtl .three-item-carousel{
+  direction: ltr;
+}
+
+.rtl .service-block-one .inner-box .lower-content{
+  text-align: right;
+}
+
+.rtl .service-block-one .inner-box .lower-content .price{
+  right: inherit;
+  left: 30px;
+}
+
+.rtl #content_block_4 .content-box .service-box{
+  text-align: right;
+}
+
+.rtl #content_block_4 .content-box .service-box ul li span{
+  float: left;
+}
+
+.rtl .service-style-two .image-layer{
+  right: inherit;
+  left: 0px;
+}
+
+.rtl .service-style-two .inner-box{
+  text-align: right;
+}
+
+.rtl .service-style-two .inner-box .single-item:nth-child(2){
+  margin-left: 0px;
+  margin-right: 20px;
+}
+
+.rtl .service-style-two .inner-box .single-item{
+  padding-left: 30px;
+  padding-right: 165px;
+}
+
+.rtl .service-style-two .inner-box .single-item .icon-box{
+  left: inherit;
+  right: 40px;
+}
+
+.rtl .service-style-two .inner-box .single-item .icon-box:before{
+  right: 90px;
+}
+
+.rtl .service-section .owl-dots{
+  text-align: right;
+}
+
+.rtl .service-style-two #content_block_5 .content-box{
+  margin-right: 0px;
+  margin-left: 70px;
+  text-align: right;
+}
+
+.rtl #content_block_5 .content-box .list li{
+  padding-left: 0px;
+  padding-right: 28px;
+}
+
+.rtl #content_block_5 .content-box .list li:before{
+  left: inherit;
+  right: 0px;
+  content: "\f107";
+}
+
+.rtl .team-block-one .inner-box .lower-content{
+  text-align: right;
+}
+
+.rtl .team-block-one .inner-box .image-box .signature{
+  right: inherit;
+  left: -40px;
+  transform: rotate(45deg);
+}
+
+.rtl .single-item-carousel{
+  direction: ltr;
+}
+
+.rtl .features-section .single-item .inner-box{
+  text-align: right;
+}
+
+.rtl .gallery-carousel{
+  direction: ltr;
+}
+
+.rtl .news-block-one .inner-box .image-box .post-date{
+  right: inherit;
+  left: 0px;
+}
+
+.rtl .news-block-one .inner-box .lower-content{
+  text-align: right;
+}
+
+.rtl .news-block-one .inner-box .lower-content .link-btn a{
+  padding-left: 0px;
+  padding-right: 17px;
+}
+
+.rtl .news-block-one .inner-box .lower-content .link-btn a:before{
+  left: inherit;
+  right: 0px;
+}
+
+.rtl .news-block-one .inner-box .lower-content .post-info li{
+  margin-right: 0px;
+  margin-left: 7px;
+}
+
+.rtl .news-block-one .inner-box .lower-content .post-info li:last-child{
+  margin-left: 0px;
+}
+
+.rtl #appointment_block .form-inner .form-group.message-btn{
+  text-align: right;
+}
+
+.rtl #appointment_block .form-inner .title-text{
+  right: inherit;
+  left: -140px;
+  transform: rotate(-90deg);
+}
+
+.rtl .appointment-section .content-box{
+  margin-right: 0px;
+  margin-left: 45px;
+  text-align: right;
+}
+
+.rtl .appointment-section .content-box .lower-inner{
+  padding-left: 0px;
+  padding-right: 270px;
+}
+
+.rtl .appointment-section .content-box .lower-inner .image-box{
+  left: inherit;
+  right: 0px;
+}
+
+.rtl .clients-section{
+  direction: ltr;
+}
+
+.rtl .cta-section .image-box .image-1{
+  left: inherit;
+  right: -123px;
+}
+
+.rtl .cta-section .image-box .image-2{
+  left: inherit;
+  right: -60px;
+}
+
+.rtl .cta-section .image-box .image-3{
+  right: inherit;
+  left: 115px;
+}
+
+.rtl .cta-section .image-box .image-4{
+  right: inherit;
+  left: 70px;
+}
+
+.rtl .cta-section .content-box{
+  text-align: right;
+}
+
+.rtl .footer-top .widget-title{
+  text-align: right;
+}
+
+.rtl .footer-top .instagram-widget .image-list li{
+  float: right;
+}
+
+.rtl .footer-top .contact-widget .info-list li{
+  padding-left: 0px;
+  padding-right: 30px;
+  text-align: right;
+}
+
+.rtl .footer-top .contact-widget .info-list li i{
+  left: inherit;
+  right: 0px;
+}
+
+.rtl .footer-top .links-widget .links-list li{
+  text-align: right;
+}
+
+.rtl .footer-top .logo-widget{
+  margin-right: 0px;
+  margin-left: 20px;
+  text-align: right;
+}
+
+.rtl .footer-top .logo-widget .subscribe-form .form-group input[type='email']{
+  padding-right: 20px;
+  padding-left: 80px;
+}
+
+.rtl .footer-top .logo-widget .subscribe-form .form-group button{
+  right: inherit;
+  left: 8px;
+}
+
+.rtl .footer-botton .copyright{
+  float: right;
+}
+
+.rtl .footer-botton .footer-social{
+  float: left;
+}
+
+.rtl .footer-botton .footer-social li{
+  margin-right: 0px;
+  margin-left: 5px;
+}
+
+.rtl .footer-botton .footer-social li:last-child{
+  margin-left: 0px;
+}
+
+.rtl .mobile-menu .contact-info{
+  text-align: right;
+}
+
+.rtl .mobile-menu .social-links{
+  text-align: right;
+}
+
+.rtl .mobile-menu .nav-logo{
+  text-align: right;
+}
+
+.rtl .mobile-menu .close-btn{
+  right: 260px;
+}
+
+.rtl .mobile-menu .navigation li > a{
+  text-align: right;
+}
+
+.rtl .mobile-menu .navigation li > a:before{
+  left: inherit;
+  right: 0px;
+}
+
+.rtl .mobile-menu .navigation li.dropdown .dropdown-btn{
+  right: inherit;
+  left: 6px;
+}
+
+.rtl .mobile-menu .navigation li.dropdown .dropdown-btn.open {
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}

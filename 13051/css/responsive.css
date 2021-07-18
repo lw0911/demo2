@@ -1,0 +1,550 @@
+/* =====================================
+Template Name: Precon
+Author Name: ThemeLamp
+Author URI: http://themelamp.com/
+Template Provide By: https://www.codeglim.com/
+Description: Precon is a Multipurpose Business HTML5 Template.
+Version:	1.0
+========================================*/
+
+/* Medium Layout 1280px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+.main-menu .nav li {
+	margin-right: 15px;
+	position: relative;
+}
+.testimonials .slick-dots {
+	right: -8px;
+}
+.hero-area .welcome-text h1 {
+	font-size: 42px;
+	line-height: 50px;
+}
+}
+/* Tablet Layout 768px. */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.btn {
+	font-size: 13px;
+}
+.main-menu .navbar {
+	float: none;
+	padding: 0;
+}
+.section-title {
+	padding: 0 40px;
+}
+.breadcrumbs {
+	padding: 60px 0;
+}
+.faq-img,.topbar .top-right{
+	display:none;
+}
+.top-contact,.topbar .top-right {
+	text-align: center;
+}
+.lang-nav .lang-dropdown{
+	text-align:left;
+}
+.top-right {
+	margin-top: 5px;
+}
+.navbar-nav {
+  display: initial;
+}
+.navbar-nav li {
+  display: inline-block;
+}
+.logo {
+	text-align: center;
+	padding-top: 25px;
+}
+.main-menu .nav li a {
+	padding: 25px 0px;
+}
+.main-menu .nav li {
+  margin-right: 21px;
+}
+.search-form {
+	top: 74px;
+}
+.search-nav-icon {
+	top: 24px;
+}
+.header.sticky .header-inner{
+	position:relative;
+}
+
+.header.style2 .main-menu .nav li:hover a,
+.header.style2 .main-menu .nav li.active a {
+	background: transparent;
+}
+.header.style2 .main-menu .nav li a {
+	padding: 22px 0;
+}
+.header.style2 .search-nav-icon {
+	top: 22px;
+}
+.hero-area.style2 .welcome-text h1 {
+  font-size: 52px;
+  line-height: 50px;
+}
+.hero-area.style2 .welcome-text h1 span {
+  font-size: 25px;
+}
+.header.style2 .search-form {
+	top: 68px;
+}
+.sidebar-quick{
+	overflow:scroll;
+}
+.background-layer{
+	display:none;
+}
+.hero-area,.hero-area .single-slide,.hero-area .welcome-text,
+.hero-area.style2, .hero-area.style2 .single-slide, 
+.hero-area.style2 .welcome-text{
+	height:500px;
+}
+.hero-area.style2 .welcome-text-inner {
+	margin: 124px 0 0;
+}
+.hero-area.style2 .slick-dots {
+	bottom: 20px;
+}
+.hero-area .welcome-text h1 {
+	font-size: 34px;
+	line-height: 50px;
+}
+.hero-area .welcome-text b {
+	font-size: 15px;
+}
+
+.why-choose .single-choose i {
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 20px;
+}
+.why-choose .single-choose h4 {
+  font-size: 13px;
+  margin: 7px 0;
+}
+.why-choose .single-choose p {
+  line-height: 20px;
+}
+.count-img {
+	display: none;
+}
+.achivements .section-title,
+.testimonials .section-title,
+.skills .section-title {
+	padding: 0;
+	margin-right: 150px;
+}
+.projects .project-nav li {
+	padding: 10px 20px;
+}
+.team .team-title {
+	font-size: 18px;
+}
+.extra-feature .feature-list li {
+	font-size: 13px;
+}
+.call-to-main {
+  text-align: center;
+}
+.call-to-main h2 {
+  font-size: 20px;
+}
+.call-to-action .button {
+	text-align:center;
+	margin-top:15px;
+}
+.call-to-action .btn {
+  display: inline-block;
+}
+.news-area .news-body h4 {
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+.news-area.latest .news-body p {
+	display: none;
+}
+.news-area.latest .news-meta ul li{
+	font-size:13px;
+	display:block;
+	margin:0;
+}
+.news-area .news-meta ul li{
+	font-size:13px;
+}
+.project-info{
+	margin-top:30px;
+}
+.footer .photo-gallery ul {
+  margin-left: -25px;
+  margin-top: -15px;
+}
+.footer .photo-gallery ul li {
+  margin-left: 25px;
+  margin-top: 15px;
+}
+.footer .photo-gallery ul li img {
+  width: 65px;
+  height: 65px;
+}
+}
+
+/* Mobile Layout 320px. */   
+@media only screen and (max-width: 767px) {
+.btn {
+	font-size: 13px;
+}
+.section-title {
+	padding: 0;
+}
+.section-title h2 {
+	font-size: 25px;
+}
+.section-title h2 span {
+	margin-right: 10px;
+	padding-right: 10px;
+}
+.logo {
+	padding-top: 0;
+}
+.mobile-nav {
+	display: block;
+}
+.slicknav_menu {
+	margin: -32px 0 0 0;
+	background: transparent;
+	padding: 0;
+}
+.slicknav_menu .slicknav_nav {
+	background: #379CB0;
+	margin-top: 35px;
+}
+.slicknav_menu .slicknav_nav a i {
+	display: none;
+}
+.mobile-nav .slicknav_btn {
+	margin: 0;
+	background: #379CB0;
+}
+.slicknav_nav a:hover{
+	opacity:0.8;
+}
+.header.style2 .logo{
+	padding:0;
+}
+.header-inner {
+	padding: 20px 0;
+}
+.skills .tab-main .nav {
+	left: 0;
+}
+.skills .tab-main .nav li {
+	display:inline-block;
+}
+.skills .tab-main .nav li a {
+	padding: 12px;
+}
+.pagination-main {
+  margin: 40px 0 0;
+}
+.pagination-main li {
+  margin-top: 10px;
+}
+.breadcrumbs {
+	padding: 45px 0;
+}
+.breadcrumbs h2 {
+	margin-bottom: 15px;
+	font-size: 28px;
+}
+.breadcrumbs ul li a {
+	font-size: 14px;
+}
+.breadcrumbs ul li a i {
+	margin-right: 10px;
+	font-size: 13px;
+}
+.faq-img,.topbar .top-right{
+	display:none;
+}
+.top-contact,.topbar .top-right {
+	text-align: center;
+}
+.lang-nav .lang-dropdown{
+	text-align:left;
+}
+.top-right {
+	margin-top: 5px;
+}
+.main-menu{
+	display:none;
+}
+.logo {
+	text-align: left;
+}
+.main-menu .nav li a {
+  padding: 20px 0px;
+}
+.main-menu .nav li {
+  margin-right: 21px;
+}
+.search-form {
+	top: 65px;
+}
+.search-nav-icon {
+	top: -75px;
+	display:none;
+}
+.header.sticky .header-inner{
+	position:relative;
+}
+.hero-area .welcome-text-content {
+	padding: 15px;
+}
+.hero-area,.hero-area .single-slide,.hero-area .welcome-text,
+.hero-area.style2,.hero-area.style2 .single-slide,.hero-area.style2 .welcome-text{
+	height:500px;
+}
+.hero-area .welcome-text h1 {
+	font-size: 24px;
+	line-height: 32px;
+}
+.hero-area.style2 .welcome-text-inner {
+	margin-top: 65.5px;
+}
+.hero-area.style2 .button{
+	margin-top:20px;
+}
+.hero-area.style2 .welcome-text p{
+	font-size:14px;
+}
+.hero-area.style2 .btn {
+  margin: 0;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.hero-area.style2 .btn:last-child {
+  margin: 0;
+}
+.hero-area.style2 .slick-dots {
+	bottom: 15px;
+}
+.background-layer{
+	display:none;
+}
+.hero-area .welcome-text b {
+	display:none;
+}
+.hero-area .welcome-text-inner {
+	padding: 10px;
+}
+.hero-area.style2 .welcome-text h1 {
+	font-size: 30px;
+	line-height: 35px;
+}
+.hero-area.style2 .welcome-text h1 span {
+	font-size: 20px;
+}
+.why-choose:before{
+	display:none;
+}
+.why-choose .single-choose i {
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 20px;
+}
+.why-choose .single-choose h4 {
+  font-size: 13px;
+  margin: 7px 0;
+}
+.why-choose .single-choose p {
+  line-height: 20px;
+}
+.count-img {
+	display: none;
+}
+.achivements .section-title,
+.testimonials .section-title,
+.skills .section-title {
+	padding: 0;
+	margin:0;
+}
+.achivements .single-count{
+	padding-right:35px;
+}
+.projects .project-nav li {
+	padding: 8px 17px;
+	font-size: 13px;
+	margin-right: 5px;
+}
+.projects .project-nav li:last-child{
+	margin:0;
+}
+.consultation .form-area {
+	padding: 25px;
+}
+.consultation .consult-title h2 {
+	font-size: 20px;
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+}
+.team .team-title {
+	font-size: 18px;
+}
+.extra-feature .feature-list li {
+	font-size: 13px;
+}
+.call-to-main {
+  text-align: center;
+}
+.call-to-main h2 {
+  font-size: 20px;
+}
+.call-to-action .button {
+	text-align:center;
+	margin-top:15px;
+}
+.call-to-action .btn {
+  display: inline-block;
+}
+.news-area .news-body h4 {
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.news-area.latest .news-body p {
+	display: none;
+}
+.news-area.latest .news-meta ul li {
+	font-size: 14px;
+	display: block;
+	margin: 0;
+}
+.news-area .news-meta ul li{
+	font-size:13px;
+}
+.project-info{
+	margin-top:30px;
+}
+.news-area.single .news-meta {
+	display: none;
+}
+.news-area.single blockquote {
+	font-size: 15px;
+}
+.news-area.single .content-inner img {
+  margin-top: 20px;
+}
+.news-area.single .heading h2 {
+  margin-bottom: 0;
+}
+.blog-comments .single-comments .comment-list {
+	margin-left: 0;
+}
+.faqs-main .single-faq .faq-title a {
+	font-size: 14px;
+}
+.error-page .error-inner h1 {
+	font-size: 110px;
+}
+.error-page .error-inner h2 {
+	font-size: 22px;
+}
+.error-page .error-search-form {
+	width: 100%;
+}
+.map {
+	width: 100%;
+	height: 250px;
+}
+.skill-img{
+	display:none;
+}
+.skills .button {
+	text-align: left;
+}
+.skills .button .btn{
+	margin:0 0 10px;
+}
+.skills .button .btn:last-child{
+	margin:0;
+}
+.services.single .single-service h1,
+.project-single .single-content h1,
+.news-area.single .news-body h1 {
+	font-size: 20px;
+	margin-bottom: 15px;
+	line-height: 30px;
+}
+.extra-feature .title h4 {
+	font-size: 18px;
+	margin: 0 0 10px;
+}
+.extra-feature .feature-list li {
+	font-size: 13px;
+	line-height: 24px;
+	margin-bottom: 5px;
+}
+.extra-feature .feature-list li:last-child{
+	margin:0;
+}
+.extra-feature .image{
+	margin-top:20px;
+}
+.footer .photo-gallery ul {
+  margin-left: -25px;
+  margin-top: -15px;
+}
+.footer .photo-gallery ul li {
+  margin-left: 25px;
+  margin-top: 15px;
+}
+.footer .photo-gallery ul li img {
+  width: 65px;
+  height: 65px;
+}	
+}
+
+/* Other Responsive CSS */
+@media only screen and (max-width: 992px) {
+	.footer-height {display: none;}
+}
+@media only screen and (min-width: 992px) {
+#footer-fixed {
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 0;
+	z-index: 1;
+}
+	
+/* Sticky Style 2 */
+.header.style2.sticky .logo {
+	padding-top: 22px;
+}
+.header.style2.sticky .logo .text-logo a{
+	color:#353535;
+}
+.header.style2.sticky .main-menu .nav li a{
+	color:#353535;
+}
+.header.style2.sticky .main-menu .nav .dropdown li a{
+	color:#eee;
+}
+.header.style2.sticky .main-menu .nav .dropdown li a:hover{
+	color:#fff;
+}
+.header.style2.sticky .search-nav-icon{
+	top:24px;
+}
+.header.style2.sticky .search-nav-icon li a {
+	color: #353535;
+}
+}

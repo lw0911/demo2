@@ -1,0 +1,120 @@
+/****************************************************************
+ *																*		
+ * 						     							*
+ *                        							*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+****************************************************************/
+@import 'reset.css';
+
+body,form,div,span,ul,ol,li,p,pre,dl,dt,dd,h1,h2,h3,h4,h5,h6,em,a,fieldset,legend,address,label,textarea,select,input,figure,table,th,td,b,i{margin:0;padding:0;}
+fieldset,img{border:0;}
+ul,li,ol{list-style:none outside none;}
+a{text-decoration:none; cursor: pointer; color: #333;}
+a:hover{ text-decoration:none;}
+a:focus,input,button,select,textarea{outline:none;}
+
+h1,h2,h3,h4,h5,h6{ font-size:100%; font-variant: normal; font-weight: normal;}
+input,select,img{ vertical-align:middle;}
+legend{ display:none;}
+textarea{resize:none;}
+em,i{font-style:normal;}
+table{border-collapse:separate;border-spacing:0;}
+
+.clear{ clear:both; height:0px; overflow:hidden;}
+.clearfix{zoom:1;}
+.clearfix:after{clear:both; content:"."; display:block ;height:0; line-height:0; visibility:hidden; overflow:hidden;}
+.fl{ float:left;}
+.fr{ float:right;}
+
+
+
+
+ @font-face {font-family: "iconfont";
+  src: url('../fonts/iconfont.eot'); /* IE9 */
+  src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/iconfont.woff') format('woff'),
+  url('../fonts/iconfont.ttf') format('truetype'),
+  url('../fonts/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font{ font-family:"微软雅黑","Microsoft Yahei";}
+.f12{ font-size: 1.2rem; }
+.f14{ font-size: 1.4rem; }
+.f16{ font-size: 1.6rem; }
+.f18{ font-size: 1.8rem; }
+.f20{ font-size: 2rem; }
+.f22{ font-size: 2.2rem; }
+.f24{ font-size: 2.4rem; }
+.f26{ font-size: 2.6rem; }
+.f32{ font-size: 3.2rem; }
+.f36{ font-size: 3.6rem; }
+.f38{ font-size: 3.8rem; }
+
+.txt_c{ text-align: center; }
+.txt_l{ text-align: left;}
+.txt_r{ text-align: right;}
+
+.white{ color: #fff; }
+.white_gray{ color: #fafafa; }
+.black{ color: #000; }
+.red{ color: #ef1611; }
+.gray_light{ color: #989898; }
+
+
+.pos_rel{ position: relative; }
+.pos_abs{ position: absolute; }
+.pos_fix{ position: fixed; }
+
+
+.ml10{ margin-left: 10px; }
+.ml70{ margin-left: 70px; }
+.mb20{ margin-bottom: 20px; }
+.mb30{ margin-bottom: 30px; }
+.m100{ margin-bottom: 100px; }
+.mt10{ margin-top:10px; }
+.mt16{ margin-top:16px; }
+.mt20{ margin-top:20px; }
+.mb16{ margin-bottom:16px; }
+.mr20{ margin-right: 20px; }
+
+.pb10{ padding-bottom: 10px; }
+
+.full_img{ width: 100%; }
+
+.no_bor_right{ border-right: none !important; }
+.no_backg{ background: none !important; }
+
+.bor_bot_gray{ border-bottom: 1px solid #e5e5e5; }
+.bor_top_gray{ border-top: 1px solid #e5e5e5; }
+.border_topBot{border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5; padding:10px 30px;}
+.box_shadow_bot{ border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5; box-shadow: 0 3px 2px 0px rgba(0,0,0,0.11); padding:24px 30px;}
+.box_shadow_bot2{ border-top: 1px solid #e5e5e5; border-bottom: 1px solid #e5e5e5; box-shadow: 0 3px 2px 0px rgba(0,0,0,0.11); }
+.bgc_blue{ background-color: #1ecfbb; }
+.bgc_white{ background-color: #ffffff; }
+
+@media screen and (max-width:640px){
+
+}
+
+@media screen and (max-width:480px){
+  .f26{ font-size: 1.4rem; }
+  .f32{ font-size: 2rem; }
+  .f36{ font-size: 2.4rem; }
+  .f38{ font-size: 2.6rem; }
+
+  .border_topBot{padding:10px;}
+}
+
+@media screen and (max-width:320px){
+  .f32{ font-size: 1.6rem; }
+}

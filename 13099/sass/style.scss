@@ -1,0 +1,707 @@
+/*
+ *  Solution by GetTemplates.co
+ *	URL: https://gettemplates.co
+ */
+
+//color variables
+$yellow-color: #ffe400;
+
+//fonts variable 
+$Alegreya-Regular : "Alegreya-Regular";
+$Asem-Kandis : "Asem-Kandis";
+$Baron-Neue : "Baron-Neue";
+$Baron-Neue-Bold : "Baron-Neue-Bold";
+$Lato-Regular : "Lato-Regular";
+$Lato-Bold : "Lato-Bold";
+$Lato-Heavy : "Lato-Heavy";
+$Lato-Light : "Lato-Light";
+$Lato-Thin : "Lato-Thin";
+$Lato-ThinItalic : "Lato-ThinItalic";
+
+$fonts-list:(
+    $Alegreya-Regular : "Alegreya-Regular",
+    $Asem-Kandis : "Asem-Kandis",
+    $Baron-Neue : "Baron-Neue",
+    $Baron-Neue-Bold : "Baron-Neue-Bold",
+    $Lato-Regular : "Lato-Regular",
+    $Lato-Bold : "Lato-Bold",
+    $Lato-Heavy : "Lato-Heavy",
+    $Lato-Light : "Lato-Light",
+    $Lato-Thin : "Lato-Thin",
+    $Lato-ThinItalic : "Lato-ThinItalic"
+);
+
+
+@each $font-name, $src_name in $fonts-list {
+    @font-face {
+        font-family:"#{$font-name}";
+        @if $src_name=="Asem-Kandis" or $src_name=="Baron-Neue" or $src_name=="Baron-Neue-Bold"{
+            src: url(../fonts/#{$src_name}.otf);
+        }@else{
+            src: url(../fonts/#{$src_name}.ttf);
+        }
+        
+        
+    }
+}
+@mixin transition($time) {
+    -webkit-transition: all $time;
+    -ms-transition: all $time;
+    -o-transition: all $time;
+    transition: all $time;
+}
+@mixin transform($val) {
+    -webkit-transform: rotate($val);
+    -ms-transform: rotate($val);
+    -o-transform: rotate($val);
+    transform: rotate($val);
+}
+body{
+    overflow-x: hidden;
+}
+p{
+   font-size: 16px;
+   color: #555555;
+   font-family: $Lato-Regular;
+}
+%arrow{
+    content: "";
+    position: absolute;
+    background-position: center;
+    background-repeat: no-repeat !important;
+    height: 30px;
+    width: 30px;
+    
+}
+%before-line{
+    &::before{
+        content: "";
+        position: absolute;
+        height: 3px;
+        width: 50px;
+        background: $yellow-color;
+        margin-top: 18px;
+        margin-left: -60px;
+    }
+}
+h2{
+    font-size: 30px;
+    font-weight: 700;
+    width: 300px;
+    text-align: center;
+    color: #201f1f;
+    text-transform: uppercase;
+    @extend %before-line;
+    
+}
+%padding-tb{
+    padding: 100px 0;
+}
+header{
+    .overlay-box{
+        position: absolute;
+        z-index: 5;
+        width: 100%;
+        left: 0;
+       
+    }
+    #my-carousel{
+        min-height: 890px;
+    }
+    .container,.row{
+        position: relative;
+    }
+    .col-md-6{
+        position: relative;
+    }
+    .carousel-inner{
+       
+        .carousel-item{
+            .d-block{
+                min-height: 890px;
+
+                @media (max-width:767px) {
+                    width: 200% !important;
+                left: -50%;
+               
+                position: relative;
+                }
+            }
+        }
+    }
+    .carousel-indicators{
+      
+        @media (max-width:560px) {
+            bottom: 250px;
+        }
+    }
+    
+    .gtco-head-left{
+        h1{
+            a{
+                font-family: $Baron-Neue-Bold;
+            font-size: 52px;
+            color: #ffffff;
+            text-decoration: none !important
+            }
+        }
+        .logo-box{
+            font-family: $Baron-Neue;
+            font-size: 72px;
+            color: #ffffff;
+            margin-top: 200px;
+            margin-left: 50px;
+
+            @media (max-width:1199px) {
+                font-size: 50px;
+            }
+            @media (max-width:991px) {
+                font-size: 36px;
+            }
+            @media (max-width:400px) {
+                font-size: 24px;
+            }
+            
+            &::before{
+                    @extend %arrow;
+                    background: url(../images/left-arrow.png);
+                    margin-left: -50px;
+            }
+            &::after{
+                @extend %arrow;
+                background: url(../images/right-arrow.png);
+                margin-left: 20px;
+                margin-top: 100px;
+
+                @media (max-width:1199px) {
+                    margin-top: 80px; 
+                }
+                @media (max-width:1199px) {
+                    margin-top: 40px; 
+                }
+            }
+            
+        }
+        
+
+        p{
+            font-family: $Alegreya-Regular;
+            font-size: 16px;
+            color: #fffefe;
+            text-align: center;
+            line-height: 1.5;
+            letter-spacing: 10px;
+            margin-top: 10px;
+
+            @media (max-width:1199px) {
+                margin-top: 15px;
+                max-width: 400px;
+            }
+            @media (max-width:991px) {
+                font-size: 14px;
+                letter-spacing: 3px;
+                max-width: 300px;
+            }
+            @media (max-width:400px) {
+                font-size: 10px;
+                max-width: 240px;
+            }
+
+            
+        }
+       
+        ul{
+            max-width: 250px;
+            margin: 0 auto;
+            a{
+                color: #ffffff;
+                padding: 0 1rem;
+                
+                &:hover{
+                    color: $yellow-color;
+                }
+
+                @media (max-width:400px) {
+               
+                    padding: 0 0.3rem;
+                }
+                
+            }
+
+            @media (max-width:1199px) {
+                max-width: 200px;
+                margin-left: 100px;
+            }
+            @media (max-width:991px) {
+                margin-left: 50px;
+            }
+            @media (max-width:400px) {
+                max-width: 150px;
+            }
+        }
+        
+        
+    }
+    
+    .gtco-head-right{
+        ul{
+            a{
+                color: #c2c2c2;
+                
+                margin: 12px 0;
+                text-transform: uppercase;
+                font-size: 16px;
+                font-family: $Lato-Bold;
+               
+                span.char{
+                    display: block;
+                    height: auto;
+                    width: auto;
+                    float: none;
+                    background: transparent;
+                    line-height: 1;
+                    text-align: center;
+            }
+                &.menu-btn{
+                    span{
+                    
+                        display: block;
+                        width: 10px;
+                        height: 2px;
+                        background: #ffffff;
+                        float: none;
+                        margin: 4px 0;
+                        &:first-child{
+                            width: 12px;
+                            
+                        }
+                        &:last-child{
+                            width: 15px;
+                        }
+                    }
+                }
+                
+                &:hover{
+                    color: $yellow-color
+                }
+                &.active{
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+    .carousel-indicators .active{
+        background: $yellow-color
+    }
+}
+
+.gtco-about-me{
+    @extend %padding-tb;
+    .profile-photo{
+        z-index: 55;
+        display: inline-block;
+        position: absolute;
+        margin-top: -450px;
+        img{
+            background-position: center;
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+
+            @media (max-width:991px) {
+                width: 200px;
+                height: 200px;
+            }
+        }
+
+        @media (max-width:991px) {
+            margin-top: -350px;
+            }
+    }
+    p{
+        &:last-child{
+            span{
+                font-family: $Asem-Kandis;
+                font-size: 59px;
+                margin-left: 12px;
+            }
+        }
+    }
+    .row{
+        margin-top: 100px;
+    }
+    .col-lg-7{
+        padding-top: 50px;
+    }
+    
+}
+
+.gtco-projects{
+    //background: url(../images/project-bg2.jpg);
+    @extend %padding-tb;
+    .col-3{
+        text-align: center;
+
+        @media (max-width:767px) {
+            flex: 0 0 50%;
+            max-width: 50%;
+            margin: 20px 0;
+            padding: 20px;
+            background: rgba(255,255,255,0.5);
+        }
+    }
+    h4{
+        @extend %before-line;
+        font-family: $Lato-Light;
+        color: #ffffff;
+        font-size: 24px;
+    }
+    h3{
+        font-family: $Baron-Neue;
+        color: #ffffff;
+        font-size: 48px;
+      
+    }
+}
+
+.gtco-my-services{
+    @extend %padding-tb;
+    h2{
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+    h5{
+        font-size: 17px;
+        color: #555555;
+        font-family: $Lato-Bold;
+    }
+    
+    .media-body{
+        color: #555555;
+        font-size: 16px;
+        font-family: $Lato-Light;
+        border-right: 3px solid $yellow-color;
+
+        @media (max-width:991px) {
+            border: none;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            height: 25px;
+            width: 25px;
+            right: 5px;
+            border: 7px solid #fff;
+            top: 50%;
+            margin-top: -12px;
+            background: $yellow-color;
+            @include transform(45deg);
+
+            @media (max-width:991px) {
+                display: none;
+            }
+        }
+        
+    }
+    
+    .fa{
+        font-size: 45px;
+        border: 1px solid #000000;
+        height: 60px;
+        width: 60px;
+        text-align: center;
+        padding: 7px 0;
+        border-radius: 50%;
+        @include transition(0.3s);
+        &:hover{
+            color: $yellow-color;
+        }
+        
+    }
+    .fa-line-chart{
+        font-size: 36px;
+        padding: 10px 0;
+    }
+    .center + div{
+    
+        .media-body{
+            border-right: none;
+            &::after{
+                display: none;
+            }
+        }
+    }
+    .owl-dots{
+        text-align: center;
+        margin-top: 30px;
+        span{
+            position: relative;
+            height: 3px;
+            width: 15px;
+            border-radius: 0%;
+            display: block;
+            background: #777777;
+            
+            margin: 0 5px;
+        }
+        .active{
+            box-shadow: none;
+            span{
+              background: $yellow-color !important;
+              box-shadow: none;
+            }
+        }
+    }
+}
+.card{
+    background: transparent;
+    border-radius: 0;
+    border:none;
+}
+.gtco-my-portfolio{
+    background: #000000;
+    @extend %padding-tb;
+    padding-top: 40px;
+    h2{
+        margin: 0 auto;
+        color: #ffffff;
+    }
+    img{border-radius: 0}
+    .col-lg-6{
+        .card{
+            h5{
+                font-family: $Baron-Neue;
+                font-size: 18px;
+                color: $yellow-color;
+                max-width: 150px;
+            }
+
+            @media (max-width:767px) {
+                margin-top: 30px !important;
+            }
+        }
+        
+        &:first-child{
+            padding-right: 35px;
+            .card{
+                &:nth-child(1){
+                    h5{
+                        position: absolute;
+                        right: -40px;
+                        top: 100px;
+
+                        @media (max-width:767px) {
+                            right: 0
+                        }
+                    }
+                }
+                &:nth-child(2){
+                    margin-top: 150px;
+                    
+                        h5{
+                            position: absolute;
+                            right: -40px;
+                            top: 75%;
+
+                            @media (max-width:767px) {
+                                right: 0
+                            }
+                        }
+                    
+                }
+                &:nth-child(3){
+                    margin-top: 80px;
+                    h5{
+                        position: absolute;
+                        right: -40px;
+                        top: 75%;
+
+                        @media (max-width:767px) {
+                            right: 0
+                        }
+                    }
+                }
+                
+            }
+        }
+        &:last-child{
+            padding-left: 35px;
+            .card{
+                &:nth-child(1){
+                    margin-top: 50px;
+                    h5{
+                        position: absolute;
+                        right: -40px;
+                        top: 75%;
+
+                        @media (max-width:767px) {
+                            right: 0
+                        }
+                    }
+                }
+                &:nth-child(2){
+                    margin-top: 80px;
+                    h5{
+                        position: absolute;
+                        left: -30px;
+                        top: 75%;
+
+                        @media (max-width:767px) {
+                           left: 0;
+                        }
+                    }
+                }
+                &:nth-child(3){
+                    margin-top: 80px;
+                    h5{
+                        position: absolute;
+                        right: -40px;
+                        top: 75%;
+
+                        @media (max-width:767px) {
+                            right: 0
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.gtco-blog{
+    @extend %padding-tb;
+    h2{
+        margin: 50px auto;
+        
+    }
+    .card:hover h5{
+        color: $yellow-color;
+    }
+    .card{
+        background: #000000;
+        margin: 0 20px;
+        img{
+            border-radius: 0;
+        }
+        h5{
+            font-family: $Baron-Neue;
+            color: #ffffff;
+            font-size: 24px;
+            @include transition(0.3s);
+            span{
+                font-family: $Lato-ThinItalic;
+                color: #fefefe;
+                font-size: 12px;
+               text-align: right;
+            }
+        }
+        p{
+            font-family: $Lato-Thin;
+            color: #fefefe;
+
+        }
+    }
+    .owl-dots{
+        text-align: center;
+        margin-top: 30px;
+        span{
+            position: relative;
+            height: 3px;
+            width: 15px;
+            border-radius: 0%;
+            display: block;
+            background: #777777;
+            
+            margin: 0 5px;
+        }
+        .active{
+            box-shadow: none;
+            span{
+              background: $yellow-color !important;
+              box-shadow: none;
+            
+             
+              
+            }
+        }
+    }
+}
+
+.gtco-gallery{
+    background: #000000;
+    .col{
+        padding: 0;
+        background: #000000;
+
+        @media (max-width:767px) {
+                flex: 0 0 50%;
+                max-width: 50%;
+        }
+    }
+    
+}
+
+footer{
+    background: #000000;
+    padding-bottom: 20px;
+    .jumbotron{
+       background: transparent;
+       margin-bottom: 0;
+        h3{
+            font-family: $Baron-Neue;
+            font-size: 48px;
+            color: #ffffff;
+
+            @media (max-width:991px) {
+                font-size: 24px;
+            }
+            @media (max-width:600px) {
+                margin: 0 auto;
+            }
+        }
+        button{
+            background: #000000 !important;
+            border-color: #ffffff !important;
+            border-width: 1px;
+            opacity: 0.3;
+            color: #ffffff;
+            text-transform: uppercase;
+            &:hover{
+                opacity: 1;
+                
+            }
+
+            @media (max-width:600px) {
+                margin: 20px auto;
+            }
+        }
+    }
+    .container{
+        a{
+            text-decoration: none;
+            color: #fefefe;
+        }
+        h4{
+            font-family: $Baron-Neue-Bold;
+            color: #c1c1c1;
+            font-size: 52px;
+            text-align: center;
+        }
+        p{
+            color: #c1c1c1;
+            margin-top: 50px;
+        }
+        ul{
+            max-width: 300px;
+            margin: 20px auto;
+            a{
+                color: #ffffff;
+                padding: 0 1rem;
+                
+                &:hover{
+                    color: $yellow-color;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<!--/************************************************************
+ *																*
+ * 						     							*
+ *                        							*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+**************************************************************-->
+<body class="font">
+<!-- 头部 -->
+<div id="top" class="white pos_rel"><h2 class="txt_c f36 white_gray">购物车</h2><span class="top_back pos_abs f32"><a class="go_back white">返回</a><a class="close ml10 white">关闭</a></span><a class="top_set pos_abs" href="#"></a></div>
+<!-- 配送地址 -->
+<div class="bs_address">配送至：<span>北京</span><!--<a href="#" class="edit">编辑</a>--></div>
+<!-- 商品列表 -->
+<div class="box_shadow_bot2 mb16 bgc_white bs_carts">
+	<div class="bs_name bor_bot_gray"><span class="checkBox"></span>耐克旗舰店</div>
+	<div class="bs_wapper pos_rel bor_bot_gray">
+		<span class="checkBox"></span>
+		<div class="right_wrapper pos_rel">
+			<div class="img_wrapper"><a href="content_products.html"><img src="images/none/333_21.png" alt="图片" class="full_img"></a></div>
+			<div class="img_info">
+				<h3>CLARINS/娇韵诗 花样年华纤柔美肤霜 200ml</h3>
+				<div class="price red">￥<span>199.00</span></div>
+				<div class="bs_num">
+                	<span class="btn-del fr">删除</span>
+					<span class="btn_num"><a href="javascript:;" class="less"><img src="images/btn_less.jpg"></a><span class="num">2</span><a href="javascript:;" class="add"><img src="images/btn_add.jpg"></a></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="cont txt_r"><i class="gray_light mr20">已选择<span class="num">1</span>件商品</i>应付：<span class="red">￥<span class="subtotal">199.00</span></span></div>
+</div>
+<div class="box_shadow_bot2 mb16 bgc_white bs_carts">
+	<div class="bs_name bor_bot_gray"><span class="checkBox"></span>耐克旗舰店</div>
+	<div class="bs_wapper pos_rel bor_bot_gray">
+		<span class="checkBox"></span>
+		<div class="right_wrapper pos_rel">
+			<div class="img_wrapper"><a href="content_products.html"><img src="images/none/333_21.png" alt="图片" class="full_img"></a></div>
+			<div class="img_info">
+				<h3>CLARINS/娇韵诗 花样年华纤柔美肤霜 200ml</h3>
+				<div class="price red">￥<span>199.00</span></div>
+				<div class="bs_num">
+                	<span class="btn-del fr">删除</span>
+					<span class="btn_num"><a href="javascript:;" class="less"><img src="images/btn_less.jpg"></a><span class="num">1</span><a href="javascript:;" class="add"><img src="images/btn_add.jpg"></a></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bs_wapper pos_rel bor_bot_gray">
+		<span class="checkBox checked"></span>
+		<div class="right_wrapper pos_rel">
+			<div class="img_wrapper"><a href="content_products.html"><img src="images/none/333_21.png" alt="图片" class="full_img"></a></div>
+			<div class="img_info">
+				<h3>CLARINS/娇韵诗 花样年华纤柔美肤霜 200ml</h3>
+				<div class="price red">￥<span>10.00</span></div>
+				<div class="bs_num">
+                	<span class="btn-del fr">删除</span>
+					<span class="btn_num"><a href="javascript:;" class="less"><img src="images/btn_less.jpg"></a><span class="num">1</span><a href="javascript:;" class="add"><img src="images/btn_add.jpg"></a></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="cont txt_r"><i class="gray_light mr20">已选择<span class="num">1</span>件商品</i>应付：<span class="red">￥<span class="subtotal">199.00</span></span></div>
+</div>
+<!-- 猜你喜欢 -->
+<div class="loveBox">
+	<h3 class="title">猜你喜欢</h3>
+	<ul class="clearfix ul_love txt_c">
+		<li><a href="content_products.html"><img src="images/none/333_25.png" class="full_img"><h5>Opera/娥佩兰</h5></a></li>
+		<li><a href="content_products.html"><img src="images/none/333_27.png" class="full_img"><h5>Clarins/娇韵诗</h5></a></li>
+		<li><a href="content_products.html"><img src="images/none/333_30.png" class="full_img"><h5>Maybelline</h5></a></li>
+	</ul>
+</div>
+<div class="m100"></div>
+<!-- 结算栏 -->
+<div class="billing bor_top_gray">
+	<div class="clearfix inner">
+		<div class="fl all_check"><span class="checkBox"></span>全选</div>
+		<div class="fr txt_r">共计：<span class="red">￥<span class="price">199.00</span></span><a href="#" class="billing_btn">结算</a></div>
+	</div>
+</div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+	$(function(){
+		fnSelect(".billing",".bs_carts",".checkBox");
+	
+		$(".bs_carts").each(function(){
+			var _this=$(this);
+	
+			_this.find('.add').bind('click', function() {
+				fnPlus($(this), '.num', '.less');
+				sum(".billing",".bs_carts",".checkBox");//计算金额
+			});
+	
+			//判断当前“减”按钮是否可用
+			_this.find('.btn_num .num').each(function() {
+				var $this=$(this);
+				if(parseInt($this.text())==1){
+					$this.siblings('.less').addClass('failed');
+				}
+			});
+	
+			_this.find('.less').bind('click', function() {
+				fnLess($(this), '.num');
+				sum(".billing",".bs_carts",".checkBox");//计算金额
+			});
+	
+		});
+		
+		//删除商品
+		$('.bs_num .btn-del').bind('click',function(){
+			var $this=$(this);
+			if($this.parentsUntil('.bs_carts').parent().children('.bs_wapper').length>1){
+				$this.parentsUntil('.bs_carts').remove();
+			}else{
+				$this.parentsUntil('.bs_carts').parent().remove();
+			}
+			sum(".billing",".bs_carts",".checkBox");//计算金额
+		});
+		
+	});
+</script>
+</body>
+</html>

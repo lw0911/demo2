@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>红包摇一摇</title>
+		<script src="js/jquery-2.1.0.js"></script>
+		<style type="text/css">
+			html,body{
+				margin: 0;
+				padding: 0;
+				height: 100%;
+			}
+			body{
+				background: url(images/yaoyiyaobg.png) left top no-repeat;
+				background-size: 100% 100%;
+				box-sizing: border-box;
+				padding-top: 130px;
+			}
+			.box{
+				width: 250px;
+				height: 220px;
+				background-color: white;
+				border-radius: 4px;
+				margin: 0 auto;
+			}
+			.box img{
+				display: block;
+				width: 90px;
+				padding-top: 15px;
+				margin: 0 auto;
+			}
+			.box span{
+				display: block;
+				height: 40px;
+				line-height: 40px;
+				text-align: center;
+			}
+			.box a{
+				display: block;
+				width: 120px;
+				height: 35px;
+				line-height: 35px;
+				text-align: center;
+				margin: 40px auto 0;
+				border: 1px solid #4488e6;
+				color: #4488e6;
+				border-radius: 4px;
+			}
+		</style>
+</head>
+<!--/************************************************************
+ *																*
+ * 						      							*
+ *                       							*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+**************************************************************-->
+<body>
+		<div id="success" class="box" style="display: none;"> <!--摇到 冰点币 显示-->
+			<img src="images/jinbi2.png" />
+			<span>恭喜摇出冰点币</span>
+			<a href="#">确定</a>
+		</div>
+		
+		<div id="fail" class="box" style="display: block;"> <!--未摇到 冰点币 显示-->
+			<img src="images/jinbi3.png" />
+			<span>这次没有，下次还有机会~</span>
+			<a href="#">确定</a>
+		</div>
+		<script>
+			
+		</script>
+	</body>
+</html>

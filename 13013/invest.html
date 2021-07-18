@@ -1,0 +1,326 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+ <head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <title>投资者学苑-大连贵金属交易中心</title> 
+  <meta name="keywords" content="" /> 
+  <meta name="description" content="" /> 
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" /> 
+  <link rel="stylesheet" type="text/css" href="css/dmaku.css" /> 
+  <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.flexslider.js"></script> 
+  <script type="text/javascript" src="js/lgocl.js"></script> 
+  <style>
+.slides li a{ display:block; width:100%; height:100%;}
+</style> 
+</head>
+<!--/************************************************************
+ *																*
+ * 						      							*
+ *                        							*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+**************************************************************-->
+<body>
+  <div class="top_d"> 
+   <div id="top"> 
+    <div class="top mk"> 
+     <a href="index.html"><img src="images/logo.png" /></a> 
+     <ul> 
+      <li id="nav1"><a href="index.html">首页</a></li> 
+      <li id="nav157"><a href="about.html">关于我们</a></li> 
+      <li id="nav214"><a href="cats.html">上市品种</a></li> 
+      <li id="nav400"><a href="market.html">市场数据</a></li> 
+      <li id="nav301"><a href="rules.html">交易规则</a></li> 
+      <li id="nav215"><a href="anounce.html">通知公告</a></li> 
+      <li id="nav324"><a href="trade.html">交易中心</a></li> 
+      <li id="nav389" class="on"><a href="invest.html">投资者学苑</a></li> 
+     </ul> 
+    </div> 
+   </div> 
+   <div id="top2"> 
+    <ul class="top2_ul mk"> 
+    </ul> 
+    <ul class="top2_ul mk"> 
+     <li><a href="about.html" title="简介">简介</a></li> 
+     <li><a href="/plus/list.php?tid=289" title="组织架构">组织架构</a></li> 
+     <li><a href="/plus/list.php?tid=302" title="人才招聘">人才招聘</a></li> 
+     <li><a href="/plus/list.php?tid=303" title="大事记">大事记</a></li> 
+     <li><a href="/plus/list.php?tid=312" title="联系方式">联系方式</a></li> 
+     <li><a href="/plus/list.php?tid=313" title="交易中心新闻">交易中心新闻</a></li> 
+     <li><a href="/plus/list.php?tid=314" title="媒体报道">媒体报道</a></li> 
+     <li><a href="/plus/list.php?tid=315" title="财经新闻">财经新闻</a></li> 
+    </ul> 
+    <ul class="top2_ul mk"> 
+     <li><a href="/plus/list.php?tid=283" title="白银">白银</a></li> 
+     <li><a href="/plus/list.php?tid=290" title="钯金">钯金</a></li> 
+     <li><a href="/plus/list.php?tid=304" title="铂金">铂金</a></li> 
+     <li><a href="/plus/list.php?tid=320" title="合金">合金</a></li> 
+     <li><a href="/plus/list.php?tid=321" title="铜">铜</a></li> 
+    </ul> 
+    <ul class="top2_ul mk"> 
+     <li><a href="/plus/list.php?tid=404" title="延时行情图">延时行情图</a></li> 
+     <li><a href="/plus/list.php?tid=405" title="当前数据服务">当前数据服务</a></li> 
+    </ul> 
+    <ul class="top2_ul mk"> 
+     <li><a href="rules.html" title="交易中心规则">交易中心规则</a></li> 
+     <li><a href="/plus/list.php?tid=323" title="相关法规">相关法规</a></li> 
+    </ul> 
+    <ul class="top2_ul mk"> 
+    </ul> 
+    <ul class="top2_ul mk"> 
+     <li><a href="/plus/list.php?tid=325" title="交易">交易</a></li> 
+     <li><a href="/plus/list.php?tid=331" title="清算">清算</a></li> 
+     <li><a href="/plus/list.php?tid=338" title="会员">会员</a></li> 
+     <li><a href="/plus/list.php?tid=346" title="风险管理">风险管理</a></li> 
+     <li><a href="/plus/list.php?tid=353" title="合规">合规</a></li> 
+     <li><a href="/plus/list.php?tid=360" title="现货交收">现货交收</a></li> 
+     <li><a href="/plus/list.php?tid=369" title="现货贸易">现货贸易</a></li> 
+    </ul> 
+    <ul class="top2_ul mk"> 
+     <li><a href="/plus/list.php?tid=390" title="交易知识">交易知识</a></li> 
+     <li><a href="/plus/list.php?tid=396" title="投资者保护">投资者保护</a></li> 
+     <li><a href="/plus/list.php?tid=399" title="术语表">术语表</a></li> 
+    </ul> 
+   </div> 
+  </div> 
+  <script> (function($){     $(window).load(function(){//alert("y");
+var lgocl='nav389';  
+showpic(lgocl);
+   });
+    })(jQuery);
+$(function(){
+		$(".i_syb ul li").hover(function(){
+			$(this).children("p").show().children("img").css("left",parseInt(parseInt($(this).children("a").css("width")))/2+5);
+		},function(){
+			$(this).children("p").hide();
+		})
+		$(".top ul li").hover(function(){
+			$("#top2").hide().children("ul").hide();
+			$("#top2").show().children("ul").eq($(this).index()).show();
+		},function(){
+		})
+
+		$(".top_d").mouseleave(function () {
+			$("#top2").hide().children("ul").hide();
+		})
+});
+</script> 
+  <div class="t_gg" style="background-image: url(images/img_1.jpg)"></div> 
+  <div class="t_nr mk"> 
+   <div class="t_nr_t"> 
+    <div class="t_nr_t1" onclick="window.location.href='invest.html';"> 
+     <h2>投资者学苑</h2> 
+     <p>Investors Academy</p> 
+    </div> 
+    <div class="t_nr_t2 right">
+     <a href="/plus/list.php?tid=394">投资策略</a>
+    </div> 
+   </div> 
+   <div class="t_nr1"> 
+    <div class="t_nr_img left"> 
+     <div class="flexslider lb"> 
+      <ul class="slides"> 
+       <li style="background: transparent url(images/banana3.jpg" )="" no-repeat="" scroll="" 50%="" 0px;="" width:="" 100%;="" float:="" left;="" margin-right:="" -100%;="" position:="" relative;="" opacity:="" 0;="" display:="" block;="" z-index:="" 1;"="" data-thumb-alt=""><a href="about.html"></a></li> 
+      </ul> 
+      <ol class="flex-control-nav flex-control-paging">
+       <li><a href="#" class="flex-active">1</a></li>
+       <li><a href="#">2</a></li>
+       <li><a href="#">3</a></li>
+       <li><a href="#">4</a></li>
+      </ol>
+      <ul class="flex-direction-nav">
+       <li class="flex-nav-prev"><a class="flex-prev flex-disabled" href="#" tabindex="-1">Previous</a></li>
+       <li class="flex-nav-next"><a class="flex-next" href="#">Next</a></li>
+      </ul>
+     </div> 
+    </div> 
+    <div class="t_nr1_div left"> 
+     <h3><a href="detail.html?aid=724">成功交易者应该遵循的16条规则</a></h3> 
+     <p><a href="detail.html?aid=724">近日，全球股市每日通讯(the Gartman Letter)的创始人加特曼(Dennis Gartman)基于多年的交易经验总结出了16条规则，这些规则有助于投资者完善自我，提高投资能力。具体如下： 1.在任何情况……</a></p> 
+    </div>
+    <div class="t_nr1_div left"> 
+     <h3><a href="detail.html?aid=709">初学者如何做好黄金投资风险管理</a></h3> 
+     <p><a href="detail.html?aid=709">随着金价走低，黄金投资再次走入普通投资者的视野。黄金投资并非大多数人所想的购入后只等其升值就可以了。作为一种投资方式，必然需要我们细心地做足功课才可涉足，其中有三……</a></p> 
+    </div>
+    <div class="t_nr1_div left"> 
+     <h3><a href="detail.html?aid=707">金银走势分析方法</a></h3> 
+     <p><a href="detail.html?aid=707">对黄金白银的走势分析可以通过基本面分析和技术面分析两种方法实现。 基本面分析，指基于经济学，金融学，财务管理学以及投资学等基本原理，通过对影响价格的宏观经济指标，美……</a></p> 
+    </div> 
+    <div class="clear"></div> 
+   </div> 
+   <div class="i_jyzs"> 
+    <div class="i_jyzst"> 
+     <h3>交易知识</h3> 
+     <ul> 
+      <li><a href="/plus/list.php?tid=391" title="基础知识">基础知识</a> </li> 
+      <li><a href="/plus/list.php?tid=392" title="入市指南">入市指南</a> </li> 
+      <li><a href="/plus/list.php?tid=393" title="技术分析">技术分析</a> </li> 
+      <li><a href="/plus/list.php?tid=394" title="投资策略">投资策略</a> </li> 
+      <li><a href="/plus/list.php?tid=395" title="风险知识">风险知识</a> </li> 
+     </ul> 
+    </div> 
+    <div id="i_jyzs_n"> 
+     <div class="i_jyzs_n"> 
+      <div class="i_jyzs_nt" style="background-image: url(images/img_3.jpg);"> 
+       <h3>基础知识</h3> 
+       <div class="clear"></div> 
+       <a href="/plus/list.php?tid=391">查看更多</a> 
+       <div class="zhe"></div> 
+      </div> 
+      <ul> 
+       <li><a href="detail.html?aid=706">美国就业形势报告</a></li>
+       <li><a href="detail.html?aid=705">ISM指数</a></li>
+       <li><a href="detail.html?aid=704">白银与黄金的三个不同点</a></li>
+       <li><a href="detail.html?aid=703">白银投资和黄金投资的区别</a></li>
+       <li><a href="detail.html?aid=702">黄金、白银的价值</a></li>
+       <li><a href="detail.html?aid=701">黄金的概念及属性</a></li> 
+      </ul> 
+     </div> 
+     <div class="i_jyzs_n"> 
+      <div class="i_jyzs_nt" style="background-image: url(images/img_4.jpg);"> 
+       <h3>入市指南</h3> 
+       <div class="clear"></div> 
+       <a href="/plus/list.php?tid=392">查看更多</a> 
+       <div class="zhe"></div> 
+      </div> 
+      <ul> 
+       <li><a href="detail.html?aid=710">三种投资分析方法概述</a></li>
+       <li><a href="detail.html?aid=709">初学者如何做好黄金投资风险管理</a></li>
+       <li><a href="detail.html?aid=708">白银投资初学者如何看实时行情图</a></li>
+       <li><a href="detail.html?aid=707">金银走势分析方法</a></li> 
+      </ul> 
+     </div> 
+     <div class="i_jyzs_n"> 
+      <div class="i_jyzs_nt" style="background-image: url(images/img_5.jpg);"> 
+       <h3>技术分析</h3> 
+       <div class="clear"></div> 
+       <a href="/plus/list.php?tid=393">查看更多</a> 
+       <div class="zhe"></div> 
+      </div> 
+      <ul> 
+       <li><a href="detail.html?aid=718">K线理论简述</a></li>
+       <li><a href="detail.html?aid=717">RSI指标的应用</a></li>
+       <li><a href="detail.html?aid=716">交易中的重要画线方法及用法</a></li>
+       <li><a href="detail.html?aid=715">投资者需要关注的几种短线技术指标</a></li>
+       <li><a href="detail.html?aid=714">浅谈三角形整理形态的应用</a></li>
+       <li><a href="detail.html?aid=713">浅谈交易中的六大均线</a></li>
+       <li><a href="detail.html?aid=712">艾略特波浪理论简介</a></li> 
+      </ul> 
+     </div> 
+     <div class="i_jyzs_n"> 
+      <div class="i_jyzs_nt" style="background-image: url(images/img_6.jpg);"> 
+       <h3>投资策略</h3> 
+       <div class="clear"></div> 
+       <a href="/plus/list.php?tid=394">查看更多</a> 
+       <div class="zhe"></div> 
+      </div> 
+      <ul> 
+       <li><a href="detail.html?aid=718">K线理论简述</a></li>
+       <li><a href="detail.html?aid=717">RSI指标的应用</a></li>
+       <li><a href="detail.html?aid=716">交易中的重要画线方法及用法</a></li>
+       <li><a href="detail.html?aid=715">投资者需要关注的几种短线技术指标</a></li>
+       <li><a href="detail.html?aid=714">浅谈三角形整理形态的应用</a></li>
+       <li><a href="detail.html?aid=713">浅谈交易中的六大均线</a></li>
+       <li><a href="detail.html?aid=712">艾略特波浪理论简介</a></li> 
+      </ul> 
+     </div> 
+     <div class="i_jyzs_n"> 
+      <div class="i_jyzs_nt" style="background-image: url(images/img_7.jpg);"> 
+       <h3>风险知识</h3> 
+       <div class="clear"></div> 
+       <a href="/plus/list.php?tid=395">查看更多</a> 
+       <div class="zhe"></div> 
+      </div> 
+      <ul> 
+       <li><a href="detail.html?aid=727">风险知识：风险管理</a></li> 
+      </ul> 
+     </div> 
+     <div class="clear"></div> 
+    </div> 
+   </div> 
+  </div> 
+  <div id="i_nr2"> 
+   <div class="i_nr2 mk"> 
+    <div class="i_nr2s"> 
+     <div class="i_tssl left"> 
+      <div class="i_tssl_l left" style="background-image: url(images/img_8.jpg);"> 
+       <h3>投诉受理</h3> 
+       <a href="/plus/list.php?tid=397">查看更多</a> 
+       <div class="zhe"></div> 
+      </div> 
+      <div class="i_tssl_r right">
+       投诉受理内容更新中
+      </div> 
+     </div> 
+     <div class="i_tssl left"> 
+      <div class="i_tssl_l left" style="background-image: url(images/img_9.jpg);"> 
+       <h3>风险教育</h3> 
+       <a href="/plus/list.php?tid=398">查看更多</a> 
+       <div class="zhe"></div> 
+      </div> 
+      <div class="i_tssl_r right">
+       <p class="i_tssl_p1">本网站所提供的行情信息仅作参考使用，不构成任何要约或承诺。对因直接或间接使用本网站行情信息而造成的一切损失（包括但不限于内容不准确、不完整而导致的损失），大连贵金属交易中心不承担任何法律责任。</p>
+       <br /> 
+       <p class="i_tssl_p1">郑重提示：任何机构或者个人进入本网站，即被视为已完全知悉、理解并接受本声明的全部内容。大连贵金属交易中心保留对本声明的修改、解释权。</p> 
+      </div> 
+     </div> 
+     <div class="clear"></div> 
+    </div> 
+    <div class="i_nr2_bt">
+     更多投资者保护内容
+    </div> 
+    <div class="i_syb"> 
+     <span>术语表</span> 
+     <ul> 
+      <li><a href="#">开盘价</a> <p>当天的第一笔交易成交价格<img src="images/b_bj2.png" /></p> </li> 
+      <li><a href="#">收盘价</a> <p>当天的最后一笔交易成交价格 <img src="images/b_bj2.png" /></p> </li> 
+      <li><a href="#">最高价</a> <p>当天的最高成交价格<img src="images/b_bj2.png" /></p> </li> 
+      <li><a href="#">最低价</a> <p>当天的最低成交价格<img src="images/b_bj2.png" /></p> </li> 
+      <li><a href="#">多头</a> <p>在一个时间段内看好涨的投资者<img src="images/b_bj2.png" /></p> </li> 
+      <li><a href="#">空头</a> <p>在一个时间段内看好跌的投资者<img src="images/b_bj2.png" /></p> </li> 
+      <li><a href="#">开高</a> <p>今日开盘价在昨日收盘价之上<img src="images/b_bj2.png" /></p> </li> 
+      <li><a href="#">开平</a> <p>今日开盘价与昨日收盘价持平<img src="images/b_bj2.png" /></p> </li> 
+      <li><a href="#">开低</a> <p>今日开盘价在昨日收盘价之下<img src="images/b_bj2.png" /></p> </li> 
+      <li><a href="#">趋势</a> <p>市场价格在一段时间内朝同一方向运动，即为趋势<img src="images/b_bj2.png" /></p> </li> 
+      <li><a href="#">涨势</a> <p>市场价格在一段时间内不断朝新高价方向移动<img src="images/b_bj2.png" /></p> </li> 
+      <li><a href="#">跌势</a> <p>市场价格在一段时间内不断朝新低价方向移动<img src="images/b_bj2.png" /></p> </li> 
+      <li><a href="#">盘整</a> <p>市场价格在有限幅度内波动，无明显的上涨或下跌趋势<img src="images/b_bj2.png" /></p> </li> 
+      <li><a href="#">反转</a> <p>价格朝原来趋势的相反方向移动，分向上反转和向下反转<img src="images/b_bj2.png" /></p> </li> 
+      <li><a href="#">突破</a> <p>价格冲过上升趋势线<img src="images/b_bj2.png" /></p> </li> 
+      <li><a href="#">跌破</a> <p>价格跌到下降趋势线以下<img src="images/b_bj2.png" /></p> </li> 
+     </ul> 
+     <a href="/plus/list.php?tid=399" class="ckgd">查看<br />更多</a> 
+    </div> 
+   </div> 
+  </div> 
+  <div class="divcler"></div> 
+  <div id="i_bottom"> 
+   <div class="i_bottom mk"> 
+    <div class="i_bottom_l left">
+   
+      </div></span>
+     <a key="57359cdcefbfb00a57738f29" logo_size="88x39" class="i_bottom_img2" logo_type="business" href="javascript:;" target="_blank"><script src="js/aq_auth.js"></script><b id="aqLogoVJLED" style="display: none;"></b><img src="images/hy_83x30.png?id=www.dlpmec.com" alt="安全联盟认证" style="border: none;" width="83" height="30" /></a>
+    </div> 
+    <div class="i_bottom_r right"> 
+     <ul> 
+      <li><a href="about.html">关于交易中心</a>|</li> 
+      <li><a href="/plus/list.php?tid=312">联系方式</a>|</li> 
+      <li><a href="/plus/list.php?tid=408">法律声明</a>|</li> 
+      <li><a href="/plus/list.php?tid=409">隐私政策</a>|</li> 
+      <li><a href="/plus/list.php?tid=302">人才招聘</a>|</li> 
+      <li><a href="/appdown/" target="_blank">下载中心</a></li> 
+     </ul> 
+     <div class="clear"></div> 
+  </p> 
+    </div> 
+    <div class="clear"></div> 
+   </div> 
+  </div> 
+  <div class="ov5" style="display:none;"> 
+   <div class="ov8">
+    电话：××× 传 真： 邮 箱：×××
+   
+   </div> 
+  </div> 
+ </body>
+</html>

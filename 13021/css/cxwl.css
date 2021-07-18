@@ -1,0 +1,51 @@
+/****************************************************************
+ *																*		
+ * 						      							*
+ *                       							*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+****************************************************************/
+body{
+	padding: 0;
+	margin: 0;
+	background-color: #F4F6F3;
+}
+.listBox{
+	padding-left: 10px;
+	overflow-y: hidden;
+}
+.lineBox{
+	position: relative;
+	float: left;
+	width: 50px;
+	height: 100%;
+	overflow-y: hidden;
+}
+.line{
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	margin-left: 20px;
+	background-color: #dddddd;
+}
+.round{
+	position: absolute;
+	left: 15px;
+	top: 45%;
+	width: 12px;
+	height: 12px;
+	background-color: #dddddd;
+	border-radius: 50%;
+}
+.listTop .line{
+	height: 55% !important;
+	margin-top: 60% !important;
+}
+.listTop .round{
+	background-color: #4488e6 !important;
+	left: 14px;
+	width: 15px !important;
+	height: 15px !important;
+	
+	
+}

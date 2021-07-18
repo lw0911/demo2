@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>商品列表</title>
+		<script src="js/jquery-2.1.0.js"></script>
+		<style>
+			html,body{
+				margin: 0;
+				padding: 0;
+				background-color: #f4f6f3;
+			}
+			.topBox{
+				background-color: #4488e6;
+				height: 30px;
+				padding: 10px;
+			}
+			.back{
+				display: block;
+				float: left;
+				color: white;
+				width: 12px;
+				height: 12px;
+				font-size: 25px;
+				border-left: 2px solid white;
+				border-top: 2px solid white;
+				transform: rotate(-45deg);
+				-webkit-transform: rotate(-45deg);
+				margin: 10px 10px 0 0;
+			}
+			.topBox input{
+				display: block;
+				float: left;
+				background: url(images/search1.png) 5px 6px no-repeat;
+				background-size: 20px;
+				border: none;
+				border-radius: 4px;
+				background-color: white;
+				height: 30px;
+				padding-left: 28px;
+				min-width: 205px;
+			}
+			.topRight{
+				display: block;
+				float: right;
+				background: url(images/splbico.png) 2.5px top no-repeat;
+				background-size: 22px;
+				font-size: 13px;
+				font-weight: 700;
+				padding-top: 20px;
+				color: white;
+			}
+			.menu{
+				margin: 0 10px;
+				height: 40px;
+				border: 1px solid #dcdcdc;
+				color: #acacac;
+				border-radius: 4px;
+			}
+			.menuSelect{
+				color: #0560de !important;
+			}
+			.menuList{
+				float: left;
+				width: 27%;
+				height: 40px;
+				line-height: 40px;
+				text-align: center;
+				border-right: 1px solid #dcdcdc;
+				box-sizing: border-box;
+				font-weight: 700;
+			}
+			.menuList span{
+				position: relative;
+			}
+			.menuList:nth-child(3) i:nth-child(1){
+				position: absolute;
+				left: 2px;
+				top: 4px;
+				display: block;
+				border-left:5px solid transparent;
+			    border-right:5px solid transparent;
+			    border-bottom:5px solid #acacac;
+			}
+			.menuList:nth-child(3) i:nth-child(2){
+				position: absolute;
+				left: 2px;
+				top: 10px;
+				display: block;
+				border-left:5px solid transparent;
+			    border-right:5px solid transparent;
+			    border-top:5px solid #acacac;
+			}
+			.menuListMoneyMax{
+				border-left:5px solid transparent !important;
+			    border-right:5px solid transparent !important;
+			    border-bottom:5px solid #4488e6 !important;
+			}
+			.menuListMoneyMin{
+				border-left:5px solid transparent !important;
+			    border-right:5px solid transparent !important;
+			    border-top:5px solid #4488e6 !important;
+			}
+			.menuList:nth-child(4){
+				width: 19%;
+				border: none;
+				background: url(images/splist_bg1.png) 22px 10px no-repeat;
+				background-size: 20px 20px;
+			}
+			.list{
+				position: relative;
+				display: block;
+				height: 100px;
+				border-bottom: 1px solid #e5e5e5;
+			}
+			.listTransition{
+				transition: all .4s ease;
+				-webkit-transition: all .4s ease;
+			}
+			.list img{
+				display: block;
+				float: left;
+				margin: 15px 0 0 10px;
+				width: 70px;
+				height: 70px;
+			}
+			.title{
+				float: left;
+				width: 70%;
+				max-height: 38px;
+				overflow-y: hidden;
+				margin: 15px 0 0 10px;
+				font-size: 14px;
+				
+			}
+			@media (min-width: 340px) {
+				.title{
+					width: 72%;
+				}
+			}
+			.priceBox{
+				position: absolute;
+				left: 90px;
+				bottom: 35px;
+				font-size: 14px;
+			}
+			.price1{
+				float: left;
+				color: red;
+			}
+			.price2{
+				float: left;
+				margin-left: 10px;
+				color: #a6a6a6;
+				text-decoration: line-through;
+			}
+			.discount{
+				position: absolute;
+				left: 90px;
+				bottom: 15px;
+				font-size: 14px;
+				background-color: #0560de;
+				padding: 1px 3px;
+				color: white;
+			}
+			.number{
+				position: absolute;
+				left: 138px;
+				bottom: 15px;
+				font-size: 14px;
+				color: #c5c5c5;
+			}
+			/*大图模式*/
+			.max_listBox{
+				margin: 0 10px !important;
+			}
+			.max_listBox:after{
+				content: ' ';
+				display: block;
+				clear: both;
+			}
+			.max_listBox .list{
+				float: left !important;
+				border: none !important;
+				width: 49% !important;
+				height: 100% !important;
+				margin: 10px 0 0 1% !important;
+				background-color: white !important;
+			}
+			.max_listBox .list:after{
+				content: ' ';
+				display: block;
+				clear: both;
+				height: 10px;
+			}
+			.max_listBox img{
+				float: none !important;
+				width: 100% !important;
+				height: auto !important;
+				margin: 0 !important;
+			}
+			.max_listBox .title{
+				float: none !important;
+				width: 100% !important;
+				margin: 0 !important;
+				box-sizing: border-box;
+				padding: 5px 0 0 10px !important;
+			}
+			.max_listBox .priceBox{
+				position: initial !important;
+				height: 16px !important;
+				margin: 5px 0 0 10px !important;
+			}
+			.max_listBox .discount{
+				position: initial !important;
+				float: left !important;
+				width: 40px !important;
+				height: 16px !important;
+				line-height: 16px !important;
+				text-align: center !important;
+				margin: 5px 0 0 10px !important;
+			}
+			.max_listBox .number{
+				position: initial !important;
+				float: left !important;
+				margin: 7px 0 0 10px !important;
+			}
+		</style>
+</head>
+<!--/************************************************************
+ *																*
+ * 						      							*
+ *                       							*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+**************************************************************-->
+<body>
+		<div class="topBox">
+			<a href="#" class="back"></a>
+			<input type="text" placeholder="请输入关键字" />
+			<a href="#" class="topRight">分类</a>
+		</div>
+		<div style="background-color: white;padding: 5px 0 5px 0;">
+			<div class="menu">
+				<div class="menuList menuSelect">新品</div>
+				<div class="menuList">销量</div>
+				<div class="menuList" type="max">价格<span><i class="menuListMoneyMax"></i><i></i></span></div>
+				<div class="menuList" type="max"></div>
+			</div>
+		</div>
+		<div class="listBox max_listBox">
+			<a href="#" class="list">
+				<img src="images/product.png" />
+				<div class="title">【新品首发】&nbsp;恐龙肉&nbsp;69元/3斤&nbsp;顺丰包邮&nbsp;原价：100元</div>
+				<div class="priceBox">
+					<div class="price1">￥100</div>
+					<div class="price2">￥150</div>
+				</div>
+				<div class="discount">6.3折</div>
+				<div class="number">销量：20</div>
+			</a>
+			<a href="#" class="list">
+				<img src="images/product.png" />
+				<div class="title">【新品首发】&nbsp;恐龙肉&nbsp;69元/3斤&nbsp;顺丰包邮&nbsp;原价：100元</div>
+				<div class="priceBox">
+					<div class="price1">￥100</div>
+					<div class="price2">￥150</div>
+				</div>
+				<div class="discount">6.3折</div>
+				<div class="number">销量：20</div>
+			</a>
+			<a href="#" class="list">
+				<img src="images/product.png" />
+				<div class="title">【新品首发】&nbsp;恐龙肉&nbsp;69元/3斤&nbsp;顺丰包邮&nbsp;原价：100元</div>
+				<div class="priceBox">
+					<div class="price1">￥100</div>
+					<div class="price2">￥150</div>
+				</div>
+				<div class="discount">6.3折</div>
+				<div class="number">销量：20</div>
+			</a>
+			<a href="#" class="list">
+				<img src="images/product.png" />
+				<div class="title">【新品首发】&nbsp;恐龙肉&nbsp;69元/3斤&nbsp;顺丰包邮&nbsp;原价：100元</div>
+				<div class="priceBox">
+					<div class="price1">￥100</div>
+					<div class="price2">￥150</div>
+				</div>
+				<div class="discount">6.3折</div>
+				<div class="number">销量：20</div>
+			</a>
+		</div>
+		<script>
+			$('.menuList').click(function(){
+				var obj=$(this);
+				if(obj.index()==3) return;
+				if(obj.index()==2){
+					if(obj.css('color')=='rgb(5, 96, 222)'){
+						if(obj.attr('type')=='max'){ //价格切换 从小到大
+							obj.find('i').eq(0).removeClass('menuListMoneyMax');
+							obj.find('i').eq(1).addClass('menuListMoneyMin');
+							obj.attr('type','min');
+						}
+						else{ //价格切换 从大到小
+							obj.find('i').eq(0).addClass('menuListMoneyMax');
+							obj.find('i').eq(1).removeClass('menuListMoneyMin');
+							obj.attr('type','max');
+						}
+					}
+				}
+				$('.menuList').removeClass('menuSelect');
+				obj.addClass('menuSelect');
+			});
+			$('.menuList').eq(3).click(function(){
+				var obj=$(this);
+				if(obj.attr('type')=='min'){ //切换大图模式
+					$('.listBox').removeClass('listTransition');
+					$('.listBox').addClass('max_listBox');
+					obj.css('background','url(images/splist_bg1.png) 22px 10px no-repeat');
+					obj.attr('type','max');
+				}
+				else{ //切换小图模式
+					$('.listBox').addClass('listTransition');
+					$('.listBox').removeClass('max_listBox');
+					obj.css('background','url(images/splist_bg2.png) 22px 10px no-repeat');
+					obj.attr('type','min');
+				}
+				obj.css('background-size','20px 20px');
+			});
+		</script>
+	</body>
+</html>

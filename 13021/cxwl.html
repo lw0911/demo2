@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>查询物流</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="css/cxwl.css" />
+		<script src="js/jquery-2.1.0.js"></script>
+</head>
+<!--/************************************************************
+ *																*
+ * 						      							*
+ *                       							*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+**************************************************************-->
+<body>
+		<div style="height: 105px;background-color: white;padding-top: 10px;box-sizing: border-box;">
+			<img src="images/panic_buying_2.png" style="display: block;float: left;width: 85px;height: 85px;margin: 0 10px 0 10px;" />
+			<div style="">物流状态&nbsp;<font style="color: #7ecfa0;">运输中</font></div>
+			<div style="color: #999999;margin-top: 3px;">承运来源：韵达快递</div>
+			<div style="color: #999999;margin-top: 3px;">运单编号：7854154651561</div>
+			<div style="color: #999999;margin-top: 3px;">官方电话：<font style="color: #58a8f7;">485156</font></div>
+		</div>
+		<div style="height: 20px;"></div>
+		<div class="listBox listTop">
+			<div class="lineBox">
+				<div class="line"></div>
+				<div class="round"></div>
+			</div>
+			<div style="float: left;color: #999999;margin-top: 10px;">成都韵达分公司&nbsp;已发出</div>
+			<div style="float: left;color: #999999;margin: 10px 0 0;border-bottom: 1px solid #dddddd;padding-bottom: 10px;">2016-01-24&nbsp;15:24:31</div>
+			<div style="clear: both;"></div>
+		</div>
+		<div class="listBox">
+			<div class="lineBox">
+				<div class="line"></div>
+				<div class="round"></div>
+			</div>
+			<div style="float: left;color: #999999;margin-top: 10px;">成都韵达分公司&nbsp;已发出</div>
+			<div style="float: left;color: #999999;margin: 10px 0 0;border-bottom: 1px solid #dddddd;padding-bottom: 10px;">2016-01-24&nbsp;15:24:31</div>
+			<div style="clear: both;"></div>
+		</div>
+		<div class="listBox">
+			<div class="lineBox">
+				<div class="line"></div>
+				<div class="round"></div>
+			</div>
+			<div style="float: left;color: #999999;margin-top: 10px;">成都韵达分公司&nbsp;已发出</div>
+			<div style="float: left;color: #999999;margin: 10px 0 0;border-bottom: 1px solid #dddddd;padding-bottom: 10px;">2016-01-24&nbsp;15:24:31</div>
+			<div style="clear: both;"></div>
+		</div>
+		<script>
+			(function(){
+				var height=parseInt($('.listBox').css('height'));
+				$('.lineBox').css('height',height+29);
+				$('.lineBox').next().css('width',parseInt($('body').css('width'))-parseInt($('.lineBox').css('width'))-20 );
+				$('.lineBox').next().next().css('width',parseInt($('body').css('width'))-parseInt($('.lineBox').css('width'))-20 );
+			}())
+		</script>
+	</body>
+</html>

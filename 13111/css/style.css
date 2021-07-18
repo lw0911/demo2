@@ -1,0 +1,878 @@
+body {
+  font-size: 16px;
+  color: #707070;
+  font-family: Lato, sans-serif;
+  background-color: transparent;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Raleway, sans-serif;
+}
+h1 {
+  font-size: 3.75em;
+  line-height: 1.25;
+  font-weight: 300;
+}
+h2 {
+  font-size: 3.125em;
+}
+h3 {
+  font-size: 2.5em;
+}
+h4 {
+  font-weight: 500;
+  font-size: 1.8em;
+}
+h5 {
+  font-size: 1.125em;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+h6 {
+  font-size: 0.9em;
+}
+p {
+  font-family: Lato, sans-serif;
+  color: #707070;
+  line-height: 1.6;
+}
+a {
+  transition: all 0.3s;
+}
+a:hover {
+  text-decoration: none;
+  color: #606060;
+}
+iframe,
+video {
+  border: 0;
+}
+/*
+|----------------------------------------------------------------------------
+| HELPER CLASS
+|----------------------------------------------------------------------------
+*/
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.mb-45 {
+  margin-bottom: 45px;
+}
+.mb-75 {
+  margin-bottom: 75px;
+}
+.mt-60 {
+  margin-top: 60px;
+}
+.info {
+  color: #707070;
+  margin-top: 15px;
+  font-size: 15px;
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+  max-height: 100%;
+}
+.overlay .title-text {
+  color: #fff;
+}
+.overlay .sub-title {
+  color: #bfbfbf;
+}
+.img-md-right,
+.img-md-left {
+  float: none;
+}
+.white-bg {
+  background-color: #fff;
+}
+@media screen and (min-width: 992px) {
+  .img-md-right {
+    float: right;
+  }
+  .img-md-left {
+    float: left;
+  }
+}
+@media screen and (max-width: 991px) {
+  .pull-right {
+    float: none !important;
+    margin-bottom: 0;
+  }
+}
+/*
+|----------------------------------------------------------------------------
+| BUTTONS
+|----------------------------------------------------------------------------
+*/
+.btn {
+  font-family: Raleway, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+.btn-cmd {
+  padding: 14px 10px;
+  min-width: 210px;
+}
+.btn-base {
+  color: #fff;
+}
+.btn-base:focus {
+  color: #fff;
+}
+.btn-base:hover {
+  color: #fff;
+}
+.btn-base span {
+  font-family: Lato, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+.btn-base-alt {
+  background: transparent;
+}
+.btn-base-alt:hover {
+  color: #fff;
+}
+.btn-base-alt.btn-white {
+  border: 2px solid #fff;
+  color: #fff;
+}
+.btn-base-alt.btn-white:hover {
+  background: #fff;
+}
+.multiple-btn .btn {
+  margin-right: 10px;
+}
+/*
+|----------------------------------------------------------------------------
+| ICONOGRAPHY
+|----------------------------------------------------------------------------
+*/
+.icon {
+  display: inline-block;
+  font: normal normal normal 14px/1 "nf";
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translate(0, 0);
+}
+/*
+|----------------------------------------------------------------------------
+| MISC
+|----------------------------------------------------------------------------
+*/
+.media-left,
+.media > .pull-left {
+  padding-right: 15px;
+}
+/*
+|----------------------------------------------------------------------------
+| SECTIONS
+|----------------------------------------------------------------------------
+*/
+.service,
+.app-description,
+.app-feature,
+.testimonials-1,
+.pricing-table-2,
+.purchase-book,
+.video,
+.contact {
+  padding: 125px 0 80px;
+}
+@media screen and (max-width: 480px) {
+  .service,
+  .app-description,
+  .app-feature,
+  .testimonials-1,
+  .pricing-table-2,
+  .purchase-book,
+  .video,
+  .contact {
+    padding: 100px 0 55px;
+  }
+}
+.pricing-table-1 .overlay,
+.testimonials-2 .overlay {
+  padding: 125px 0 80px;
+}
+@media screen and (max-width: 480px) {
+  .pricing-table-1 .overlay,
+  .testimonials-2 .overlay {
+    padding: 100px 0 55px;
+  }
+}
+.screenshots,
+.download {
+  padding: 125px 0;
+}
+@media screen and (max-width: 480px) {
+  .screenshots,
+  .download {
+    padding: 100px 0;
+  }
+}
+.app-description,
+.testimonials-1,
+.pricing-table-2,
+.video,
+.footer {
+  background: #f6f6f7;
+}
+.app-description .title-text,
+.testimonials-1 .title-text,
+.pricing-table-2 .title-text,
+.video .title-text,
+.footer .title-text {
+  color: #404040;
+}
+/*************** HEADING ***************/
+.title-text {
+  color: #202020;
+  font-weight: 300;
+}
+.title-text span {
+  font-weight: 500;
+}
+.column-heading {
+  margin-top: 50px;
+}
+.column-heading .icon:before {
+  font-size: 70px;
+}
+.column-heading .title-text {
+  margin: 40px 0 40px;
+}
+.section-heading {
+  margin-bottom: 75px;
+}
+.section-heading .title-text {
+  margin: 0 0 20px;
+}
+/*
+|----------------------------------------------------------------------------
+| FORMS
+|----------------------------------------------------------------------------
+*/
+.form-control {
+  border-color: transparent;
+  height: 50px;
+  max-width: 100%;
+  padding: 8px 20px;
+  box-shadow: none;
+  transition: all 0.3s;
+  color: #707070;
+  font-size: 1em;
+}
+.form-control:focus {
+  box-shadow: none;
+}
+/******************** REGISTRATION FORM ********************/
+.registration-form {
+  background: #fff;
+  padding: 30px;
+}
+.registration-form .btn {
+  margin-top: 30px;
+}
+.registration-form .form-control {
+  border-radius: 0;
+  border: 0;
+  border-bottom: 1px solid #d6d6d6;
+  padding: 8px 0;
+}
+.success-msg,
+.error-msg {
+  display: none;
+  margin-top: 10px;
+}
+@media screen and (min-width: 768px) {
+  .form-inline .form-group {
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form-inline .btn {
+    display: block;
+    width: 100%;
+  }
+}
+/*
+|----------------------------------------------------------------------------
+| NAVBAR
+|----------------------------------------------------------------------------
+*/
+.fog-navbar {
+  transition: all 0.3s;
+}
+.fog-navbar .navbar-collapse {
+  text-align: center;
+}
+.navbar-brand {
+  padding: 15px;
+  height: 70px;
+}
+.navbar-brand img {
+  height: 100%;
+  width: auto;
+}
+.navbar-toggle {
+  padding: 12px 13px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.fog-navbar-light {
+  background-color: #fff;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.05);
+}
+.fog-navbar-light .navbar-collapse {
+  border-color: #d6d6d6;
+}
+@media screen and (min-width: 768px) {
+  .navbar-anim {
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .navbar-anim.hidden-nav {
+    visibility: hidden;
+    opacity: 0;
+  }
+  .navbar-anim .navbar-brand {
+    margin-top: 9px;
+    padding: 20px 15px;
+    height: 80px;
+  }
+  .navbar-anim .fog-navbar-nav {
+    margin-top: 15px;
+  }
+  .navbar-anim .fog-navbar-nav > li > a {
+    color: #fff;
+  }
+  .navbar-anim .fog-navbar-nav > li > a:hover {
+    color: #d9d9d9;
+  }
+  .navbar-anim .fog-navbar-nav > li.nav-btn a {
+    background-color: transparent;
+  }
+}
+.fog-navbar-nav {
+  transition: all 0.3s;
+}
+.fog-navbar-nav > li {
+  display: inline-block;
+}
+.fog-navbar-nav > li > a {
+  text-transform: uppercase;
+  color: #707070;
+  font-size: 14px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.fog-navbar-nav > li > a:hover {
+  background-color: transparent;
+}
+.fog-navbar-nav > li > a:focus {
+  background: none;
+}
+.fog-navbar-nav > li.nav-btn {
+  margin: 12px 15px 11px 10px;
+}
+.fog-navbar-nav > li.nav-btn a {
+  border: 1px solid transparent;
+  font-size: 13px;
+  border-radius: 4px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  transition: all 0.3s;
+}
+@media screen and (max-width: 480px) {
+  .fog-navbar-nav > li {
+    display: block;
+  }
+  .fog-navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+/*
+|----------------------------------------------------------------------------
+| HOME
+|----------------------------------------------------------------------------
+*/
+.home .overlay {
+  padding: 130px 0 75px;
+}
+.home .logo {
+  margin-top: 25px;
+}
+.home p:not(.info) {
+  color: #bfbfbf;
+  font-family: Raleway, sans-serif;
+}
+@media screen and (max-width: 991px) {
+  .home {
+    text-align: center;
+  }
+  .home .img-md-right {
+    margin: 20px auto 50px;
+  }
+}
+.home.image-bg {
+  background: url(../images/home-1-background.jpg) center center no-repeat;
+  background-size: cover;
+}
+.home-content h1 {
+  color: #fff;
+  margin-bottom: 45px;
+}
+.home-content .form-control {
+  height: 56px;
+}
+/******************** APP HOME - 1 ********************/
+.app-home-1 .home-content {
+  margin-top: 75px;
+}
+/******************** SERVICE HOME - 1 ********************/
+.service-home-1 .overlay,
+.service-home-2 .overlay {
+  padding: 230px 0 220px;
+}
+.service-home-1 .form-group,
+.service-home-2 .form-group {
+  min-width: 30%;
+  margin-bottom: 30px;
+}
+.service-home-1 .form-control,
+.service-home-2 .form-control {
+  width: 100%;
+}
+.service-home-1 .btn,
+.service-home-2 .btn {
+  margin-bottom: 30px;
+}
+.service-home-3 .overlay {
+  padding: 230px 0 155px;
+}
+/******************** WEBAPP ********************/
+.webapp .overlay {
+  padding: 230px 0 175px;
+}
+/*
+|----------------------------------------------------------------------------
+| SERVICE SECTIONS
+|----------------------------------------------------------------------------
+*/
+.service {
+  background-color: #fff;
+}
+.service-item {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.service-item .title-text {
+  margin: 35px 0 30px;
+  font-weight: 500;
+}
+/*
+|----------------------------------------------------------------------------
+| SERVICE - 1
+|----------------------------------------------------------------------------
+*/
+.service-1 .service-item .icon {
+  font-size: 70px;
+}
+/*
+|----------------------------------------------------------------------------
+| SERVICE - 2
+|----------------------------------------------------------------------------
+*/
+.service-2 .service-item .icon {
+  font-size: 45px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  padding: 20px;
+  transition: all 0.3s;
+}
+/*
+|----------------------------------------------------------------------------
+| APP DESCRIPTION
+|----------------------------------------------------------------------------
+*/
+.app-description .btn {
+  margin-top: 40px;
+}
+.os-icons {
+  padding: 0;
+  margin-top: 45px;
+  font-size: 0;
+}
+.os-icons li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+.os-icons .icon {
+  font-size: 50px;
+}
+/*
+|----------------------------------------------------------------------------
+| APP FEATURE
+|----------------------------------------------------------------------------
+*/
+.app-feature {
+  background-color: #fff;
+}
+.app-feature .features {
+  margin-top: 50px;
+}
+.app-feature .features .icon:before {
+  font-size: 24px;
+}
+.app-feature .features p {
+  font-size: 14px;
+}
+/******************** APP FEATURE - 2 ********************/
+.app-feature-2 h2 {
+  font-size: 3.025em;
+}
+/*
+|----------------------------------------------------------------------------
+| PRICING TABLE
+|----------------------------------------------------------------------------
+*/
+.pricing-table.image-bg {
+  background: url(../images/pricing-table-background.jpg) top center no-repeat;
+  background-size: cover;
+}
+.single-table {
+  background: #fff;
+  text-align: center;
+  border-radius: 0 0 5px 5px;
+  border: 1px solid transparent;
+}
+.single-table .heading {
+  font-size: 20px;
+  font-weight: 500;
+  padding: 25px 15px;
+  margin: -1px;
+}
+.single-table .pricing {
+  padding: 15px 15px 25px;
+  font-family: Raleway, sans-serif;
+  margin: 0 -1px;
+  font-weight: 300;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid transparent;
+}
+.single-table .currency {
+  font-size: 25px;
+}
+.single-table .rate {
+  font-size: 60px;
+  line-height: 1;
+}
+.single-table .features {
+  padding: 30px 15px 45px;
+}
+.single-table .features ul {
+  padding: 0;
+  margin: 0;
+}
+.single-table .features ul li {
+  list-style-type: none;
+  line-height: 2.3;
+}
+.single-table .features .btn {
+  margin-top: 30px;
+}
+.single-table .affirmative:before,
+.single-table .negative:before {
+  margin-right: 5px;
+  font-family: "nf";
+}
+.single-table .affirmative:before {
+  content: "\e10e";
+}
+.single-table .negative:before {
+  content: "\e235";
+}
+.pricing-table-1 .single-table {
+  border-color: #f6f6f7;
+}
+.pricing-table-1 .single-table header {
+  color: #202020;
+}
+.pricing-table-1 .single-table .heading {
+  background: #f6f6f7;
+}
+.pricing-table-2 .single-table {
+  border-color: #fff;
+}
+.pricing-table-2 .single-table header {
+  color: #404040;
+}
+.pricing-table-2 .single-table.active {
+  color: #fff;
+}
+.pricing-table-2 .single-table.active .pricing {
+  color: #fff;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.pricing-table-2 .single-table.active .affirmative:before,
+.pricing-table-2 .single-table.active .negative:before {
+  color: rgba(0, 0, 0, 0.2);
+}
+.pricing-table-2 .single-table.active .btn {
+  background: #fff;
+}
+.pricing-table-2 .single-table.active .btn:hover {
+  background: transparent;
+  color: #fff;
+}
+/*
+|----------------------------------------------------------------------------
+| SCREENSHOTS
+|----------------------------------------------------------------------------
+*/
+.screenshots {
+  background-color: #fff;
+}
+/******************** OWL CONTROLS CUSTOM ********************/
+.owl-theme .owl-nav {
+  margin-top: 25px;
+}
+.owl-theme .owl-nav [class*='owl-'] {
+  background: #b3b3bb;
+  border-radius: 0;
+  padding: 5px 15px;
+  transition: all 0.3s;
+}
+.owl-theme .owl-dots .owl-dot span {
+  width: 20px;
+  height: 10px;
+  background: #b3b3bb;
+  border-radius: 0;
+  margin: 0 3px;
+  transition: all 0.3s;
+}
+/*
+|----------------------------------------------------------------------------
+| TESTIMONIALS
+|----------------------------------------------------------------------------
+*/
+.testimonial {
+  background: #fff;
+  border-radius: 5px;
+  font-family: Lato, sans-serif;
+  padding: 45px;
+  margin: 0;
+  font-size: 16px;
+  border: none;
+  position: relative;
+}
+.testimonial:before {
+  position: absolute;
+  left: 8px;
+  top: -20px;
+  content: '“';
+  font-size: 280px;
+  line-height: 1;
+  height: 100%;
+  opacity: 0.2;
+}
+.testimonial p {
+  font-style: italic;
+}
+.testimonial cite {
+  font-style: normal;
+  margin-top: 30px;
+  display: block;
+  font-size: 18px;
+}
+.testimonial cite span {
+  color: #202020;
+  font-size: 14px;
+}
+/******************** TESTIMONIALS - 2 ********************/
+.testimonials-2.image-bg {
+  background: url(../images/pricing-table-background.jpg) top center no-repeat;
+  background-size: cover;
+}
+/*
+|----------------------------------------------------------------------------
+| COMPANIES
+|----------------------------------------------------------------------------
+*/
+.companies {
+  padding: 80px 0 60px;
+  text-align: center;
+  background-color: #fff;
+}
+.companies .title-text {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.companies ul {
+  padding: 20px 0;
+  margin: 0;
+}
+.companies ul li {
+  list-style-type: none;
+  padding: 10px;
+}
+.companies ul li:last-child {
+  padding-bottom: 0;
+}
+.companies ul li:first-child {
+  padding-top: 0;
+}
+.companies ul li a {
+  display: block;
+}
+.companies ul li a:hover img {
+  opacity: 1;
+}
+.companies ul li img {
+  opacity: 0.6;
+  width: 100%;
+  max-width: 120px;
+  height: auto;
+  transition: all 0.3s;
+}
+@media screen and (min-width: 768px) {
+  .companies ul li {
+    display: inline-block;
+  }
+}
+@media screen and (min-width: 992px) {
+  .companies ul li {
+    padding: 10px 20px;
+  }
+}
+/*
+|----------------------------------------------------------------------------
+| SUBSCRIBE
+|----------------------------------------------------------------------------
+*/
+.trial-download .overlay {
+  padding: 125px 0 115px;
+  background-color: #323a45;
+  max-height: 100%;
+}
+.trial-download .info {
+  color: #b0b0b0;
+}
+/*
+|----------------------------------------------------------------------------
+| DOWNLOAD
+|----------------------------------------------------------------------------
+*/
+.download {
+  background-color: #fff;
+}
+.download .section-heading {
+  margin-bottom: 60px;
+}
+.download .download-onto {
+  margin: 30px auto 0;
+}
+.download-btns .btn {
+  margin: 0 7px 30px 7px;
+}
+/*
+|----------------------------------------------------------------------------
+| PURCHASE BOOK
+|----------------------------------------------------------------------------
+*/
+.purchase-book {
+  background-color: #fff;
+}
+.purchase-book .section-heading {
+  margin-bottom: 60px;
+}
+/*
+|----------------------------------------------------------------------------
+| CONTACT
+|----------------------------------------------------------------------------
+*/
+.contact {
+  background-color: #fff;
+}
+.get-in-touch + .get-in-touch {
+  margin-top: 45px;
+}
+.get-in-touch .title-text {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.get-in-touch .phone:before {
+  margin-right: 10px;
+  vertical-align: middle;
+  font-family: nf;
+  content: "\e1cc";
+}
+.get-in-touch .form-group {
+  margin-bottom: 30px;
+}
+.get-in-touch .form-control {
+  background-color: #f6f6f7;
+}
+.get-in-touch .form-control:focus {
+  background-color: transparent;
+}
+/*
+|----------------------------------------------------------------------------
+| FOOTER
+|----------------------------------------------------------------------------
+*/
+.footer {
+  padding: 25px 0 15px;
+}
+.footer .copyright a {
+  color: #707070;
+  padding-bottom: 3px;
+}
+.footer .copyright a:hover {
+  border-bottom: 1px dotted #707070;
+}
+.footer .social-sites {
+  text-align: right;
+}
+.social-sites {
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+}
+.social-sites li {
+  list-style-type: none;
+  display: inline-block;
+}
+.social-sites li .icon {
+  font-size: 25px;
+  color: #404040;
+  transition: all 0.3s;
+}
+.social-sites li + li {
+  margin-left: 7px;
+}
+@media screen and (max-width: 767px) {
+  .footer .copyright {
+    text-align: center;
+  }
+  .footer .social-sites {
+    text-align: center;
+  }
+}

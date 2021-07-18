@@ -1,0 +1,11 @@
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  h1 {
+    font-size: 3em;
+  }
+  .multiple-btn .btn + .btn {
+    margin-top: 30px;
+  }
+}

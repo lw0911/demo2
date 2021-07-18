@@ -1,0 +1,60 @@
+/* =====================================
+Template Name: Precon
+Author Name: ThemeLamp
+Author URI: http://themelamp.com/
+Description: Precon is a Multipurpose Business HTML5 Template.
+Version:	1.0
+
+[Note: Please Do not Touch the Color Codes]
+========================================*/
+
+
+/* Color Skin 1 */
+.top-inner,.sidebar-quick .remove a,.sidebar-quick .social-icons li a:hover,.sidebar-quick.style2,.why-choose .why-img .video-play:hover,.why-choose .why-img .video-play i,.why-choose .single-choose i,.services .single-service .icon,.services-sidebar .single-sidebar h2::before,.service-category ul li:hover a,
+.service-category ul li.active a,.achivements .single-count .icon,.project-info,.team .team-position,.team .team-social a:hover,.call-to-action,.news-area .news-head .date,.sidebar-main .single-widget h2::before,.sidebar-main .tags ul li a:hover,.sidebar-main .subscribe,.news-area.single .bottom-title h2,.partner-info .slide-hover,.about-video .video-play,.we-do-list .single-list:hover .icon,.skills .tab-main .nav li a:hover,.skills .tab-main .nav li a.active,.single-table .title,.faqs-main .single-faq .faq-title a i,.contact-info .info-head h2,.contact-us .social  h2,.error-page .error-search-form input,.download-brochure a,.footer .single-widget.about .social li a:hover,.footer .copyright-inner,.btn.theme-1,.slicknav_menu .slicknav_nav,.mobile-nav .slicknav_btn,.projects .project-nav li:hover,.projects .project-nav li.active,.projects .project-hover .button::before,.testimonials::before{
+	background: #379CB0;
+}
+.sidebar-quick .remove a:hover,.sidebar-quick.style2 .remove a,.hero-area .welcome-text h1 span,.why-choose .why-img .video-play:hover i,.why-choose .single-choose:hover i,.services.single .single-service h1:hover a,.project-info .single-info:hover i,.sidebar-main .categories-inner li a:hover,.sidebar-main .signle-popular h4 a:hover,.about-video .video-play:hover,.we-do-list .icon,.contact-form .form-group span,.extra-feature .feature-list li i,.btn.theme-1:hover,.btn.theme-1.no-style,.project-single .single-content h1:hover a{
+	color:#379CB0;
+}
+.preloader{
+	border-top-color:#379CB0;
+}
+.consultation .form-group input:hover,
+.consultation .form-group textarea:hover,
+.blog-comments-form .form-group input:hover,
+.blog-comments-form .form-group textarea:hover{
+	border-bottom-color:#379CB0;
+}
+.sidebar-main .categories-inner li a span,.btn.theme-1,.testimonials .single-testimonial:hover .img-head:before{
+	border-color:#379CB0;
+}
+.btn.theme-1{
+	box-shadow: 0px 10px 25px rgba(55, 156, 176, 0.2);
+}
+.team .team-position::before,.news-area .news-head .date::before,.news-area.single .bottom-title h2::before,.skills .tab-main .nav,.single-table .title::before,.contact-form .form-group input:hover,.contact-form .form-group textarea:hover,.contact-info .info-head h2:before,.contact-us .social h2:before,.download-brochure a::before,.preloader{
+	border-bottom-color:#379CB0;
+}
+
+/* Color Skin 2 */
+.main-menu .nav li a::before,.search-form button[type="submit"],.hero-area button:hover,.hero-area button span,.hero-area.style2 .slick-dots::before,.hero-area.style2 .slick-dots li:hover button,.hero-area.style2 .slick-dots li.slick-active button,.why-choose::before,.project-slider .slick-dots li.slick-active button,.project-slider .slick-dots li:hover button,.testimonials .ratting-main .rating,.testimonials .slick-dots li:hover button,.testimonials .slick-dots li.slick-active button,.team .team-title::before,.team button:hover,.team button span,.consultation .consult-title h2:before,.news-area .single-news.video .video-play:hover,.news-area .single-news.slider .slick-dots li:hover button,.news-area .single-news.slider .slick-dots li.slick-active button,.pagination li.active a,.pagination li:hover a,.blog-comments .single-comments .reply,.blog-comments-form .form-group .btn,.footer .single-widget h2:before,.main-menu .nav li a::before,.search-form button[type="submit"],.btn.theme-2,.section-title h2 span::before,#scrollUp,.precon-options span.skin1:after{
+	background: #FC6761;
+}
+.main-menu .nav li.active a,.main-menu .nav li:hover a,.search-nav-icon li a:hover,.header.style2 .main-menu .nav li.active a,.header.style2 .main-menu .nav li:hover a,.sidebar-quick .side-nav li a:hover,.services .single-service:hover h4 a,.achivements .count,.projects .p-title h4 a:hover,.projects .project-hover .btn,.testimonials .t-info .t-name span,.call-to-action .btn,.news-area .news-body h4 a:hover,.news-area .news-meta ul li i,.news-area .single-news.video .video-play,.sidebar-main .search .form button,.sidebar-main .signle-popular p i,.news-area.single .news-body h1 a:hover,.blog-comments .single-comments .meta i,.blog-comments-form label span,.partner-info .slide-hover a,.about-des .about-title h2 span,.we-do-list .we-do-title h2 span,.skills .tab-main .nav li a i,.single-table .price .amount,.contact-info .single-address i,.error-page .error-inner h2 span,.btn.theme-2:hover,.btn.theme-2.no-style,.section-title h2 span,.section-title p a,.breadcrumbs ul li a:hover{
+	color: #FC6761;
+}
+.hero-area.style2 .slick-dots li button,.btn.theme-2,.preloader::before{
+	border-color:#FC6761;
+}
+.search-form,.testimonials .ratting-main .rating::before,.testimonials .ratting-main .rating::after,.search-form{
+	border-top-color:#FC6761;
+}
+.testimonials .ratting-main .rating::before,.news-area.single blockquote{
+	border-left-color:#FC6761;
+}
+.testimonials .ratting-main .rating::after{
+	border-right-color:#FC6761;
+}
+.btn.theme-2 {
+	box-shadow: 0px 10px 25px rgba(252, 103, 97, 0.2);
+}

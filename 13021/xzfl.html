@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>商品分类</title>
+		<script src="js/jquery-2.1.0.js"></script>
+		<style type="text/css">
+			body{
+				margin: 0;
+				padding: 0;
+				background-color: #f4f6f3;
+			}
+			.topBox{
+				position: relative;
+				height: 40px;
+				line-height: 40px;
+				text-align: center;
+				color: #919090;
+				font-weight: 700;
+			}
+			.topBox a{
+				position: absolute;
+				display: block;
+				color: #198fee;
+				right: 10px;
+				top: 0px;
+			}
+			.listBox{
+				height: 40px;
+				line-height: 40px;
+				border-bottom: 1px solid #f4f6f3;
+				color: #919090;
+				font-weight: 700;
+				padding: 0 10px;
+				background-color: white;
+			}
+			.listBoxItem{
+				height: 40px;
+				line-height: 40px;
+				border-bottom: 1px solid #f4f6f3;
+				color: #919090;
+				font-weight: 700;
+				padding: 0 10px 0 30px;
+				background-color: #f4f6f3;
+			}
+			.listLeft{
+				float: left;
+			}
+			.checkbox{
+				position: relative;
+				float: right;
+				display: none;
+				background-color: #198fee;
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				margin-top: 9px;
+				border: 1px solid #198fee;
+			}
+			.checkbox:before{
+				position: absolute;
+				content: '  ';
+				display: block;
+				left: 7px;
+				top: 4px;
+				width: 4px;
+				height: 8px;
+				transform: rotate(30deg);
+				-webkit-transform: rotate(30deg);
+				border-right: 2px solid white;
+				border-bottom: 2px solid white;
+			}
+		</style>
+</head>
+<!--/************************************************************
+ *																*
+ * 						      							*
+ *                       							*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+**************************************************************-->
+<body>
+		<div class="topBox">选择分类<a href="#">取消</a></div>
+		<div class="listBox">
+			<div class="listLeft">全部商品</div>
+			<label class="checkbox" style="display: block;"></label>
+		</div>
+		<div class="listBox">
+			<div class="listLeft">全球鲜果</div>
+			<label class="checkbox"></label>
+		</div>
+		<div class="listBoxItem">
+			<div class="listLeft">新品尝鲜</div>
+			<label class="checkbox"></label>
+		</div>
+		<div class="listBoxItem">
+			<div class="listLeft">鲜果炫搭</div>
+			<label class="checkbox"></label>
+		</div>
+		<div class="listBoxItem">
+			<div class="listLeft">鲜果荟萃</div>
+			<label class="checkbox"></label>
+		</div>
+		<div class="listBoxItem">
+			<div class="listLeft">人气单品</div>
+			<label class="checkbox"></label>
+		</div>
+		<div class="listBox">
+			<div class="listLeft">店铺优惠</div>
+			<label class="checkbox"></label>
+		</div>
+		<div class="listBoxItem">
+			<div class="listLeft">人气单品</div>
+			<label class="checkbox"></label>
+		</div>
+		<div class="listBoxItem">
+			<div class="listLeft">超级特价</div>
+			<label class="checkbox"></label>
+		</div>
+		<div class="listBox">
+			<div class="listLeft">分类</div>
+			<label class="checkbox"></label>
+		</div>
+		<div class="listBoxItem">
+			<div class="listLeft">鲜果</div>
+			<label class="checkbox"></label>
+		</div>
+		<div class="listBoxItem">
+			<div class="listLeft">干果</div>
+			<label class="checkbox"></label>
+		</div>
+		<div class="listBoxItem">
+			<div class="listLeft">桂圆</div>
+			<label class="checkbox"></label>
+		</div>
+		<div class="listBoxItem">
+			<div class="listLeft">花茶</div>
+			<label class="checkbox"></label>
+		</div>
+		<div class="listBoxItem">
+			<div class="listLeft">蛋糕</div>
+			<label class="checkbox"></label>
+		</div>
+		<div class="listBox">
+			<div class="listLeft">美味干果</div>
+			<label class="checkbox"></label>
+		</div>
+		<div class="listBoxItem">
+			<div class="listLeft">养生桂圆</div>
+			<label class="checkbox"></label>
+		</div>
+		<div class="listBoxItem">
+			<div class="listLeft">美容花茶</div>
+			<label class="checkbox"></label>
+		</div>
+		<div class="listBoxItem">
+			<div class="listLeft">其他</div>
+			<label class="checkbox"></label>
+		</div>
+		<script>
+			$('.listBox,.listBoxItem').on('click',function(){
+				$('.checkbox').css('display','none');
+				$(this).find('.checkbox').css('display','block');
+			});
+		</script>
+	</body>
+</html>

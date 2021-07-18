@@ -1,0 +1,173 @@
+/*
+|----------------------------------------------------------------------------
+| GLOBAL
+|----------------------------------------------------------------------------
+*/
+a {
+  color: #bb9e0a;
+}
+.btn-base {
+  background: #bb9e0a;
+}
+.btn-base:hover {
+  background: #947d08;
+}
+.btn-base-alt {
+  border: 2px solid #bb9e0a;
+  color: #bb9e0a;
+}
+.btn-base-alt:hover {
+  background: #bb9e0a;
+}
+.btn-base-alt.btn-white:hover {
+  color: #bb9e0a;
+}
+.column-heading .icon:before {
+  color: #bb9e0a;
+}
+/*
+|----------------------------------------------------------------------------
+| APP FEATURE
+|----------------------------------------------------------------------------
+*/
+.app-feature .features .icon:before {
+  color: #bb9e0a;
+}
+.app-feature .features h5 {
+  color: #bb9e0a;
+}
+/*
+|----------------------------------------------------------------------------
+| CONTACT
+|----------------------------------------------------------------------------
+*/
+.get-in-touch .phone:before {
+  color: #bb9e0a;
+}
+/*
+|----------------------------------------------------------------------------
+| FOOTER
+|----------------------------------------------------------------------------
+*/
+.social-sites li a:hover .icon {
+  color: #bb9e0a;
+}
+/******************** FORMS ********************/
+.form-control:focus {
+  border-color: #bb9e0a;
+}
+/******************** NAVBAR ********************/
+.fog-navbar .navbar-toggle {
+  background-color: #bb9e0a;
+}
+.fog-navbar .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.fog-navbar-nav > li > a:hover {
+  color: #bb9e0a;
+}
+.fog-navbar-nav > li.current > a {
+  color: #bb9e0a;
+}
+.fog-navbar-nav > li.nav-btn a {
+  border-color: #fff;
+  background-color: #bb9e0a;
+  color: #fff;
+}
+.fog-navbar-nav > li.nav-btn a:hover {
+  border-color: #947d08;
+  background-color: #947d08;
+}
+/******************** PRICING TABLE ********************/
+.pricing-table-1 .single-table .affirmative:before {
+  color: #bb9e0a;
+}
+.pricing-table-1 .single-table.active .heading {
+  background: #bb9e0a;
+  color: #fff;
+}
+.pricing-table-1 .single-table.active .pricing {
+  color: #bb9e0a;
+}
+.pricing-table-2 .single-table .heading {
+  background: #bb9e0a;
+  color: #fff;
+}
+.pricing-table-2 .single-table.active {
+  background: #bb9e0a;
+  border-color: #bb9e0a;
+}
+.pricing-table-2 .single-table.active .btn {
+  color: #bb9e0a;
+}
+/******************** OWL CONTROLS CUSTOM ********************/
+.owl-theme .owl-nav [class*='owl-']:hover {
+  background: #bb9e0a;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #bb9e0a;
+}
+/******************** SERVICE SECTIONS ********************/
+.service-item .icon {
+  color: #bb9e0a;
+}
+.service-2 .service-item .icon {
+  border-color: #bb9e0a;
+}
+.service-2 .service-item:hover .icon {
+  background: #bb9e0a;
+  color: #fff;
+}
+/******************** TESTIMONIALS ********************/
+.testimonial cite {
+  color: #bb9e0a;
+}
+/*
+|----------------------------------------------------------------------------
+| BACKGROUNDS
+|----------------------------------------------------------------------------
+*/
+.solid-color .overlay {
+  background-color: #bb9e0a;
+  max-height: 100%;
+}
+.solid-color.gradient-color .overlay {
+  background-image: -webkit-gradient(linear, left top, right top, from(#bb9e0a), to(#e5c41a));
+  background-image: -webkit-linear-gradient(left, #bb9e0a, #e5c41a);
+  background-image: -moz-linear-gradient(left, #bb9e0a, #e5c41a);
+  background-image: -o-linear-gradient(left, #bb9e0a, #e5c41a);
+  background-image: linear-gradient(to right, #bb9e0a, #e5c41a);
+}
+.solid-color.pricing-table-1 .single-table.active .heading {
+  background: #816d07;
+}
+.transparent-color .overlay {
+  background-color: rgba(187, 158, 10, 0.9);
+  max-height: 100%;
+}
+.gradient-color .overlay {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(187, 158, 10, 0.7)), to(rgba(229, 196, 26, 0.7)));
+  background-image: -webkit-linear-gradient(left, rgba(187, 158, 10, 0.7), rgba(229, 196, 26, 0.7));
+  background-image: -moz-linear-gradient(left, rgba(187, 158, 10, 0.7), rgba(229, 196, 26, 0.7));
+  background-image: -o-linear-gradient(left, rgba(187, 158, 10, 0.7), rgba(229, 196, 26, 0.7));
+  background-image: linear-gradient(to right, rgba(187, 158, 10, 0.7), rgba(229, 196, 26, 0.7));
+}
+.solid-color.home .btn-base:not(.btn-block),
+.transparent-color.home .btn-base:not(.btn-block),
+.gradient-color.home .btn-base:not(.btn-block) {
+  border-color: #fff;
+  background: #fff;
+  color: #bb9e0a;
+}
+.solid-color.home .btn-base:not(.btn-block):hover,
+.transparent-color.home .btn-base:not(.btn-block):hover,
+.gradient-color.home .btn-base:not(.btn-block):hover {
+  background: transparent;
+  color: #fff;
+}
+.solid-color .sub-title,
+.transparent-color .sub-title,
+.gradient-color .sub-title {
+  color: #e0e0e0;
+}

@@ -1,0 +1,41 @@
+body {
+  font-family: "Montserrat",sans-serif;
+}
+
+section{
+    padding: 100px 0 !important;
+}
+
+.header9 .intro h1 {
+  color: #fff;
+  font-family: "Roboto",sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  margin-top: 145px;
+  position: relative;
+}
+
+.header9 .intro p {
+  color: #ddd;
+    font-family: inherit;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  line-height: 2;
+  margin-bottom: 25px;
+  max-width: 340px;
+  word-spacing: 1px;
+}
+
+.header9 .intro .button {
+  letter-spacing: 1px;
+    min-width: 140px;
+}
+
+
+.navigation3{ padding: 0 !important;}
+.content-section20{ padding-bottom: 0 !important;}
+.content-section2{ background-color: #F8F9FB; }
+.content-section8{ padding: 0 !important; }

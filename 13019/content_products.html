@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>详情页</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<!--/************************************************************
+ *																*
+ * 						     							*
+ *                        							*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+**************************************************************-->
+<body class="font">
+<!-- 头部 -->
+<div id="top" class="white pos_rel"><h2 class="txt_c f36 white_gray">量众购物-商品详情</h2><span class="top_back pos_abs f32"><a class="go_back white">返回</a></span><a class="top_set pos_abs" href="#"></a></div>
+<!-- 产品展示图 -->
+<div><img src="images/none/img_contents.jpg" alt="产品详情" class="full_img"></div>
+<div class="product_detail box_shadow_bot bgc_white">
+	<h1>秋韩版新品大码女装长袖女t恤衫打底宽松上衣服骷髅头印花潮 商城正品 质量保障</h1>
+	<div class="price">价格<span>￥139.00</span></div>
+</div>
+<div class="box_shadow_bot s_selects mt16 bgc_white">
+	<div class="sp_address bor_bot_gray pos_rel pb10"><i>送至：</i><span>北京</span><a href="#" class="iconfont icon_arrow">&#xe621;</a></div>
+	<div id="color" class="mt16"><i>颜色：</i><span class="options cur">白色<span class="selected"><img src="images/icon_select.png"></span></span><span class="options">黑色</span></div>
+	<div id="size" class="mt16"><i>尺寸：</i><span class="options cur">S<span class="selected"><img src="images/icon_select.png"></span></span><span class="options">M</span><span class="options">L</span><span class="options">XL</span></div>
+	<div id="num" class="mt16"><i>数量：</i><span class="btn_num"><a href="javascript:;" id="less" class="less"><img src="images/btn_less.jpg"></a><span class="num">1</span><a href="javascript:;" id="add" class="add"><img src="images/btn_add.jpg"></a></span></div>
+</div>
+<div class="box_shadow_bot s_selects mt16 bgc_white"><div class="pos_rel black">图文详情<a href="#" class="iconfont icon_arrow">&#xe621;</a></div></div>
+<div class="box_shadow_bot s_selects mt16 bgc_white"><div class="pos_rel black">评价<a href="#" class="iconfont icon_arrow">&#xe621;</a></div></div>
+<!-- 搜索结果 -->
+<div class="box_shadow_bot mt16 buyBox pos_rel bgc_white">
+	<a href="carts.html" id="goCarts"><img src="images/img_cart2.png" title="购物车" alt="购物车"></a>
+	<div class="buyBtn"><a href="javascript:;" class="carts">加入购物车</a><a href="carts.html" class="buy">直接购买</a></div>
+</div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+	$(function(){
+		fnCountNum();
+		fnGetSelected();
+	});
+</script>
+</body>
+</html>

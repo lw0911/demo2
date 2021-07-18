@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="format-detection" content="telephone=no">
+<meta name="format-detection" content="email=no">
+<title>逛</title>
+<link href="font/iconfont.css" rel="stylesheet" type="text/css" />
+<link href="css/basestyle.css" rel="stylesheet" type="text/css" />
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script src="js/scroll.js"></script>
+<script src="js/iscroll-probe.js"></script>
+<script>
+var myScroll;
+var pullDownFlag,pullUpFlag;
+var pullDown,pullUp;
+var spinner;
+function positionJudge(){
+    if(this.y>40){    //判断下拉
+        pullDown.innerHTML = "放开刷新页面";
+        pullDownFlag = 1;
+    }else if(this.y<(this.maxScrollY-40)){   //判断上拉
+        pullUp.innerHTML = "加载页面";
+        pullUpFlag = 1;
+    }
+}
+function action(){
+    if(pullDownFlag==1){
+        pullDownAction();
+        pullDown.innerHTML = "下拉加载页面…";
+        pullDownFlag = 0;
+    }else if(pullUpFlag==1){
+        pullUpAction();
+        pullUp.innerHTML = "上拉刷新…";
+        pullUpFlag = 0;
+    }
+}
+function loaded(){
+    pullDownFlag = 0;
+    pullUpFlag = 0;
+    pullDown = document.getElementById("pullDown");
+    pullUp = document.getElementById("pullUp");
+    spinner = document.getElementById("spinner");
+    myScroll = new IScroll("#wrapper",{
+        probeType: 3,
+//        momentum: false,//关闭惯性滑动
+        mouseWheel: true,//鼠标滑轮开启
+        scrollbars: true,//滚动条可见
+        fadeScrollbars: true,//滚动条渐隐
+        interactiveScrollbars: true,//滚动条可拖动
+        shrinkScrollbars: 'scale', // 当滚动边界之外的滚动条是由少量的收缩
+        useTransform: true,//CSS转化
+        useTransition: true,//CSS过渡
+        bounce: true,//反弹
+        freeScroll: false,//只能在一个方向上滑动
+        startX: 0,
+        startY: 0,
+//        snap: "li",//以 li 为单位
+    });
+    myScroll.on('scroll',positionJudge);
+    myScroll.on("scrollEnd",action);
+}
+function pullDownAction(){
+    spinner.style.display = "block";
+    setTimeout(function(){
+        spinner.style.display = "none";
+        myScroll.refresh();
+    },1000);
+}
+function pullUpAction(){
+    spinner.style.display = "block";
+    setTimeout(function(){
+        spinner.style.display = "none";
+        myScroll.refresh();
+    },1000);
+}
+function updatePosition(){
+pullDown.innerHTML = this.y>>0;
+}
+document.addEventListener('touchmove', function (e) {
+    e.preventDefault();
+}, false);
+document.addEventListener('touchmove', function (e) {
+    e.preventDefault();
+}, false);
+myScroll.on('scroll',positionJudge);
+myScroll.on("scrollEnd",action);
+</script>
+</head>
+<body onload="loaded()">
+<!--<div class="wx-top">
+    <div class="top-title">关于EGC</div>
+    <div class="xiaoxi-icon"><a href="xiaoxi.html"><span class="point on"></span></a></div>
+</div>-->
+<div id="wrapper">
+  <div id="scroller" class="fbh-pro-wrap">
+    <div id="pullDown"> <span>下拉刷新…</span> </div>
+    <div class="sousuobox"><input type="text" class="sousuo-ipt" placeholder="搜索" /><i class="sousuo-icon"></i></div>
+  	<div class="guang-icon-list tab">
+      <ul>
+      <li class="active"><a href="list.html"><img src="images/guang-icon-1.png"><p>热门推荐</p></a></li>
+      <li><a href="list.html"><img src="images/guang-icon-2.png"><p>私人定制</p></a></li>
+      <li><a href="list.html"><img src="images/guang-icon-3.png"><p>手工艺品</p></a></li>
+      <li><a href="list.html"><img src="images/guang-icon-4.png"><p>原创作品</p></a></li>
+      <li><a href="list.html"><img src="images/guang-icon-5.png"><p>企业办公</p></a></li>
+      <li><a href="list.html"><img src="images/guang-icon-6.png"><p>生活家居</p></a></li>
+      <li><a href="list.html"><img src="images/guang-icon-7.png"><p>影像冲印</p></a></li>
+      <li><a href="list.html"><img src="images/guang-icon-8.png"><p>全部分类</p></a></li>
+      </ul>
+    </div>
+    <ul id="list">
+      <li class="tab">
+        <div class="myyk-pro-items">
+          <div class="pro-upuser"><a href="#"><img src="images/touxiang.png"></a><span>飞翔的小泥鳅~</span></div>
+          <div class="proimg" style="background-image:url(upload/fbh_01.jpg);"><div class="propri">￥<span>88.00</span></div></div>
+          <div class="pro-tit">美洲鳄鱼皮特质表带</div>
+          <div class="pro-info">鳄鱼皮表带是顶级表带的定制标准，其产量不大、华文特别，搭配高档手表十分合适。</div>
+          <div class="pro-opt tab">
+            <a href="javascript:;" class="pro-opt-btn"><i class="ly-icon"></i><span>12</span></a>
+            <a href="javascript:;" class="pro-opt-btn"><i class="zanle-icon"></i><span>32</span></a>
+            <div  class="pro-shop-btn"><a href="javascript:;">购买</a></div>
+          </div>
+        </div>
+      </li>
+      <li class="tab">
+        <div class="myyk-pro-items">
+          <div class="pro-upuser"><a href="#"><img src="images/touxiang.png"></a><span>飞翔的小泥鳅~</span></div>
+          <div class="proimg" style="background-image:url(upload/fbh_01.jpg);"><div class="propri">￥<span>88.00</span></div></div>
+          <div class="pro-tit">美洲鳄鱼皮特质表带</div>
+          <div class="pro-info">鳄鱼皮表带是顶级表带的定制标准，其产量不大、华文特别，搭配高档手表十分合适。</div>
+          <div class="pro-opt tab">
+            <a href="javascript:;" class="pro-opt-btn"><i class="ly-icon"></i><span>12</span></a>
+            <a href="javascript:;" class="pro-opt-btn"><i class="zanle-icon active"></i><span>32</span></a>
+            <div  class="pro-shop-btn"><a href="javascript:;">购买</a></div>
+          </div>
+        </div>
+      </li>
+      <li class="tab">
+        <div class="myyk-pro-items">
+          <div class="pro-upuser"><a href="#"><img src="images/touxiang.png"></a><span>飞翔的小泥鳅~</span></div>
+          <div class="proimg" style="background-image:url(upload/fbh_01.jpg);"><div class="propri">￥<span>88.00</span></div></div>
+          <div class="pro-tit">美洲鳄鱼皮特质表带</div>
+          <div class="pro-info">鳄鱼皮表带是顶级表带的定制标准，其产量不大、华文特别，搭配高档手表十分合适。</div>
+          <div class="pro-opt tab">
+            <a href="javascript:;" class="pro-opt-btn"><i class="ly-icon"></i><span>12</span></a>
+            <a href="javascript:;" class="pro-opt-btn"><i class="zanle-icon"></i><span>32</span></a>
+            <div  class="pro-shop-btn"><a href="javascript:;">购买</a></div>
+          </div>
+        </div>
+      </li>
+      <li class="tab">
+        <div class="myyk-pro-items">
+          <div class="pro-upuser"><img src="images/touxiang.png"><span>飞翔的小泥鳅~</span></div>
+          <div class="proimg" style="background-image:url(upload/fbh_01.jpg);"><div class="propri">￥<span>88.00</span></div></div>
+          <div class="pro-tit">美洲鳄鱼皮特质表带</div>
+          <div class="pro-info">鳄鱼皮表带是顶级表带的定制标准，其产量不大、华文特别，搭配高档手表十分合适。</div>
+          <div class="pro-opt tab">
+            <a href="javascript:;" class="pro-opt-btn"><i class="ly-icon"></i><span>12</span></a>
+            <a href="javascript:;" class="pro-opt-btn"><i class="zanle-icon"></i><span>32</span></a>
+            <div  class="pro-shop-btn"><a href="javascript:;">购买</a></div>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div id="pullUp"><span>123</span></div>
+  </div>
+</div>
+<div id="spinner">
+  <div class="loading-box">
+    <div class="list-loading-icon">
+      <div class="rect1"></div>
+      <div class="rect2"></div>
+      <div class="rect3"></div>
+      <div class="rect4"></div>
+      <div class="rect5"></div>
+    </div>
+  </div>
+</div>
+
+<div class="wx-footer2 tab">
+  <a href="index.html" class=""><i class="icon-v2 fbh"></i><p>发布会</p></a>
+  <a href="guang.html" class="active"><i class="icon-v2 guang"></i><p>逛</p></a>
+  <a href="maimaiquan.html" class=""><i class="icon-v2 mmq"></i><p>买卖圈</p></a>
+  <a href="wode.html" class=""><i class="icon-v2 wo"></i><p>我</p></a>
+</div>
+</body>
+</html>

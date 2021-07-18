@@ -1,0 +1,181 @@
+/*==========================================
+   Table Of Contents
+============================================
+
+Kit Name: Eden UI
+Kit URI: http://scripteden.com/
+Description: 100+ elements
+Version: 1.0
+Author: Md Shaifuddin
+
+CSS STRUCTURE:
+
+1. Typograghy
+
+2. MISCS
+
+============================================
+==========================================*/
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    overflow-x: hidden;
+    background-color: #f9f9f9;
+    font-family: "Montserrat",sans-serif;
+}
+
+*{
+    outline-color: transparent !important;
+}
+
+p{
+    font-size: 13px;
+	color: #666;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+.section-title {
+	color: #333;
+	font-size: 35px;
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+	margin-bottom: 30px;
+}
+
+.padding-0 {
+	padding-right: 0px !important;
+	padding-left: 0px !important;
+}
+
+.p-r-0{
+    padding-right: 0 !important;
+}
+
+.p-l-0{
+    padding-left: 0 !important;
+}
+
+.margin-auto{
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.list-inline{
+    margin-left: 0;
+}
+
+.tag-line {
+    color: #eee;
+    display: block;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+}
+
+.center-vertically{
+    display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	/*-ms-flex-align: center;*/
+}
+
+.border:before,
+.border-bottom:before,
+.border-default:before {
+    position: absolute;
+    content: '';
+    width: 35px;
+    height: 2px;
+    background-color: #fff;
+    bottom: -24px;
+    left: 0;
+}
+
+.highlight {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 600;
+  height: 33px;
+  left: 20px;
+  letter-spacing: 1.5px;
+  padding-top: 8px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 20px;
+  width: 70px;
+}
+
+/* color */
+.primary-ecolor  { color: #38A5E0 !important; }
+.warning-ecolor  { color: #ffbc42 !important; }
+.default-ecolor  { color: #666666 !important; }
+.danger-ecolor   { color: #ef476f !important; }
+.success-ecolor  { color: #01BF86 !important; }
+.inverse-ecolor  { color: #333333 !important; }
+.info-ecolor     { color: #15beed !important; }
+.disabled-ecolor { color: #aaaaaa !important; }
+
+/* background color */
+.primary-ebg  { background-color: #38A5E0 !important; }
+.warning-ebg  { background-color: #ffbc42 !important; }
+.default-ebg  { background-color: #666666 !important; }
+.danger-ebg   { background-color: #ef476f !important; }
+.success-ebg  { background-color: #01BF86 !important; }
+.inverse-ebg  { background-color: #333333 !important; }
+.info-ebg     { background-color: #15beed !important; }
+.disabled-ebg { background-color: #aaaaaa !important; }
+
+/* Gradient */
+.border-default:before,
+.blue-gradient{
+    background: #38A5E0; 
+    background: -webkit-linear-gradient(to left, #38A5E0 , #146d9e); 
+    background: linear-gradient(to left, #38A5E0 , #146d9e);     
+}
+
+.border-bottom:before,
+.red-gradient{
+    background: rgba(123, 67, 151, 1); 
+    background: -webkit-linear-gradient(to left, rgba(123, 67, 151, 1) , #dc2430); 
+    background: linear-gradient(to left, rgba(123, 67, 151, 1) , #dc2430);         
+}
+
+.skyblue-gradient{
+    background: rgba(26, 41, 128, 1);
+    background: -webkit-linear-gradient(to right, rgba(26, 41, 128, 1) , rgba(27, 155, 153, 1) );
+    background: linear-gradient(to right, rgba(26, 41, 128, 1) , rgba(27, 155, 153, 1) ); 
+}
+
+/* Gradient Transparent */
+.blue-gradient-t{
+    background: rgba(56, 165, 224, 0.7); 
+    background: -webkit-linear-gradient(to left, rgba(56, 165, 224, 0.7) , #146d9e); 
+    background: linear-gradient(to left, rgba(56, 165, 224, 0.7) , #146d9e);     
+}
+
+.red-gradient-t{
+    background: rgba(123, 67, 151, 0.7); 
+    background: -webkit-linear-gradient(to left, rgba(123, 67, 151, 0.7) , #dc2430); 
+    background: linear-gradient(to left, rgba(123, 67, 151, 0.7) , #dc2430);         
+}
+
+.skyblue-gradient-t{
+    background: rgba(26, 41, 128, 0.7);
+    background: -webkit-linear-gradient(to right, rgba(26, 41, 128, 0.7) , rgba(27, 155, 153, 0.7) );
+    background: linear-gradient(to right, rgba(26, 41, 128, 0.7) , rgba(27, 155, 153, 0.7) ); 
+}

@@ -1,0 +1,1127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>设计定制类商城网站模板 </title>
+<meta name="keywords" content="设计,定制类,商城网站,网站模板,全套下载" /> 
+<meta name="description" content="设计定制类商城网站模板全套下载。" /> 
+<link href="css/base.css" rel="stylesheet" type="text/css" />
+<link href="css/index.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script type="text/javascript" src="js/chenks.js"></script>
+<script type="text/javascript" src="egc/js/jquery.SuperSlide2.js"></script>
+<script src="js/egc-bannerhelp.js"></script>
+<script type="text/javascript">      
+	$(function () {
+		$('.unaoto').banner({ isauto: false });
+		$('#autoabt-mac').banner({ isauto: true });
+		$('#autoabt-mob').banner({ isauto: true });
+	})
+</script>
+</head>
+<!--/************************************************************
+ *																*
+ * 						      							*
+ *                        							*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+**************************************************************-->
+<body>
+<div class="egc-top">
+  <div class="m-cnt">
+    <div class="egc-menu"><span><a href="#" class="zc-top">免费注册</a>|<a href="#" class="lg-top">立即登录</a></span><a href="#">退出</a><a href="#"> 客服中心</a><a href="#">帮助中心</a></div>
+    <div class="egc-top-l"> <a href="#" class="back-icon"><b></b>返回首页</a></div>
+  </div>
+</div>
+<div class="egcMenu">
+  <div class="egcNavigation facade">
+    <div class="m-cnt">
+      <div class="nav-logo"><a href="#" class="fl logo"><img src="images/logo-indx.png"></a><span class="txt fl">易工场&nbsp;&nbsp;&nbsp;&nbsp;一件起订</span></div>
+      <div class="hd-nav facade"> <a href="#" class="on">我的库</a> <a href="#">模板中心<em>new<s></s></em></a> <a href="#">交易数据</a> <a href="#">行业专属</a> <a href="#">需求招标</a>
+        <div class="clearfixfix"></div>
+      </div>
+      <div class="nav-search facade">
+        <input type="text" class="nav-sea-ipt fl" placeholder="检索模板、工厂、设计师">
+        <input type="button" value="搜索" class="nav-sea-sub fr">
+        <div class="clearfixfix"></div>
+        <div class="sear-keys"> <span>热门搜索：</span> <a href="javascript:;">名片</a> <a href="javascript:;">工服</a> <a href="javascript:;">手提袋</a> <a href="javascript:;">店招</a> <a href="javascript:;">画册</a> <a href="javascript:;">箱包</a> </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="banner-box">
+  <div class="bd">
+    <ul>
+      <li style="background:#0075b3 ;">
+        <div class="m-width"> <a href="javascript:void(0);"><img src="adv/ban-ind-01.jpg"/></a> </div>
+      </li>
+      <li style="background:#0075b3 ">
+        <div class="m-width"> <a href="javascript:void(0);"><img src="adv/ban-ind-01.jpg"></a> </div>
+      </li>
+    </ul>
+  </div>
+  <div class="ban-ind-btn"> <a class="prev" href="javascript:void(0);"><</a> <a class="next" href="javascript:void(0);">></a>
+    <div class="hd">
+      <ul>
+      </ul>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".prev,.next").hover(function(){
+		$(this).stop(true,false).fadeTo("show");
+	},function(){
+		$(this).stop(true,false).fadeTo("show");
+	});
+	
+	$(".banner-box").slide({
+		titCell:".hd ul",
+		mainCell:".bd ul",
+		effect:"fold",
+		interTime:3500,
+		delayTime:500,
+		autoPlay:true,
+		autoPage:true, 
+		trigger:"click" 
+	});
+
+});
+</script>
+<div class="link-ek"><a href="#">进入e库管家</a></div>
+<div class="indLogin">
+  <div class="error-ts" id="err_tip" style="display: none;"><i class="error"></i><span>请输入账号和密码</span> </div>
+  <div class="top-txt">
+    <div class="sec-n"> <a id="alink_0" href="javascript:;" class="on">会员登录</a></div>
+  </div>
+  <div class="tab">
+    <div class="login-item">
+      <div class="login-l fl"><i class="lg-user"></i></div>
+      <input type="text" class="user-ipt fl" id="txtUserName">
+      <!--<b class="right"></b>--> 
+      <!--错误提示是<b class="error"></b>-->
+      <div class="clearfix"></div>
+    </div>
+    <div class="login-item">
+      <div class="login-l fl"><i class="lg-psw"></i></div>
+      <input type="text" class="user-ipt keyboard fl" id="txtUserPwd">
+      <div class="clearfix"></div>
+    </div>
+  </div>
+  <div class="tab"><a href="javascript:;" id="btnSubmit" class="lg-btn">马上登陆</a></div>
+  <div class="tab">
+    <div class="fl pwsd-opt"> <a href="/register.html">免费注册</a> </div>
+    <div class="fr pwsd-opt"><a href="/retrievepwd.html">忘记密码？</a></div>
+    <div class="clearfix"></div>
+  </div>
+  <div class="tab">
+    <div class="other-log"> <a href="##" class="qq">QQ登陆</a> <a href="##" class="weixin">微信登陆</a> <a href="##" class="weixin">微信登陆</a></div>
+  </div>
+</div>
+<div class="actionWrap">
+  <div class="main">
+    <div class="tit">
+      <h1>今日数据</h1>
+      <p>易工场自上线以来深受市场欢迎，企业用户，服务商家，设计师不断入驻，<br />
+        我们每日的交易总额也不断增长，深受用户赞誉</p>
+    </div>
+    <div class="con">
+      <div class="date-box">
+        <div class="date-itms date-color01">
+          <h2>共有企业用户</h2>
+          <p><span>3657</span>位</p>
+        </div>
+        <div class="date-itms date-color02">
+          <h2>专业服务商</h2>
+          <p><span>3657</span>家</p>
+        </div>
+        <div class="date-itms date-color03">
+          <h2>共有设计师</h2>
+          <p><span>3657</span>位</p>
+        </div>
+        <div class="date-itms date-color04">
+          <h2>今日总交易额</h2>
+          <p><span>3657.00</span>元</p>
+        </div>
+      </div>
+      <div class="clearfixfix"></div>
+    </div>
+  </div>
+</div>
+<div class="actionWrap action-gray">
+  <div class="main">
+    <div class="tit">
+      <h1>今日最新订单</h1>
+    </div>
+    <div class="con">
+      <ul class="order-sx-tit">
+        <li class="selected"><a href="javascript:;" rel="all">所有订单</a></li>
+        <li><a href="javascript:;" rel="zjxd">直接下单</a></li>
+        <li><a href="javascript:;" rel="xjd">询价订单</a></li>
+        <li><a href="javascript:;" rel="zbd">招标订单</a></li>
+      </ul>
+      <ul class="order-sx-con clearfixfix">
+        <li rel="zbd">
+          <div class="odr-items">
+            <div class="odr-lx zbd"></div>
+            <div class="odr-b-t">
+              <div class="name">1000个一次性水杯定制</div>
+              <div class="people"><span>发标人：</span><span>******有限公司</span></div>
+            </div>
+            <div class="odr-b-c">
+              <dl class="odr-b-list">
+                <dt>邀请竞标商家</dt>
+                <dd>******有限公司</dd>
+                <dd>******有限公司</dd>
+                <dd>******有限公司</dd>
+                <dd>*****</dd>
+              </dl>
+            </div>
+            <div class="odr-b-b">
+              <dl>
+                <dd><i class="jbqx"></i>竞标期限<span>5</span>天</dd>
+                <dd><i class="ti"></i>发标时间<span>2015-10-09  12:13</span></dd>
+              </dl>
+              <div class="lxftime" endtime="2015-12-12 00:00:00"></div>
+            </div>
+          </div>
+        </li>
+        <li rel="zjxd">
+          <div class="odr-items">
+            <div class="odr-lx zjxd"></div>
+            <div class="odr-b-t">
+              <div class="name">1000个一次性水杯定制</div>
+              <div class="people"><span>发标人：</span><span>******有限公司</span></div>
+            </div>
+            <div class="odr-b-c">
+              <dl class="odr-b-list">
+                <dt>接单商家</dt>
+                <dd>******有限公司</dd>
+              </dl>
+            </div>
+            <div class="odr-b-b">
+              <dl>
+                <dd><i class="sl"></i>数量　　<span>1000</span>个</dd>
+                <dd><i class="je"></i>总金额　<span>156.00</span>元</dd>
+                <dd><i class="ti"></i>下单时间<span>2015-10-09  12:13</span></dd>
+              </dl>
+            </div>
+          </div>
+        </li>
+        <li rel="xjd">
+          <div class="odr-items">
+            <div class="odr-lx xjd"></div>
+            <div class="odr-b-t">
+              <div class="name">1000个一次性水杯定制</div>
+              <div class="people"><span>发标人：</span><span>******有限公司</span></div>
+            </div>
+            <div class="odr-b-c">
+              <dl class="odr-b-list">
+                <dt>邀请报价商家</dt>
+                <dd>******有限公司</dd>
+                <dd>******有限公司</dd>
+                <dd>******有限公司</dd>
+                <dd>*****</dd>
+              </dl>
+            </div>
+            <div class="odr-b-b">
+              <dl>
+                <dd><i class="jbqx"></i>报价期限<span>5</span>天</dd>
+                <dd><i class="ti"></i>询价时间<span>2015-10-09  12:13</span></dd>
+              </dl>
+              <div class="lxftime" endtime="2015-10-12 00:00:00"></div>
+            </div>
+          </div>
+        </li>
+        <li rel="zbd">
+          <div class="odr-items">
+            <div class="odr-lx zbd"></div>
+            <div class="odr-b-t">
+              <div class="name">1000个一次性水杯定制</div>
+              <div class="people"><span>发标人：</span><span>******有限公司</span></div>
+            </div>
+            <div class="odr-b-c">
+              <dl class="odr-b-list">
+                <dt>邀请竞标商家</dt>
+                <dd>******有限公司</dd>
+                <dd>******有限公司</dd>
+                <dd>******有限公司</dd>
+                <dd>*****</dd>
+              </dl>
+            </div>
+            <div class="odr-b-b">
+              <dl>
+                <dd><i class="jbqx"></i>竞标期限<span>5</span>天</dd>
+                <dd><i class="ti"></i>发标时间<span>2015-10-09  12:13</span></dd>
+              </dl>
+              <div class="lxftime" endtime="2015-10-12 00:00:00"></div>
+            </div>
+          </div>
+        </li>
+        <li rel="zjxd">
+          <div class="odr-items">
+            <div class="odr-lx zjxd"></div>
+            <div class="odr-b-t">
+              <div class="name">1000个一次性水杯定制</div>
+              <div class="people"><span>发标人：</span><span>******有限公司</span></div>
+            </div>
+            <div class="odr-b-c">
+              <dl class="odr-b-list">
+                <dt>接单商家</dt>
+                <dd>******有限公司</dd>
+              </dl>
+            </div>
+            <div class="odr-b-b">
+              <dl>
+                <dd><i class="sl"></i>数量　　<span>1000</span>个</dd>
+                <dd><i class="je"></i>总金额　<span>156.00</span>元</dd>
+                <dd><i class="ti"></i>下单时间<span>2015-10-09  12:13</span></dd>
+              </dl>
+            </div>
+          </div>
+        </li>
+        <li rel="xjd">
+          <div class="odr-items">
+            <div class="odr-lx xjd"></div>
+            <div class="odr-b-t">
+              <div class="name">1000个一次性水杯定制</div>
+              <div class="people"><span>发标人：</span><span>******有限公司</span></div>
+            </div>
+            <div class="odr-b-c">
+              <dl class="odr-b-list">
+                <dt>邀请报价商家</dt>
+                <dd>******有限公司</dd>
+                <dd>******有限公司</dd>
+                <dd>******有限公司</dd>
+                <dd>*****</dd>
+              </dl>
+            </div>
+            <div class="odr-b-b">
+              <dl>
+                <dd><i class="jbqx"></i>报价期限<span>5</span>天</dd>
+                <dd><i class="ti"></i>询价时间<span>2015-10-09  12:13</span></dd>
+              </dl>
+              <div class="lxftime" endtime="2015-10-12 00:00:00"></div>
+            </div>
+          </div>
+        </li>
+        <li rel="zbd">
+          <div class="odr-items">
+            <div class="odr-lx zbd"></div>
+            <div class="odr-b-t">
+              <div class="name">1000个一次性水杯定制</div>
+              <div class="people"><span>发标人：</span><span>******有限公司</span></div>
+            </div>
+            <div class="odr-b-c">
+              <dl class="odr-b-list">
+                <dt>邀请竞标商家</dt>
+                <dd>******有限公司</dd>
+                <dd>******有限公司</dd>
+                <dd>******有限公司</dd>
+                <dd>*****</dd>
+              </dl>
+            </div>
+            <div class="odr-b-b">
+              <dl>
+                <dd><i class="jbqx"></i>竞标期限<span>5</span>天</dd>
+                <dd><i class="ti"></i>发标时间<span>2015-10-09  12:13</span></dd>
+              </dl>
+              <div class="lxftime" endtime="2015-10-12 00:00:00"></div>
+            </div>
+          </div>
+        </li>
+        <li rel="zjxd">
+          <div class="odr-items">
+            <div class="odr-lx zjxd"></div>
+            <div class="odr-b-t">
+              <div class="name">1000个一次性水杯定制</div>
+              <div class="people"><span>发标人：</span><span>******有限公司</span></div>
+            </div>
+            <div class="odr-b-c">
+              <dl class="odr-b-list">
+                <dt>接单商家</dt>
+                <dd>******有限公司</dd>
+              </dl>
+            </div>
+            <div class="odr-b-b">
+              <dl>
+                <dd><i class="sl"></i>数量　　<span>1000</span>个</dd>
+                <dd><i class="je"></i>总金额　<span>156.00</span>元</dd>
+                <dd><i class="ti"></i>下单时间<span>2015-10-09  12:13</span></dd>
+              </dl>
+            </div>
+          </div>
+        </li>
+        <li rel="xjd">
+          <div class="odr-items">
+            <div class="odr-lx xjd"></div>
+            <div class="odr-b-t">
+              <div class="name">1000个一次性水杯定制</div>
+              <div class="people"><span>发标人：</span><span>******有限公司</span></div>
+            </div>
+            <div class="odr-b-c">
+              <dl class="odr-b-list">
+                <dt>邀请报价商家</dt>
+                <dd>******有限公司</dd>
+                <dd>******有限公司</dd>
+                <dd>******有限公司</dd>
+                <dd>*****</dd>
+              </dl>
+            </div>
+            <div class="odr-b-b">
+              <dl>
+                <dd><i class="jbqx"></i>报价期限<span>5</span>天</dd>
+                <dd><i class="ti"></i>询价时间<span>2015-10-09  12:13</span></dd>
+              </dl>
+              <div class="lxftime" endtime="2015-10-12 00:00:00"></div>
+            </div>
+          </div>
+        </li>
+        <li rel="zbd">
+          <div class="odr-items">
+            <div class="odr-lx zbd"></div>
+            <div class="odr-b-t">
+              <div class="name">1000个一次性水杯定制</div>
+              <div class="people"><span>发标人：</span><span>******有限公司</span></div>
+            </div>
+            <div class="odr-b-c">
+              <dl class="odr-b-list">
+                <dt>邀请竞标商家</dt>
+                <dd>******有限公司</dd>
+                <dd>******有限公司</dd>
+                <dd>******有限公司</dd>
+                <dd>*****</dd>
+              </dl>
+            </div>
+            <div class="odr-b-b">
+              <dl>
+                <dd><i class="jbqx"></i>竞标期限<span>5</span>天</dd>
+                <dd><i class="ti"></i>发标时间<span>2015-10-09  12:13</span></dd>
+              </dl>
+              <div class="lxftime" endtime="2015-10-12 00:00:00"></div>
+            </div>
+          </div>
+        </li>
+        <li rel="zjxd">
+          <div class="odr-items">
+            <div class="odr-lx zjxd"></div>
+            <div class="odr-b-t">
+              <div class="name">1000个一次性水杯定制</div>
+              <div class="people"><span>发标人：</span><span>******有限公司</span></div>
+            </div>
+            <div class="odr-b-c">
+              <dl class="odr-b-list">
+                <dt>接单商家</dt>
+                <dd>******有限公司</dd>
+              </dl>
+            </div>
+            <div class="odr-b-b">
+              <dl>
+                <dd><i class="sl"></i>数量　　<span>1000</span>个</dd>
+                <dd><i class="je"></i>总金额　<span>156.00</span>元</dd>
+                <dd><i class="ti"></i>下单时间<span>2015-10-09  12:13</span></dd>
+              </dl>
+            </div>
+          </div>
+        </li>
+        <li rel="xjd">
+          <div class="odr-items">
+            <div class="odr-lx xjd"></div>
+            <div class="odr-b-t">
+              <div class="name">1000个一次性水杯定制</div>
+              <div class="people"><span>发标人：</span><span>******有限公司</span></div>
+            </div>
+            <div class="odr-b-c">
+              <dl class="odr-b-list">
+                <dt>邀请报价商家</dt>
+                <dd>******有限公司</dd>
+                <dd>******有限公司</dd>
+                <dd>******有限公司</dd>
+                <dd>*****</dd>
+              </dl>
+            </div>
+            <div class="odr-b-b">
+              <dl>
+                <dd><i class="jbqx"></i>报价期限<span>5</span>天</dd>
+                <dd><i class="ti"></i>询价时间<span>2015-10-09  12:13</span></dd>
+              </dl>
+              <div class="lxftime" endtime="2015-10-12 00:00:00"></div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="clearfixfix"></div>
+      <div class="ck-more"><a href="javascript:;">查看更多<i class="sj"></i></a></div>
+    </div>
+    <script type="text/javascript">
+  $(document).ready(function(){	
+	$('.order-sx-tit li a').click(function(){
+		$('.order-sx-tit li').removeClass('selected');
+		$(this).parent('li').addClass('selected');
+		thisItem 	= $(this).attr('rel');
+		if(thisItem != "all"){
+			$('.order-sx-con li[rel='+thisItem+']').stop().animate({'width' : '250px','opacity' : 1, 'marginRight' : '66px', 'marginLeft' : '0'});
+			$('.order-sx-con li[rel!='+thisItem+']').stop().animate({'width' : 0, 'opacity' : 0, 'marginRight' : 0, 'marginLeft' : 0});
+		}else{
+			$('.order-sx-con li').stop().animate({'opacity' : 1, 'width' : '250px', 'marginRight' : '66px', 'marginLeft' : '0'});
+		}
+	});
+	
+	$('.order-sx-con li img').animate({'opacity' : 0.5}).hover(function(){
+		$(this).animate({'opacity' : 1});
+	},function(){
+		$(this).animate({'opacity' : 0.5});
+	});
+
+});
+</script> 
+  </div>
+</div>
+</div>
+<div class="actionWrap">
+  <div class="main">
+    <div class="tit">
+      <h1>定制流程</h1>
+      <p>我们有自己的独特的定制流程哦，快来了解下吧！<a href="#" class="red">去详细了解>></a></p>
+    </div>
+    <div class="con">
+      <div class="ind-dz-lc">
+        <ul>
+          <span class="arrow-l"></span>
+          <li>
+            <div class="circle radius"> <i class="lc-01"></i> </div>
+            <div class="line">
+              <div class="round radius"></div>
+            </div>
+            <div class="txt">
+              <h4>选定定制模板</h4>
+              <p>涵盖企事业所需各种定制</p>
+            </div>
+          </li>
+          <li>
+            <div class="circle radius"> <i class="lc-02"></i> </div>
+            <div class="line">
+              <div class="round radius"></div>
+            </div>
+            <div class="txt">
+              <h4>免费在线设计</h4>
+              <p>易工场设计师免费设计效果图</p>
+            </div>
+          </li>
+          <li>
+            <div class="circle radius"> <i class="lc-03"></i> </div>
+            <div class="line">
+              <div class="round radius"></div>
+            </div>
+            <div class="txt">
+              <h4>用户确认定制效果图</h4>
+              <p>可与设计客服沟通直至满意为止</p>
+            </div>
+          </li>
+          <li>
+            <div class="circle radius"> <i class="lc-04"></i> </div>
+            <div class="line">
+              <div class="round radius"></div>
+            </div>
+            <div class="txt">
+              <h4>匹配供应商</h4>
+              <p>用户可以询价、招标，系统匹配最佳供应商</p>
+            </div>
+          </li>
+          <li>
+            <div class="circle radius"> <i class="lc-05"></i> </div>
+            <div class="line">
+              <div class="round radius"></div>
+            </div>
+            <div class="txt">
+              <h4>确定合同，下单付款</h4>
+              <p>安全交易，易工场全程品质担保</p>
+            </div>
+          </li>
+          <li>
+            <div class="circle radius"> <i class="lc-06"></i> </div>
+            <div class="line">
+              <div class="round radius"></div>
+            </div>
+            <div class="txt">
+              <h4>发货完成交易</h4>
+              <p>用户收货、评价交易完成</p>
+            </div>
+          </li>
+          <span class="arrow-r"></span>
+        </ul>
+        <div class="clearfixfix"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="actionWrap action-gray">
+  <div class="main">
+    <div class="tit">
+      <h1>关于易工场</h1>
+      <p>易工场通过互联网实现用户与工厂的链接，对于用户，我们帮助采购者基于云端的供应链定制、发标管理；对于工厂，我们帮主生产者直达目标客户，<br />
+        减少中间层，并通过数据分析，实现厂家的柔性定制管理。<a href="#" class="red">去详细了解>></a></p>
+    </div>
+    <div class="con">
+      <div class="mac-ban">
+        <div class="banner" id="autoabt-mac">
+          <ul class="banner-img">
+            <li><a><img src="adv/mac-01.jpg" width="416" height="250"></a></li>
+            <li><a><img src="adv/mac-01.jpg" width="416" height="250"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="mob-ban">
+        <div class="banner" id="autoabt-mob">
+          <ul class="banner-img">
+            <li><a><img src="adv/mob-01.jpg" width="117" height="186"></a></li>
+            <li><a><img src="adv/mob-01.jpg" width="117" height="186"></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="abt-ind-box">
+        <ul>
+          <li><i class="abt-icon abt-01"></i>
+            <h5>我们是谁</h5>
+            <p>定制品的专业交易平台、用户的专业采购管理工具、商家定制订单的接单工具</p>
+          </li>
+          <li><i class="abt-icon abt-02"></i>
+            <h5>我们的服务</h5>
+            <p>免费设计，为用户建立定制品的采购标准、发单抢单模式匹配优质供应商、安全交易担保，交易过程品质无忧</p>
+          </li>
+          <li><i class="abt-icon abt-03"></i>
+            <h5>我们解决哪些问题</h5>
+            <p>为用户解决定制品的采购繁琐、为商家解决定制需求的数据采集</p>
+          </li>
+          <li><i class="abt-icon abt-04"></i>
+            <h5>我们的优势</h5>
+            <p>十二年的企事业采购管理经验、优秀的易工场团队、近千家的供应商支持</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="actionWrap">
+  <div class="main">
+    <div class="tit">
+      <h1>热门模板推荐</h1>
+      <p>在未来，每个团队都拥有自己的专属定制品，即使是一两个人的小公司定制也将不再那么繁琐</p>
+    </div>
+    <div class="con">
+      <div class="examples_box">
+        <ul class="bannerHolder">
+          <li>
+            <div class="ind-tj-mb"> <a href="#" target="_blank"><img height="230" width="230" src="adv/rmmb.jpg" /></a>
+              <div class="companyInfo">
+                <div class="mb-name">此处最多放置十二个字符</div>
+                <div class="mb-pri">￥<span>125.00</span><em>起</em></div>
+                <div class="info">查看详情</div>
+              </div>
+              <div class="cornerTL rad-cover"></div>
+              <div class="cornerTR rad-cover"></div>
+              <div class="cornerBL rad-cover"></div>
+              <div class="cornerBR rad-cover"></div>
+            </div>
+          </li>
+          <li>
+            <div class="ind-tj-mb"> <a href="#" target="_blank"><img height="230" width="230" src="adv/rmmb.jpg" /></a>
+              <div class="companyInfo">
+                <div class="mb-name">高端大气上档次名片</div>
+                <div class="mb-pri">￥<span>125.00</span><em>起</em></div>
+                <div class="info">查看详情</div>
+              </div>
+              <div class="cornerTL rad-cover"></div>
+              <div class="cornerTR rad-cover"></div>
+              <div class="cornerBL rad-cover"></div>
+              <div class="cornerBR rad-cover"></div>
+            </div>
+          </li>
+          <li>
+            <div class="ind-tj-mb"> <a href="#" target="_blank"><img height="230" width="230" src="adv/rmmb.jpg" /></a>
+              <div class="companyInfo">
+                <div class="mb-name">高端大气上档次名片</div>
+                <div class="mb-pri">￥<span>125.00</span><em>起</em></div>
+                <div class="info">查看详情</div>
+              </div>
+              <div class="cornerTL rad-cover"></div>
+              <div class="cornerTR rad-cover"></div>
+              <div class="cornerBL rad-cover"></div>
+              <div class="cornerBR rad-cover"></div>
+            </div>
+          </li>
+          <li>
+            <div class="ind-tj-mb"> <a href="#" target="_blank"><img height="230" width="230" src="adv/rmmb.jpg" /></a>
+              <div class="companyInfo">
+                <div class="mb-name">高端大气上档次名片</div>
+                <div class="mb-pri">￥<span>125.00</span><em>起</em></div>
+                <div class="info">查看详情</div>
+              </div>
+              <div class="cornerTL rad-cover"></div>
+              <div class="cornerTR rad-cover"></div>
+              <div class="cornerBL rad-cover"></div>
+              <div class="cornerBR rad-cover"></div>
+            </div>
+          </li>
+          <li>
+            <div class="ind-tj-mb"> <a href="#" target="_blank"><img height="230" width="230" src="adv/rmmb.jpg" /></a>
+              <div class="companyInfo">
+                <div class="mb-name">高端大气上档次名片</div>
+                <div class="mb-pri">￥<span>125.00</span><em>起</em></div>
+                <div class="info">查看详情</div>
+              </div>
+              <div class="cornerTL rad-cover"></div>
+              <div class="cornerTR rad-cover"></div>
+              <div class="cornerBL rad-cover"></div>
+              <div class="cornerBR rad-cover"></div>
+            </div>
+          </li>
+          <li>
+            <div class="ind-tj-mb"> <a href="#" target="_blank"><img height="230" width="230" src="adv/rmmb.jpg" /></a>
+              <div class="companyInfo">
+                <div class="mb-name">高端大气上档次名片</div>
+                <div class="mb-pri">￥<span>125.00</span><em>起</em></div>
+                <div class="info">查看详情</div>
+              </div>
+              <div class="cornerTL rad-cover"></div>
+              <div class="cornerTR rad-cover"></div>
+              <div class="cornerBL rad-cover"></div>
+              <div class="cornerBR rad-cover"></div>
+            </div>
+          </li>
+          <li>
+            <div class="ind-tj-mb"> <a href="#" target="_blank"><img height="230" width="230" src="adv/rmmb.jpg" /></a>
+              <div class="companyInfo">
+                <div class="mb-name">高端大气上档次名片</div>
+                <div class="mb-pri">￥<span>125.00</span><em>起</em></div>
+                <div class="info">查看详情</div>
+              </div>
+              <div class="cornerTL rad-cover"></div>
+              <div class="cornerTR rad-cover"></div>
+              <div class="cornerBL rad-cover"></div>
+              <div class="cornerBR rad-cover"></div>
+            </div>
+          </li>
+          <li>
+            <div class="ind-tj-mb"> <a href="#" target="_blank"><img height="230" width="230" src="adv/rmmb.jpg" /></a>
+              <div class="companyInfo">
+                <div class="mb-name">高端大气上档次名片</div>
+                <div class="mb-pri">￥<span>125.00</span><em>起</em></div>
+                <div class="info">查看详情</div>
+              </div>
+              <div class="cornerTL rad-cover"></div>
+              <div class="cornerTR rad-cover"></div>
+              <div class="cornerBL rad-cover"></div>
+              <div class="cornerBR rad-cover"></div>
+            </div>
+          </li>
+          <li>
+            <div class="ind-tj-mb"> <a href="#" target="_blank"><img height="230" width="230" src="adv/rmmb.jpg" /></a>
+              <div class="companyInfo">
+                <div class="mb-name">高端大气上档次名片</div>
+                <div class="mb-pri">￥<span>125.00</span><em>起</em></div>
+                <div class="info">查看详情</div>
+              </div>
+              <div class="cornerTL rad-cover"></div>
+              <div class="cornerTR rad-cover"></div>
+              <div class="cornerBL rad-cover"></div>
+              <div class="cornerBR rad-cover"></div>
+            </div>
+          </li>
+          <li>
+            <div class="ind-tj-mb"> <a href="#" target="_blank"><img height="230" width="230" src="adv/rmmb.jpg" /></a>
+              <div class="companyInfo">
+                <div class="mb-name">高端大气上档次名片</div>
+                <div class="mb-pri">￥<span>125.00</span><em>起</em></div>
+                <div class="info">查看详情</div>
+              </div>
+              <div class="cornerTL rad-cover"></div>
+              <div class="cornerTR rad-cover"></div>
+              <div class="cornerBL rad-cover"></div>
+              <div class="cornerBR rad-cover"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <script type="text/javascript">
+$(document).ready(function(){
+	$('.ind-tj-mb .rad-cover').css({"opacity":"0.3", "-webkit-opacity":"0.3","-ms-opacity":"0.3","-o-opacity":"0.3", "-moz-opacity":"0.3","filter":"alpha(opacity=30)"});
+	$('.ind-tj-mb').hover(function(){
+		var el = $(this);
+		el.find('.rad-cover').stop().animate({width:400,height:400},500,function(){
+			el.find('.companyInfo').fadeIn("fast");
+		});
+	},function(){
+		var el = $(this);
+		el.find('.companyInfo').stop(true,true).hide();
+		el.find('.rad-cover').stop().animate({width:0,height:0},500);
+	}).click(function(){
+		window.open($(this).find('a').attr('href'));
+	});
+});
+</script> 
+    </div>
+  </div>
+</div>
+<div class="actionWrap action-gray">
+  <div class="main">
+    <div class="tit">
+      <h1>优秀设计师</h1>
+      <p>设计师一种生活，快来看看设计大神们的世界</p>
+    </div>
+    <div class="con">
+      <div class="exceptional designers">
+        <ul>
+          <li>
+            <div class="exce-t">
+              <div class="hd-pic radius fl"><a href="#"><img src="images/Designer.jpg" /></a></div>
+              <div class="exce-info fl">
+                <p class="name">王晓楠<span class="xb">男</span></p>
+                <p>设计级别：<span>高级设计师</span></p>
+                <p>服务商家：<span>服务客户<em>300</em>家</span></p>
+              </div>
+              <div class="clearfixfix"></div>
+              <div class="contact">
+                <span>好评1233次</span>
+                <a href="javascrip:;">在线联系</a>
+              </div>
+            </div>
+            <div class="exce-b">
+              <a href="#"><img src="adv/yx.jpg" width="75" height="75" /></a>
+              <a href="#"><img src="adv/rmmb.jpg" width="75" height="75" /></a>
+              <a href="#"><img src="adv/yx.jpg" width="75" height="75" /></a>
+              <div class="clearfixfix"></div>
+            </div>
+          </li>
+          <li>
+            <div class="exce-t">
+              <div class="hd-pic radius fl"><a href="#"><img src="images/Designer.jpg" /></a></div>
+              <div class="exce-info fl">
+                <p class="name">王晓楠<span class="xb">男</span></p>
+                <p>设计级别：<span>高级设计师</span></p>
+                <p>服务商家：<span>服务客户<em>300</em>家</span></p>
+              </div>
+              <div class="clearfixfix"></div>
+              <div class="contact">
+                <span>好评1233次</span>
+                <a href="javascrip:;">在线联系</a>
+              </div>
+            </div>
+            <div class="exce-b">
+              <a href="#"><img src="adv/yx.jpg" width="75" height="75" /></a>
+              <a href="#"><img src="adv/rmmb.jpg" width="75" height="75" /></a>
+              <div class="clearfixfix"></div>
+            </div>
+          </li>
+          <li>
+            <div class="exce-t">
+              <div class="hd-pic radius fl"><a href="#"><img src="images/Designer.jpg" /></a></div>
+              <div class="exce-info fl">
+                <p class="name">王晓楠<span class="xb">男</span></p>
+                <p>设计级别：<span>高级设计师</span></p>
+                <p>服务商家：<span>服务客户<em>300</em>家</span></p>
+              </div>
+              <div class="clearfixfix"></div>
+              <div class="contact">
+                <span>好评1233次</span>
+                <a href="javascrip:;">在线联系</a>
+              </div>
+            </div>
+            <div class="exce-b">
+              <a href="#"><img src="adv/yx.jpg" width="75" height="75" /></a>
+              <a href="#"><img src="adv/rmmb.jpg" width="75" height="75" /></a>
+              <a href="#"><img src="adv/rmmb.jpg" width="75" height="75" /></a>
+              <div class="clearfixfix"></div>
+            </div>
+          </li>
+          <li>
+            <div class="exce-t">
+              <div class="hd-pic radius fl"><a href="#"><img src="images/Designer.jpg" /></a></div>
+              <div class="exce-info fl">
+                <p class="name">王晓楠<span class="xb">男</span></p>
+                <p>设计级别：<span>高级设计师</span></p>
+                <p>服务商家：<span>服务客户<em>300</em>家</span></p>
+              </div>
+              <div class="clearfixfix"></div>
+              <div class="contact">
+                <span>好评1233次</span>
+                <a href="javascrip:;">在线联系</a>
+              </div>
+            </div>
+            <div class="exce-b">
+              <a href="#"><img src="adv/yx.jpg" width="75" height="75" /></a>
+              <a href="#"><img src="adv/rmmb.jpg" width="75" height="75" /></a>
+              <div class="clearfixfix"></div>
+            </div>
+          </li>
+          <li>
+            <div class="exce-t">
+              <div class="hd-pic radius fl"><a href="#"><img src="images/Designer.jpg" /></a></div>
+              <div class="exce-info fl">
+                <p class="name">王晓楠<span class="xb">男</span></p>
+                <p>设计级别：<span>高级设计师</span></p>
+                <p>服务商家：<span>服务客户<em>300</em>家</span></p>
+              </div>
+              <div class="clearfixfix"></div>
+              <div class="contact">
+                <span>好评1233次</span>
+                <a href="javascrip:;">在线联系</a>
+              </div>
+            </div>
+            <div class="exce-b">
+              <a href="#"><img src="adv/yx.jpg" width="75" height="75" /></a>
+              <a href="#"><img src="adv/yx.jpg" width="75" height="75" /></a>
+              <a href="#"><img src="adv/rmmb.jpg" width="75" height="75" /></a>
+              <div class="clearfixfix"></div>
+            </div>
+          </li>
+          <li>
+            <div class="exce-t">
+              <div class="hd-pic radius fl"><a href="#"><img src="images/Designer.jpg" /></a></div>
+              <div class="exce-info fl">
+                <p class="name">王晓楠<span class="xb">男</span></p>
+                <p>设计级别：<span>高级设计师</span></p>
+                <p>服务商家：<span>服务客户<em>300</em>家</span></p>
+              </div>
+              <div class="clearfixfix"></div>
+              <div class="contact">
+                <span>好评1233次</span>
+                <a href="javascrip:;">在线联系</a>
+              </div>
+            </div>
+            <div class="exce-b">
+              <a href="#"><img src="adv/yx.jpg" width="75" height="75" /></a>
+              <a href="#"><img src="adv/rmmb.jpg" width="75" height="75" /></a>
+              <div class="clearfixfix"></div>
+            </div>
+          </li>
+        </ul>
+        <div class="clearfixfix"></div>
+        <div class="ck-more"><a href="javascript:;">查看更多<i class="sj"></i></a></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="actionWrap">
+  <div class="main">
+    <div class="tit">
+      <h1>认证商家</h1>
+      <p>我们只推荐诚信的企业，我们愿意和厂家一起追求工匠精神</p>
+    </div>
+    <div class="con">
+      <div class="exceptional business">
+        <ul>
+          <li>
+            <div class="exce-t">
+              <div class="hd-pic radius fl"><a href="#"><img src="adv/zb-logo.jpg" /></a></div>
+              <div class="exce-info fl">
+                <p class="name">正邦品牌顾问服务集团</p>
+                <p>商家级别：<span>5星供应商</span></p>
+                <p>服务商家：<span>服务客户<em>300</em>家</span></p>
+              </div>
+              <div class="clearfixfix"></div>
+              <div class="contact">
+                <span>好评1233次</span>
+                <a href="javascrip:;">在线联系</a>
+              </div>
+            </div>
+            <div class="exce-b">
+              <a href="#"><img src="adv/yx.jpg" width="75" height="75" /></a>
+              <a href="#"><img src="adv/rmmb.jpg" width="75" height="75" /></a>
+              <div class="clearfixfix"></div>
+            </div>
+          </li>
+          <li>
+            <div class="exce-t">
+              <div class="hd-pic radius fl"><a href="#"><img src="adv/zb-logo.jpg" /></a></div>
+              <div class="exce-info fl">
+                <p class="name">正邦品牌顾问服务集团</p>
+                <p>商家级别：<span>5星供应商</span></p>
+                <p>服务商家：<span>服务客户<em>300</em>家</span></p>
+              </div>
+              <div class="clearfixfix"></div>
+              <div class="contact">
+                <span>好评1233次</span>
+                <a href="javascrip:;">在线联系</a>
+              </div>
+            </div>
+            <div class="exce-b">
+              <a href="#"><img src="adv/yx.jpg" width="75" height="75" /></a>
+              <a href="#"><img src="adv/rmmb.jpg" width="75" height="75" /></a>
+              <a href="#"><img src="adv/yx.jpg" width="75" height="75" /></a>
+              <div class="clearfixfix"></div>
+            </div>
+          </li>
+          <li>
+            <div class="exce-t">
+              <div class="hd-pic radius fl"><a href="#"><img src="adv/zb-logo.jpg" /></a></div>
+              <div class="exce-info fl">
+                <p class="name">正邦品牌顾问服务集团</p>
+                <p>商家级别：<span>5星供应商</span></p>
+                <p>服务商家：<span>服务客户<em>300</em>家</span></p>
+              </div>
+              <div class="clearfixfix"></div>
+              <div class="contact">
+                <span>好评1233次</span>
+                <a href="javascrip:;">在线联系</a>
+              </div>
+            </div>
+            <div class="exce-b">
+              <a href="#"><img src="adv/yx.jpg" width="75" height="75" /></a>
+              <a href="#"><img src="adv/rmmb.jpg" width="75" height="75" /></a>
+              <div class="clearfixfix"></div>
+            </div>
+          </li>
+          <li>
+            <div class="exce-t">
+              <div class="hd-pic radius fl"><a href="#"><img src="adv/zb-logo.jpg" /></a></div>
+              <div class="exce-info fl">
+                <p class="name">正邦品牌顾问服务集团</p>
+                <p>商家级别：<span>5星供应商</span></p>
+                <p>服务商家：<span>服务客户<em>300</em>家</span></p>
+              </div>
+              <div class="clearfixfix"></div>
+              <div class="contact">
+                <span>好评1233次</span>
+                <a href="javascrip:;">在线联系</a>
+              </div>
+            </div>
+            <div class="exce-b">
+              <a href="#"><img src="adv/yx.jpg" width="75" height="75" /></a>
+              <a href="#"><img src="adv/rmmb.jpg" width="75" height="75" /></a>
+              <div class="clearfixfix"></div>
+            </div>
+          </li>
+          <li>
+            <div class="exce-t">
+              <div class="hd-pic radius fl"><a href="#"><img src="adv/zb-logo.jpg" /></a></div>
+              <div class="exce-info fl">
+                <p class="name">正邦品牌顾问服务集团</p>
+                <p>商家级别：<span>5星供应商</span></p>
+                <p>服务商家：<span>服务客户<em>300</em>家</span></p>
+              </div>
+              <div class="clearfixfix"></div>
+              <div class="contact">
+                <span>好评1233次</span>
+                <a href="javascrip:;">在线联系</a>
+              </div>
+            </div>
+            <div class="exce-b">
+              <a href="#"><img src="adv/yx.jpg" width="75" height="75" /></a>
+              <a href="#"><img src="adv/rmmb.jpg" width="75" height="75" /></a>
+              <a href="#"><img src="adv/yx.jpg" width="75" height="75" /></a>
+              <a href="#"><img src="adv/rmmb.jpg" width="75" height="75" /></a>
+              <div class="clearfixfix"></div>
+            </div>
+          </li>
+          <li>
+            <div class="exce-t">
+              <div class="hd-pic radius fl"><a href="#"><img src="adv/zb-logo.jpg" /></a></div>
+              <div class="exce-info fl">
+                <p class="name">正邦品牌顾问服务集团</p>
+                <p>商家级别：<span>5星供应商</span></p>
+                <p>服务商家：<span>服务客户<em>300</em>家</span></p>
+              </div>
+              <div class="clearfixfix"></div>
+              <div class="contact">
+                <span>好评1233次</span>
+                <a href="javascrip:;">在线联系</a>
+              </div>
+            </div>
+            <div class="exce-b">
+              <a href="#"><img src="adv/yx.jpg" width="75" height="75" /></a>
+              <a href="#"><img src="adv/rmmb.jpg" width="75" height="75" /></a>
+              <div class="clearfixfix"></div>
+            </div>
+          </li>
+        </ul>
+        <div class="clearfixfix"></div>
+        <div class="ck-more"><a href="javascript:;">查看更多<i class="sj"></i></a></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="actionWrap action-gray">
+  <div class="main">
+    <div class="tit">
+      <h1>已经有3000家企业选择了易工场采购</h1>
+      <p>因为高效、所以更值得用户信赖</p>
+    </div>
+    <div class="con">
+    <div class="mr_frbox">
+		<a class="mr_frBtnL next mr_frBtn"><</a>
+		<div class="mr_frUl">
+			<ul>
+				<li><a><img src="adv/link-jd-logo.jpg" width="204" height="68" /></a><a><img src="adv/link-jd-logo.jpg" width="204" height="68" /></a></li>
+				<li><a><img src="adv/link-jd-logo.jpg" width="204" height="68" /></a><a><img src="adv/link-jd-logo.jpg" width="204" height="68" /></a></li>
+                <li><a><img src="adv/link-jd-logo.jpg" width="204" height="68" /></a><a><img src="adv/link-jd-logo.jpg" width="204" height="68" /></a></li>
+                <li><a><img src="adv/link-jd-logo.jpg" width="204" height="68" /></a><a><img src="adv/link-jd-logo.jpg" width="204" height="68" /></a></li>
+                <li><a><img src="adv/link-jd-logo.jpg" width="204" height="68" /></a><a><img src="adv/link-jd-logo.jpg" width="204" height="68" /></a></li>
+                <li><a><img src="adv/link-jd-logo.jpg" width="204" height="68" /></a><a><img src="adv/link-jd-logo.jpg" width="204" height="68" /></a></li>
+			</ul>
+            <div class="clearfixfix"></div>
+		</div>
+		<a class="mr_frBtnR next mr_frBtn">></a>
+	</div>
+<script type="text/javascript">
+$(".mr_frbox").slide({
+	titCell:"",
+	mainCell:".mr_frUl ul",
+	autoPage:true,
+	effect:"leftLoop",
+	autoPlay:true,
+	vis:5
+});
+</script>
+    </div>
+  </div>
+</div>
+<div class="footWrap">
+    <div class="m-cnt">
+        <div class="items abt fl">
+            <h6>APP下载</h6>
+            <div class="ewm-down">
+              <div class="ewm fl">
+                <img src="images/ewm-down.jpg" width="80" height="80" />
+                <p>e库管家APP下载</p>
+              </div>
+              <div class="ewm-mg fl">
+                <img src="images/ewm-down.jpg" width="80" height="80" />
+                <p>接单宝APP下载</p>
+              </div>
+              <div class="clearfixfix"></div>
+            </div>
+        </div>
+        <div class="items menu fl">
+            <dl>
+                <dt>新手上路</dt>
+                <dd><a href="/articledetail-3.html" target="_blank">关于易工场</a><a href="/articledetail-4.html" target="_blank">注册流程</a><a href="/articledetail-5.html" target="_blank">会员等级</a><a href="/articledetail-6.html" target="_blank">常见问题</a></dd>
+            </dl>
+            <dl>
+                <dt>定制流程</dt>
+                <dd><a href="/articledetail-7.html" target="_blank">设计流程</a><a href="/articledetail-8.html" target="_blank">询价流程</a><a href="/articledetail-9.html" target="_blank">下单流程</a><a href="/articledetail-10.html" target="_blank">招标流程</a></dd>
+            </dl>
+            <dl>
+                <dt>付款方式</dt>
+                <dd><a href="/articledetail-11.html" target="_blank">在线付款</a><a href="/articledetail-12.html" target="_blank">分期付款</a><a href="/articledetail-13.html" target="_blank">余额付款</a><a href="/articledetail-22.html" target="_blank">退换货说明</a></dd>
+            </dl>
+            <dl class="last">
+                <dt>商家服务</dt>
+                <dd><a href="/articledetail-15.html" target="_blank">商家入驻</a><a href="/articledetail-16.html" target="_blank">抢单接单</a><a href="/articledetail-17.html" target="_blank">报价单维护</a><a href="/articledetail-18.html" target="_blank">商家认证</a></dd>
+            </dl>
+        </div>
+        <div class="items tel fl">
+            <h7>400-710-8886</h7>
+            <a href="#" class="btn">24小时免费在线客服</a>
+        </div>
+        <div class="clearfixfix"></div>
+    </div>
+    <div class="ft-text">
+        <div class="links"><a href="/articledetail-3.html" target="_blank">关于我们</a><a href="/articledetail-21.html" target="_blank">购物指南</a><a href="#">定制流程</a><a href="#">友情链接</a></div>
+        <div
+        <div class="authenticate"><a href="#"><img src="images/1.gif"></a><a href="#"><img src="images/2.png"></a></div>
+    </div>
+</div>
+</body>
+</html>

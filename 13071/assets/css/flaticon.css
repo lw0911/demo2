@@ -1,0 +1,97 @@
+	/*
+  	Flaticon icon font: Flaticon
+  	Creation date: 16/06/2020 16:45
+  	*/
+
+@font-face {
+  font-family: "Flaticon";
+  src: url("../fonts/Flaticon.eot");
+  src: url("../fonts/Flaticon.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/Flaticon.woff2") format("woff2"),
+       url("../fonts/Flaticon.woff") format("woff"),
+       url("../fonts/Flaticon.ttf") format("truetype"),
+       url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "Flaticon";
+    src: url("../fonts/Flaticon.svg#Flaticon") format("svg");
+  }
+}
+
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+  font-family: Flaticon;
+  font-style: normal;
+}
+
+.flaticon-search:before { content: "\f100"; }
+.flaticon-search-1:before { content: "\f101"; }
+.flaticon-right:before { content: "\f102"; }
+.flaticon-right-arrow-1:before { content: "\f103"; }
+.flaticon-right-1:before { content: "\f104"; }
+.flaticon-right-chevron:before { content: "\f105"; }
+.flaticon-right-arrow-3:before { content: "\f106"; }
+.flaticon-left:before { content: "\f107"; }
+.flaticon-left-arrow:before { content: "\f108"; }
+.flaticon-left-1:before { content: "\f109"; }
+.flaticon-left-chevron:before { content: "\f10a"; }
+.flaticon-left-2:before { content: "\f10b"; }
+.flaticon-maps-and-flags:before { content: "\f10c"; }
+.flaticon-map-marker:before { content: "\f10d"; }
+.flaticon-laptop:before { content: "\f10e"; }
+.flaticon-plus:before { content: "\f10f"; }
+.flaticon-plus-1:before { content: "\f110"; }
+.flaticon-location-pin:before { content: "\f111"; }
+.flaticon-maps-and-flags-1:before { content: "\f112"; }
+.flaticon-star:before { content: "\f113"; }
+.flaticon-minus:before { content: "\f114"; }
+.flaticon-minus-1:before { content: "\f115"; }
+.flaticon-star-1:before { content: "\f116"; }
+.flaticon-cancel:before { content: "\f117"; }
+.flaticon-close:before { content: "\f118"; }
+.flaticon-email:before { content: "\f119"; }
+.flaticon-email-1:before { content: "\f11a"; }
+.flaticon-phone:before { content: "\f11b"; }
+.flaticon-call:before { content: "\f11c"; }
+.flaticon-shopping-cart:before { content: "\f11d"; }
+.flaticon-shopping-cart-1:before { content: "\f11e"; }
+.flaticon-shopping-cart-2:before { content: "\f11f"; }
+.flaticon-right-arrow:before { content: "\f120"; }
+.flaticon-location:before { content: "\f121"; }
+.flaticon-alarm-clock:before { content: "\f122"; }
+.flaticon-alarm-clock-1:before { content: "\f123"; }
+.flaticon-clocks:before { content: "\f124"; }
+.flaticon-scissors:before { content: "\f125"; }
+.flaticon-salon:before { content: "\f126"; }
+.flaticon-essential-oils:before { content: "\f127"; }
+.flaticon-spa:before { content: "\f128"; }
+.flaticon-face-mask:before { content: "\f129"; }
+.flaticon-aromatherapy:before { content: "\f12a"; }
+.flaticon-essential-oil:before { content: "\f12b"; }
+.flaticon-sauna:before { content: "\f12c"; }
+.flaticon-user:before { content: "\f12d"; }
+.flaticon-account:before { content: "\f12e"; }
+.flaticon-user-1:before { content: "\f12f"; }
+.flaticon-comments:before { content: "\f130"; }
+.flaticon-phone-call:before { content: "\f131"; }
+.flaticon-call-1:before { content: "\f132"; }
+.flaticon-call-2:before { content: "\f133"; }
+.flaticon-phone-call-1:before { content: "\f134"; }
+.flaticon-email-2:before { content: "\f135"; }
+.flaticon-email-3:before { content: "\f136"; }
+.flaticon-scissors-1:before { content: "\f137"; }
+.flaticon-scissors-2:before { content: "\f138"; }
+.flaticon-hair-curler:before { content: "\f139"; }
+.flaticon-beauty-treatment:before { content: "\f13a"; }
+.flaticon-perfume:before { content: "\f13b"; }
+.flaticon-perfume-1:before { content: "\f13c"; }
+.flaticon-curler:before { content: "\f13d"; }
+.flaticon-happy:before { content: "\f13e"; }
+.flaticon-happy-1:before { content: "\f13f"; }
+.flaticon-checked:before { content: "\f140"; }
+.flaticon-loupe:before { content: "\f141"; }
+.flaticon-face-cleanser:before { content: "\f142"; }

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <title>京西商城</title>
+    <link href="css/bass.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+ </head> 
+ <!--/************************************************************
+ *																*
+ * 						     							*
+ *                      						*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+**************************************************************-->
+ <body>
+	<!--头部 header-->
+	<div>
+		<header>
+			<div class="header">
+				<a href="index.html"><i class="icon icon-return"></i></a>
+				<h1>分类</h1>
+			</div>
+		</header>
+		<div style="height: 2.5rem;"></div>
+	</div>
+	<article class="classify-box">
+		<div class="classify-left fl">
+			<ul id="tab_btn">
+				<li class="pick"><a href="javascript:;">潮流女装</a></li>
+				<li><a href="javascript:;">潮流男装</a></li>
+				<li><a href="javascript:;">居家小商品</a></li>
+				<li><a href="javascript:;">品牌鞋类</a></li>
+				<li><a href="javascript:;">皮具箱包</a></li>
+				<li><a href="javascript:;">内衣针织</a></li>
+				<li><a href="javascript:;">儿童玩具</a></li>
+				<li><a href="javascript:;">母婴用品</a></li>
+				<li><a href="javascript:;">电子数码</a></li>
+				<li><a href="javascript:;">办公用品</a></li>
+				<li><a href="javascript:;">体育用品</a></li>
+			</ul>
+		</div>
+		<div class="classify-right">
+			<ul>
+				<li class="tab_content show">
+					<a href="javascript:;">
+						<img src="images/fl_02.png">
+						<span>衣衫</span>
+					</a>
+					<a href="javascript:;">
+						<img src="images/fl_03.png">
+						<span>半身裙</span>
+					</a>
+					<a href="javascript:;">
+						<img src="images/fl_04.png">
+						<span>裤子</span>
+					</a>
+					<a href="javascript:;">
+						<img src="images/fl_05.png">
+						<span>卫衣</span>
+					</a>
+					<a href="javascript:;">
+						<img src="images/fl_06.png">
+						<span>风衣</span>
+					</a>
+					<a href="javascript:;">
+						<img src="images/fl_07.png">
+						<span>高帮鞋</span>
+					</a>
+				</li>
+				<li class="tab_content"><a href="javascript:;">2</a></li>
+				<li class="tab_content"><a href="javascript:;">3</a></li>
+				<li class="tab_content"><a href="javascript:;">4</a></li>
+				<li class="tab_content"><a href="javascript:;">5</a></li>
+				<li class="tab_content"><a href="javascript:;">6</a></li>
+				<li class="tab_content"><a href="javascript:;">7</a></li>
+				<li class="tab_content"><a href="javascript:;">8</a></li>
+				<li class="tab_content"><a href="javascript:;">9</a></li>
+				<li class="tab_content"><a href="javascript:;">10</a></li>
+				<li class="tab_content"><a href="javascript:;">11</a></li>
+			</ul>
+		</div>
+	</article>
+	<!-- 引入js资源 -->
+	<script type="text/javascript" src="js/zepto.min.js"></script>
+	<script type="text/javascript">
+	    //TAB切换
+	    var tab_Btns_box=document.getElementById('tab_btn');
+	    var tab_Btns=tab_Btns_box.getElementsByTagName('li');
+	    var tab_contents=document.getElementsByClassName('tab_content');
+	    for(var i=0;i<tab_Btns.length;i++){
+	    tab_Btns[i].index=i;
+
+	    tab_Btns[i].onclick=function(){
+	     for(var i=0;i<tab_Btns.length;i++){
+	     if(i!==this.index){
+	     tab_Btns[i].classList.remove('pick')
+	     }
+	     }
+	     tab_Btns[this.index].className="pick";
+
+	     for(var j=0;j<tab_contents.length;j++){
+	     if(j!==this.index){
+	         tab_contents[j].classList.remove('show');
+	     }
+	         tab_contents[this.index].classList.add('show');
+	     }
+	    }
+	    }
+	</script>
+</body>
+</html>

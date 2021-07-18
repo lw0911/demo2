@@ -1,0 +1,130 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #f4f6f3;
+}/****************************************************************
+ *																*		
+ * 						      							*
+ *                       							*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+****************************************************************/
+a{
+	text-decoration: none;
+}
+.topBox{
+	height: 45px;
+	padding: 0 10px;
+	background-color: #f4f6f3;
+	font-weight: 700;
+	font-size: 15px;
+}
+.topBox div:nth-child(1){
+	float: left;
+	height: 45px;
+	line-height: 45px;
+	color: #717171;
+}
+.topBox div:nth-child(2){
+	float: right;
+	height: 30px;
+	line-height: 30px;
+	color: #a8a8a8;
+	border-radius: 4px;
+	padding: 0 8px;
+	margin-top: 7.5px;
+	border: 1px solid #4488e6;
+}
+#listBox{
+	background-color: white;
+}
+.list{
+	position: relative;
+	margin: 0 10px;
+	height: 100px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.checkboxs{
+	width: 25px !important;
+	height: 25px !important;
+	float: left !important;
+	margin: 25px 0 0 10px !important;
+}
+.checkboxs:before{
+	left: 9px !important;
+	top: 5px !important;
+	width: 6px !important;
+	height: 10px !important;
+}
+.checkboxs:after{
+	position: absolute;
+	left: 27px;
+	top: 3px;
+	content: '全选';
+	width: 38px;
+	color: #a6a6a6;
+	font-weight: 700;
+	font-size: 18px;
+}
+.checkbox,.checkboxs{
+	position: relative;
+	float: left;
+	display: block;
+	background-color: #16c460;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	/*transition: all .3s ease;
+	-webkit-transition: all .3s ease;*/
+	margin-top: 40px;
+	border: 1px solid rgb(22, 196, 96);
+}
+.checkboxf,.checkboxsf{
+	background-color: white !important;
+	border: 1px solid #999999 !important;
+}
+.checkbox:before,.checkboxs:before{
+	position: absolute;
+	content: '  ';
+	display: block;
+	left: 7px;
+	top: 4px;
+	width: 4px;
+	height: 8px;
+	transform: rotate(30deg);
+	-webkit-transform: rotate(30deg);
+	border-right: 2px solid white;
+	border-bottom: 2px solid white;
+	/*transition: all .5s ease;
+	-webkit-transition: all .5s ease;*/
+}
+.list img{
+	float: left;
+	margin: 15px 0 0 10px;
+	width: 70px;
+	height: 70px;
+}
+.title{
+	float: left;
+	width: 60%;
+	max-height: 47px;
+	overflow-y: hidden;
+	margin: 15px 0 0 10px;
+	font-size: 14px;
+}
+.priceBox{
+	position: absolute;
+	left: 110px;
+	bottom: 14px;
+	font-size: 14px;
+}
+.price1{
+	float: left;
+	color: red;
+}
+.price2{
+	float: left;
+	margin-left: 10px;
+	color: #a6a6a6;
+	text-decoration: line-through;
+}

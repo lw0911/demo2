@@ -1,0 +1,90 @@
+/****************************************************************
+ *																*		
+ * 						      							*
+ *                       							*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+****************************************************************/
+body{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+#distributor{
+	height: 100%;
+	background-color: #f4f6f3;
+}
+#banner{
+	width: 100%;
+}
+.welcome{
+	margin: 30px 0 10px 5%;
+}
+.welcome div{
+	margin-top: 10px;
+	font-weight: 600;
+	font-size: 18px;
+}
+#distributor input{
+	display: block;
+	margin: 10px auto;
+	width: 85%;
+	height: 35px;
+	padding-left: 10px;
+	font-size: 17px;
+	
+}
+#distributor .but{
+	display: block;
+	border: none;
+	margin: 20px auto 0;
+	width: 90%;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	border-radius: 9px;
+	background-color: #4488e6;
+	color: white;
+	font-size: 20px;
+	font-weight: 600;
+}
+#distributor .privilege{
+	width: 90%;
+	margin: 30px auto 10px;
+	font-size: 18px;
+	font-weight: 700;
+	color: #848484;
+}
+.privilegeList{
+	margin: 0 auto;
+	width: 90%;
+	height: 60px;
+	padding: 10px 0;
+	background-color: white;
+	border-bottom: 1px solid #f4f6f3;
+}
+.privilegeList img{
+	float: left;
+	width: 60px;
+	margin-left: 5%;
+}
+.privilegeList div{
+	float: left;
+	margin-top: 6px;
+	margin-left: 10px;
+}
+.privilegeList span{
+	display: block;
+	padding: 5px 10px;
+	color: #ccc;
+}
+@media (max-width:340px){
+	.privilegeList div{
+		width: 195px;
+	}
+}
+.privilegeList div:nth-child(3){
+	color: #b0b0b0;
+}

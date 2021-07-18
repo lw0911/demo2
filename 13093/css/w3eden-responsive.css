@@ -1,0 +1,34 @@
+@media screen and (max-width:1199px) {
+    .w3e-what-about .about-area .pin-pointer::after,
+    .w3e-what-about .about-area .pin-pointer::before{
+        display: none;
+    }
+}
+
+@media screen and (max-width:991px) {
+    
+    .w3e-services .service-icon::after,
+    .w3e-services .service-icon::before{
+        display: none;
+    }
+    .w3e-testimonial .carousel-slide {
+        display: none;
+    }
+    .w3e-testimonial .carousel.slide {
+      padding: 12rem 0  7.5rem;
+    }
+    .comment-form .address-info {
+      border-top: 1px solid #eee;
+      margin-top: 0;
+      padding-top: 25px;
+    }
+    
+}
+
+@media screen and (max-width:400px) {
+    
+    .w3e-testimonial.dashed-bar:before {
+        display: none;
+    }
+    
+}

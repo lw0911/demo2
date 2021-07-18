@@ -1,0 +1,18 @@
+@media screen and (max-width:767px) {
+    
+    .header1 .navbar,
+    .header2 .navbar,
+    .header3 .navbar,
+    .header4 .navbar,
+    .header5 .navbar,
+    .header6 .navbar,
+    .header7 .navbar,
+    .header8 .navbar,
+    .header9 .navbar,
+    .header10 .navbar{
+        background-color: rgba(51, 51, 51, 0.5);
+        height: inherit;
+        min-height: 70px !important;
+    }
+    
+}

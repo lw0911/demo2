@@ -1,0 +1,649 @@
+/*
+ *  Solution by GetTemplates.co
+ *	URL: https://gettemplates.co
+ */
+@font-face {
+  font-family: "Alegreya-Regular";
+  src: url(../fonts/Alegreya-Regular.ttf);
+}
+@font-face {
+  font-family: "Asem-Kandis";
+  src: url(../fonts/Asem-Kandis.otf);
+}
+@font-face {
+  font-family: "Baron-Neue";
+  src: url(../fonts/Baron-Neue.otf);
+}
+@font-face {
+  font-family: "Baron-Neue-Bold";
+  src: url(../fonts/Baron-Neue-Bold.otf);
+}
+@font-face {
+  font-family: "Lato-Regular";
+  src: url(../fonts/Lato-Regular.ttf);
+}
+@font-face {
+  font-family: "Lato-Bold";
+  src: url(../fonts/Lato-Bold.ttf);
+}
+@font-face {
+  font-family: "Lato-Heavy";
+  src: url(../fonts/Lato-Heavy.ttf);
+}
+@font-face {
+  font-family: "Lato-Light";
+  src: url(../fonts/Lato-Light.ttf);
+}
+@font-face {
+  font-family: "Lato-Thin";
+  src: url(../fonts/Lato-Thin.ttf);
+}
+@font-face {
+  font-family: "Lato-ThinItalic";
+  src: url(../fonts/Lato-ThinItalic.ttf);
+}
+body {
+  overflow-x: hidden;
+}
+
+p {
+  font-size: 16px;
+  color: #555555;
+  font-family: "Lato-Regular";
+}
+
+header .gtco-head-left .logo-box::before, header .gtco-head-left .logo-box::after {
+  content: "";
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat !important;
+  height: 30px;
+  width: 30px;
+}
+
+h2::before, .gtco-projects h4::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 50px;
+  background: #ffe400;
+  margin-top: 18px;
+  margin-left: -60px;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+  width: 300px;
+  text-align: center;
+  color: #201f1f;
+  text-transform: uppercase;
+}
+
+.gtco-about-me, .gtco-projects, .gtco-my-services, .gtco-my-portfolio, .gtco-blog {
+  padding: 100px 0;
+}
+
+header .overlay-box {
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  left: 0;
+}
+header #my-carousel {
+  min-height: 890px;
+}
+header .container, header .row {
+  position: relative;
+}
+header .col-md-6 {
+  position: relative;
+}
+header .carousel-inner .carousel-item .d-block {
+  min-height: 890px;
+}
+@media (max-width: 767px) {
+  header .carousel-inner .carousel-item .d-block {
+    width: 200% !important;
+    left: -50%;
+    position: relative;
+  }
+}
+@media (max-width: 560px) {
+  header .carousel-indicators {
+    bottom: 250px;
+  }
+}
+header .gtco-head-left h1 a {
+  font-family: "Baron-Neue-Bold";
+  font-size: 52px;
+  color: #ffffff;
+  text-decoration: none !important;
+}
+header .gtco-head-left .logo-box {
+  font-family: "Baron-Neue";
+  font-size: 72px;
+  color: #ffffff;
+  margin-top: 200px;
+  margin-left: 50px;
+}
+@media (max-width: 1199px) {
+  header .gtco-head-left .logo-box {
+    font-size: 50px;
+  }
+}
+@media (max-width: 991px) {
+  header .gtco-head-left .logo-box {
+    font-size: 36px;
+  }
+}
+@media (max-width: 400px) {
+  header .gtco-head-left .logo-box {
+    font-size: 24px;
+  }
+}
+header .gtco-head-left .logo-box::before {
+  background: url(../images/left-arrow.png);
+  margin-left: -50px;
+}
+header .gtco-head-left .logo-box::after {
+  background: url(../images/right-arrow.png);
+  margin-left: 20px;
+  margin-top: 100px;
+}
+@media (max-width: 1199px) {
+  header .gtco-head-left .logo-box::after {
+    margin-top: 80px;
+  }
+}
+@media (max-width: 1199px) {
+  header .gtco-head-left .logo-box::after {
+    margin-top: 40px;
+  }
+}
+header .gtco-head-left p {
+  font-family: "Alegreya-Regular";
+  font-size: 16px;
+  color: #fffefe;
+  text-align: center;
+  line-height: 1.5;
+  letter-spacing: 10px;
+  margin-top: 10px;
+}
+@media (max-width: 1199px) {
+  header .gtco-head-left p {
+    margin-top: 15px;
+    max-width: 400px;
+  }
+}
+@media (max-width: 991px) {
+  header .gtco-head-left p {
+    font-size: 14px;
+    letter-spacing: 3px;
+    max-width: 300px;
+  }
+}
+@media (max-width: 400px) {
+  header .gtco-head-left p {
+    font-size: 10px;
+    max-width: 240px;
+  }
+}
+header .gtco-head-left ul {
+  max-width: 250px;
+  margin: 0 auto;
+}
+header .gtco-head-left ul a {
+  color: #ffffff;
+  padding: 0 1rem;
+}
+header .gtco-head-left ul a:hover {
+  color: #ffe400;
+}
+@media (max-width: 400px) {
+  header .gtco-head-left ul a {
+    padding: 0 0.3rem;
+  }
+}
+@media (max-width: 1199px) {
+  header .gtco-head-left ul {
+    max-width: 200px;
+    margin-left: 100px;
+  }
+}
+@media (max-width: 991px) {
+  header .gtco-head-left ul {
+    margin-left: 50px;
+  }
+}
+@media (max-width: 400px) {
+  header .gtco-head-left ul {
+    max-width: 150px;
+  }
+}
+header .gtco-head-right ul a {
+  color: #c2c2c2;
+  margin: 12px 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-family: "Lato-Bold";
+}
+header .gtco-head-right ul a span.char {
+  display: block;
+  height: auto;
+  width: auto;
+  float: none;
+  background: transparent;
+  line-height: 1;
+  text-align: center;
+}
+header .gtco-head-right ul a.menu-btn span {
+  display: block;
+  width: 10px;
+  height: 2px;
+  background: #ffffff;
+  float: none;
+  margin: 4px 0;
+}
+header .gtco-head-right ul a.menu-btn span:first-child {
+  width: 12px;
+}
+header .gtco-head-right ul a.menu-btn span:last-child {
+  width: 15px;
+}
+header .gtco-head-right ul a:hover {
+  color: #ffe400;
+}
+header .gtco-head-right ul a.active {
+  color: #ffffff;
+}
+header .carousel-indicators .active {
+  background: #ffe400;
+}
+
+.gtco-about-me .profile-photo {
+  z-index: 55;
+  display: inline-block;
+  position: absolute;
+  margin-top: -450px;
+}
+.gtco-about-me .profile-photo img {
+  background-position: center;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+}
+@media (max-width: 991px) {
+  .gtco-about-me .profile-photo img {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media (max-width: 991px) {
+  .gtco-about-me .profile-photo {
+    margin-top: -350px;
+  }
+}
+.gtco-about-me p:last-child span {
+  font-family: "Asem-Kandis";
+  font-size: 59px;
+  margin-left: 12px;
+}
+.gtco-about-me .row {
+  margin-top: 100px;
+}
+.gtco-about-me .col-lg-7 {
+  padding-top: 50px;
+}
+
+.gtco-projects .col-3 {
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .gtco-projects .col-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin: 20px 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.5);
+  }
+}
+.gtco-projects h4 {
+  font-family: "Lato-Light";
+  color: #ffffff;
+  font-size: 24px;
+}
+.gtco-projects h3 {
+  font-family: "Baron-Neue";
+  color: #ffffff;
+  font-size: 48px;
+}
+
+.gtco-my-services h2 {
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.gtco-my-services h5 {
+  font-size: 17px;
+  color: #555555;
+  font-family: "Lato-Bold";
+}
+.gtco-my-services .media-body {
+  color: #555555;
+  font-size: 16px;
+  font-family: "Lato-Light";
+  border-right: 3px solid #ffe400;
+}
+@media (max-width: 991px) {
+  .gtco-my-services .media-body {
+    border: none;
+  }
+}
+.gtco-my-services .media-body::after {
+  content: "";
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  right: 5px;
+  border: 7px solid #fff;
+  top: 50%;
+  margin-top: -12px;
+  background: #ffe400;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+@media (max-width: 991px) {
+  .gtco-my-services .media-body::after {
+    display: none;
+  }
+}
+.gtco-my-services .fa {
+  font-size: 45px;
+  border: 1px solid #000000;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  padding: 7px 0;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.gtco-my-services .fa:hover {
+  color: #ffe400;
+}
+.gtco-my-services .fa-line-chart {
+  font-size: 36px;
+  padding: 10px 0;
+}
+.gtco-my-services .center + div .media-body {
+  border-right: none;
+}
+.gtco-my-services .center + div .media-body::after {
+  display: none;
+}
+.gtco-my-services .owl-dots {
+  text-align: center;
+  margin-top: 30px;
+}
+.gtco-my-services .owl-dots span {
+  position: relative;
+  height: 3px;
+  width: 15px;
+  border-radius: 0%;
+  display: block;
+  background: #777777;
+  margin: 0 5px;
+}
+.gtco-my-services .owl-dots .active {
+  box-shadow: none;
+}
+.gtco-my-services .owl-dots .active span {
+  background: #ffe400 !important;
+  box-shadow: none;
+}
+
+.card {
+  background: transparent;
+  border-radius: 0;
+  border: none;
+}
+
+.gtco-my-portfolio {
+  background: #000000;
+  padding-top: 40px;
+}
+.gtco-my-portfolio h2 {
+  margin: 0 auto;
+  color: #ffffff;
+}
+.gtco-my-portfolio img {
+  border-radius: 0;
+}
+.gtco-my-portfolio .col-lg-6 .card h5 {
+  font-family: "Baron-Neue";
+  font-size: 18px;
+  color: #ffe400;
+  max-width: 150px;
+}
+@media (max-width: 767px) {
+  .gtco-my-portfolio .col-lg-6 .card {
+    margin-top: 30px !important;
+  }
+}
+.gtco-my-portfolio .col-lg-6:first-child {
+  padding-right: 35px;
+}
+.gtco-my-portfolio .col-lg-6:first-child .card:nth-child(1) h5 {
+  position: absolute;
+  right: -40px;
+  top: 100px;
+}
+@media (max-width: 767px) {
+  .gtco-my-portfolio .col-lg-6:first-child .card:nth-child(1) h5 {
+    right: 0;
+  }
+}
+.gtco-my-portfolio .col-lg-6:first-child .card:nth-child(2) {
+  margin-top: 150px;
+}
+.gtco-my-portfolio .col-lg-6:first-child .card:nth-child(2) h5 {
+  position: absolute;
+  right: -40px;
+  top: 75%;
+}
+@media (max-width: 767px) {
+  .gtco-my-portfolio .col-lg-6:first-child .card:nth-child(2) h5 {
+    right: 0;
+  }
+}
+.gtco-my-portfolio .col-lg-6:first-child .card:nth-child(3) {
+  margin-top: 80px;
+}
+.gtco-my-portfolio .col-lg-6:first-child .card:nth-child(3) h5 {
+  position: absolute;
+  right: -40px;
+  top: 75%;
+}
+@media (max-width: 767px) {
+  .gtco-my-portfolio .col-lg-6:first-child .card:nth-child(3) h5 {
+    right: 0;
+  }
+}
+.gtco-my-portfolio .col-lg-6:last-child {
+  padding-left: 35px;
+}
+.gtco-my-portfolio .col-lg-6:last-child .card:nth-child(1) {
+  margin-top: 50px;
+}
+.gtco-my-portfolio .col-lg-6:last-child .card:nth-child(1) h5 {
+  position: absolute;
+  right: -40px;
+  top: 75%;
+}
+@media (max-width: 767px) {
+  .gtco-my-portfolio .col-lg-6:last-child .card:nth-child(1) h5 {
+    right: 0;
+  }
+}
+.gtco-my-portfolio .col-lg-6:last-child .card:nth-child(2) {
+  margin-top: 80px;
+}
+.gtco-my-portfolio .col-lg-6:last-child .card:nth-child(2) h5 {
+  position: absolute;
+  left: -30px;
+  top: 75%;
+}
+@media (max-width: 767px) {
+  .gtco-my-portfolio .col-lg-6:last-child .card:nth-child(2) h5 {
+    left: 0;
+  }
+}
+.gtco-my-portfolio .col-lg-6:last-child .card:nth-child(3) {
+  margin-top: 80px;
+}
+.gtco-my-portfolio .col-lg-6:last-child .card:nth-child(3) h5 {
+  position: absolute;
+  right: -40px;
+  top: 75%;
+}
+@media (max-width: 767px) {
+  .gtco-my-portfolio .col-lg-6:last-child .card:nth-child(3) h5 {
+    right: 0;
+  }
+}
+
+.gtco-blog h2 {
+  margin: 50px auto;
+}
+.gtco-blog .card:hover h5 {
+  color: #ffe400;
+}
+.gtco-blog .card {
+  background: #000000;
+  margin: 0 20px;
+}
+.gtco-blog .card img {
+  border-radius: 0;
+}
+.gtco-blog .card h5 {
+  font-family: "Baron-Neue";
+  color: #ffffff;
+  font-size: 24px;
+  -webkit-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.gtco-blog .card h5 span {
+  font-family: "Lato-ThinItalic";
+  color: #fefefe;
+  font-size: 12px;
+  text-align: right;
+}
+.gtco-blog .card p {
+  font-family: "Lato-Thin";
+  color: #fefefe;
+}
+.gtco-blog .owl-dots {
+  text-align: center;
+  margin-top: 30px;
+}
+.gtco-blog .owl-dots span {
+  position: relative;
+  height: 3px;
+  width: 15px;
+  border-radius: 0%;
+  display: block;
+  background: #777777;
+  margin: 0 5px;
+}
+.gtco-blog .owl-dots .active {
+  box-shadow: none;
+}
+.gtco-blog .owl-dots .active span {
+  background: #ffe400 !important;
+  box-shadow: none;
+}
+
+.gtco-gallery {
+  background: #000000;
+}
+.gtco-gallery .col {
+  padding: 0;
+  background: #000000;
+}
+@media (max-width: 767px) {
+  .gtco-gallery .col {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+footer {
+  background: #000000;
+  padding-bottom: 20px;
+}
+footer .jumbotron {
+  background: transparent;
+  margin-bottom: 0;
+}
+footer .jumbotron h3 {
+  font-family: "Baron-Neue";
+  font-size: 48px;
+  color: #ffffff;
+}
+@media (max-width: 991px) {
+  footer .jumbotron h3 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 600px) {
+  footer .jumbotron h3 {
+    margin: 0 auto;
+  }
+}
+footer .jumbotron button {
+  background: #000000 !important;
+  border-color: #ffffff !important;
+  border-width: 1px;
+  opacity: 0.3;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+footer .jumbotron button:hover {
+  opacity: 1;
+}
+@media (max-width: 600px) {
+  footer .jumbotron button {
+    margin: 20px auto;
+  }
+}
+footer .container a {
+  text-decoration: none;
+  color: #fefefe;
+}
+footer .container h4 {
+  font-family: "Baron-Neue-Bold";
+  color: #c1c1c1;
+  font-size: 52px;
+  text-align: center;
+}
+footer .container p {
+  color: #c1c1c1;
+  margin-top: 50px;
+}
+footer .container ul {
+  max-width: 300px;
+  margin: 20px auto;
+}
+footer .container ul a {
+  color: #ffffff;
+  padding: 0 1rem;
+}
+footer .container ul a:hover {
+  color: #ffe400;
+}

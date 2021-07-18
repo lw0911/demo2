@@ -1,0 +1,173 @@
+/*
+|----------------------------------------------------------------------------
+| GLOBAL
+|----------------------------------------------------------------------------
+*/
+a {
+  color: #f25454;
+}
+.btn-base {
+  background: #f25454;
+}
+.btn-base:hover {
+  background: #ef2e2e;
+}
+.btn-base-alt {
+  border: 2px solid #f25454;
+  color: #f25454;
+}
+.btn-base-alt:hover {
+  background: #f25454;
+}
+.btn-base-alt.btn-white:hover {
+  color: #f25454;
+}
+.column-heading .icon:before {
+  color: #f25454;
+}
+/*
+|----------------------------------------------------------------------------
+| APP FEATURE
+|----------------------------------------------------------------------------
+*/
+.app-feature .features .icon:before {
+  color: #f25454;
+}
+.app-feature .features h5 {
+  color: #f25454;
+}
+/*
+|----------------------------------------------------------------------------
+| CONTACT
+|----------------------------------------------------------------------------
+*/
+.get-in-touch .phone:before {
+  color: #f25454;
+}
+/*
+|----------------------------------------------------------------------------
+| FOOTER
+|----------------------------------------------------------------------------
+*/
+.social-sites li a:hover .icon {
+  color: #f25454;
+}
+/******************** FORMS ********************/
+.form-control:focus {
+  border-color: #f25454;
+}
+/******************** NAVBAR ********************/
+.fog-navbar .navbar-toggle {
+  background-color: #f25454;
+}
+.fog-navbar .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+.fog-navbar-nav > li > a:hover {
+  color: #f25454;
+}
+.fog-navbar-nav > li.current > a {
+  color: #f25454;
+}
+.fog-navbar-nav > li.nav-btn a {
+  border-color: #fff;
+  background-color: #f25454;
+  color: #fff;
+}
+.fog-navbar-nav > li.nav-btn a:hover {
+  border-color: #ef2e2e;
+  background-color: #ef2e2e;
+}
+/******************** PRICING TABLE ********************/
+.pricing-table-1 .single-table .affirmative:before {
+  color: #f25454;
+}
+.pricing-table-1 .single-table.active .heading {
+  background: #f25454;
+  color: #fff;
+}
+.pricing-table-1 .single-table.active .pricing {
+  color: #f25454;
+}
+.pricing-table-2 .single-table .heading {
+  background: #f25454;
+  color: #fff;
+}
+.pricing-table-2 .single-table.active {
+  background: #f25454;
+  border-color: #f25454;
+}
+.pricing-table-2 .single-table.active .btn {
+  color: #f25454;
+}
+/******************** OWL CONTROLS CUSTOM ********************/
+.owl-theme .owl-nav [class*='owl-']:hover {
+  background: #f25454;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #f25454;
+}
+/******************** SERVICE SECTIONS ********************/
+.service-item .icon {
+  color: #f25454;
+}
+.service-2 .service-item .icon {
+  border-color: #f25454;
+}
+.service-2 .service-item:hover .icon {
+  background: #f25454;
+  color: #fff;
+}
+/******************** TESTIMONIALS ********************/
+.testimonial cite {
+  color: #f25454;
+}
+/*
+|----------------------------------------------------------------------------
+| BACKGROUNDS
+|----------------------------------------------------------------------------
+*/
+.solid-color .overlay {
+  background-color: #f25454;
+  max-height: 100%;
+}
+.solid-color.gradient-color .overlay {
+  background-image: -webkit-gradient(linear, left top, right top, from(#f25454), to(#ed6363));
+  background-image: -webkit-linear-gradient(left, #f25454, #ed6363);
+  background-image: -moz-linear-gradient(left, #f25454, #ed6363);
+  background-image: -o-linear-gradient(left, #f25454, #ed6363);
+  background-image: linear-gradient(to right, #f25454, #ed6363);
+}
+.solid-color.pricing-table-1 .single-table.active .heading {
+  background: #ee1b1b;
+}
+.transparent-color .overlay {
+  background-color: rgba(242, 84, 84, 0.9);
+  max-height: 100%;
+}
+.gradient-color .overlay {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(242, 84, 84, 0.7)), to(rgba(237, 99, 99, 0.7)));
+  background-image: -webkit-linear-gradient(left, rgba(242, 84, 84, 0.7), rgba(237, 99, 99, 0.7));
+  background-image: -moz-linear-gradient(left, rgba(242, 84, 84, 0.7), rgba(237, 99, 99, 0.7));
+  background-image: -o-linear-gradient(left, rgba(242, 84, 84, 0.7), rgba(237, 99, 99, 0.7));
+  background-image: linear-gradient(to right, rgba(242, 84, 84, 0.7), rgba(237, 99, 99, 0.7));
+}
+.solid-color.home .btn-base:not(.btn-block),
+.transparent-color.home .btn-base:not(.btn-block),
+.gradient-color.home .btn-base:not(.btn-block) {
+  border-color: #fff;
+  background: #fff;
+  color: #f25454;
+}
+.solid-color.home .btn-base:not(.btn-block):hover,
+.transparent-color.home .btn-base:not(.btn-block):hover,
+.gradient-color.home .btn-base:not(.btn-block):hover {
+  background: transparent;
+  color: #fff;
+}
+.solid-color .sub-title,
+.transparent-color .sub-title,
+.gradient-color .sub-title {
+  color: #e0e0e0;
+}

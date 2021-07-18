@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>我要评价</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<script src="js/jquery-2.1.0.js"></script>
+		<style type="text/css">
+			body{
+				margin: 0;
+				padding: 0;
+				background-color: #f4f6f3;
+			}
+			.topBox{
+				height: 200px;
+				border-bottom: 1px solid #c9c9c9;
+				padding: 10px;
+				background-color: white;
+			}
+			.ico{
+				display: block;
+				float: left;
+				width: 70px;
+				height: 70px;
+			}
+			.topBox textarea{
+				display: block;
+				float: left;
+				height: 64px;
+				margin-left: 10px;
+				border: none;
+			}
+			.list{
+				height: 60px;
+				background-color: white;
+			}
+			.listLef{
+				float: left;
+				height: 60px;
+				line-height: 60px;
+				padding-left: 10px;
+			}
+			.listRight{
+				float: right;
+				
+			}
+			.listRight img{
+				display: block;
+				float: left;
+				width: 30px;
+				height: 30px;
+				margin-top: 15px;
+				margin-right: 17px;
+			}
+			.bottomBox{
+				position: fixed;
+				left: 0;
+				bottom: 0;
+				background-color: white;
+				width: 100%;
+				height: 40px;
+			}
+			#but{
+				display: block;
+				background-color: #ff5000;
+				color: white;
+				float: right;
+				width: 100px;
+				height: 40px;
+				line-height: 40px;
+				text-align: center;
+				font-weight: 700;
+			}
+		</style>
+</head>
+<!--/************************************************************
+ *																*
+ * 						      							*
+ *                       							*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+**************************************************************-->
+<body>
+		<div class="topBox">
+			<img class="ico" src="images/product.png"/>
+			<textarea placeholder="亲，请写下您的评价吧，对其他人会有用哦~"></textarea>
+		</div>
+		<div class="list">
+			<div class="listLef">描述相符</div>
+			<div class="listRight">
+				<img src="images/star.png" />
+				<img src="images/star.png" />
+				<img src="images/star.png" />
+				<img src="images/star.png" />
+				<img src="images/star.png" />
+			</div>
+		</div>
+		<div class="list" style="margin-top: 20px;">
+			<div class="listLef">物流服务</div>
+			<div class="listRight">
+				<img src="images/star.png" />
+				<img src="images/star.png" />
+				<img src="images/star.png" />
+				<img src="images/star.png" />
+				<img src="images/star.png" />
+			</div>
+		</div>
+		<div class="list" style="margin-bottom: 40px;">
+			<div class="listLef">服务态度</div>
+			<div class="listRight">
+				<img src="images/star.png" />
+				<img src="images/star.png" />
+				<img src="images/star.png" />
+				<img src="images/star.png" />
+				<img src="images/star.png" />
+			</div>
+		</div>
+		<div class="bottomBox">
+			<div style="float: left;margin: 8px 0 0 4px;"><input type="checkbox" name="" id="" value="" />匿名评价</div>
+			<div id="but">评价</div>
+		</div>
+		<script>
+			(function(){
+				$('.topBox textarea').css('width',parseInt($('.topBox').css('width'))-90);
+			}())
+			$('.listRight img').click(function(){
+				var obj=$(this).parent().find('img');
+				obj.attr('src','images/star.png');
+				for(var i=0;i<=$(this).index();i++){
+					obj.eq(i).attr('src','images/stars.png');
+				}
+			});
+		</script>
+	</body>
+</html>

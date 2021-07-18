@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>签到</title>
+		<style type="text/css">
+			body{
+				margin: 0;
+				padding: 0;
+			}
+			.bg{
+				position: relative;
+				padding-top: 40px;
+				box-sizing: border-box;
+			}
+			.bg:after{
+				content: ' ';
+				display: block;
+				clear: both;
+			}
+			.bg img{
+				position: absolute;
+				z-index: 0;
+				left: 0;
+				top: 0;
+				display: block;
+				width: 100%;
+			}
+			.bg div{
+				position: relative;
+				z-index: 1;
+				background-color: #4488e6;
+				border: 5px solid white;
+				color: white;
+				width: 80px;
+				height: 80px;
+				line-height: 80px;
+				text-align: center;
+				border-radius: 50%;
+				margin: 0 auto;
+				font-size: 20px;
+			}
+			.bg span{
+				position: relative;
+				display: block;
+				z-index: 1;
+				text-align: center;
+				color: white;
+				padding-top: 15px;
+				font-weight: 700;
+			}
+			.selectBox{
+				background-color: white;
+				height: 50px;
+				margin-top: 35px;
+			}
+			.selectLeft{
+				float: left;
+				width: 50%;
+				text-align: center;
+				box-sizing: border-box;
+				border-right: 1px solid #dcdcdc;
+			}
+			.selectRight{
+				float: left;
+				width: 50%;
+				text-align: center;
+				
+			}
+			.timeTxt{
+				background: url(images/qd.png) 10px 11px no-repeat;
+				background-size: 16px 16px;
+				height: 40px;
+				line-height: 40px;
+				padding-left: 30px;
+				color: #adadad;
+			}
+			.timeBox{
+				width: 100%;
+				color: #767172;
+				table-layout: fixed;
+			}
+			.timeBox td{
+				height: 40px;
+				line-height: 40px;
+				text-align: center;
+			}
+			.selectTime{
+				background: url(images/diamonds.png) left top no-repeat;
+				background-size: 100% 40px;
+			}
+		</style>
+</head>
+<!--/************************************************************
+ *																*
+ * 						      							*
+ *                       							*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+**************************************************************-->
+<body>
+		<div class="bg">
+			<img src="images/qdbg.png" />
+			<div>签到</div>
+			<span>已连续签到<font color="#4488e6">2</font>天</span>
+		</div>
+		<div class="selectBox">
+			<div class="selectLeft">
+				<div>累计签到</div>
+				<div style="color: #4488e6;">0次</div>
+			</div>
+			<div class="selectRight">
+				<div>我的积分</div>
+				<div style="color: #4488e6;">0分</div>
+			</div>
+		</div>
+		<div style="height: 15px;background-color: #f4f6f3;"></div>
+		<div class="timeTxt">2016年4月</div>
+		<table class="timeBox" cellpadding="0" cellspacing="0">
+			<tr style="background-color: #ebebeb;">
+				<td>日</td>
+				<td>一</td>
+				<td>二</td>
+				<td>三</td>
+				<td>四</td>
+				<td>五</td>
+				<td>六</td>
+			</tr>
+			<tr>
+				<td>27</td>
+				<td>27</td>
+				<td>27</td>
+				<td>27</td>
+				<td>27</td>
+				<td>27</td>
+				<td>27</td>
+			</tr>
+			<tr>
+				<td class="selectTime">27</td>
+				<td>27</td>
+				<td>27</td>
+				<td>27</td>
+				<td>27</td>
+				<td>27</td>
+				<td>27</td>
+			</tr>
+			<tr>
+				<td>27</td>
+				<td>27</td>
+				<td>27</td>
+				<td>27</td>
+				<td>27</td>
+				<td>27</td>
+				<td>27</td>
+			</tr>
+			<tr>
+				<td>27</td>
+				<td>27</td>
+				<td>27</td>
+				<td>27</td>
+				<td>27</td>
+				<td>27</td>
+				<td>27</td>
+			</tr>
+			<tr>
+				<td>27</td>
+				<td>27</td>
+				<td>27</td>
+				<td>27</td>
+				<td>27</td>
+				<td>27</td>
+				<td>27</td>
+			</tr>
+		</table>
+		
+		<script>
+			
+
+		</script>
+	</body>
+</html>

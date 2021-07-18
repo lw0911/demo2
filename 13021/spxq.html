@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>商品详情</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="css/swiper-3.3.1.min.css" />
+		<script src="js/jquery-2.1.0.js"></script>
+		<script src="js/swiper-3.3.1.jquery.min.js"></script>
+		<style type="text/css">
+			body{
+				margin: 0;
+				padding: 0;
+				background-color: #f4f6f3;
+			}
+			a{
+				display: block;
+				text-decoration: none;
+				display: block;
+			}
+			.swiper-container img{
+				display: block;
+				width: 100%;
+				height: 190px;
+			}
+			.topBox{
+				padding-top: 10px;
+				margin: 0 10px;
+				height: 45px;
+				border-bottom: 1px solid #d2d2d2;
+			}
+			.topBox div:nth-child(1){
+				float: left;
+				width: 68%;
+				height: 40px;
+				color: #4f4f4f;
+				box-sizing: border-box;
+				border-right: 1px solid #d2d2d2;
+			}
+			.topBox div:nth-child(2){
+				float: right;
+				width: 30%;
+				border: 1px solid #d2d2d2;
+				border-radius: 4px;
+				background-color: #f0f0f0;
+				height: 30px;
+				line-height: 30px;
+				text-align: center;
+				color: #797979;
+				box-sizing: border-box;
+				font-size: 13px;
+			}
+			.topBox div:nth-child(2) img{
+				display: block;
+				float: left;
+				margin: 4px 0 0 5px;
+				width: 20px;
+				height: 20px;
+			}
+			.tabBox{
+				height: 40px;
+				line-height: 40px;
+				margin-top: 20px;
+			}
+			.tabSelect{
+				border-top: 3px solid #ff6700 !important;
+				border-bottom: 1px solid white !important;
+			}
+			.tabBox div{
+				float: left;
+				box-sizing: border-box;
+				width: 25%;
+				height: 40px;
+				text-align: center;
+				border: 1px solid #f4f6f3;
+				background-color: white;
+			}
+			.selectBox{
+				background-color: white;
+				margin-bottom: 55px;
+			}
+			.parameter{
+				height: 40px;
+				line-height: 40px;
+				border-bottom: 1px solid #e5e5e5;
+			}
+			.parameter span:nth-child(1){
+				color: #c1c1c1;
+				padding-left:10px;
+				font-weight: 700;
+			}
+			.parameter span:nth-child(2){
+				display: inline-block;
+				padding-left:20px;
+			}
+			.evaluate{
+				border-bottom: 1px solid #e5e5e5;
+				margin: 0 10px;
+				padding: 20px 10px 10px;
+			}
+			.evaluateUser{
+				height: 40px;
+			}
+			.evaluateUser img{
+				display: block;
+				float: left;
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+			}
+			.evaluateUser div{
+				float: left;
+				height: 40px;
+				line-height: 40px;
+				padding-left: 10px;
+			}
+			.evaluateTxt{
+				color: #0c222e;
+				margin-top: 10px;
+			}
+			.evaluateTime{
+				color: #999999;
+			}
+			.evaluateImg{
+				margin-top: 5px;
+			}
+			.evaluateImg:after{
+				content: ' ';
+				display: block;
+				clear: both;
+			}
+			.evaluateImg img{
+				display: block;
+				float: left;
+				width: 30%;
+				margin: 5px 3.33% 0 0;
+			}
+						.list{
+				position: relative;
+				display: block;
+				height: 100px;
+				border-bottom: 1px solid #e5e5e5;
+			}
+			.listTransition{
+				transition: all .4s ease;
+				-webkit-transition: all .4s ease;
+			}
+			.list img{
+				display: block;
+				float: left;
+				margin: 15px 0 0 10px;
+				width: 70px;
+				height: 70px;
+			}
+			.title{
+				float: left;
+				width: 70%;
+				max-height: 38px;
+				overflow-y: hidden;
+				margin: 15px 0 0 10px;
+				font-size: 14px;
+				
+			}
+			@media (min-width: 340px) {
+				.title{
+					width: 72%;
+				}
+			}
+			.priceBox{
+				position: absolute;
+				left: 90px;
+				bottom: 35px;
+				font-size: 14px;
+			}
+			.price1{
+				float: left;
+				color: red;
+			}
+			.price2{
+				float: left;
+				margin-left: 10px;
+				color: #a6a6a6;
+				text-decoration: line-through;
+			}
+			.discount{
+				position: absolute;
+				left: 90px;
+				bottom: 15px;
+				font-size: 14px;
+				background-color: #0560de;
+				padding: 1px 3px;
+				color: white;
+			}
+			.number{
+				position: absolute;
+				left: 138px;
+				bottom: 15px;
+				font-size: 14px;
+				color: #c5c5c5;
+			}
+			.max_listBox{
+				padding: 0 10px !important;
+			}
+			.max_listBox:after{
+				content: ' ';
+				display: block;
+				clear: both;
+			}
+			.max_listBox .list{
+				float: left !important;
+				border: none !important;
+				width: 49% !important;
+				height: 100% !important;
+				margin: 10px 0 0 1% !important;
+				background-color: white !important;
+			}
+			.max_listBox .list:after{
+				content: ' ';
+				display: block;
+				clear: both;
+				height: 10px;
+			}
+			.max_listBox img{
+				float: none !important;
+				width: 100% !important;
+				height: auto !important;
+				margin: 0 !important;
+			}
+			.max_listBox .title{
+				float: none !important;
+				width: 100% !important;
+				margin: 0 !important;
+				box-sizing: border-box;
+				padding: 5px 0 0 10px !important;
+			}
+			.max_listBox .priceBox{
+				position: initial !important;
+				height: 16px !important;
+				margin: 5px 0 0 10px !important;
+			}
+			.max_listBox .discount{
+				position: initial !important;
+				float: left !important;
+				width: 40px !important;
+				height: 16px !important;
+				line-height: 16px !important;
+				text-align: center !important;
+				margin: 5px 0 0 10px !important;
+			}
+			.max_listBox .number{
+				position: initial !important;
+				float: left !important;
+				margin: 7px 0 0 10px !important;
+			}
+			.menuBox{
+				position: fixed;
+				left: 0;
+				bottom: 0;
+				width: 100%;
+				height: 55px;
+				border-top: 1px solid #dddddd;
+				background-color: white;
+			}
+			.menuBox div{
+				float: left;
+				height: 55px;
+			}
+			.menuBox div:nth-child(1){
+				background: url(images/dfh2.png) 15px 10px no-repeat;
+				background-size: 20px;
+				padding: 30px 0 0 10px;
+				color: #a3a3a3;
+				width: 20%;
+				box-sizing: border-box;
+			}
+			.menuBox div:nth-child(2){
+				background: url(images/star.png) 15px 10px no-repeat;
+				background-size: 20px;
+				padding: 30px 0 0 10px;
+				color: #a3a3a3;
+				width: 20%;
+				box-sizing: border-box;
+			}
+			.menuBox div:nth-child(3){
+				width: 30%;
+				line-height: 55px;
+				text-align: center;
+				color: white;
+				background-color: #ff9402;
+				font-weight: 700;
+			}
+			.menuBox div:nth-child(4){
+				width: 30%;
+				line-height: 55px;
+				text-align: center;
+				color: white;
+				background-color: #ff5000;
+				font-weight: 700;
+			}
+		</style>
+</head>
+<!--/************************************************************
+ *																*
+ * 						      							*
+ *                       							*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+**************************************************************-->
+<body>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+			  	<div class="swiper-slide">
+			  		<img src="images/product.png"/>
+			  	</div>
+			  	<div class="swiper-slide">
+			  		<img src="images/water_top.png"/>
+			  	</div>
+			  	<div class="swiper-slide">
+			  		<img src="images/f_banner.png"/>
+			  	</div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+		<div style="background-color: white;">
+			<div class="topBox">
+				<div>【新品首发】美国原装进口伟哥 顺丰包邮 原价：299元</div>
+				<div><img src="images/money1.png" />我要分销</div>
+			</div>
+			<div style="color: #ff6600;font-weight: 700;padding: 7px 0 0 10px;">￥30.66</div>
+			<div style="color: #d0cfce;font-weight: 700;height: 30px;margin: 5px 10px 0;border-bottom: 1px solid #d2d2d2;">市场价：￥20.23</div>
+			<div style="color: #9b9b9b;height: 40px;line-height: 40px;text-align: right;margin-right: 10px;">销量：21件</div>
+		</div>
+		<a href="#" style="height: 50px;line-height: 50px;margin: 10px 0;padding: 0 10px;background-color: white;">
+			<div style="color: #5b5b5b;float: left;">请选择商品规格</div>
+			<div style="color: #b3b3b3;float: right;">&gt;</div>
+		</a>
+		<div style="padding: 10px 0 0 10px;background-color: white;">
+			<img src="images/ice_03.png" style="width: 50px;margin-right:10px;height: 50px;border: 1px solid #bfbfbf;background-color: #f4f6f3;display: block;float: left;" />
+			<div style="color: #333333;padding-top: 6px;">冰点水</div>
+			<div style="color: #c1c1c1;padding-top: 3px;">全部宝贝500个</div>
+			<div style="margin:20px 10px 0 0;border-top: 1px solid #d2d2d2;height: 40px;padding-top: 10px;">
+				<a style="float: left;background: url(images/lt.png) 10px 7px no-repeat;height: 30px;line-height: 30px;background-size: 18px 15px;padding-left: 22px;border: 1px solid #d2d2d2;border-radius: 4px;box-sizing: border-box;width: 49%;text-align: center;">查看所有商品</a>
+				<a style="float: left;background: url(images/dfh2.png) 10px 6px no-repeat;height: 30px;line-height: 30px;background-size: 18px 15px;padding-left: 22px;border: 1px solid #d2d2d2;border-radius: 4px;box-sizing: border-box;width: 49%;text-align: center;margin-left: 2%;">进店逛逛</a>
+			</div>
+		</div>
+		<div class="tabBox">
+			<div class="tabSelect">图文详情</div>
+			<div>产品参数</div>
+			<div>用户评价</div>
+			<div>同店推荐</div>
+		</div>
+		<div class="selectBox" style="display: block;"> <!--图文详情-->
+			澳洲无籽红提，珍珠无籽提子，crimson seedless品种，超
+甜，长椭圆形，单果颗粒不大，糖度可达约20%，广州进口
+水果公司直营店，一手货源，专注于高端进口水果，每天港
+口最新到货。
+		</div>
+		<div class="selectBox" style="display: none;"> <!--产品参数-->
+			<div class="parameter">
+				<span>包装方式</span>
+				<span>你大爷</span>
+			</div>
+			<div class="parameter">
+				<span>净含量</span>
+				<span>1000</span>
+			</div>
+		</div>
+		<div class="selectBox" style="display: none;"> <!--用户评价-->
+			<div class="evaluate">
+				<div class="evaluateUser">
+					<img src="images/product.png" />
+					<div>这是我的网名</div>
+				</div>
+				<div class="evaluateTxt">味道不错，值得好评</div>
+				<div class="evaluateTime">2016-02-12</div>
+				<div class="evaluateImg">
+					<img src="images/panic_buying_2.png" />
+					<img src="images/panic_buying_1.png" />
+					<img src="images/panic_buying_1.png" />
+					<img src="images/panic_buying_1.png" />
+				</div>
+			</div>
+			<div class="evaluate">
+				<div class="evaluateUser">
+					<img src="images/product.png" />
+					<div>这是我的网名</div>
+				</div>
+				<div class="evaluateTxt">味道不错，值得好评</div>
+				<div class="evaluateTime">2016-02-12</div>
+				<div class="evaluateImg">
+					<img src="images/panic_buying_2.png" />
+					<img src="images/panic_buying_1.png" />
+					<img src="images/panic_buying_1.png" />
+					<img src="images/panic_buying_1.png" />
+				</div>
+			</div>
+		</div>
+		<div class="selectBox max_listBox" style="display: none;"> <!--同店推荐-->
+			<a href="#" class="list">
+				<img src="images/product.png" />
+				<div class="title">【新品首发】&nbsp;恐龙肉&nbsp;69元/3斤&nbsp;顺丰包邮&nbsp;原价：100元</div>
+				<div class="priceBox">
+					<div class="price1">￥100</div>
+					<div class="price2">￥150</div>
+				</div>
+				<div class="discount">6.3折</div>
+				<div class="number">销量：20</div>
+			</a>
+			<a href="#" class="list">
+				<img src="images/product.png" />
+				<div class="title">【新品首发】&nbsp;恐龙肉&nbsp;69元/3斤&nbsp;顺丰包邮&nbsp;原价：100元</div>
+				<div class="priceBox">
+					<div class="price1">￥100</div>
+					<div class="price2">￥150</div>
+				</div>
+				<div class="discount">6.3折</div>
+				<div class="number">销量：20</div>
+			</a>
+			<a href="#" class="list">
+				<img src="images/product.png" />
+				<div class="title">【新品首发】&nbsp;恐龙肉&nbsp;69元/3斤&nbsp;顺丰包邮&nbsp;原价：100元</div>
+				<div class="priceBox">
+					<div class="price1">￥100</div>
+					<div class="price2">￥150</div>
+				</div>
+				<div class="discount">6.3折</div>
+				<div class="number">销量：20</div>
+			</a>
+			<a href="#" class="list">
+				<img src="images/product.png" />
+				<div class="title">【新品首发】&nbsp;恐龙肉&nbsp;69元/3斤&nbsp;顺丰包邮&nbsp;原价：100元</div>
+				<div class="priceBox">
+					<div class="price1">￥100</div>
+					<div class="price2">￥150</div>
+				</div>
+				<div class="discount">6.3折</div>
+				<div class="number">销量：20</div>
+			</a>
+			<a href="#" class="list">
+				<img src="images/product.png" />
+				<div class="title">【新品首发】&nbsp;恐龙肉&nbsp;69元/3斤&nbsp;顺丰包邮&nbsp;原价：100元</div>
+				<div class="priceBox">
+					<div class="price1">￥100</div>
+					<div class="price2">￥150</div>
+				</div>
+				<div class="discount">6.3折</div>
+				<div class="number">销量：20</div>
+			</a>
+		</div>
+		<div class="menuBox">
+			<div>店铺</div>
+			<div>收藏</div>
+			<div>加入购物车</div>
+			<div>立即购买</div>
+		</div>
+		
+		<script>
+			var mySwiper = new Swiper('.swiper-container', {
+				autoplay: 3000,
+				autoplayDisableOnInteraction: false,
+				loop: true,
+				pagination : '.swiper-pagination'
+			});
+			(function(){
+				$('.swiper-slide img').css('height',$('.swiper-slide img').css('width'));
+			}())
+			//选项卡切换
+			$('.tabBox div').click(function(){
+				$('.tabBox div').removeClass('tabSelect');
+				$(this).addClass('tabSelect');
+				$('.selectBox').css('display','none');
+				$('.selectBox').eq($(this).index()).css('display','block');
+			});
+		</script>
+	</body>
+</html>

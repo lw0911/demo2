@@ -1,0 +1,67 @@
+/****************************************************************
+ *																*		
+ * 						      							*
+ *                       							*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+****************************************************************/
+body{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	list-style: none;
+}
+.bgBox{
+	background-color: #4488e6;
+	color: white;
+}
+.number{
+	background-color: #cc3432;
+	color: white;
+	width: 22px;
+	height: 22px;
+	line-height: 22px;
+	text-align: center;
+}
+.speedBox{
+	margin: 10px 10px 0;
+	background-color: #dddddd;
+	height: 10px;
+	border-radius: 6px;
+}
+.speed{
+	width: 30%;
+	height: 10px;
+	background-color: #cc3432;
+	border-radius: 6px;
+}
+input{
+	display: block;
+	float: left;
+	
+}
+.button{
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 20px 10px 10px;
+	width: 100%;
+}
+.button td{
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	font-weight: 700;
+	
+}
+.button a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	border-radius: 6px;
+}
+
+
+
+

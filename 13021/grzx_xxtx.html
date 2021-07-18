@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>消息提醒</title>
+		<script src="js/jquery-2.1.0.js"></script>
+		<style type="text/css">
+			body{
+				margin: 0;
+				padding: 0;
+				background-color: #f4f6f3;
+			}
+			.listBox{
+				background-color: white;
+			}
+			.list{
+				height: 40px;
+				line-height: 40px;
+				margin: 1px 10px 0;
+				border-bottom: 1px solid #f4f6f3;
+			}
+			.listLeft{
+				float: left;
+			}
+			.switch{
+				position: relative;
+				display: block;
+				float: right;
+				width: 50px;
+				height: 25px;
+				background-color: #DCDCDC;
+				border-radius: 20px;
+				border: 1px solid #4cd964;
+				transition: all .5s ease;
+				-webkit-transition: all .5s ease;
+				margin-top: 7px;
+			}
+			.switch div{
+				/*content: ' ';
+				display: block;*/
+				width: 20px;
+				height: 20px;
+				background-color: white;
+				border-radius: 50%;
+				margin: 2.5px 0 0 4px;
+				transition: all .3s ease;
+				-webkit-transition: all .3s ease;
+			}
+			.switchf{
+				background-color: #4cd964 !important;
+			}
+			.switchf div{
+				margin: 2.5px 4px 0 27px !important;
+			}
+			.switch input{
+				display: none;
+				margin: 0;
+				padding: 0;
+				
+			}
+		</style>
+</head>
+<!--/************************************************************
+ *																*
+ * 						      							*
+ *                       							*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+**************************************************************-->
+<body>
+		<div style="position: relative;color: #707070;text-align: center;font-size: 20px;height: 45px;line-height: 45px;background-color: white;font-weight: 700;">
+			<a href="#" style="position: absolute;display: block;left: 10px;color: #707070;">&lt;</a>消息提醒
+		</div>
+		<div style="height: 40px;line-height: 40px;color: #bfbfbf;text-align: center;">我的订单提醒</div>
+		
+		<div class="listBox">
+			<div class="list">
+				<div class="listLeft">订单提交成功</div>
+				<div class="switch switchf">
+					<div></div>
+					<span><input name="list" type="checkbox" checked="checked" disabled="disabled" /></span>
+				</div>
+			</div>
+			<div class="list">
+				<div class="listLeft">购买成功通知</div>
+				<label class="switch switchf">
+					<div></div>
+					<span><input name="list" type="checkbox" checked="checked" disabled="disabled" /></span>
+				</label>
+			</div>
+			<div class="list">
+				<div class="listLeft">订单发货通知</div>
+				<label class="switch switchf">
+					<div></div>
+					<span><input name="list" type="checkbox" checked="checked" disabled="disabled" /></span>
+				</label>
+			</div>
+			<div class="list">
+				<div class="listLeft">退款申请通知</div>
+				<label class="switch switchf">
+					<div></div>
+					<span><input name="list" type="checkbox" checked="checked" disabled="disabled" /></span>
+				</label>
+			</div>
+			<div class="list">
+				<div class="listLeft">退款通知</div>
+				<label class="switch switchf">
+					<div></div>
+					<span><input name="list" type="checkbox" checked="checked" disabled="disabled" /></span>
+				</label>
+			</div>
+			<div class="list">
+				<div class="listLeft">提现审核结果通知</div>
+				<label class="switch switchf">
+					<div></div>
+					<span><input name="list" type="checkbox" checked="checked" disabled="disabled" /></span>
+				</label>
+			</div>
+			<div class="list">
+				<div class="listLeft">优惠券到期提醒</div>
+				<label class="switch switchf">
+					<div></div>
+					<span><input name="list" type="checkbox" checked="checked" disabled="disabled" /></span>
+				</label>
+			</div>
+		</div>
+		<div style="height: 40px;line-height: 40px;color: #bfbfbf;text-align: center;">分销信息提醒</div>
+		<div class="listBox" style="margin-bottom: 40px;">
+			<div class="list">
+				<div class="listLeft">新代理加入通知</div>
+				<label class="switch switchf">
+					<div></div>
+					<span><input name="list" type="checkbox" checked="checked" disabled="disabled" /></span>
+				</label>
+			</div>
+			<div class="list">
+				<div class="listLeft">新订单通知</div>
+				<label class="switch switchf">
+					<div></div>
+					<span><input name="list" type="checkbox" checked="checked" disabled="disabled" /></span>
+				</label>
+			</div>
+			<div class="list">
+				<div class="listLeft">佣金提醒</div>
+				<label class="switch switchf">
+					<div></div>
+					<span><input name="list" type="checkbox" checked="checked" disabled="disabled" /></span>
+				</label>
+			</div>
+		</div>
+		
+		<script>
+			$('.switch').on('touchend',function(){
+				var _obj=$(this);
+				if(_obj.css('background-color')=='rgb(220, 220, 220)'){
+					_obj.addClass('switchf');
+					_obj.find('span').html('<input name="list" type="checkbox" checked="checked" disabled="disabled" />');
+				}
+				else{
+					_obj.removeClass('switchf');
+					_obj.find('span').html('<input name="list" type="checkbox" disabled="disabled" />');
+				}
+				return false;
+			});
+		</script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

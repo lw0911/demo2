@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" href="css/shoppingCart.css" />
+		<script src="js/jquery-2.1.0.js"></script>
+</head>
+<!--/************************************************************
+ *																*
+ * 						      							*
+ *                       							*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+**************************************************************-->
+<body>
+		<div style="display: block;"> <!--当购物车为空时，请隐藏-->
+			<div class="topBox">
+				<div>购物车（<font>8</font>）</div>
+				<div>移至收藏夹</div>
+				<div>删除</div>
+			</div>
+			<div class="cart">冰点 ></div>
+			<div id="listBox">
+				<div class="list">
+					<label class="checkbox"></label>
+					<img src="images/panic_buying_1.png" />
+					<div class="title">【新品首发】&nbsp;恐龙肉&nbsp;69元/3斤&nbsp;顺丰包邮&nbsp;原价：100元</div>
+					<div class="priceBox">
+						<div class="price1">￥100</div>
+						<div class="price2">￥150</div>
+					</div>
+					<div class="calculation">
+						<div class="jian">-</div>
+						<input type="text" value="1" />
+						<div class="jia">+</div>
+					</div>
+				</div>
+				<div class="list">
+					<label class="checkbox"></label>
+					<img src="images/panic_buying_1.png" />
+					<div class="title">【新品首发】&nbsp;恐龙肉&nbsp;69元/3斤&nbsp;顺丰包邮&nbsp;原价：100元</div>
+					<div class="priceBox">
+						<div class="price1">￥100</div>
+						<div class="price2">￥150</div>
+					</div>
+					<div class="calculation">
+						<div class="jian">-</div>
+						<input type="text" value="1" />
+						<div class="jia">+</div>
+					</div>
+				</div>
+				<div class="list">
+					<label class="checkbox"></label>
+					<img src="images/panic_buying_1.png" />
+					<div class="title">【新品首发】&nbsp;恐龙肉&nbsp;69元/3斤&nbsp;顺丰包邮&nbsp;原价：100元</div>
+					<div class="priceBox">
+						<div class="price1">￥100</div>
+						<div class="price2">￥150</div>
+					</div>
+					<div class="calculation">
+						<div class="jian">-</div>
+						<input type="text" value="1" />
+						<div class="jia">+</div>
+					</div>
+				</div>
+				
+				<div class="commodityNumber">共<font style="color: #575757;">8</font>件商品&nbsp;&nbsp;合计：<font style="color: #575757;">￥100</font></div>
+				
+				<div class="settlement">
+					<label class="checkboxs"></label>
+					<div class="settlementBut">结算(<font>8</font>)</div>
+					<div class="totalBox">
+						<div class="total">合计：<font style="color:red;">￥200</font></div>
+						<div style="text-align: right;color: #888888;">不含运费</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div style="display: block;"> <!--当购物车为空时，请显示-->
+			<img src="images/vehicle.png" style="display: block;width: 80px;margin: 70px auto 0;" />
+			<div style="color: #898989;text-align: center;margin-top: 10px;">购物车是空的</div>
+			<div style="color: #c6c6c6;text-align: center;margin-top: 10px;">暂时没有相关数据</div>
+			<a href="#" style="display: block;border: 1px solid #d2d2d2;background-color: #eeeeee;color: black;width: 130px;height: 40px;line-height: 40px;text-align: center;margin: 40px auto 0;border-radius: 4px;">去逛逛</a>
+		</div>
+		<script>
+			$('.checkbox,.checkboxs').on('touchend',function(){ //选择框
+				var _obj=$(this);
+				function checkboxSelect(){
+					if(_obj.css('background-color')=='rgb(255, 255, 255)'){ //选择
+						return true;
+					}
+					else{ //取消
+						return false;
+					}
+				}
+				if(_obj.attr('class')=='checkbox'){
+					if(checkboxSelect()){
+						_obj.css('background-color','rgb(22, 196, 96)');
+						_obj.css('border','1px solid rgb(22, 196, 96)');
+					}
+					else{
+						_obj.css('background-color','rgb(255, 255, 255)');
+						_obj.css('border','1px solid #999999');
+					}
+					$('.checkbox').each(function(index,checkbox){
+						if($(checkbox).css('background-color')=='rgb(255, 255, 255)'){
+							$('.checkboxs').css('background-color','rgb(255, 255, 255)');
+							$('.checkboxs').css('border','1px solid #999999');
+							return false;
+						}
+						if($('.checkbox').length==index+1){
+							$('.checkboxs').css('background-color','rgb(22, 196, 96)');
+							$('.checkboxs').css('border','1px solid rgb(22, 196, 96)');
+						}
+					});
+				}
+				else if(_obj.attr('class')=='checkboxs'){
+					if(checkboxSelect()){
+						$('.checkbox').css('background-color','rgb(22, 196, 96)');
+						$('.checkbox').css('border','1px solid rgb(22, 196, 96)');
+						_obj.css('background-color','rgb(22, 196, 96)');
+						_obj.css('border','1px solid rgb(22, 196, 96)');
+					}
+					else{
+						$('.checkbox').css('background-color','rgb(255, 255, 255)');
+						$('.checkbox').css('border','1px solid #999999');
+						_obj.css('background-color','rgb(255, 255, 255)');
+						_obj.css('border','1px solid #999999');
+					}
+				}
+				return false;
+			});
+			$('body').on('keyup','.calculation input',function(){
+				this.value=this.value.replace(/\D/g,'');
+				if(this.value=='') this.value=0;
+			});
+			$('body').on('afterpaste','.calculation input',function(){
+				this.value=this.value.replace(/\D/g,'');
+			});
+			$('.list').on('touchend',function(){
+				$(this).find('.checkbox').trigger('touchend');
+			});
+			$('.jian').on('touchend',function(){
+				var _txt=$(this).next();
+				if(_txt.val()>0){
+					_txt.val(parseInt(_txt.val())-1);
+				}
+				return false;
+			});
+			$('.jia').on('touchend',function(){
+				var _txt=$(this).prev();
+				_txt.val(parseInt(_txt.val())+1);
+				return false;
+			});
+			$('.calculation input').on('touchend',function(){
+				$(this)[0].focus();
+				return false;
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>每日签到</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<!--/************************************************************
+ *																*
+ * 						     							*
+ *                        							*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+**************************************************************-->
+<body class="font">
+<div id="head" class="pos_rel">
+	<!-- 头部 -->
+	<div id="top" class="white pos_rel"><h2 class="txt_c f36 white_gray">每日签到</h2><span class="top_back pos_abs f32"><a class="go_back white">返回</a><a class="close ml10 white" id="close">关闭</a></span><a class="top_set pos_abs" href="#"></a></div>
+	<!-- 搜索栏 -->
+	<div id="search_1" class="pos_rel">
+		<a href="#" class="menu pos_abs" id="menuBtn"></a>
+		<div class="search ml70">
+			<span class="txt"><input type="text" value="请输入搜索内容" id="input_txt" class="f20" onclick="this.value=''"></input></span>
+			<input type="submit" id="input_btn" value="搜索" class="pos_abs f32"></input>
+		</div>
+	</div>
+</div>
+<!-- 频道导航 -->
+<div id="menu_nav" class="bgc_white txt_c">
+	<ul>
+		<li><a href="#">数码城</a></li>
+		<li><a href="#">数码城</a></li>
+		<li><a href="#">数码城</a></li>
+		<li><a href="#">数码城</a></li>
+		<li><a href="#">数码城</a></li>
+		<li><a href="#">数码城</a></li>
+		<li><a href="#">数码城</a></li>
+		<li><a href="#">数码城</a></li>
+		<li><a href="#">数码城</a></li>
+		<li><a href="#">数码城</a></li>
+		<li><a href="#">数码城</a></li>
+		<li><a href="#">数码城</a></li>
+		<li><a href="#">数码城</a></li>
+		<li><a href="#">数码城</a></li>
+		<li><a href="#">数码城</a></li>
+		<li><a href="#">数码城</a></li>
+		<li><a href="#">数码城</a></li>
+		<li><a href="#">数码城</a></li>
+	</ul>
+</div>
+<!-- 广告位 -->
+<div class="box_shadow_bot2"><img src="images/banner/banner_signIn.png" alt="签到拿福利" class="full_img"></div>
+<!-- 签到 -->
+<div id="lottery" class="clearfix white">
+	<ul class="colum1">
+		<li><div class="lottery-unit"><span class="lottery-unit-0">1积分</span></div></li>
+		<li><div class="lottery-unit"><span class="lottery-unit-11">20元券</span></div></li>
+		<li><div class="lottery-unit"><span class="lottery-unit-10">20积分</span></div></li>
+		<li><div class="lottery-unit"><span class="lottery-unit-9">5积分</span></div></li>
+	</ul>
+	<div class="colum2 clearfix">
+		<div class="group">
+		 	<div class="border">
+				<div class="lottery-unit"><span class="lottery-unit-1">2积分</span></div>
+			</div>
+		</div>
+		<div class="group">
+			<div class="border">
+		    	<div class="lottery-unit"><span class="lottery-unit-2">3积分</span></div>
+		    </div>
+		</div>
+		<div class="sign_img fl"><a href=""></a></div>
+		<div class="group">
+			<div class="border">
+				<div class="lottery-unit"><span class="lottery-unit-8">水杯</span></div>
+			</div>
+		</div>
+		<div class="group">
+			<div class="border">
+				<div class="lottery-unit"><span class="lottery-unit-7">100积分</span></div>
+			</div>
+		</div>
+	</div>
+	<ul class="colum1">
+		<li><div class="lottery-unit"><span class="lottery-unit-3">sorry</span></div></li>
+		<li><div class="lottery-unit"><span class="lottery-unit-4">咖啡</span></div></li>
+		<li><div class="lottery-unit"><span class="lottery-unit-5">8积分</span></div></li>
+		<li><div class="lottery-unit"><span class="lottery-unit-6">旅游</span></div></li>
+	</ul>
+</div>
+
+<div class="m100"></div>
+<ul id="bot_nav" class="clearfix">
+	<li class="cur"><a href="#"><img src="images/img_shopping.png" alt="购物"><!-- 购物 --></a></li>
+	<li><a href="#"><img src="images/img_search.png" alt="搜索"><!-- 搜索 --></a></li>
+	<li><a href="#"><img src="images/img_person.png" alt="个人中心"><!-- 个人中心 --></a></li>
+	<li><a href="#"><img src="images/img_cart.png" alt="购物车"><!-- 购物车 --></a></li>
+	<li><a href="#"><img src="images/img_selled.png" alt="售后"><!-- 售后 --></a></li>
+</ul>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script type="text/javascript">
+	//导航
+	fnNav("menuBtn","menu_nav",'head');
+</script>
+<!-- 签到 -->
+<script type="text/javascript" src="js/signIn.js"></script>
+</body>
+</html>

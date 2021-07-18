@@ -1,0 +1,21 @@
+
+
+.main-menu .navigation > li > a:before{
+	background: url(../images/icons/wave-1.png);
+}
+
+.owl-dots-style-one .owl-dots .owl-dot span{
+	background: url(../images/icons/wave-2.png) !important;
+}
+
+#content_block_1 .content-box .image-holder:before{
+	background: url(../images/icons/wave-3.png);
+}
+
+.service-section .owl-dots-style-one .owl-dots .owl-dot span{
+	background: url(../images/icons/wave-4.png) !important;
+}
+
+.gallery-section .owl-dots-style-one .owl-dots .owl-dot span{
+	background: url(../images/icons/wave-4.png) !important;
+}

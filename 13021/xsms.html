@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>限时秒杀</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<script src="js/jquery-2.1.0.js"></script>
+		<style type="text/css">
+			body{
+				margin: 0;
+				padding: 0;
+			}
+			.topBox{
+				height: 30px;
+				background: url(images/timer.png) 10px 10px no-repeat;
+				background-size: 25px 25px;
+				color: #4488e6;
+				font-weight: 700;
+				font-size: 17px;
+				padding: 15px 0 0 38px;
+				border-bottom: 1px solid #d5d5d5;
+			}
+			.listBox{
+				margin: 0 10px;
+				
+			}
+			.list{
+				position: relative;
+				border-bottom: 1px solid #d5d5d5;
+				height: 160px;
+				box-sizing: border-box;
+				padding-top: 20px;
+			}
+			.label{
+				width: 110px;
+				height: 20px;
+				line-height: 20px;
+				border: 2px solid #ea3d4f;
+			}
+			.label span{
+				display: block;
+				float: left;
+			}
+			.label span:nth-child(1){
+				color: white;
+				background-color: #ea3d4f;
+				border-top-right-radius: 8px;
+				border-bottom-right-radius: 8px;
+				padding-right: 7px;
+			}
+			.label span:nth-child(2){
+				padding-left: 5px;
+				color: #ea3d4f;
+			}
+			.listIco{
+				display: block;
+				float: right;
+				width: 130px;
+				height: 130px;
+			}
+			.title{
+				box-sizing: border-box;
+				max-height: 36px;
+				overflow-y: hidden;
+				margin-top: 10px;
+			}
+			.priceBox{
+				position: absolute;
+				bottom: 35px;
+				font-size: 14px;
+				bottom: 30px;
+			}
+			.price1{
+				float: left;
+				color: #fd6801;
+			}
+			.price2{
+				float: left;
+				margin-left: 10px;
+				color: #a6a6a6;
+				text-decoration: line-through;
+			}
+			.discount{
+				position: absolute;
+				bottom: 7px;
+				font-size: 14px;
+				background-color: #0560de;
+				padding: 1px 3px;
+				color: white;
+			}
+			.number{
+				position: absolute;
+				left: 55px;
+				bottom: 7px;
+				font-size: 14px;
+				color: #c5c5c5;
+			}
+		</style>
+</head>
+<!--/************************************************************
+ *																*
+ * 						      							*
+ *                       							*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+**************************************************************-->
+<body>
+		<div class="topBox">专享好货</div>
+		<div class="listBox">
+			<div class="list">
+				<img class="listIco" src="images/product.png"/>
+				<div class="label">
+					<span>促销装</span>
+					<span>买就送</span>
+				</div>
+				<div class="title">【新品首发】美国原装进口伟哥 99元/盒 顺丰包邮</div>
+				<div class="priceBox">
+					<div class="price1">￥100</div>
+					<div class="price2">￥150</div>
+				</div>
+				<div class="discount">6.3折</div>
+				<div class="number"><font color="red">130件</font>已售</div>
+			</div>
+			<div class="list">
+				<img class="listIco" src="images/product.png"/>
+				<div class="label">
+					<span>促销装</span>
+					<span>买就送</span>
+				</div>
+				<div class="title">【新品首发】美国原装进口伟哥 99元/盒 顺丰包邮</div>
+				<div class="priceBox">
+					<div class="price1">￥100</div>
+					<div class="price2">￥150</div>
+				</div>
+				<div class="discount">6.3折</div>
+				<div class="number"><font color="red">130件</font>已售</div>
+			</div>
+			<div class="list">
+				<img class="listIco" src="images/product.png"/>
+				<div class="label">
+					<span>促销装</span>
+					<span>买就送</span>
+				</div>
+				<div class="title">【新品首发】美国原装进口伟哥 99元/盒 顺丰包邮</div>
+				<div class="priceBox">
+					<div class="price1">￥100</div>
+					<div class="price2">￥150</div>
+				</div>
+				<div class="discount">6.3折</div>
+				<div class="number"><font color="red">130件</font>已售</div>
+			</div>
+		</div>
+	</body>
+</html>

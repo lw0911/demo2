@@ -1,0 +1,23 @@
+/****************************************************************
+ *																*		
+ * 						      代码库							*
+ *                        www.dmaku.com							*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+****************************************************************/
+
+body {
+    font-family: microsoft yahei, sans-serif;
+    tap-heilight-color:transparent;
+    -webkit-tap-highlight-color: transparent;
+}
+a {
+    color: #ffffff;
+}
+
+.f-left {
+    float: left;
+}
+.f-right {
+    float: right;
+}

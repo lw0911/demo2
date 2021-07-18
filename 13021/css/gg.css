@@ -1,0 +1,69 @@
+﻿/***************全局样式********************/
+*{
+	box-sizing: border-box;
+	padding:0;
+	margin: 0;
+	list-style:none;
+	text-decoration:none;
+}/****************************************************************
+ *																*		
+ * 						      							*
+ *                       							*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+****************************************************************/
+body{
+	font:14px "Microsoft yahei",Arial;
+}
+/***************尾部样式********************/
+footer{
+	display: -webkit-box;
+	background: #fff;
+	width:100%;
+	height:55px;
+	position:fixed;
+	bottom:0;
+}
+footer a{
+	display: block;
+	font-size: 12px;
+	width:25%;
+	height:50px;
+	padding-top: 33px;
+	text-align: center;
+	background: no-repeat center 10px;
+	background-size: 21px;
+	color: #5F5F5F;
+	border-top: 1px solid #D4D4D4;
+}
+footer a.active{
+	color: #2575E2;
+}
+footer a:nth-child(1){
+	background-position-y: 12px;
+	background-image:url("../images/footer_home.png");
+}
+footer a:nth-child(2){
+	background-position-y: 11px;
+	background-image:url("../images/footer_distributor.png");
+}
+footer a:nth-child(3){
+	background-image:url("../images/footer_shopping_card.png");
+	background-position-y: 14px;
+}
+footer a:nth-child(4){
+	background-position-y: 12px;
+	background-image:url("../images/footer_my.png");
+}
+footer a.active:nth-child(1){
+	background-image:url("../images/footer_home_a.png");
+}
+footer a.active:nth-child(2){
+	background-image:url("../images/footer_distributor_a.png");
+}
+footer a.active:nth-child(3){
+	background-image:url("../images/footer_shopping_card_a.png");
+}
+footer a.active:nth-child(4){
+	background-image:url("../images/footer_my_a.png");
+}
